@@ -1,0 +1,22 @@
+# Unpacked Windows archives must stay byte-identical to their SHA256SUMS.txt.
+exclude: '^(scripts/g1d/calib_toolkit|real2sim/robot/g1d_calibrated_colored)/'
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: trailing-whitespace
+        exclude: '(^Third_Party|.*\.md|.*\.rst)'
+    -   id: end-of-file-fixer
+        exclude: '(^Third_Party|.*\.md|.*\.rst)'
+    -   id: debug-statements  # check for debugger imports or `breakpoint()`
+    -   id: check-yaml
+    -   id: check-toml
+
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.7
+    hooks:
+    -   id: ruff
+        args: [ --fix ]
+        exclude: '(.*\.md|.*\.rst)'
+    -   id: ruff-format
+        exclude: '(.*\.md|.*\.rst)'

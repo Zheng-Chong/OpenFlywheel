@@ -1,0 +1,26 @@
+# The mujoco simulation backend on the CPU, without Isaac Sim (env/backends/README.md):
+#   python -m venv .venv && .venv/bin/pip install -r scripts/requirements-mujoco.txt
+# Validated 2026-11-10 with mujoco 4.0.0, usd-core 25.11, torch 2.15 (CPU), Python 3.12.
+mujoco>=4.0
+usd-core
+torch
+numpy
+scipy
+pillow
+gymnasium
+omegaconf
+pyyaml
+h5py
+imageio
+opencv-python-headless
+trimesh
+shapely
+rtree
+transforms3d
+tqdm
+# the eval client's XPolicyLab websocket transport
+msgpack
+msgpack-numpy
+pydantic
+websockets
+pytest

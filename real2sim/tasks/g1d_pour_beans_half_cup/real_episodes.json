@@ -1,0 +1,1105 @@
+{
+ "dataset": "G1D-PourBeansEps380",
+ "stand": {
+  "dx": -0.0575,
+  "dy": -0.201,
+  "yaw_deg": -0.16
+ },
+ "note": "source / target: real gripper pad points at the frame each hand closes (world, g1d_lab scene); start: first-frame arm joints (rad)",
+ "at_stand": 37,
+ "skipped": {
+  "275": "the closes do not read as two cups",
+  "296": "a gripper never closes",
+  "346": "the closes do not read as two cups"
+ },
+ "episodes": [
+  {
+   "episode": 0,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1111,
+    -0.4976,
+    0.9064
+   ],
+   "target": [
+    -0.1136,
+    -0.485,
+    0.898
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.7168999910354614,
+    "left_shoulder_roll_joint": -0.0026000000070780516,
+    "left_shoulder_yaw_joint": -0.16779999434947968,
+    "left_elbow_joint": -0.1671999990940094,
+    "left_wrist_roll_joint": 0.036400001496076584,
+    "left_wrist_pitch_joint": -0.517300009727478,
+    "left_wrist_yaw_joint": -0.014999999664723873,
+    "right_shoulder_pitch_joint": 0.7954000234603882,
+    "right_shoulder_roll_joint": -0.17159999907016754,
+    "right_shoulder_yaw_joint": -0.00989999994635582,
+    "right_elbow_joint": -0.3384999930858612,
+    "right_wrist_roll_joint": 0.4318000078201294,
+    "right_wrist_pitch_joint": -0.2093999981880188,
+    "right_wrist_yaw_joint": 0.49709999561309814
+   },
+   "frames": 939
+  },
+  {
+   "episode": 10,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.0898,
+    -0.4829,
+    0.9205
+   ],
+   "target": [
+    -0.2191,
+    -0.5404,
+    0.8898
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6288999915122986,
+    "left_shoulder_roll_joint": 0.060600001364946365,
+    "left_shoulder_yaw_joint": -0.19189999997615814,
+    "left_elbow_joint": -0.4706000089645386,
+    "left_wrist_roll_joint": 0.04089999943971634,
+    "left_wrist_pitch_joint": -0.1518000066280365,
+    "left_wrist_yaw_joint": -0.06040000170469284,
+    "right_shoulder_pitch_joint": 0.5076000094413757,
+    "right_shoulder_roll_joint": -0.0689999982714653,
+    "right_shoulder_yaw_joint": 0.05810000002384186,
+    "right_elbow_joint": -0.42080000042915344,
+    "right_wrist_roll_joint": 0.149399995803833,
+    "right_wrist_pitch_joint": -0.03579999879002571,
+    "right_wrist_yaw_joint": 0.164900004863739
+   },
+   "frames": 880
+  },
+  {
+   "episode": 13,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.0781,
+    -0.4828,
+    0.9058
+   ],
+   "target": [
+    -0.2008,
+    -0.4848,
+    0.8731
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.25529998540878296,
+    "left_shoulder_roll_joint": -0.003000000026077032,
+    "left_shoulder_yaw_joint": -0.14830000698566437,
+    "left_elbow_joint": -0.4230000078678131,
+    "left_wrist_roll_joint": -0.028200000524520874,
+    "left_wrist_pitch_joint": -0.2062000036239624,
+    "left_wrist_yaw_joint": -0.09740000218153,
+    "right_shoulder_pitch_joint": 0.33239999413490295,
+    "right_shoulder_roll_joint": -0.11429999768733978,
+    "right_shoulder_yaw_joint": -0.013700000010430813,
+    "right_elbow_joint": -0.5849000215530396,
+    "right_wrist_roll_joint": 0.49050000309944153,
+    "right_wrist_pitch_joint": -0.032099999487400055,
+    "right_wrist_yaw_joint": 0.3151000142097473
+   },
+   "frames": 864
+  },
+  {
+   "episode": 42,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1821,
+    -0.4793,
+    0.8868
+   ],
+   "target": [
+    -0.1703,
+    -0.4597,
+    0.9187
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.27880001068115234,
+    "left_shoulder_roll_joint": -0.005799999926239252,
+    "left_shoulder_yaw_joint": -0.2508000135421753,
+    "left_elbow_joint": -0.22310000658035278,
+    "left_wrist_roll_joint": 0.08730000257492065,
+    "left_wrist_pitch_joint": -0.4169999957084656,
+    "left_wrist_yaw_joint": -0.034299999475479126,
+    "right_shoulder_pitch_joint": 0.23649999499320984,
+    "right_shoulder_roll_joint": -0.02889999933540821,
+    "right_shoulder_yaw_joint": 0.08209999650716782,
+    "right_elbow_joint": -0.20419999957084656,
+    "right_wrist_roll_joint": -0.09669999778270721,
+    "right_wrist_pitch_joint": -0.30720001459121704,
+    "right_wrist_yaw_joint": 0.007199999876320362
+   },
+   "frames": 952
+  },
+  {
+   "episode": 57,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1311,
+    -0.566,
+    0.8793
+   ],
+   "target": [
+    -0.1585,
+    -0.5349,
+    0.9182
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.428600013256073,
+    "left_shoulder_roll_joint": 0.10350000113248825,
+    "left_shoulder_yaw_joint": -0.2574000060558319,
+    "left_elbow_joint": -0.5773000121116638,
+    "left_wrist_roll_joint": 0.1477999985218048,
+    "left_wrist_pitch_joint": -0.38679999113082886,
+    "left_wrist_yaw_joint": -0.08209999650716782,
+    "right_shoulder_pitch_joint": 0.1437000036239624,
+    "right_shoulder_roll_joint": -0.1005999967455864,
+    "right_shoulder_yaw_joint": 0.11410000175237656,
+    "right_elbow_joint": -0.5685999989509583,
+    "right_wrist_roll_joint": 0.18770000338554382,
+    "right_wrist_pitch_joint": -0.04639999940991402,
+    "right_wrist_yaw_joint": 0.2078000009059906
+   },
+   "frames": 742
+  },
+  {
+   "episode": 120,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1228,
+    -0.5429,
+    0.9145
+   ],
+   "target": [
+    -0.2188,
+    -0.5372,
+    0.8924
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6816999912261963,
+    "left_shoulder_roll_joint": -0.02850000001490116,
+    "left_shoulder_yaw_joint": -0.12049999833106995,
+    "left_elbow_joint": -0.4235999882221222,
+    "left_wrist_roll_joint": -0.16760000586509705,
+    "left_wrist_pitch_joint": -0.2784000039100647,
+    "left_wrist_yaw_joint": -0.10279999673366547,
+    "right_shoulder_pitch_joint": 0.5800999999046326,
+    "right_shoulder_roll_joint": -0.10920000076293945,
+    "right_shoulder_yaw_joint": -0.04179999977350235,
+    "right_elbow_joint": -0.310699999332428,
+    "right_wrist_roll_joint": 0.22660000622272491,
+    "right_wrist_pitch_joint": -0.22010000050067902,
+    "right_wrist_yaw_joint": 0.24699999392032623
+   },
+   "frames": 685
+  },
+  {
+   "episode": 122,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1185,
+    -0.4744,
+    0.9294
+   ],
+   "target": [
+    -0.2442,
+    -0.5074,
+    0.8916
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5809000134468079,
+    "left_shoulder_roll_joint": 0.02930000051856041,
+    "left_shoulder_yaw_joint": -0.08889999985694885,
+    "left_elbow_joint": -0.4318000078201294,
+    "left_wrist_roll_joint": -0.16580000519752502,
+    "left_wrist_pitch_joint": -0.3183000087738037,
+    "left_wrist_yaw_joint": -0.1761000007390976,
+    "right_shoulder_pitch_joint": 0.38359999656677246,
+    "right_shoulder_roll_joint": -0.056299999356269836,
+    "right_shoulder_yaw_joint": 0.004699999932199717,
+    "right_elbow_joint": -0.24079999327659607,
+    "right_wrist_roll_joint": 0.06239999830722809,
+    "right_wrist_pitch_joint": -0.16179999709129333,
+    "right_wrist_yaw_joint": 0.12530000507831573
+   },
+   "frames": 664
+  },
+  {
+   "episode": 134,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.16,
+    -0.5128,
+    0.916
+   ],
+   "target": [
+    -0.2189,
+    -0.5489,
+    0.88
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6794999837875366,
+    "left_shoulder_roll_joint": 0.022700000554323196,
+    "left_shoulder_yaw_joint": -0.21809999644756317,
+    "left_elbow_joint": -0.2944999933242798,
+    "left_wrist_roll_joint": 0.10339999943971634,
+    "left_wrist_pitch_joint": -0.517799973487854,
+    "left_wrist_yaw_joint": 0.003100000089034438,
+    "right_shoulder_pitch_joint": 0.5759999752044678,
+    "right_shoulder_roll_joint": -0.1160999983549118,
+    "right_shoulder_yaw_joint": -0.03620000183582306,
+    "right_elbow_joint": -0.27889999747276306,
+    "right_wrist_roll_joint": 0.06040000170469284,
+    "right_wrist_pitch_joint": -0.36309999227523804,
+    "right_wrist_yaw_joint": 0.19480000436306
+   },
+   "frames": 474
+  },
+  {
+   "episode": 139,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.133,
+    -0.5131,
+    0.8947
+   ],
+   "target": [
+    -0.1895,
+    -0.5138,
+    0.8654
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6294999718666077,
+    "left_shoulder_roll_joint": 0.041999999433755875,
+    "left_shoulder_yaw_joint": -0.12370000034570694,
+    "left_elbow_joint": -0.3522999882698059,
+    "left_wrist_roll_joint": -0.05779999867081642,
+    "left_wrist_pitch_joint": -0.3531999886035919,
+    "left_wrist_yaw_joint": -0.1266999989748001,
+    "right_shoulder_pitch_joint": 0.5748999714851379,
+    "right_shoulder_roll_joint": -0.06030000001192093,
+    "right_shoulder_yaw_joint": 0.04470000043511391,
+    "right_elbow_joint": -0.26330000162124634,
+    "right_wrist_roll_joint": -0.07689999788999557,
+    "right_wrist_pitch_joint": -0.5234000086784363,
+    "right_wrist_yaw_joint": 0.037700001150369644
+   },
+   "frames": 590
+  },
+  {
+   "episode": 143,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.136,
+    -0.4969,
+    0.8845
+   ],
+   "target": [
+    -0.2601,
+    -0.4859,
+    0.8706
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.31779998540878296,
+    "left_shoulder_roll_joint": -0.0471000000834465,
+    "left_shoulder_yaw_joint": -0.14669999480247498,
+    "left_elbow_joint": -0.05939999967813492,
+    "left_wrist_roll_joint": 0.06949999928474426,
+    "left_wrist_pitch_joint": -0.510699987411499,
+    "left_wrist_yaw_joint": 0.008899999782443047,
+    "right_shoulder_pitch_joint": 0.3151000142097473,
+    "right_shoulder_roll_joint": -0.006899999920278788,
+    "right_shoulder_yaw_joint": 0.039000000804662704,
+    "right_elbow_joint": 0.04280000180006027,
+    "right_wrist_roll_joint": -0.15489999949932098,
+    "right_wrist_pitch_joint": -0.4023999869823456,
+    "right_wrist_yaw_joint": -0.11379999667406082
+   },
+   "frames": 716
+  },
+  {
+   "episode": 148,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.0709,
+    -0.5109,
+    0.8979
+   ],
+   "target": [
+    -0.264,
+    -0.5051,
+    0.8554
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5982999801635742,
+    "left_shoulder_roll_joint": 0.031599998474121094,
+    "left_shoulder_yaw_joint": -0.14259999990463257,
+    "left_elbow_joint": -0.2946000099182129,
+    "left_wrist_roll_joint": 0.12540000677108765,
+    "left_wrist_pitch_joint": -0.47780001163482666,
+    "left_wrist_yaw_joint": 0.0017000000225380063,
+    "right_shoulder_pitch_joint": 0.3610000014305115,
+    "right_shoulder_roll_joint": 0.058800000697374344,
+    "right_shoulder_yaw_joint": 0.1704999953508377,
+    "right_elbow_joint": -0.09589999914169312,
+    "right_wrist_roll_joint": -0.04809999838471413,
+    "right_wrist_pitch_joint": -0.3569999933242798,
+    "right_wrist_yaw_joint": -0.009499999694526196
+   },
+   "frames": 562
+  },
+  {
+   "episode": 158,
+   "instruction": "把方口杯里的红豆，倒进灰色的粗口杯里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00009",
+   "source": [
+    0.1518,
+    -0.5087,
+    0.8791
+   ],
+   "target": [
+    -0.2329,
+    -0.5085,
+    0.8685
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5189999938011169,
+    "left_shoulder_roll_joint": -0.00930000003427267,
+    "left_shoulder_yaw_joint": -0.22579999268054962,
+    "left_elbow_joint": -0.17520000040531158,
+    "left_wrist_roll_joint": 0.21799999475479126,
+    "left_wrist_pitch_joint": -0.4383000135421753,
+    "left_wrist_yaw_joint": 0.10199999809265137,
+    "right_shoulder_pitch_joint": 0.22380000352859497,
+    "right_shoulder_roll_joint": -0.09740000218153,
+    "right_shoulder_yaw_joint": -0.12460000067949295,
+    "right_elbow_joint": 0.13760000467300415,
+    "right_wrist_roll_joint": 0.11909999698400497,
+    "right_wrist_pitch_joint": -0.4235999882221222,
+    "right_wrist_yaw_joint": 0.16869999468326569
+   },
+   "frames": 558
+  },
+  {
+   "episode": 184,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1178,
+    -0.5113,
+    0.8894
+   ],
+   "target": [
+    -0.1756,
+    -0.5179,
+    0.8989
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5203999876976013,
+    "left_shoulder_roll_joint": -0.0414000004529953,
+    "left_shoulder_yaw_joint": -0.23409999907016754,
+    "left_elbow_joint": -0.30559998750686646,
+    "left_wrist_roll_joint": -0.00930000003427267,
+    "left_wrist_pitch_joint": -0.397599995136261,
+    "left_wrist_yaw_joint": -0.04179999977350235,
+    "right_shoulder_pitch_joint": 0.33480000495910645,
+    "right_shoulder_roll_joint": 0.011900000274181366,
+    "right_shoulder_yaw_joint": 0.0406000018119812,
+    "right_elbow_joint": -0.06459999829530716,
+    "right_wrist_roll_joint": -0.07150000333786011,
+    "right_wrist_pitch_joint": -0.3278999924659729,
+    "right_wrist_yaw_joint": -0.02250000089406967
+   },
+   "frames": 492
+  },
+  {
+   "episode": 185,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.0697,
+    -0.4868,
+    0.899
+   ],
+   "target": [
+    -0.2553,
+    -0.4941,
+    0.892
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.609499990940094,
+    "left_shoulder_roll_joint": -0.019600000232458115,
+    "left_shoulder_yaw_joint": -0.19439999759197235,
+    "left_elbow_joint": -0.32409998774528503,
+    "left_wrist_roll_joint": 0.042399998754262924,
+    "left_wrist_pitch_joint": -0.36719998717308044,
+    "left_wrist_yaw_joint": -0.007499999832361937,
+    "right_shoulder_pitch_joint": 0.29809999465942383,
+    "right_shoulder_roll_joint": 0.041999999433755875,
+    "right_shoulder_yaw_joint": 0.14180000126361847,
+    "right_elbow_joint": -0.04830000177025795,
+    "right_wrist_roll_joint": -0.09719999879598618,
+    "right_wrist_pitch_joint": -0.2971000075340271,
+    "right_wrist_yaw_joint": -0.03590000048279762
+   },
+   "frames": 469
+  },
+  {
+   "episode": 189,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1212,
+    -0.519,
+    0.8756
+   ],
+   "target": [
+    -0.1653,
+    -0.5233,
+    0.8935
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6816999912261963,
+    "left_shoulder_roll_joint": 0.019700000062584877,
+    "left_shoulder_yaw_joint": -0.14659999310970306,
+    "left_elbow_joint": -0.48399999737739563,
+    "left_wrist_roll_joint": 0.05979999899864197,
+    "left_wrist_pitch_joint": -0.24770000576972961,
+    "left_wrist_yaw_joint": -0.012900000438094139,
+    "right_shoulder_pitch_joint": 0.5475000143051147,
+    "right_shoulder_roll_joint": -0.04399999976158142,
+    "right_shoulder_yaw_joint": 0.04619999974966049,
+    "right_elbow_joint": -0.3422999978065491,
+    "right_wrist_roll_joint": -0.04969999939203262,
+    "right_wrist_pitch_joint": -0.19359999895095825,
+    "right_wrist_yaw_joint": -0.000699999975040555
+   },
+   "frames": 572
+  },
+  {
+   "episode": 197,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.0856,
+    -0.5142,
+    0.8812
+   ],
+   "target": [
+    -0.1754,
+    -0.5248,
+    0.8857
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6165000200271606,
+    "left_shoulder_roll_joint": -0.033399999141693115,
+    "left_shoulder_yaw_joint": -0.15690000355243683,
+    "left_elbow_joint": -0.25440001487731934,
+    "left_wrist_roll_joint": 0.1574999988079071,
+    "left_wrist_pitch_joint": -0.5175999999046326,
+    "left_wrist_yaw_joint": 0.10050000250339508,
+    "right_shoulder_pitch_joint": 0.40529999136924744,
+    "right_shoulder_roll_joint": 0.009999999776482582,
+    "right_shoulder_yaw_joint": 0.07360000163316727,
+    "right_elbow_joint": -0.2303999960422516,
+    "right_wrist_roll_joint": 0.03999999910593033,
+    "right_wrist_pitch_joint": -0.30959999561309814,
+    "right_wrist_yaw_joint": 0.05119999870657921
+   },
+   "frames": 498
+  },
+  {
+   "episode": 199,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.121,
+    -0.4906,
+    0.8847
+   ],
+   "target": [
+    -0.1845,
+    -0.5007,
+    0.891
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.6488000154495239,
+    "left_shoulder_roll_joint": -0.031199999153614044,
+    "left_shoulder_yaw_joint": -0.25519999861717224,
+    "left_elbow_joint": -0.263700008392334,
+    "left_wrist_roll_joint": 0.09059999883174896,
+    "left_wrist_pitch_joint": -0.534600019454956,
+    "left_wrist_yaw_joint": 0.06870000064373016,
+    "right_shoulder_pitch_joint": 0.29750001430511475,
+    "right_shoulder_roll_joint": -0.03799999877810478,
+    "right_shoulder_yaw_joint": -0.04089999943971634,
+    "right_elbow_joint": -0.1363999992609024,
+    "right_wrist_roll_joint": 0.09799999743700027,
+    "right_wrist_pitch_joint": -0.1940000057220459,
+    "right_wrist_yaw_joint": 0.07620000094175339
+   },
+   "frames": 465
+  },
+  {
+   "episode": 200,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1293,
+    -0.5196,
+    0.8975
+   ],
+   "target": [
+    -0.1726,
+    -0.5383,
+    0.9046
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.7073000073432922,
+    "left_shoulder_roll_joint": 0.032099999487400055,
+    "left_shoulder_yaw_joint": -0.17679999768733978,
+    "left_elbow_joint": -0.18369999527931213,
+    "left_wrist_roll_joint": 0.1080000028014183,
+    "left_wrist_pitch_joint": -0.6128000020980835,
+    "left_wrist_yaw_joint": -0.017500000074505806,
+    "right_shoulder_pitch_joint": 0.4968000054359436,
+    "right_shoulder_roll_joint": -0.0071000000461936,
+    "right_shoulder_yaw_joint": 0.01759999990463257,
+    "right_elbow_joint": -0.16940000653266907,
+    "right_wrist_roll_joint": 0.07240000367164612,
+    "right_wrist_pitch_joint": -0.3427000045776367,
+    "right_wrist_yaw_joint": 0.07440000027418137
+   },
+   "frames": 470
+  },
+  {
+   "episode": 207,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1037,
+    -0.4972,
+    0.8805
+   ],
+   "target": [
+    -0.1822,
+    -0.5072,
+    0.9052
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5307999849319458,
+    "left_shoulder_roll_joint": 0.005200000014156103,
+    "left_shoulder_yaw_joint": -0.13779999315738678,
+    "left_elbow_joint": -0.18649999797344208,
+    "left_wrist_roll_joint": 0.15929999947547913,
+    "left_wrist_pitch_joint": -0.5727999806404114,
+    "left_wrist_yaw_joint": 0.050999999046325684,
+    "right_shoulder_pitch_joint": 0.4142000079154968,
+    "right_shoulder_roll_joint": 0.03359999880194664,
+    "right_shoulder_yaw_joint": 0.08910000324249268,
+    "right_elbow_joint": -0.17239999771118164,
+    "right_wrist_roll_joint": -0.02239999920129776,
+    "right_wrist_pitch_joint": -0.33500000834465027,
+    "right_wrist_yaw_joint": -0.02759999968111515
+   },
+   "frames": 497
+  },
+  {
+   "episode": 220,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1581,
+    -0.4908,
+    0.9125
+   ],
+   "target": [
+    -0.1748,
+    -0.4585,
+    0.8972
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.569100022315979,
+    "left_shoulder_roll_joint": -0.04490000009536743,
+    "left_shoulder_yaw_joint": -0.1225999966263771,
+    "left_elbow_joint": -0.19460000097751617,
+    "left_wrist_roll_joint": 0.020999999716877937,
+    "left_wrist_pitch_joint": -0.4957999885082245,
+    "left_wrist_yaw_joint": 0.0008999999845400453,
+    "right_shoulder_pitch_joint": 0.26759999990463257,
+    "right_shoulder_roll_joint": -0.0471000000834465,
+    "right_shoulder_yaw_joint": -0.07900000363588333,
+    "right_elbow_joint": -0.15150000154972076,
+    "right_wrist_roll_joint": 0.05979999899864197,
+    "right_wrist_pitch_joint": -0.16130000352859497,
+    "right_wrist_yaw_joint": 0.0414000004529953
+   },
+   "frames": 576
+  },
+  {
+   "episode": 266,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1483,
+    -0.5039,
+    0.8667
+   ],
+   "target": [
+    -0.2258,
+    -0.4511,
+    0.882
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5138000249862671,
+    "left_shoulder_roll_joint": -0.027300000190734863,
+    "left_shoulder_yaw_joint": -0.1257999986410141,
+    "left_elbow_joint": -0.44929999113082886,
+    "left_wrist_roll_joint": 0.08079999685287476,
+    "left_wrist_pitch_joint": -0.3619000017642975,
+    "left_wrist_yaw_joint": 0.029400000348687172,
+    "right_shoulder_pitch_joint": 0.30090001225471497,
+    "right_shoulder_roll_joint": -0.05939999967813492,
+    "right_shoulder_yaw_joint": -0.053599998354911804,
+    "right_elbow_joint": -0.08429999649524689,
+    "right_wrist_roll_joint": -0.056299999356269836,
+    "right_wrist_pitch_joint": -0.2395000010728836,
+    "right_wrist_yaw_joint": -0.01720000058412552
+   },
+   "frames": 614
+  },
+  {
+   "episode": 272,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1725,
+    -0.4996,
+    0.8852
+   ],
+   "target": [
+    -0.2902,
+    -0.481,
+    0.8827
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5738999843597412,
+    "left_shoulder_roll_joint": -0.05299999937415123,
+    "left_shoulder_yaw_joint": -0.09109999984502792,
+    "left_elbow_joint": -0.23199999332427979,
+    "left_wrist_roll_joint": 0.3246999979019165,
+    "left_wrist_pitch_joint": -0.48910000920295715,
+    "left_wrist_yaw_joint": 0.2775000035762787,
+    "right_shoulder_pitch_joint": 0.3537999987602234,
+    "right_shoulder_roll_joint": -0.022099999710917473,
+    "right_shoulder_yaw_joint": -0.07500000298023224,
+    "right_elbow_joint": -0.04659999907016754,
+    "right_wrist_roll_joint": -0.017100000753998756,
+    "right_wrist_pitch_joint": -0.41990000009536743,
+    "right_wrist_yaw_joint": -0.030500000342726707
+   },
+   "frames": 516
+  },
+  {
+   "episode": 278,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1493,
+    -0.4976,
+    0.8912
+   ],
+   "target": [
+    -0.2287,
+    -0.4246,
+    0.9046
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.3294000029563904,
+    "left_shoulder_roll_joint": -0.04639999940991402,
+    "left_shoulder_yaw_joint": -0.1664000004529953,
+    "left_elbow_joint": -0.3190999925136566,
+    "left_wrist_roll_joint": 0.17820000648498535,
+    "left_wrist_pitch_joint": -0.321399986743927,
+    "left_wrist_yaw_joint": 0.08879999816417694,
+    "right_shoulder_pitch_joint": 0.17270000278949738,
+    "right_shoulder_roll_joint": -0.017799999564886093,
+    "right_shoulder_yaw_joint": -0.0340999998152256,
+    "right_elbow_joint": -0.03709999844431877,
+    "right_wrist_roll_joint": -0.10180000215768814,
+    "right_wrist_pitch_joint": -0.2906999886035919,
+    "right_wrist_yaw_joint": -0.05889999866485596
+   },
+   "frames": 558
+  },
+  {
+   "episode": 283,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.2319,
+    -0.4417,
+    0.9158
+   ],
+   "target": [
+    -0.0172,
+    -0.5382,
+    0.897
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.17190000414848328,
+    "left_shoulder_roll_joint": -0.0357000008225441,
+    "left_shoulder_yaw_joint": 0.07530000060796738,
+    "left_elbow_joint": 0.2231999933719635,
+    "left_wrist_roll_joint": -0.09629999846220016,
+    "left_wrist_pitch_joint": -0.70660001039505,
+    "left_wrist_yaw_joint": -0.04749999940395355,
+    "right_shoulder_pitch_joint": 0.08739999681711197,
+    "right_shoulder_roll_joint": -0.09369999915361404,
+    "right_shoulder_yaw_joint": -0.24779999256134033,
+    "right_elbow_joint": 0.45590001344680786,
+    "right_wrist_roll_joint": 0.08179999887943268,
+    "right_wrist_pitch_joint": -0.7789000272750854,
+    "right_wrist_yaw_joint": -0.009200000204145908
+   },
+   "frames": 648
+  },
+  {
+   "episode": 294,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.114,
+    -0.5353,
+    0.905
+   ],
+   "target": [
+    -0.095,
+    -0.4272,
+    0.8719
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5011000037193298,
+    "left_shoulder_roll_joint": -0.03669999912381172,
+    "left_shoulder_yaw_joint": -0.21459999680519104,
+    "left_elbow_joint": -0.4731000065803528,
+    "left_wrist_roll_joint": 0.015599999576807022,
+    "left_wrist_pitch_joint": -0.3402999937534332,
+    "left_wrist_yaw_joint": -0.012199999764561653,
+    "right_shoulder_pitch_joint": 0.3614000082015991,
+    "right_shoulder_roll_joint": -0.04600000008940697,
+    "right_shoulder_yaw_joint": 0.003000000026077032,
+    "right_elbow_joint": -0.13729999959468842,
+    "right_wrist_roll_joint": 0.0957999974489212,
+    "right_wrist_pitch_joint": -0.2700999975204468,
+    "right_wrist_yaw_joint": 0.1316000074148178
+   },
+   "frames": 578
+  },
+  {
+   "episode": 299,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1522,
+    -0.4966,
+    0.9141
+   ],
+   "target": [
+    -0.2882,
+    -0.5208,
+    0.9026
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.5482000112533569,
+    "left_shoulder_roll_joint": -0.02329999953508377,
+    "left_shoulder_yaw_joint": -0.20029999315738678,
+    "left_elbow_joint": -0.3190999925136566,
+    "left_wrist_roll_joint": 0.19670000672340393,
+    "left_wrist_pitch_joint": -0.3871000111103058,
+    "left_wrist_yaw_joint": 0.10170000046491623,
+    "right_shoulder_pitch_joint": 0.4706999957561493,
+    "right_shoulder_roll_joint": -0.04500000178813934,
+    "right_shoulder_yaw_joint": -0.007000000216066837,
+    "right_elbow_joint": -0.3319000005722046,
+    "right_wrist_roll_joint": 0.25920000672340393,
+    "right_wrist_pitch_joint": -0.3084000051021576,
+    "right_wrist_yaw_joint": 0.23919999599456787
+   },
+   "frames": 641
+  },
+  {
+   "episode": 300,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1719,
+    -0.5045,
+    0.9078
+   ],
+   "target": [
+    -0.0916,
+    -0.441,
+    0.8948
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.46309998631477356,
+    "left_shoulder_roll_joint": -0.009600000455975533,
+    "left_shoulder_yaw_joint": -0.19120000302791595,
+    "left_elbow_joint": -0.2978000044822693,
+    "left_wrist_roll_joint": -0.009399999864399433,
+    "left_wrist_pitch_joint": -0.4968999922275543,
+    "left_wrist_yaw_joint": -0.04800000041723251,
+    "right_shoulder_pitch_joint": 0.28439998626708984,
+    "right_shoulder_roll_joint": -0.029999999329447746,
+    "right_shoulder_yaw_joint": -0.1437000036239624,
+    "right_elbow_joint": -0.04569999873638153,
+    "right_wrist_roll_joint": 0.11640000343322754,
+    "right_wrist_pitch_joint": -0.33399999141693115,
+    "right_wrist_yaw_joint": 0.07150000333786011
+   },
+   "frames": 480
+  },
+  {
+   "episode": 305,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1157,
+    -0.543,
+    0.8961
+   ],
+   "target": [
+    -0.0884,
+    -0.5176,
+    0.9045
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.4846999943256378,
+    "left_shoulder_roll_joint": -0.004800000227987766,
+    "left_shoulder_yaw_joint": -0.3068000078201294,
+    "left_elbow_joint": -0.21699999272823334,
+    "left_wrist_roll_joint": 0.13359999656677246,
+    "left_wrist_pitch_joint": -0.426800012588501,
+    "left_wrist_yaw_joint": 0.003599999938160181,
+    "right_shoulder_pitch_joint": 0.4828000068664551,
+    "right_shoulder_roll_joint": 0.006099999882280827,
+    "right_shoulder_yaw_joint": 0.0674000009894371,
+    "right_elbow_joint": -0.27630001306533813,
+    "right_wrist_roll_joint": -0.05429999902844429,
+    "right_wrist_pitch_joint": -0.2930999994277954,
+    "right_wrist_yaw_joint": 0.004100000020116568
+   },
+   "frames": 476
+  },
+  {
+   "episode": 310,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1112,
+    -0.5482,
+    0.8969
+   ],
+   "target": [
+    -0.2493,
+    -0.4539,
+    0.8934
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.47620001435279846,
+    "left_shoulder_roll_joint": -0.0364999994635582,
+    "left_shoulder_yaw_joint": -0.22529999911785126,
+    "left_elbow_joint": -0.3093999922275543,
+    "left_wrist_roll_joint": 0.06390000134706497,
+    "left_wrist_pitch_joint": -0.39590001106262207,
+    "left_wrist_yaw_joint": 0.01730000041425228,
+    "right_shoulder_pitch_joint": 0.4327999949455261,
+    "right_shoulder_roll_joint": 0.05490000173449516,
+    "right_shoulder_yaw_joint": 0.07419999688863754,
+    "right_elbow_joint": -0.1876000016927719,
+    "right_wrist_roll_joint": 0.02669999934732914,
+    "right_wrist_pitch_joint": -0.3228999972343445,
+    "right_wrist_yaw_joint": 0.02070000022649765
+   },
+   "frames": 497
+  },
+  {
+   "episode": 317,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.2354,
+    -0.4608,
+    0.9154
+   ],
+   "target": [
+    -0.2898,
+    -0.5637,
+    0.8875
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.41130000352859497,
+    "left_shoulder_roll_joint": -0.0071000000461936,
+    "left_shoulder_yaw_joint": -0.3174999952316284,
+    "left_elbow_joint": -0.1379999965429306,
+    "left_wrist_roll_joint": 0.2651999890804291,
+    "left_wrist_pitch_joint": -0.49810001254081726,
+    "left_wrist_yaw_joint": 0.0949999988079071,
+    "right_shoulder_pitch_joint": -0.20990000665187836,
+    "right_shoulder_roll_joint": -0.3149000108242035,
+    "right_shoulder_yaw_joint": -0.31790000200271606,
+    "right_elbow_joint": 0.6003999710083008,
+    "right_wrist_roll_joint": 0.26190000772476196,
+    "right_wrist_pitch_joint": -0.35040000081062317,
+    "right_wrist_yaw_joint": 0.3463999927043915
+   },
+   "frames": 478
+  },
+  {
+   "episode": 327,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1141,
+    -0.4857,
+    0.8982
+   ],
+   "target": [
+    -0.3149,
+    -0.5372,
+    0.8979
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.32670000195503235,
+    "left_shoulder_roll_joint": -0.008200000040233135,
+    "left_shoulder_yaw_joint": -0.15209999680519104,
+    "left_elbow_joint": 0.0333000011742115,
+    "left_wrist_roll_joint": 0.17599999904632568,
+    "left_wrist_pitch_joint": -0.625,
+    "left_wrist_yaw_joint": 0.05429999902844429,
+    "right_shoulder_pitch_joint": 0.23399999737739563,
+    "right_shoulder_roll_joint": -0.10639999806880951,
+    "right_shoulder_yaw_joint": -0.07609999924898148,
+    "right_elbow_joint": 0.13230000436306,
+    "right_wrist_roll_joint": 0.16339999437332153,
+    "right_wrist_pitch_joint": -0.4311000108718872,
+    "right_wrist_yaw_joint": 0.24369999766349792
+   },
+   "frames": 530
+  },
+  {
+   "episode": 328,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1914,
+    -0.5191,
+    0.916
+   ],
+   "target": [
+    -0.2786,
+    -0.5205,
+    0.9025
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.29840001463890076,
+    "left_shoulder_roll_joint": -0.048700001090765,
+    "left_shoulder_yaw_joint": -0.09070000052452087,
+    "left_elbow_joint": 0.14470000565052032,
+    "left_wrist_roll_joint": 0.08959999680519104,
+    "left_wrist_pitch_joint": -0.7912999987602234,
+    "left_wrist_yaw_joint": 0.06300000101327896,
+    "right_shoulder_pitch_joint": 0.06650000065565109,
+    "right_shoulder_roll_joint": -0.07490000128746033,
+    "right_shoulder_yaw_joint": -0.1517000049352646,
+    "right_elbow_joint": 0.31529998779296875,
+    "right_wrist_roll_joint": 0.059300001710653305,
+    "right_wrist_pitch_joint": -0.5692999958992004,
+    "right_wrist_yaw_joint": 0.02889999933540821
+   },
+   "frames": 603
+  },
+  {
+   "episode": 366,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.2527,
+    -0.5058,
+    0.9125
+   ],
+   "target": [
+    -0.3475,
+    -0.5243,
+    0.9162
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.16500000655651093,
+    "left_shoulder_roll_joint": -0.05119999870657921,
+    "left_shoulder_yaw_joint": -0.10859999805688858,
+    "left_elbow_joint": 0.12999999523162842,
+    "left_wrist_roll_joint": -0.018799999728798866,
+    "left_wrist_pitch_joint": -0.6988000273704529,
+    "left_wrist_yaw_joint": -0.04540000110864639,
+    "right_shoulder_pitch_joint": 0.0024999999441206455,
+    "right_shoulder_roll_joint": -0.24789999425411224,
+    "right_shoulder_yaw_joint": -0.32679998874664307,
+    "right_elbow_joint": 0.45179998874664307,
+    "right_wrist_roll_joint": 0.18469999730587006,
+    "right_wrist_pitch_joint": -0.6187000274658203,
+    "right_wrist_yaw_joint": 0.11919999867677689
+   },
+   "frames": 508
+  },
+  {
+   "episode": 368,
+   "instruction": "把方口杯里的红豆，倒进蓝色杯子里，倒半杯",
+   "target_object": "Rigid/plastic_cup/00008",
+   "source": [
+    0.1495,
+    -0.4774,
+    0.9241
+   ],
+   "target": [
+    -0.0565,
+    -0.4496,
+    0.9019
+   ],
+   "start": {
+    "left_shoulder_pitch_joint": 0.20730000734329224,
+    "left_shoulder_roll_joint": -0.0478999987244606,
+    "left_shoulder_yaw_joint": -0.2054000049829483,
+    "left_elbow_joint": 0.08799999952316284,
+    "left_wrist_roll_joint": 0.0625,
+    "left_wrist_pitch_joint": -0.5983999967575073,
+    "left_wrist_yaw_joint": -0.03449999913573265,
+    "right_shoulder_pitch_joint": -0.14499999582767487,
+    "right_shoulder_roll_joint": -0.08389999717473984,
+    "right_shoulder_yaw_joint": -0.1485999971628189,
+    "right_elbow_joint": 0.36480000615119934,
+    "right_wrist_roll_joint": 0.03779999911785126,
+    "right_wrist_pitch_joint": -0.3598000109195709,
+    "right_wrist_yaw_joint": -0.02800000086426735
+   },
+   "frames": 349
+  }
+ ]
+}

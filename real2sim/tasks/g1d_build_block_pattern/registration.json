@@ -1,0 +1,57 @@
+{
+  "task": "g1d_build_block_pattern",
+  "name": "照图搭积木",
+  "name_en": "Build the Block Pattern on the Card",
+  "definition": "桌上平放一张印着积木造型正面图的卡片（小房子、牌坊或拱桥之一），这个造型要用的原木积木（4–5 块）散放在卡片和搭建区两侧。机器人看卡片，用两只手把积木一块块拿起，在卡片和机器人之间的桌面上照卡片自下而上搭出同样的造型：每块积木的相对位置、朝向和卡片一致，搭完两只手都松开。",
+  "instructions": {
+    "count": 3,
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "success": "回合结束时：(1) 以造型的基准积木定坐标系，每块积木的位置偏差水平 ≤ 15 mm、高度 ≤ 10 mm；(2) 每块直立（倾斜 < 10°），朝向按形状的对称性偏差 < 15°；造型可以搭在桌上任意位置、任意朝向；(3) 两只夹爪都已松开（张开 ≥ 0.8）。",
+  "hand": "both",
+  "horizon_s": 60,
+  "owner": {
+    "username": "contributor",
+    "name": "种政"
+  },
+  "objects": [
+    {
+      "label": "card",
+      "count": 1,
+      "candidates": [
+        "Rigid/block_pattern_card/00000",
+        "Rigid/block_pattern_card/00001",
+        "Rigid/block_pattern_card/00002"
+      ]
+    },
+    {
+      "label": "block",
+      "count": 5,
+      "candidates": [
+        "Rigid/wood_block_arch/00000",
+        "Rigid/wood_block_cube/00000",
+        "Rigid/wood_block_cylinder/00000",
+        "Rigid/wood_block_half_cylinder/00000",
+        "Rigid/wood_block_plank/00000",
+        "Rigid/wood_block_prism/00000",
+        "Rigid/wood_block_short_plank/00000",
+        "Rigid/wood_block_small_prism/00000"
+      ]
+    }
+  ],
+  "notes": "agent 代登记：代码里已有实现（task/RoboDojo/tasks/g1d_build_block_pattern.py，造型在 scripts/objects/block_patterns.py，脚本专家 scripted_demo.block_pattern_actions），按代码写定义。卡片编号就是造型编号；积木标签 block_<i> 按造型的放置顺序（小房子、牌坊 4 块，拱桥 5 块），只用原木色（00000）。没有真机示例视频；仿真专家四视角视频在 <runs-dir>/block-patterns-20261031-193104/videos/*_4views_v17.mp4。",
+  "locked": true,
+  "lock_history": [
+    {
+      "action": "lock",
+      "by": "管理员",
+      "at": 1793499733.7845633,
+      "note": "登记"
+    }
+  ],
+  "updated_by": "管理员",
+  "updated_at": "2026-11-01 10:22:13"
+}

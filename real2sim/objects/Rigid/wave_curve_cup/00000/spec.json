@@ -1,0 +1,31 @@
+{
+  "id": "Rigid/wave_curve_cup/00000",
+  "twin": true,
+  "asset_origin": "physical_object",
+  "name": "波浪纹杯子",
+  "name_en": "Wave Curve Cup",
+  "mass_g": 110.9,
+  "dimensions_mm": "开口直径72.76，底部直径60.61，高度93.01",
+  "requirements": "中空可以放物体",
+  "generalization": {
+    "count": 3,
+    "requirements": "参数由 coding agent 设计，彼此差异明显",
+    "color": true,
+    "material": true
+  },
+  "updated_by": "杨开元",
+  "updated_at": "2026-10-29 21:25:39",
+  "dimension_policy": "measured",
+  "mass_policy": "measured",
+  "reference_source": "实物照片",
+  "physics_requirements": "刚体",
+  "material": "PP 塑料",
+  "color": "待核实；保留已归档实拍与现有模型配色",
+  "features": "黄色，波浪状外壁",
+  "modeling_confirmation": {
+    "version": "real-object-v3",
+    "revision": "4245652bc6c6f64f2d6ae929ce1efd467418b31e21bef4c2001a1550168abcbe",
+    "by": "杨开元",
+    "at": 1793280339.9708045
+  }
+}

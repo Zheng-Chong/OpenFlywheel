@@ -1,0 +1,43 @@
+{
+  "id": "Garment/microfiber_towel/00000",
+  "twin": true,
+  "asset_origin": "physical_object",
+  "name": "蓝色超细纤维家政毛巾（30×30 cm）",
+  "name_en": "blue microfiber cleaning towel 30x30 cm",
+  "material": "超细纤维毛圈布（家政毛巾常见的涤纶/锦纶混纺，成分未核实）",
+  "color": "宝蓝色，四边同色锁边",
+  "dimensions_mm": "长 300，宽 300",
+  "features": "单层矩形超细纤维毛圈毛巾，表面细密绒毛、哑光；四边约 5 mm 宽同色锁边包边；一角缝有白底小布标（商品图 1）。可平铺、对折、叠放（商品图 2）。",
+  "requirements": "做成可形变布料：能平铺在桌上、悬垂、对折、揉皱后展开，能被夹爪指垫捏起提起，能压在桌面上擦拭。外观用照片毛圈纹理；布标暂可不建模，但要在交付说明里写明。",
+  "notes": "商品标称 30×30 cm（用户提供，未用卷尺量）。质量 25 g：用户 2026-11-02 在对话中提供的称重值。布料几乎没有弹性（用户说明）。摩擦未测。30×70 cm 长条款作为尺寸变体 microfiber_towel/00001，面密度、颜色、材质与本体一致，共用同一组商品图。",
+  "deformable": {
+    "family": "cloth",
+    "backend": "physx",
+    "rest_state": "平铺展开、无拉力的单层状态（商品图 1、3），标称 300×300 mm",
+    "structure": "单层矩形毛圈布，四边锁边包边，一角布标（暂不建模）；仿真用二维中面三角网格；几乎不可拉伸（用户说明）",
+    "measurements": {
+      "areal_density_g_m2": {
+        "value": 277.8,
+        "source": "estimated",
+        "evidence": "本体实测质量 25 g ÷ 标称面积 0.30 m × 0.30 m（尺寸未用卷尺实测）"
+      },
+      "thickness_mm": {
+        "value": 2.0,
+        "source": "estimated",
+        "evidence": "按商品图估计毛圈布厚约 2 mm，未测量"
+      }
+    }
+  },
+  "updated_by": "种政（agent 代登记）",
+  "updated_at": "2026-11-02 16:34:53",
+  "reference_source": "用户提供的 3 张商品图（平铺手按、叠放一摞、斜放平铺），不是这件实物的实拍；尺寸为用户给的商品标称尺寸，未用卷尺实测。",
+  "dimension_policy": "estimate",
+  "mass_policy": "measured",
+  "physics_requirements": "布料（PhysX 粒子布料，GarmentObject）：悬垂、对折、揉皱展开、指垫夹持提起、压布擦桌；材料参数未实测，按候选值建模并标注。",
+  "mass_g": 25,
+  "generalization": {
+    "count": 1,
+    "size": true,
+    "requirements": "30×70 cm 长条款（同款不同尺寸）：颜色、材质、面密度、锁边与本体一致"
+  }
+}

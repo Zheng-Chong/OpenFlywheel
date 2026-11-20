@@ -1,0 +1,85 @@
+{
+  "task": "pick_bucket",
+  "engine": "RoboDojo / Isaac Sim 5.0",
+  "run": "pick_bucket_probe15",
+  "env_cfg": "g1d_school",
+  "seed": 0,
+  "layout_id": 0,
+  "status": "research_candidate_failed",
+  "native_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+      "0": {
+        "layout_id": 0,
+        "success": false,
+        "score": 0.0,
+        "instruction": "拿起摆件放进圆口木质编织提篮，提起篮子后放回桌面并松手"
+      }
+    }
+  },
+  "stage_history": [
+    {
+      "stage": 1,
+      "sample": 232
+    },
+    {
+      "stage": 2,
+      "sample": 487
+    },
+    {
+      "stage": 3,
+      "sample": 937
+    }
+  ],
+  "last_stage": 3,
+  "max_basket_bottom_height_m": 4.220220647233042e-05,
+  "final_food_inside": true,
+  "videos": {
+    "head": {
+      "file": "pick_bucket_head.mp4",
+      "frames": 1713,
+      "fps": 30.0,
+      "duration_s": 57.1,
+      "sha256": "543e5bb3285ec6177231c5e278803a12e95e6d18559e5efcabd3cfbf6c4da79b"
+    },
+    "left_wrist": {
+      "file": "pick_bucket_left_wrist.mp4",
+      "frames": 1713,
+      "fps": 30.0,
+      "duration_s": 57.1,
+      "sha256": "47a492db186e6e4b7349681e583eb1c75fc51e0c66e4165a1e242902d2174841"
+    },
+    "right_wrist": {
+      "file": "pick_bucket_right_wrist.mp4",
+      "frames": 1713,
+      "fps": 30.0,
+      "duration_s": 57.1,
+      "sha256": "51e4e4a57b39429b4a591b0e3852a64903670b32e571c6f9deda4322b38916a6"
+    }
+  },
+  "input_sha256": {
+    "task/RoboDojo/tasks/pick_bucket.py": "8b3abbfa860b454a3e8a81756d4016ffb8de24e28d47b299a2cae999fa1439fa",
+    "env/reward_manager/pick_bucket_checks.py": "47324f1984a483def37b1da9dce66c7297b914bae5fbbd1584b6fcf6c1767608",
+    "scripts/g1d/pick_bucket_demo.py": "6eed5d7e56e126bb162f1e7d5b1db527c84db3626ff7be147950f4e54a4270b3",
+    "scripts/g1d/scripted_demo.py": "f84335bee920edde58b4b6023962fb67ef06aa19d7a65feb902aa1ff5d40d6af",
+    "Assets/Eval_Layout/RoboDojo/g1d_school/0/pick_bucket_0.json": "22f436d302ffbbdbc7362b290dc536b4a0f77f9d0a354ff0d576c88fceb82452",
+    "real2sim/tasks/pick_bucket/registration.json": "0fc759e74ce6bcbdd0e5a9453b61742600c06b09e9ea6fbcdbbd1c8b2487b15b",
+    "env_cfg/g1d_school.yml": "0e3f61a4bdaca4431ceda0ce95ffd21b81b53b8a972809bf865cf5882928fbbd",
+    "Assets/Object/Real2Sim/Rigid/mango_prop/00000/object.usdz": "ccdfc8491ee78b73454b78f5e6e6dcc01ca738628fe20fabcee021cd8970d22b",
+    "Assets/Object/RoboDojo/Rigid/mango_prop/00000/object.usdz": "ccdfc8491ee78b73454b78f5e6e6dcc01ca738628fe20fabcee021cd8970d22b",
+    "Assets/Object/Real2Sim/Rigid/basket/00014/object.usdz": "77ad9b84d1c4c415185a9987372d0bba8da2ec36356df439cff71df476e9efc7"
+  },
+  "checks": {
+    "native_run": "passed",
+    "three_videos_full_decode": "passed",
+    "ordered_five_stage_physics": "failed",
+    "cpu_suite": "205 passed, 4 skipped, 82 subtests passed"
+  },
+  "scope": "Single L0 development evaluation; no batch collection or shared-asset modification",
+  "limitations": [
+    "Material, friction and robot contact are not calibrated against the physical objects",
+    "Closed gripper near handle is only a grasp candidate; loaded lift must still satisfy the physical height and retention check"
+  ]
+}

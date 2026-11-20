@@ -1,0 +1,9 @@
+# Recorded episode-0001 torso-frame image-fit candidate. Use g1d_pick_bucket.
+# Source poses are not metrologically calibrated; the saved layout carries initial robot joints.
+Rigid:
+  - common: {xlim: [0.0734635685, 0.0734635685], ylim: [-0.4259521719, -0.4259521719], rotate_rand: false, qpos: [0.0103979760, 0, 0, 0.9999459396], relative_plane: Table}
+    category: [{name: mango_prop, index: [0]}]
+    select_mode: {nums: 1, mode: unique, label: [food]}
+  - common: {xlim: [0.3443969330, 0.3443969330], ylim: [-0.5230318933, -0.5230318933], rotate_rand: false, qpos: [-0.6322645971, 0, 0, 0.7747525277], relative_plane: Table}
+    category: [{name: basket, index: [14]}]
+    select_mode: {nums: 1, mode: unique, label: [basket]}

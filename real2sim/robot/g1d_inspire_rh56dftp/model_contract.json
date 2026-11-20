@@ -1,0 +1,527 @@
+{
+  "model": "g1d_inspire_rh56dftp",
+  "joint_unit": "rad",
+  "length_unit": "m",
+  "hands": {
+    "left": {
+      "root": "left_inspire_base_link",
+      "joints": [
+        "left_little_1_joint",
+        "left_ring_1_joint",
+        "left_middle_1_joint",
+        "left_index_1_joint",
+        "left_thumb_1_joint",
+        "left_thumb_swing_joint"
+      ],
+      "all_joints": [
+        "left_thumb_swing_joint",
+        "left_thumb_1_joint",
+        "left_thumb_2_joint",
+        "left_thumb_3_joint",
+        "left_index_1_joint",
+        "left_index_2_joint",
+        "left_middle_1_joint",
+        "left_middle_2_joint",
+        "left_ring_1_joint",
+        "left_ring_2_joint",
+        "left_little_1_joint",
+        "left_little_2_joint"
+      ],
+      "links": [
+        "left_inspire_base_link",
+        "left_thumb_swing",
+        "left_thumb_1",
+        "left_thumb_2",
+        "left_thumb_3",
+        "left_index_1",
+        "left_index_2",
+        "left_middle_1",
+        "left_middle_2",
+        "left_ring_1",
+        "left_ring_2",
+        "left_little_1",
+        "left_little_2"
+      ],
+      "limits": {
+        "left_thumb_swing_joint": {
+          "lower": 0.0,
+          "upper": 1.7,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_thumb_1_joint": {
+          "lower": 0.0,
+          "upper": 0.92,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_thumb_2_joint": {
+          "lower": 0.0,
+          "upper": 3.14,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_thumb_3_joint": {
+          "lower": 0.0,
+          "upper": 3.14,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_index_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_index_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_middle_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_middle_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_ring_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_ring_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_little_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_little_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        }
+      },
+      "effective_active_limits": {
+        "left_little_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_ring_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_middle_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_index_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_thumb_1_joint": {
+          "lower": 0.0,
+          "upper": 0.92,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "left_thumb_swing_joint": {
+          "lower": 0.0,
+          "upper": 1.7,
+          "effort": 1.0,
+          "velocity": 100.0
+        }
+      },
+      "mimic": {
+        "left_thumb_2_joint": {
+          "joint": "left_thumb_1_joint",
+          "multiplier": 0.4,
+          "offset": 0.0
+        },
+        "left_thumb_3_joint": {
+          "joint": "left_thumb_1_joint",
+          "multiplier": 0.6,
+          "offset": 0.0
+        },
+        "left_index_2_joint": {
+          "joint": "left_index_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "left_middle_2_joint": {
+          "joint": "left_middle_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "left_ring_2_joint": {
+          "joint": "left_ring_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "left_little_2_joint": {
+          "joint": "left_little_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        }
+      },
+      "initial_rad": {
+        "left_little_1_joint": 0.0,
+        "left_ring_1_joint": 0.0,
+        "left_middle_1_joint": 0.0,
+        "left_index_1_joint": 0.0,
+        "left_thumb_1_joint": 0.0,
+        "left_thumb_swing_joint": 0.0,
+        "left_thumb_2_joint": 0.0,
+        "left_thumb_3_joint": 0.0,
+        "left_index_2_joint": 0.0,
+        "left_middle_2_joint": 0.0,
+        "left_ring_2_joint": 0.0,
+        "left_little_2_joint": 0.0
+      },
+      "cad_flange_anchor_m": [
+        -0.008326747454702854,
+        0.11181005463004112,
+        -0.11095590889453888
+      ],
+      "mount_xyz_m": [
+        0.1524559088945389,
+        -0.10881005463004112,
+        -0.008326747454702842
+      ],
+      "mount_rpy_rad": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "configured_mass_kg": 0.40341505250388254,
+      "source": "attachment/FTP_urdf_left   2024-10-25/urdf_left   2024-10-25/urdf/left.xacro",
+      "limit_correction": "four active finger upper limits intersected with 1.05 slave limit: 1.6 / 1.05 rad; source limits retained in this contract"
+    },
+    "right": {
+      "root": "right_inspire_base_link",
+      "joints": [
+        "right_little_1_joint",
+        "right_ring_1_joint",
+        "right_middle_1_joint",
+        "right_index_1_joint",
+        "right_thumb_2_joint",
+        "right_thumb_1_joint"
+      ],
+      "all_joints": [
+        "right_thumb_1_joint",
+        "right_thumb_2_joint",
+        "right_thumb_3_joint",
+        "right_thumb_4_joint",
+        "right_index_1_joint",
+        "right_index_2_joint",
+        "right_middle_1_joint",
+        "right_middle_2_joint",
+        "right_ring_1_joint",
+        "right_ring_2_joint",
+        "right_little_1_joint",
+        "right_little_2_joint"
+      ],
+      "links": [
+        "right_inspire_base_link",
+        "right_thumb_1",
+        "right_thumb_2",
+        "right_thumb_3",
+        "right_thumb_4",
+        "right_index_1",
+        "right_index_2",
+        "right_middle_1",
+        "right_middle_2",
+        "right_ring_1",
+        "right_ring_2",
+        "right_little_1",
+        "right_little_2"
+      ],
+      "limits": {
+        "right_thumb_1_joint": {
+          "lower": 0.0,
+          "upper": 1.7,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_thumb_2_joint": {
+          "lower": 0.035,
+          "upper": 0.9,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_thumb_3_joint": {
+          "lower": 0.0,
+          "upper": 3.14,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_thumb_4_joint": {
+          "lower": 0.0,
+          "upper": 3.14,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_index_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_index_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_middle_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_middle_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_ring_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_ring_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_little_1_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_little_2_joint": {
+          "lower": 0.0,
+          "upper": 1.6,
+          "effort": 1.0,
+          "velocity": 100.0
+        }
+      },
+      "effective_active_limits": {
+        "right_little_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_ring_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_middle_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_index_1_joint": {
+          "lower": 0.0,
+          "upper": 1.5238095238095237,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_thumb_2_joint": {
+          "lower": 0.035,
+          "upper": 0.9,
+          "effort": 1.0,
+          "velocity": 100.0
+        },
+        "right_thumb_1_joint": {
+          "lower": 0.0,
+          "upper": 1.7,
+          "effort": 1.0,
+          "velocity": 100.0
+        }
+      },
+      "mimic": {
+        "right_thumb_3_joint": {
+          "joint": "right_thumb_2_joint",
+          "multiplier": 0.4,
+          "offset": 0.0
+        },
+        "right_thumb_4_joint": {
+          "joint": "right_thumb_2_joint",
+          "multiplier": 0.6,
+          "offset": 0.0
+        },
+        "right_index_2_joint": {
+          "joint": "right_index_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "right_middle_2_joint": {
+          "joint": "right_middle_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "right_ring_2_joint": {
+          "joint": "right_ring_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        },
+        "right_little_2_joint": {
+          "joint": "right_little_1_joint",
+          "multiplier": 1.05,
+          "offset": 0.0
+        }
+      },
+      "initial_rad": {
+        "right_little_1_joint": 0.0,
+        "right_ring_1_joint": 0.0,
+        "right_middle_1_joint": 0.0,
+        "right_index_1_joint": 0.0,
+        "right_thumb_2_joint": 0.035,
+        "right_thumb_1_joint": 0.0,
+        "right_thumb_3_joint": 0.014000000000000002,
+        "right_thumb_4_joint": 0.021,
+        "right_index_2_joint": 0.0,
+        "right_middle_2_joint": 0.0,
+        "right_ring_2_joint": 0.0,
+        "right_little_2_joint": 0.0
+      },
+      "cad_flange_anchor_m": [
+        -0.008326747454702854,
+        -0.11181005463004112,
+        -0.11095590889453888
+      ],
+      "mount_xyz_m": [
+        0.1524559088945389,
+        0.10881005463004112,
+        -0.008326747454702842
+      ],
+      "mount_rpy_rad": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "configured_mass_kg": 0.4454710671291473,
+      "source": "attachment/FTP_urdf_right 2024-10-25/urdf_right 10.28/urdf_right/urdf/urdf_right.xacro",
+      "limit_correction": "four active finger upper limits intersected with 1.05 slave limit: 1.6 / 1.05 rad; source limits retained in this contract"
+    }
+  },
+  "source_archive_sha256": "fd4eb08c419f5754df87e28d160044670a07bb0338f4dc6f18415fdec5a671ab",
+  "source_selection": "matching left.xacro and urdf_right.xacro with their own meshes; display world mounts removed",
+  "physical_calibration": "pending_real_measurements",
+  "mount_status": "CAD_flange_center_aligned_simulation_candidate_G1D_bolt_pattern_and_TCP_unmeasured",
+  "mount_orientation_contract": "source_+Z_to_wrist_+X_thumb_side_up_positive_flexion_inward",
+  "collision_exclusions": [
+    [
+      "left_inspire_base_link",
+      "left_thumb_1"
+    ],
+    [
+      "right_inspire_base_link",
+      "right_thumb_2"
+    ]
+  ],
+  "tactile": {
+    "left": {
+      "piezoresistive": {
+        "patches": 17,
+        "taxels": 1062,
+        "bytes": 2124,
+        "raw_unit": "ADC_count_0_to_4096_not_Newtons",
+        "addresses": [
+          3000,
+          5123
+        ]
+      },
+      "capacitive": {
+        "fingertip_modules": 5,
+        "bytes_per_module": 58,
+        "physical_float_units": "not_confirmed"
+      },
+      "simulation": "native_filtered_link_contact_force_N_not_hardware_taxels",
+      "taxel_geometry_and_pressure_calibration": "not_supplied_not_invented"
+    },
+    "right": {
+      "piezoresistive": {
+        "patches": 17,
+        "taxels": 1062,
+        "bytes": 2124,
+        "raw_unit": "ADC_count_0_to_4096_not_Newtons",
+        "addresses": [
+          3000,
+          5123
+        ]
+      },
+      "capacitive": {
+        "fingertip_modules": 5,
+        "bytes_per_module": 58,
+        "physical_float_units": "not_confirmed"
+      },
+      "simulation": "native_filtered_link_contact_force_N_not_hardware_taxels",
+      "taxel_geometry_and_pressure_calibration": "not_supplied_not_invented"
+    }
+  },
+  "forbidden_runtime_interfaces": [
+    "DDS",
+    "real_camera",
+    "hardware_SDK"
+  ],
+  "simulation_dynamics": {
+    "stiffness_Nm_per_rad": 3.0,
+    "damping_Nms_per_rad": 0.15,
+    "effort_cap_Nm": 1.0,
+    "active_velocity_cap_rad_per_s": 2.0,
+    "active_target_lead_rad": 0.05,
+    "physics_dt_s": 0.0020833333333333333,
+    "solver_position_velocity_iterations": [
+      64,
+      8
+    ],
+    "max_depenetration_velocity_m_s": 0.2,
+    "collision_contact_offset_m": 0.0005,
+    "mimic_constraint": "native_rigid_zero_compliance_strong_layer_override",
+    "status": "conservative_simulation_preset_not_measured_motor_response"
+  },
+  "optional_body_commands": {
+    "waist_joint_state": 2,
+    "lift_joint_state": 1
+  },
+  "action_dimension": 26,
+  "collision_exclusion_reason": "Only the palm housing versus thumb proximal grandchild: supplied native convex hulls overlap internally by 4.107/2.893 mm insphere radius at the feasible open pose. External finger/palm and inter-finger collisions retained.",
+  "action_layout": [
+    "left_arm_7_rad",
+    "left_hand_6_rad",
+    "right_arm_7_rad",
+    "right_hand_6_rad"
+  ]
+}

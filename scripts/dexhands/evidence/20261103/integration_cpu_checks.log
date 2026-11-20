@@ -1,0 +1,10 @@
+...s.................................................................... [ 34%]
+..................ss.................................................... [ 68%]
+.............................................................. [ 98%]
+....                                                                     [100%]
+=========================== short test summary info ============================
+SKIPPED [1] scripts/objects/test_deformable.py:10: could not import 'newton': No module named 'newton'
+SKIPPED [1] scripts/prototypes/test_genie_bridge.py:11: could not import 'pxr': No module named 'pxr'
+SKIPPED [1] scripts/datagen/test_datagen.py:100: XPolicyLab (and h5py, cv2) not importable
+SKIPPED [2] scripts/objects/test_geniesim.py:37: could not import 'pxr': No module named 'pxr'
+207 passed, 5 skipped, 82 subtests passed in 3.38s

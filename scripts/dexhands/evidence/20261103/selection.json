@@ -1,0 +1,33 @@
+{
+  "models": [
+    {
+      "model": "g1d_sharpa_wave",
+      "title": "Sharpa Wave",
+      "motion": "sharpa_motion01",
+      "grasp": "sharpa_grasp11",
+      "contact": "sharpa_contact06"
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "title": "Wuji Hand2 2.1",
+      "motion": "wuji21_motion01",
+      "grasp": "wuji21_grasp14",
+      "contact": "wuji21_contact07"
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "title": "Wuji Hand2 2.2",
+      "motion": "wuji22_motion02",
+      "grasp": "wuji22_grasp12",
+      "contact": "wuji22_contact06"
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "title": "因时 RH56DFTP",
+      "motion": "inspire_motion02",
+      "grasp": "inspire_grasp14",
+      "contact": "inspire_contact04"
+    }
+  ],
+  "scope": "Four complete G1-D variants, both hands. Qualified finite motion and physical interaction tests; failures and placement offsets retained. Simulation only, no hardware calibration."
+}

@@ -1,0 +1,48 @@
+{
+  "task": "pick_bucket",
+  "status": "recorded_layout_candidate_initialization_failed",
+  "env_cfg": "g1d_pick_bucket",
+  "reference_frame": 0,
+  "reference_not_initial_frame": 420,
+  "qualified_metric_calibration": false,
+  "corrections": [
+    "torso-to-chassis offset 53.3714301 mm",
+    "archived head pose and off-axis K",
+    "recorded first-frame arm and gripper joints",
+    "basket right and nearer than mango",
+    "silver cable hatch"
+  ],
+  "basket_identity_unconfirmed": true,
+  "source_proxy_dimensions_approx_m": [
+    0.212,
+    0.157,
+    0.193
+  ],
+  "native_basket_00014_bbox_m": [
+    0.263837,
+    0.2569,
+    0.252
+  ],
+  "native_gate": {
+    "startup_stability": "failed",
+    "five_stage_execution": "not started",
+    "passed": false
+  },
+  "old_preview_run": "pick_bucket_probe15",
+  "old_preview_applicability": "obsolete: initial layout was not aligned",
+  "diagnostic_runs": [
+    "alignment_gate08.log",
+    "alignment_static09.log",
+    "alignment_hold10.log"
+  ],
+  "negative_hypotheses": "yaw 0 and 168.4 did not repair stability; disabling robot collision after initialization also did not change outcome; root cause of contact instability not established",
+  "scope": "source poses are image-fit priors. Native geometry silhouette still does not match the recorded basket; no fabricated acceptance or metric calibration.",
+  "input_sha256": {
+    "real2sim/tasks/pick_bucket/recorded_alignment.json": "564078401f03698a0246b423c205aa38eca07b07a14070b0707e821ed210242c",
+    "output/real_frame0000.jpg": "372b1d3025dc0673451cf9e6ff5e14f0ec9beb8e3435b4cbad75c7e6072af0ae",
+    "output/real_frame0420.jpg": "2804711e573dc3494f43b0d16facfc0ce61d502544803673278a4e470b8c9a06",
+    "Assets/Object/Real2Sim/Rigid/basket/00014/object.usdz": "77ad9b84d1c4c415185a9987372d0bba8da2ec36356df439cff71df476e9efc7"
+  },
+  "run": "pick_bucket_recorded_alignment_gate",
+  "gate_log_sha256": "3d6777cd1c8fb4e93c7113b85dd426680492f9bc0907a487dc11aa163f79f5fc"
+}

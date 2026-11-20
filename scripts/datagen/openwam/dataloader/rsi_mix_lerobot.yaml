@@ -1,0 +1,18 @@
+# rsi_mix.yaml with the generated rounds read from their LeRobot v3 releases (rsi/AGENTS.md section 5.2): official
+# RoboDojo stays the stock `robodojo` HDF5 reader, generated is OpenWAM's `robodojo_lerobot` over one dataset dir per
+# round. Both use M_0's normalization stats. Selected by scripts/datagen/rsi_train.py (`--generated lerobot`).
+defaults:
+  - robodojo@datasets.official
+  - robodojo_lerobot@datasets.generated
+  - _self_
+
+type: mixture
+weight_strategy: manual
+
+datasets:
+  official:
+    enabled: true
+    weight: 0.5
+  generated:
+    enabled: true
+    weight: 0.5

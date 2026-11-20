@@ -1,0 +1,74 @@
+{
+  "id": "Rigid/wooden_arch_block/00000",
+  "name": "木质拱形积木",
+  "name_en": "wooden_arch_block",
+  "material": "木材（外观判断）",
+  "features": "矩形积木、底部半圆拱洞、木纹",
+  "requirements": "基于实验室实物照片建模；",
+  "notes": "2026-10-29本次对话用户明确确认：按实测长度60.10、宽度29.72、高度30.04mm重建；最薄处9.58mm指拱顶到积木顶面的厚度。质量实测24.6g。此确认取代此前“尺寸尚未实测/保留现有参数”的状态；材料、摩擦尚未标定。\n历史记录（以下估计与旧状态仅追溯，不作当前建模目标）：\n2026-10-29最新实测质量：24.6g，状态：照片中的单块木拱积木。本次仅更新登记与建模输入，既有模型质量和历史报告未重写；后续按新质量重建并重新验证。尺寸仍沿用原值，尚未实测。\n历史登记（旧估计质量仅作追溯，不作为当前建模目标）：依据用户提供的实验室实物照片建模。估计外包围盒 60.0 × 30.0 × 40.0 mm；暂估质量 25g。现有参数保持不变；尺寸、质量尚未实测。几何由照片轮廓推定；未辨识摩擦/材料参数。",
+  "updated_by": "杨开元",
+  "updated_at": "2026-10-29 23:02:02",
+  "owner": {
+    "username": "yangkaiyuan",
+    "name": "杨开元"
+  },
+  "estimated_dimensions_mm": {
+    "X": 60.0,
+    "Y": 30.0,
+    "Z": 40.0
+  },
+  "estimated_mass_g": 25.0,
+  "simulation_status": "basic_simulation_candidate",
+  "real_material_calibrated": false,
+  "twin": true,
+  "asset_origin": "physical_object",
+  "reference_source": "用户2026-10-24提供的实物照片，已从原会话附件恢复并关联reference/original_20261024.jpg；文件SHA256见recovery_provenance.json。保留现有估计参数，尺寸、质量和材料尚未重新实测。 2026-10-29补充本次用户称量原图，质量单位g；新称量原图/SHA见reference/measurement_20261029.json。 本次对话已确认四项尺寸为实测，最薄处为拱顶厚度；原文中的尚未实测仅属旧状态。",
+  "photo_reference": {
+    "received": true,
+    "channel": "conversation",
+    "archive_status": "linked",
+    "sha256": "925069375e2dd4ac594b6d01f6cb5c5e2d8921dbb08b35de6350adf11556be79",
+    "received_at": "2026-10-24T04:10:26.503Z"
+  },
+  "dimension_policy": "measured",
+  "mass_policy": "measured",
+  "color": "木纹；具体色调待原图归档后核对",
+  "physics_requirements": "刚体；从项目实际工厂加载，验证落地静置、实体阻挡、初始无穿插、复位和再次加载；按用途验证夹持与滑移，记录质量/惯量/摩擦依据。 验证拱洞可穿过与实体部分阻挡；不以整体凸包封闭拱洞。 使用本次确认的实测尺寸与24.6g质量；未测材料/摩擦保持未知。测试要求不代表已通过，按已有原生报告逐项核对；不把静态预览或落地通过当作机器人任务或实物标定通过。 本次质量目标改为实测24.6g；旧估计质量不再作为目标。需要复验加载质量、碰撞、复位及对应类型工况。",
+  "modeling_confirmation": {
+    "version": "real-object-v3",
+    "revision": "ff33fb65e47df98cac53a62e1c55494a3c78ab537595ae5c8748367a95bc6e75",
+    "by": "杨开元（本次对话明确确认）",
+    "at": 1793286122.638152
+  },
+  "mass_g": 24.6,
+  "measurement_evidence": [
+    {
+      "date": "2026-10-29",
+      "quantity": "mass",
+      "value": 24.6,
+      "unit": "g",
+      "method": "用户提供的英衡电子秤称量照片",
+      "object_state": "照片中的单块木拱积木",
+      "source": "本次用户消息及称量照片；读数经原图放大核对",
+      "photos": [
+        {
+          "index": 3,
+          "file": "measurement_20261029_03.jpg",
+          "sha256": "2a76597522ed89298ad1846122d47137c454e80295a40f0d3b6fec8bacc33757",
+          "bytes": 272936,
+          "source_session": "rollout-2026-10-22T11-08-07-01a16194-84b2-7ab2-81ea-e75e562b2f57.jsonl",
+          "source_line": 10245,
+          "timestamp": "2026-10-29T03:33:07.794Z"
+        }
+      ],
+      "uncertainty_g": null,
+      "calibration_certificate": null
+    }
+  ],
+  "model_update_pending": {
+    "reason": "新增实测质量及照片，既有模型尚未按本次输入重建验证",
+    "measured_mass_g": 24.6,
+    "current_model_mass_g": 25.0
+  },
+  "dimensions_mm": "长度60.10，宽度29.72，高度30.04，最薄处9.58"
+}

@@ -1,0 +1,9 @@
+# Episode-0001 torso-frame image fit; raw lift sensor zero is not calibrated.
+robots:
+  - robot_type: arm
+    robot_name: g1d
+    coupled: true
+    need_planner: false
+    default_root_pos: [0.000167718, -0.8433714301, 0.1115]
+    default_root_rot: [0.7071067811865476, 0, 0, 0.7071067811865476]
+    init_joint_pos: {LZ_mt_Joint: 0.01632340172544866, LZ_it_Joint: 0.01632340172544866}

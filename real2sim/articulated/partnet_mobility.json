@@ -1,0 +1,5525 @@
+{
+  "license": "SAPIEN PartNet-Mobility terms of use: non-commercial research and educational use only",
+  "rsi_pools": "excluded: non-commercial research licence (rsi/AGENTS.md); 非商用研究，不进 RSI 池",
+  "source": "https://huggingface.co/datasets/AlbertS666/PartNet-Mobility-USD",
+  "revision": "faf11263510b3d41264b0d7644ea9e7282226890",
+  "summary": {
+    "candidates": 391,
+    "dropped": 237,
+    "converted": 154,
+    "passed": 153,
+    "failed": 1,
+    "failure_reasons": {
+      "joint_blocked": 1
+    }
+  },
+  "passed": [
+    {
+      "id": "Articulation/partnet_microwave/00000",
+      "src": "Microwave/7119",
+      "size_m": [
+        0.3445,
+        0.5,
+        0.2282
+      ],
+      "reason": "Microwave, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00001",
+      "src": "Microwave/7128",
+      "size_m": [
+        0.3223,
+        0.5,
+        0.2553
+      ],
+      "reason": "Microwave, 5 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00002",
+      "src": "Microwave/7167",
+      "size_m": [
+        0.3848,
+        0.5,
+        0.2989
+      ],
+      "reason": "Microwave, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00003",
+      "src": "Microwave/7221",
+      "size_m": [
+        0.3217,
+        0.5,
+        0.2824
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00004",
+      "src": "Microwave/7236",
+      "size_m": [
+        0.2424,
+        0.5,
+        0.303
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      },
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: pass"
+    },
+    {
+      "id": "Articulation/partnet_microwave/00005",
+      "src": "Microwave/7263",
+      "size_m": [
+        0.2528,
+        0.5,
+        0.2865
+      ],
+      "reason": "Microwave, 19 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00006",
+      "src": "Microwave/7265",
+      "size_m": [
+        0.5871,
+        0.5,
+        0.2989
+      ],
+      "reason": "Microwave, 20 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00007",
+      "src": "Microwave/7273",
+      "size_m": [
+        0.3089,
+        0.5,
+        0.3153
+      ],
+      "reason": "Microwave, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00008",
+      "src": "Microwave/7292",
+      "size_m": [
+        0.3641,
+        0.5,
+        0.2353
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00009",
+      "src": "Microwave/7296",
+      "size_m": [
+        0.3929,
+        0.5,
+        0.3733
+      ],
+      "reason": "Microwave, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00010",
+      "src": "Microwave/7304",
+      "size_m": [
+        0.5,
+        0.5,
+        0.3
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00011",
+      "src": "Microwave/7306",
+      "size_m": [
+        0.3397,
+        0.5,
+        0.3913
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00012",
+      "src": "Microwave/7310",
+      "size_m": [
+        0.5057,
+        0.5,
+        0.3375
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00013",
+      "src": "Microwave/7320",
+      "size_m": [
+        0.2851,
+        0.5,
+        0.2824
+      ],
+      "reason": "Microwave, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00014",
+      "src": "Microwave/7349",
+      "size_m": [
+        0.2782,
+        0.5,
+        0.321
+      ],
+      "reason": "Microwave, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_microwave/00015",
+      "src": "Microwave/7366",
+      "size_m": [
+        0.3621,
+        0.5,
+        0.3833
+      ],
+      "reason": "Microwave, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_oven/00000",
+      "src": "Oven/7130",
+      "size_m": [
+        0.5228,
+        0.5,
+        0.4
+      ],
+      "reason": "Oven/countertop, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_oven/00001",
+      "src": "Oven/7138",
+      "size_m": [
+        0.4511,
+        0.5,
+        0.3414
+      ],
+      "reason": "Oven/countertop, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_oven/00002",
+      "src": "Oven/7290",
+      "size_m": [
+        0.4385,
+        0.5,
+        0.3445
+      ],
+      "reason": "Oven/countertop, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00000",
+      "src": "StorageFurniture/40147",
+      "size_m": [
+        0.5256,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00001",
+      "src": "StorageFurniture/41083",
+      "size_m": [
+        0.5307,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00002",
+      "src": "StorageFurniture/41086",
+      "size_m": [
+        0.3208,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00003",
+      "src": "StorageFurniture/44781",
+      "size_m": [
+        0.4134,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00004",
+      "src": "StorageFurniture/44817",
+      "size_m": [
+        0.3939,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00005",
+      "src": "StorageFurniture/44826",
+      "size_m": [
+        0.5251,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00006",
+      "src": "StorageFurniture/45001",
+      "size_m": [
+        0.5269,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00007",
+      "src": "StorageFurniture/45007",
+      "size_m": [
+        0.3303,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00008",
+      "src": "StorageFurniture/45091",
+      "size_m": [
+        0.3245,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00009",
+      "src": "StorageFurniture/45132",
+      "size_m": [
+        0.5172,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00010",
+      "src": "StorageFurniture/45135",
+      "size_m": [
+        0.4134,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00011",
+      "src": "StorageFurniture/45159",
+      "size_m": [
+        0.5301,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00012",
+      "src": "StorageFurniture/45177",
+      "size_m": [
+        0.3267,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00013",
+      "src": "StorageFurniture/45194",
+      "size_m": [
+        0.5351,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00014",
+      "src": "StorageFurniture/45219",
+      "size_m": [
+        0.5196,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00015",
+      "src": "StorageFurniture/45238",
+      "size_m": [
+        0.5351,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00016",
+      "src": "StorageFurniture/45243",
+      "size_m": [
+        0.4084,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00017",
+      "src": "StorageFurniture/45247",
+      "size_m": [
+        0.3267,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00018",
+      "src": "StorageFurniture/45261",
+      "size_m": [
+        0.7794,
+        0.7408,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 5 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00019",
+      "src": "StorageFurniture/45262",
+      "size_m": [
+        0.2565,
+        0.6034,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00020",
+      "src": "StorageFurniture/45305",
+      "size_m": [
+        0.5269,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00021",
+      "src": "StorageFurniture/45332",
+      "size_m": [
+        0.5634,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00022",
+      "src": "StorageFurniture/45354",
+      "size_m": [
+        0.527,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00023",
+      "src": "StorageFurniture/45374",
+      "size_m": [
+        0.3981,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00024",
+      "src": "StorageFurniture/45378",
+      "size_m": [
+        0.5307,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00025",
+      "src": "StorageFurniture/45397",
+      "size_m": [
+        0.5173,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00026",
+      "src": "StorageFurniture/45420",
+      "size_m": [
+        0.5351,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00027",
+      "src": "StorageFurniture/45463",
+      "size_m": [
+        0.5301,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00028",
+      "src": "StorageFurniture/45503",
+      "size_m": [
+        0.2171,
+        0.4667,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00029",
+      "src": "StorageFurniture/45504",
+      "size_m": [
+        0.3252,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00030",
+      "src": "StorageFurniture/45505",
+      "size_m": [
+        0.5263,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00031",
+      "src": "StorageFurniture/45573",
+      "size_m": [
+        0.5263,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00032",
+      "src": "StorageFurniture/45600",
+      "size_m": [
+        0.3354,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00033",
+      "src": "StorageFurniture/45622",
+      "size_m": [
+        0.5269,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00034",
+      "src": "StorageFurniture/45632",
+      "size_m": [
+        0.4034,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00035",
+      "src": "StorageFurniture/45636",
+      "size_m": [
+        0.5251,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00036",
+      "src": "StorageFurniture/45642",
+      "size_m": [
+        0.1709,
+        0.4836,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00037",
+      "src": "StorageFurniture/45662",
+      "size_m": [
+        0.4041,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00038",
+      "src": "StorageFurniture/45667",
+      "size_m": [
+        0.3354,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00039",
+      "src": "StorageFurniture/45670",
+      "size_m": [
+        0.4045,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00040",
+      "src": "StorageFurniture/45677",
+      "size_m": [
+        0.4134,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00041",
+      "src": "StorageFurniture/45687",
+      "size_m": [
+        0.5275,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00042",
+      "src": "StorageFurniture/45689",
+      "size_m": [
+        0.5263,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00043",
+      "src": "StorageFurniture/45693",
+      "size_m": [
+        0.3252,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00044",
+      "src": "StorageFurniture/45725",
+      "size_m": [
+        0.1665,
+        0.5182,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 14 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00045",
+      "src": "StorageFurniture/45746",
+      "size_m": [
+        0.7794,
+        0.7408,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00046",
+      "src": "StorageFurniture/45747",
+      "size_m": [
+        0.2541,
+        0.5385,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00047",
+      "src": "StorageFurniture/45749",
+      "size_m": [
+        0.2923,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00048",
+      "src": "StorageFurniture/45756",
+      "size_m": [
+        0.4034,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00049",
+      "src": "StorageFurniture/45780",
+      "size_m": [
+        0.4083,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00050",
+      "src": "StorageFurniture/45801",
+      "size_m": [
+        0.4034,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00051",
+      "src": "StorageFurniture/45841",
+      "size_m": [
+        0.7794,
+        0.7408,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00052",
+      "src": "StorageFurniture/45908",
+      "size_m": [
+        0.3247,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00053",
+      "src": "StorageFurniture/45922",
+      "size_m": [
+        0.2863,
+        0.6364,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00054",
+      "src": "StorageFurniture/45940",
+      "size_m": [
+        0.4083,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00055",
+      "src": "StorageFurniture/45949",
+      "size_m": [
+        0.4083,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00056",
+      "src": "StorageFurniture/46002",
+      "size_m": [
+        0.2923,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00057",
+      "src": "StorageFurniture/46014",
+      "size_m": [
+        0.7794,
+        0.7408,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00058",
+      "src": "StorageFurniture/46019",
+      "size_m": [
+        0.2835,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00059",
+      "src": "StorageFurniture/46037",
+      "size_m": [
+        0.4134,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00060",
+      "src": "StorageFurniture/46057",
+      "size_m": [
+        0.3094,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      },
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: pass"
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00061",
+      "src": "StorageFurniture/46084",
+      "size_m": [
+        0.5256,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00062",
+      "src": "StorageFurniture/46092",
+      "size_m": [
+        0.5269,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00064",
+      "src": "StorageFurniture/46109",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 5 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00065",
+      "src": "StorageFurniture/46117",
+      "size_m": [
+        0.3175,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      },
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: pass"
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00066",
+      "src": "StorageFurniture/46120",
+      "size_m": [
+        0.5627,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00067",
+      "src": "StorageFurniture/46123",
+      "size_m": [
+        0.4178,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00068",
+      "src": "StorageFurniture/46130",
+      "size_m": [
+        0.3963,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00069",
+      "src": "StorageFurniture/46132",
+      "size_m": [
+        0.3354,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00070",
+      "src": "StorageFurniture/46134",
+      "size_m": [
+        0.5256,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00071",
+      "src": "StorageFurniture/46199",
+      "size_m": [
+        0.5728,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 6 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00072",
+      "src": "StorageFurniture/46277",
+      "size_m": [
+        0.525,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00073",
+      "src": "StorageFurniture/46380",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00074",
+      "src": "StorageFurniture/46403",
+      "size_m": [
+        0.1904,
+        0.8044,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00075",
+      "src": "StorageFurniture/46430",
+      "size_m": [
+        0.2943,
+        0.6364,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      },
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: pass"
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00076",
+      "src": "StorageFurniture/46443",
+      "size_m": [
+        0.4179,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00077",
+      "src": "StorageFurniture/46452",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00078",
+      "src": "StorageFurniture/46462",
+      "size_m": [
+        0.3981,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00079",
+      "src": "StorageFurniture/46466",
+      "size_m": [
+        0.4039,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00080",
+      "src": "StorageFurniture/46480",
+      "size_m": [
+        0.5173,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00081",
+      "src": "StorageFurniture/46490",
+      "size_m": [
+        0.2598,
+        0.4939,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00082",
+      "src": "StorageFurniture/46537",
+      "size_m": [
+        0.4001,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00083",
+      "src": "StorageFurniture/46699",
+      "size_m": [
+        0.4328,
+        0.7615,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00084",
+      "src": "StorageFurniture/46700",
+      "size_m": [
+        0.4083,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00085",
+      "src": "StorageFurniture/46762",
+      "size_m": [
+        0.4034,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00086",
+      "src": "StorageFurniture/46801",
+      "size_m": [
+        0.5225,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00087",
+      "src": "StorageFurniture/46825",
+      "size_m": [
+        0.4178,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00088",
+      "src": "StorageFurniture/46839",
+      "size_m": [
+        0.5301,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00089",
+      "src": "StorageFurniture/46856",
+      "size_m": [
+        0.5301,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00090",
+      "src": "StorageFurniture/46874",
+      "size_m": [
+        0.527,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00091",
+      "src": "StorageFurniture/46981",
+      "size_m": [
+        0.4039,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00092",
+      "src": "StorageFurniture/47088",
+      "size_m": [
+        0.5072,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00093",
+      "src": "StorageFurniture/47089",
+      "size_m": [
+        0.4036,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00094",
+      "src": "StorageFurniture/47183",
+      "size_m": [
+        0.4071,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00095",
+      "src": "StorageFurniture/47207",
+      "size_m": [
+        0.4084,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00096",
+      "src": "StorageFurniture/47227",
+      "size_m": [
+        0.2598,
+        0.4939,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00097",
+      "src": "StorageFurniture/47233",
+      "size_m": [
+        0.4083,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00098",
+      "src": "StorageFurniture/47238",
+      "size_m": [
+        0.3719,
+        0.875,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00099",
+      "src": "StorageFurniture/47252",
+      "size_m": [
+        0.3978,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00100",
+      "src": "StorageFurniture/47278",
+      "size_m": [
+        0.4058,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00101",
+      "src": "StorageFurniture/47315",
+      "size_m": [
+        0.3415,
+        0.6,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00102",
+      "src": "StorageFurniture/47316",
+      "size_m": [
+        0.6417,
+        0.6222,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00103",
+      "src": "StorageFurniture/47565",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00104",
+      "src": "StorageFurniture/47578",
+      "size_m": [
+        0.4084,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00105",
+      "src": "StorageFurniture/47595",
+      "size_m": [
+        0.2598,
+        0.4939,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00106",
+      "src": "StorageFurniture/47601",
+      "size_m": [
+        0.3354,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00107",
+      "src": "StorageFurniture/47651",
+      "size_m": [
+        0.3094,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00108",
+      "src": "StorageFurniture/47701",
+      "size_m": [
+        0.2598,
+        0.4939,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00109",
+      "src": "StorageFurniture/47711",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00110",
+      "src": "StorageFurniture/47817",
+      "size_m": [
+        0.3296,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      },
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: pass"
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00111",
+      "src": "StorageFurniture/47944",
+      "size_m": [
+        0.4083,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00112",
+      "src": "StorageFurniture/47963",
+      "size_m": [
+        0.3245,
+        0.7,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00113",
+      "src": "StorageFurniture/47976",
+      "size_m": [
+        0.2598,
+        0.4939,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00114",
+      "src": "StorageFurniture/48036",
+      "size_m": [
+        0.3267,
+        0.84,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00115",
+      "src": "StorageFurniture/48051",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 5 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00116",
+      "src": "StorageFurniture/48063",
+      "size_m": [
+        0.4191,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00117",
+      "src": "StorageFurniture/48177",
+      "size_m": [
+        0.5196,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00118",
+      "src": "StorageFurniture/48253",
+      "size_m": [
+        0.4083,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00119",
+      "src": "StorageFurniture/48258",
+      "size_m": [
+        0.4134,
+        0.487,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00120",
+      "src": "StorageFurniture/48379",
+      "size_m": [
+        0.5351,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00121",
+      "src": "StorageFurniture/48381",
+      "size_m": [
+        0.2706,
+        0.5833,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00122",
+      "src": "StorageFurniture/48413",
+      "size_m": [
+        0.7365,
+        0.6614,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00123",
+      "src": "StorageFurniture/48452",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 1 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00124",
+      "src": "StorageFurniture/48479",
+      "size_m": [
+        0.1728,
+        0.6914,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00125",
+      "src": "StorageFurniture/48491",
+      "size_m": [
+        0.7794,
+        0.7408,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00126",
+      "src": "StorageFurniture/48513",
+      "size_m": [
+        0.5351,
+        0.8522,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00127",
+      "src": "StorageFurniture/48517",
+      "size_m": [
+        0.4585,
+        0.7875,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00128",
+      "src": "StorageFurniture/48700",
+      "size_m": [
+        0.4083,
+        0.7913,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00129",
+      "src": "StorageFurniture/48740",
+      "size_m": [
+        0.4041,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00130",
+      "src": "StorageFurniture/48855",
+      "size_m": [
+        0.522,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00131",
+      "src": "StorageFurniture/48876",
+      "size_m": [
+        0.4083,
+        0.5478,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 3 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00132",
+      "src": "StorageFurniture/49042",
+      "size_m": [
+        0.3605,
+        0.8556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00133",
+      "src": "StorageFurniture/49133",
+      "size_m": [
+        0.5256,
+        0.7304,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 2 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/partnet_storagefurniture/00134",
+      "src": "StorageFurniture/49140",
+      "size_m": [
+        0.5846,
+        0.5556,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    }
+  ],
+  "failed": [
+    {
+      "id": "Articulation/partnet_storagefurniture/00063",
+      "src": "StorageFurniture/46108",
+      "size_m": [
+        0.3682,
+        0.6614,
+        0.7
+      ],
+      "reason": "StorageFurniture/low, 4 joint(s)",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "joint_0",
+          "part": "door",
+          "role": "door",
+          "unit": "deg",
+          "nominal": [
+            -0.0,
+            100.0
+          ],
+          "reached": [
+            -0.0,
+            93.3929
+          ],
+          "back_error": 0.066
+        },
+        {
+          "name": "joint_1",
+          "part": "door",
+          "role": "door",
+          "unit": "deg",
+          "nominal": [
+            -0.0,
+            100.0
+          ],
+          "reached": [
+            -0.0,
+            93.3929
+          ],
+          "back_error": 0.066
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    }
+  ],
+  "dropped": [
+    {
+      "src": "Oven/7120",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.15977,
+      "size_m": [
+        0.537,
+        0.6232,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7179",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.18395,
+      "size_m": [
+        0.537,
+        0.6232,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7187",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.09205,
+      "size_m": [
+        0.5534,
+        0.5673,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7201",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.13968,
+      "size_m": [
+        0.537,
+        0.5613,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7220",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.15701,
+      "size_m": [
+        0.5534,
+        0.6309,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7332",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.12314,
+      "size_m": [
+        0.537,
+        0.5613,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/7347",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.27899,
+      "size_m": [
+        0.6125,
+        0.7412,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101773",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.35474,
+      "size_m": [
+        0.769,
+        0.7781,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101908",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.56869,
+      "size_m": [
+        0.5906,
+        1.2638,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101909",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.23864,
+      "size_m": [
+        0.5192,
+        0.5697,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101917",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.27501,
+      "size_m": [
+        0.6712,
+        0.8181,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101921",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.37756,
+      "size_m": [
+        0.5654,
+        0.8482,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101924",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.20321,
+      "size_m": [
+        0.4892,
+        0.7202,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101930",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.19473,
+      "size_m": [
+        0.6516,
+        0.5108,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101931",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.21834,
+      "size_m": [
+        0.5189,
+        0.5684,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101940",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.21612,
+      "size_m": [
+        0.6858,
+        0.5977,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101943",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.29797,
+      "size_m": [
+        0.6085,
+        0.769,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101946",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.45255,
+      "size_m": [
+        0.8047,
+        0.9157,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101947",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.79388,
+      "size_m": [
+        0.773,
+        1.4221,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/101971",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.41457,
+      "size_m": [
+        0.8886,
+        0.8203,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/102001",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.49502,
+      "size_m": [
+        0.658,
+        1.1083,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/102018",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.38365,
+      "size_m": [
+        0.7718,
+        0.9123,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/102019",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.30425,
+      "size_m": [
+        0.7062,
+        0.7813,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/102044",
+      "category": "Oven",
+      "kind": "Oven/range",
+      "scale": 1.74735,
+      "size_m": [
+        0.7126,
+        1.3692,
+        0.9
+      ],
+      "reason": "freestanding range: a floor appliance whose oven door sits below the table, out of reach"
+    },
+    {
+      "src": "Oven/102055",
+      "category": "Oven",
+      "kind": "Oven/countertop",
+      "scale": 0.58247,
+      "size_m": [
+        0.3354,
+        0.5,
+        0.063
+      ],
+      "reason": "0.06 m high at 0.5 m wide: a flat cooktop, not an oven"
+    },
+    {
+      "src": "Oven/102060",
+      "category": "Oven",
+      "kind": "Oven/countertop",
+      "scale": 0.60952,
+      "size_m": [
+        0.3565,
+        0.5,
+        0.1388
+      ],
+      "reason": "0.14 m high at 0.5 m wide: a flat cooktop, not an oven"
+    },
+    {
+      "src": "StorageFurniture/35059",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.36565,
+      "size_m": [
+        1.3533,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/38516",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.3365,
+      "size_m": [
+        0.3094,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/40417",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.41969,
+      "size_m": [
+        0.3978,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/40453",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.59444,
+      "size_m": [
+        0.5794,
+        1.365,
+        0.7
+      ],
+      "reason": "1.36 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41003",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.11444,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41004",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.36299,
+      "size_m": [
+        1.4335,
+        0.4985,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41085",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.11896,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41452",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.19792,
+      "size_m": [
+        0.3354,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41510",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.35043,
+      "size_m": [
+        1.3533,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/41529",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.16318,
+      "size_m": [
+        0.3354,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/44853",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.37728,
+      "size_m": [
+        1.3504,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/44962",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.40338,
+      "size_m": [
+        1.3321,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45087",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.22848,
+      "size_m": [
+        0.3296,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45092",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.35238,
+      "size_m": [
+        1.3258,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45130",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.28252,
+      "size_m": [
+        1.3361,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45134",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.31452,
+      "size_m": [
+        0.3354,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45146",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.39652,
+      "size_m": [
+        1.3565,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45162",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.35528,
+      "size_m": [
+        1.063,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45164",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.1379,
+      "size_m": [
+        1.1795,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45166",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.66646,
+      "size_m": [
+        0.8112,
+        1.4,
+        0.7
+      ],
+      "reason": "1.40 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45168",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.4758,
+      "size_m": [
+        1.3516,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45173",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.15329,
+      "size_m": [
+        1.3435,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45176",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.16939,
+      "size_m": [
+        1.05,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45178",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.21705,
+      "size_m": [
+        0.3094,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45189",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.06476,
+      "size_m": [
+        0.5011,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45203",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.21378,
+      "size_m": [
+        1.3565,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45212",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.2733,
+      "size_m": [
+        1.363,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45213",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.50714,
+      "size_m": [
+        1.4469,
+        0.9969,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45235",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.39642,
+      "size_m": [
+        1.3361,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45244",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.20344,
+      "size_m": [
+        1.0386,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45248",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.14533,
+      "size_m": [
+        1.3516,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45249",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.34244,
+      "size_m": [
+        1.3761,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45267",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.3041,
+      "size_m": [
+        1.363,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45271",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.42222,
+      "size_m": [
+        0.4083,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45290",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.43265,
+      "size_m": [
+        1.363,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45297",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.45217,
+      "size_m": [
+        0.3296,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45323",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.25528,
+      "size_m": [
+        0.395,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45372",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.33478,
+      "size_m": [
+        1.3516,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45384",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.46028,
+      "size_m": [
+        1.3423,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45385",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.36569,
+      "size_m": [
+        0.3267,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45387",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.18044,
+      "size_m": [
+        0.6013,
+        1.143,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45403",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.24978,
+      "size_m": [
+        0.3267,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45413",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.23841,
+      "size_m": [
+        1.3761,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45415",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.22788,
+      "size_m": [
+        0.4347,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45419",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.19874,
+      "size_m": [
+        0.3252,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45423",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.9138,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45427",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.40971,
+      "size_m": [
+        1.4126,
+        1.1172,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45443",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.13963,
+      "size_m": [
+        0.3296,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45444",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.1237,
+      "size_m": [
+        0.5249,
+        1.0286,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45448",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.15175,
+      "size_m": [
+        1.05,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45516",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.17447,
+      "size_m": [
+        0.3094,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45523",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.51265,
+      "size_m": [
+        0.5505,
+        1.2833,
+        0.7
+      ],
+      "reason": "1.28 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45524",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.41094,
+      "size_m": [
+        1.363,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45526",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.23503,
+      "size_m": [
+        0.4282,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45575",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.31835,
+      "size_m": [
+        1.3761,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45594",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.03656,
+      "size_m": [
+        0.6681,
+        0.635,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45606",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.19646,
+      "size_m": [
+        1.3761,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45612",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.42601,
+      "size_m": [
+        0.4058,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45620",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.26328,
+      "size_m": [
+        1.1951,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45621",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.23316,
+      "size_m": [
+        0.417,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45623",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.23683,
+      "size_m": [
+        0.4207,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45633",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.42969,
+      "size_m": [
+        0.3094,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45638",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.49169,
+      "size_m": [
+        1.35,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45645",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.18765,
+      "size_m": [
+        1.023,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45661",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.33675,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45671",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.18314,
+      "size_m": [
+        0.3296,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45676",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.31532,
+      "size_m": [
+        1.0402,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45690",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.22803,
+      "size_m": [
+        1.3533,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45691",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.18225,
+      "size_m": [
+        0.9185,
+        0.9,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45694",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.29923,
+      "size_m": [
+        1.023,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45696",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.06524,
+      "size_m": [
+        0.5011,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45699",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.16457,
+      "size_m": [
+        0.3613,
+        0.9333,
+        0.7
+      ],
+      "reason": "0.93 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45710",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.37158,
+      "size_m": [
+        1.3647,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45717",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.45506,
+      "size_m": [
+        0.3267,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45759",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.95347,
+      "size_m": [
+        0.6013,
+        0.5715,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45767",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.86169,
+      "size_m": [
+        0.3788,
+        0.4263,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45776",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.23289,
+      "size_m": [
+        1.3533,
+        0.7826,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45779",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.3013,
+      "size_m": [
+        0.3208,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45783",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.26399,
+      "size_m": [
+        1.3516,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45784",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.25366,
+      "size_m": [
+        1.0373,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45790",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.32355,
+      "size_m": [
+        1.4237,
+        1.1172,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45822",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.11788,
+      "size_m": [
+        1.1938,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45850",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.88669,
+      "size_m": [
+        0.8006,
+        1.68,
+        0.7
+      ],
+      "reason": "1.68 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45853",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.37387,
+      "size_m": [
+        1.3533,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45855",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.23886,
+      "size_m": [
+        0.4282,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45910",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.27485,
+      "size_m": [
+        0.4142,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45915",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.34821,
+      "size_m": [
+        0.3245,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45916",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.1424,
+      "size_m": [
+        1.0435,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45936",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.254,
+      "size_m": [
+        1.063,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45937",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.97093,
+      "size_m": [
+        0.5256,
+        1.0511,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45948",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.43354,
+      "size_m": [
+        0.4134,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45950",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.1504,
+      "size_m": [
+        1.0516,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45961",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.26937,
+      "size_m": [
+        1.3516,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45963",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.49069,
+      "size_m": [
+        0.3729,
+        1.2805,
+        0.7
+      ],
+      "reason": "1.28 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45964",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.44503,
+      "size_m": [
+        1.355,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/45984",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.26375,
+      "size_m": [
+        1.0467,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46029",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.42387,
+      "size_m": [
+        1.3533,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46033",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.15868,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46044",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.20659,
+      "size_m": [
+        0.3245,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46045",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.40728,
+      "size_m": [
+        1.0386,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46060",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.3566,
+      "size_m": [
+        1.3508,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46107",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.4185,
+      "size_m": [
+        0.3354,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46127",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.44587,
+      "size_m": [
+        0.3354,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46145",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.43659,
+      "size_m": [
+        0.4083,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46166",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.78136,
+      "size_m": [
+        0.6606,
+        1.54,
+        0.7
+      ],
+      "reason": "1.54 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46172",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.13302,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46179",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.34017,
+      "size_m": [
+        1.363,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46180",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.35927,
+      "size_m": [
+        1.4258,
+        1.1172,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46197",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.90685,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46230",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.2931,
+      "size_m": [
+        1.3439,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46236",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.87807,
+      "size_m": [
+        0.547,
+        0.415,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46334",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.59733,
+      "size_m": [
+        1.4487,
+        0.9969,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46401",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.15946,
+      "size_m": [
+        1.0402,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46408",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.94132,
+      "size_m": [
+        0.6843,
+        1.75,
+        0.7
+      ],
+      "reason": "1.75 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46417",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.38589,
+      "size_m": [
+        1.3875,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46427",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.39582,
+      "size_m": [
+        0.6606,
+        2.24,
+        0.7
+      ],
+      "reason": "2.24 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46437",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.28559,
+      "size_m": [
+        0.162,
+        1.024,
+        0.7
+      ],
+      "reason": "1.02 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46439",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.25197,
+      "size_m": [
+        0.4152,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46440",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.46127,
+      "size_m": [
+        1.3761,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46456",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.88867,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46481",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.31194,
+      "size_m": [
+        0.3686,
+        1.0145,
+        0.7
+      ],
+      "reason": "1.01 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46544",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.41817,
+      "size_m": [
+        1.3367,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46549",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.27207,
+      "size_m": [
+        1.3367,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46556",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.21793,
+      "size_m": [
+        1.3484,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46563",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.95952,
+      "size_m": [
+        0.4484,
+        0.7137,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46598",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.92724,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46616",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.95472,
+      "size_m": [
+        0.6091,
+        0.5715,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46641",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.34877,
+      "size_m": [
+        1.363,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46653",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.2298,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46655",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.06177,
+      "size_m": [
+        0.4506,
+        1.0265,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46732",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.02319,
+      "size_m": [
+        0.6681,
+        0.635,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46741",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.317,
+      "size_m": [
+        1.3302,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46744",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.42748,
+      "size_m": [
+        0.4065,
+        1.225,
+        0.7
+      ],
+      "reason": "1.23 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46768",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.14768,
+      "size_m": [
+        0.637,
+        1.143,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46787",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.14579,
+      "size_m": [
+        0.8006,
+        1.96,
+        0.7
+      ],
+      "reason": "1.96 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46847",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.27733,
+      "size_m": [
+        1.355,
+        0.7826,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46859",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.27742,
+      "size_m": [
+        1.05,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46879",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.21648,
+      "size_m": [
+        0.3813,
+        0.6379,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46889",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.03777,
+      "size_m": [
+        0.8799,
+        0.75,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46893",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.2989,
+      "size_m": [
+        1.3361,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46896",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.2617,
+      "size_m": [
+        0.3813,
+        0.6379,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46906",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.10894,
+      "size_m": [
+        0.6606,
+        1.96,
+        0.7
+      ],
+      "reason": "1.96 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46922",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.3805,
+      "size_m": [
+        1.3521,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46944",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.47217,
+      "size_m": [
+        1.4487,
+        0.4985,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46955",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.07694,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/46966",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.37684,
+      "size_m": [
+        1.3302,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47021",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.0742,
+      "size_m": [
+        0.5443,
+        0.6429,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47024",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.34317,
+      "size_m": [
+        1.363,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47099",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.29334,
+      "size_m": [
+        0.2821,
+        1.0839,
+        0.7
+      ],
+      "reason": "1.08 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47133",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.14273,
+      "size_m": [
+        0.3252,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47168",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.20006,
+      "size_m": [
+        1.35,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47178",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.34028,
+      "size_m": [
+        1.3282,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47180",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.35154,
+      "size_m": [
+        0.3354,
+        1.12,
+        0.7
+      ],
+      "reason": "1.12 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47182",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.1666,
+      "size_m": [
+        1.3533,
+        0.4696,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47185",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.35243,
+      "size_m": [
+        1.05,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47187",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.98844,
+      "size_m": [
+        0.7619,
+        0.6248,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47235",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.49792,
+      "size_m": [
+        0.4585,
+        1.2775,
+        0.7
+      ],
+      "reason": "1.28 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47254",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.30081,
+      "size_m": [
+        1.0745,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47281",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.91623,
+      "size_m": [
+        0.5466,
+        0.5195,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47290",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.12425,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47296",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.25955,
+      "size_m": [
+        1.4348,
+        0.9969,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47388",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.24004,
+      "size_m": [
+        1.05,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47391",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.20661,
+      "size_m": [
+        0.3354,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47419",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.49897,
+      "size_m": [
+        0.3267,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47438",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.32661,
+      "size_m": [
+        1.363,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47443",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.01949,
+      "size_m": [
+        0.3749,
+        0.9523,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47466",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.97575,
+      "size_m": [
+        0.5408,
+        0.6589,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47514",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.69043,
+      "size_m": [
+        0.6606,
+        1.4,
+        0.7
+      ],
+      "reason": "1.40 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47529",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.36708,
+      "size_m": [
+        1.355,
+        0.9391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47570",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.4386,
+      "size_m": [
+        1.4258,
+        1.1172,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47577",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.92512,
+      "size_m": [
+        0.6013,
+        0.5715,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47585",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.10531,
+      "size_m": [
+        1.1693,
+        1.8,
+        0.7
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47613",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.066,
+      "size_m": [
+        0.5011,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47632",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.19568,
+      "size_m": [
+        0.3245,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47648",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.0886,
+      "size_m": [
+        0.4097,
+        0.9531,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47669",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.09823,
+      "size_m": [
+        0.5011,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47686",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.22227,
+      "size_m": [
+        0.4053,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47729",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.62678,
+      "size_m": [
+        0.7904,
+        2.52,
+        0.7
+      ],
+      "reason": "2.52 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47742",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.42359,
+      "size_m": [
+        1.3277,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47747",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.92004,
+      "size_m": [
+        0.5466,
+        0.5195,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47808",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.93532,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47853",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.94351,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47926",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.42531,
+      "size_m": [
+        0.4045,
+        1.2174,
+        0.7
+      ],
+      "reason": "1.22 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/47954",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.32303,
+      "size_m": [
+        0.5031,
+        2.1984,
+        0.7
+      ],
+      "reason": "2.20 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48010",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.38681,
+      "size_m": [
+        1.3258,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48013",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.15511,
+      "size_m": [
+        0.5124,
+        0.9979,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48018",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.16022,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48023",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.49025,
+      "size_m": [
+        0.3296,
+        1.26,
+        0.7
+      ],
+      "reason": "1.26 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48167",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.21193,
+      "size_m": [
+        0.3622,
+        0.9333,
+        0.7
+      ],
+      "reason": "0.93 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48169",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.20561,
+      "size_m": [
+        0.9615,
+        1.0021,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48243",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.18596,
+      "size_m": [
+        0.3296,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48263",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.22061,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48271",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.5169,
+      "size_m": [
+        1.363,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48356",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.19488,
+      "size_m": [
+        0.6013,
+        1.143,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48467",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.19248,
+      "size_m": [
+        0.3175,
+        0.98,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48490",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.16408,
+      "size_m": [
+        0.3175,
+        0.91,
+        0.7
+      ],
+      "reason": "0.91 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48497",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.21226,
+      "size_m": [
+        0.373,
+        1.152,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48519",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.02487,
+      "size_m": [
+        0.8006,
+        1.82,
+        0.7
+      ],
+      "reason": "1.82 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48623",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.11264,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48686",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 1.25623,
+      "size_m": [
+        0.395,
+        0.983,
+        0.7
+      ],
+      "reason": "0.98 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48721",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.88715,
+      "size_m": [
+        0.3521,
+        0.446,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48746",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.05151,
+      "size_m": [
+        1.1967,
+        0.6261,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48797",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 1.89255,
+      "size_m": [
+        0.5011,
+        0.4763,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48859",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.10784,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/48878",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.25925,
+      "size_m": [
+        1.05,
+        1.0957,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49025",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.08414,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49038",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/low",
+      "scale": 2.5242,
+      "size_m": [
+        1.5112,
+        1.925,
+        0.7
+      ],
+      "reason": "1.93 m at real size (StorageFurniture/low): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49062",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.06661,
+      "size_m": [
+        0.5011,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49132",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.23255,
+      "size_m": [
+        1.0021,
+        0.9525,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49182",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.18168,
+      "size_m": [
+        0.5097,
+        1.1469,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    },
+    {
+      "src": "StorageFurniture/49188",
+      "category": "StorageFurniture",
+      "kind": "StorageFurniture/tall",
+      "scale": 2.10292,
+      "size_m": [
+        0.5466,
+        1.0391,
+        1.8
+      ],
+      "reason": "1.80 m at real size (StorageFurniture/tall): large, out of reach next to the table"
+    }
+  ]
+}

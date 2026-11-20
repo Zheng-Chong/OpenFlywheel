@@ -1,0 +1,815 @@
+{
+  "model": "g1d_sharpa_wave",
+  "source_commits": {
+    "wuji-description": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+    "sharpa-models": "0d19cac602f46456b819e4b6a2c09a74982c9a3e",
+    "sharpa-tacmap": "e4f8827407e15625368ef0b9cf5a72c44304e16b"
+  },
+  "joint_unit": "rad",
+  "length_unit": "m",
+  "mount_status": "simulation_candidate_not_measured",
+  "physical_calibration": "pending",
+  "hand_source_preservation": "links, joint axes/origins/limits, mass/inertia and mesh bytes preserved",
+  "hands": {
+    "left": {
+      "root": "left_hand_flange",
+      "joints": [
+        "left_thumb_CMC_FE",
+        "left_thumb_CMC_AA",
+        "left_thumb_MCP_FE",
+        "left_thumb_MCP_AA",
+        "left_thumb_IP",
+        "left_index_MCP_FE",
+        "left_index_MCP_AA",
+        "left_index_PIP",
+        "left_index_DIP",
+        "left_middle_MCP_FE",
+        "left_middle_MCP_AA",
+        "left_middle_PIP",
+        "left_middle_DIP",
+        "left_ring_MCP_FE",
+        "left_ring_MCP_AA",
+        "left_ring_PIP",
+        "left_ring_DIP",
+        "left_pinky_CMC",
+        "left_pinky_MCP_FE",
+        "left_pinky_MCP_AA",
+        "left_pinky_PIP",
+        "left_pinky_DIP"
+      ],
+      "limits": {
+        "left_thumb_CMC_FE": {
+          "lower": -0.1745,
+          "upper": 1.9199,
+          "effort": 3.3,
+          "velocity": 11.84076833
+        },
+        "left_thumb_CMC_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 3.3,
+          "velocity": 11.84076833
+        },
+        "left_thumb_MCP_FE": {
+          "lower": -0.5236,
+          "upper": 1.3963,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_thumb_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_thumb_IP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "left_index_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_index_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_index_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "left_index_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "left_middle_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_middle_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_middle_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "left_middle_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "left_ring_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_ring_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_ring_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "left_ring_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "left_pinky_CMC": {
+          "lower": 0.0,
+          "upper": 0.2618,
+          "effort": 0.5285,
+          "velocity": 35.07416159
+        },
+        "left_pinky_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_pinky_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "left_pinky_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "left_pinky_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        }
+      },
+      "mount_xyz_m": [
+        0.0415,
+        0.003,
+        0.0
+      ],
+      "mount_rpy_rad": [
+        -1.5707963267948966,
+        0.0,
+        -1.5707963267948966
+      ],
+      "configured_mass_kg": 1.311765,
+      "mjcf_position_gains": {
+        "left_thumb_CMC_FE": {
+          "kp": 6.95
+        },
+        "left_thumb_CMC_AA": {
+          "kp": 13.2
+        },
+        "left_thumb_MCP_FE": {
+          "kp": 4.76
+        },
+        "left_thumb_MCP_AA": {
+          "kp": 6.62
+        },
+        "left_thumb_IP": {
+          "kp": 0.9
+        },
+        "left_index_MCP_FE": {
+          "kp": 4.76
+        },
+        "left_index_MCP_AA": {
+          "kp": 6.62
+        },
+        "left_index_PIP": {
+          "kp": 0.9
+        },
+        "left_index_DIP": {
+          "kp": 0.9
+        },
+        "left_middle_MCP_FE": {
+          "kp": 4.76
+        },
+        "left_middle_MCP_AA": {
+          "kp": 6.62
+        },
+        "left_middle_PIP": {
+          "kp": 0.9
+        },
+        "left_middle_DIP": {
+          "kp": 0.9
+        },
+        "left_ring_MCP_FE": {
+          "kp": 4.76
+        },
+        "left_ring_MCP_AA": {
+          "kp": 6.62
+        },
+        "left_ring_PIP": {
+          "kp": 0.9
+        },
+        "left_ring_DIP": {
+          "kp": 0.9
+        },
+        "left_pinky_CMC": {
+          "kp": 1.38
+        },
+        "left_pinky_MCP_FE": {
+          "kp": 4.76
+        },
+        "left_pinky_MCP_AA": {
+          "kp": 6.62
+        },
+        "left_pinky_PIP": {
+          "kp": 0.9
+        },
+        "left_pinky_DIP": {
+          "kp": 0.9
+        }
+      },
+      "vendor_urdf": "sharpa-models/wave_01/left_sharpa_wave/left_sharpa_wave_with_flange.urdf"
+    },
+    "right": {
+      "root": "right_hand_flange",
+      "joints": [
+        "right_thumb_CMC_FE",
+        "right_thumb_CMC_AA",
+        "right_thumb_MCP_FE",
+        "right_thumb_MCP_AA",
+        "right_thumb_IP",
+        "right_index_MCP_FE",
+        "right_index_MCP_AA",
+        "right_index_PIP",
+        "right_index_DIP",
+        "right_middle_MCP_FE",
+        "right_middle_MCP_AA",
+        "right_middle_PIP",
+        "right_middle_DIP",
+        "right_ring_MCP_FE",
+        "right_ring_MCP_AA",
+        "right_ring_PIP",
+        "right_ring_DIP",
+        "right_pinky_CMC",
+        "right_pinky_MCP_FE",
+        "right_pinky_MCP_AA",
+        "right_pinky_PIP",
+        "right_pinky_DIP"
+      ],
+      "limits": {
+        "right_thumb_CMC_FE": {
+          "lower": -0.1745,
+          "upper": 1.9199,
+          "effort": 3.3,
+          "velocity": 11.84076833
+        },
+        "right_thumb_CMC_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 3.3,
+          "velocity": 11.84076833
+        },
+        "right_thumb_MCP_FE": {
+          "lower": -0.5236,
+          "upper": 1.3963,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_thumb_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_thumb_IP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "right_index_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_index_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_index_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "right_index_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "right_middle_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_middle_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_middle_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "right_middle_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "right_ring_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_ring_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_ring_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "right_ring_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        },
+        "right_pinky_CMC": {
+          "lower": 0.0,
+          "upper": 0.2618,
+          "effort": 0.5285,
+          "velocity": 35.07416159
+        },
+        "right_pinky_MCP_FE": {
+          "lower": -0.17453293,
+          "upper": 1.5708,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_pinky_MCP_AA": {
+          "lower": -0.3491,
+          "upper": 0.3491,
+          "effort": 1.864,
+          "velocity": 16.07692878
+        },
+        "right_pinky_PIP": {
+          "lower": 0.0,
+          "upper": 1.7453,
+          "effort": 0.638,
+          "velocity": 11.61831603
+        },
+        "right_pinky_DIP": {
+          "lower": 0.0,
+          "upper": 1.3963,
+          "effort": 0.189369,
+          "velocity": 14.66594768
+        }
+      },
+      "mount_xyz_m": [
+        0.0415,
+        -0.003,
+        0.0
+      ],
+      "mount_rpy_rad": [
+        1.5707963267948966,
+        0.0,
+        1.5707963267948966
+      ],
+      "configured_mass_kg": 1.309765,
+      "mjcf_position_gains": {
+        "right_thumb_CMC_FE": {
+          "kp": 6.95
+        },
+        "right_thumb_CMC_AA": {
+          "kp": 13.2
+        },
+        "right_thumb_MCP_FE": {
+          "kp": 4.76
+        },
+        "right_thumb_MCP_AA": {
+          "kp": 6.62
+        },
+        "right_thumb_IP": {
+          "kp": 0.9
+        },
+        "right_index_MCP_FE": {
+          "kp": 4.76
+        },
+        "right_index_MCP_AA": {
+          "kp": 6.62
+        },
+        "right_index_PIP": {
+          "kp": 0.9
+        },
+        "right_index_DIP": {
+          "kp": 0.9
+        },
+        "right_middle_MCP_FE": {
+          "kp": 4.76
+        },
+        "right_middle_MCP_AA": {
+          "kp": 6.62
+        },
+        "right_middle_PIP": {
+          "kp": 0.9
+        },
+        "right_middle_DIP": {
+          "kp": 0.9
+        },
+        "right_ring_MCP_FE": {
+          "kp": 4.76
+        },
+        "right_ring_MCP_AA": {
+          "kp": 6.62
+        },
+        "right_ring_PIP": {
+          "kp": 0.9
+        },
+        "right_ring_DIP": {
+          "kp": 0.9
+        },
+        "right_pinky_CMC": {
+          "kp": 1.38
+        },
+        "right_pinky_MCP_FE": {
+          "kp": 4.76
+        },
+        "right_pinky_MCP_AA": {
+          "kp": 6.62
+        },
+        "right_pinky_PIP": {
+          "kp": 0.9
+        },
+        "right_pinky_DIP": {
+          "kp": 0.9
+        }
+      },
+      "vendor_urdf": "sharpa-models/wave_01/right_sharpa_wave/right_sharpa_wave_with_flange.urdf"
+    }
+  },
+  "collision_exclusions": [
+    [
+      "left_hand_C_MC",
+      "left_hand_C_MC"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_index_MCP_VL"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_index_PP"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_middle_MCP_VL"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_middle_PP"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_pinky_MC"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_pinky_PP"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_ring_MCP_VL"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_ring_PP"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_thumb_CMC_VL"
+    ],
+    [
+      "left_hand_C_MC",
+      "left_thumb_MC"
+    ],
+    [
+      "left_index_DP",
+      "left_index_MP"
+    ],
+    [
+      "left_index_DP",
+      "left_index_elastomer"
+    ],
+    [
+      "left_index_MCP_VL",
+      "left_index_PP"
+    ],
+    [
+      "left_index_MP",
+      "left_index_PP"
+    ],
+    [
+      "left_middle_DP",
+      "left_middle_MP"
+    ],
+    [
+      "left_middle_DP",
+      "left_middle_elastomer"
+    ],
+    [
+      "left_middle_MCP_VL",
+      "left_middle_PP"
+    ],
+    [
+      "left_middle_MP",
+      "left_middle_PP"
+    ],
+    [
+      "left_pinky_DP",
+      "left_pinky_MP"
+    ],
+    [
+      "left_pinky_DP",
+      "left_pinky_elastomer"
+    ],
+    [
+      "left_pinky_MC",
+      "left_pinky_MCP_VL"
+    ],
+    [
+      "left_pinky_MC",
+      "left_pinky_PP"
+    ],
+    [
+      "left_pinky_MCP_VL",
+      "left_pinky_PP"
+    ],
+    [
+      "left_pinky_MP",
+      "left_pinky_PP"
+    ],
+    [
+      "left_ring_DP",
+      "left_ring_MP"
+    ],
+    [
+      "left_ring_DP",
+      "left_ring_elastomer"
+    ],
+    [
+      "left_ring_MCP_VL",
+      "left_ring_PP"
+    ],
+    [
+      "left_ring_MP",
+      "left_ring_PP"
+    ],
+    [
+      "left_thumb_DP",
+      "left_thumb_PP"
+    ],
+    [
+      "left_thumb_DP",
+      "left_thumb_elastomer"
+    ],
+    [
+      "left_thumb_MC",
+      "left_thumb_MCP_VL"
+    ],
+    [
+      "left_thumb_MC",
+      "left_thumb_PP"
+    ],
+    [
+      "left_thumb_MCP_VL",
+      "left_thumb_PP"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_hand_C_MC"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_index_MCP_VL"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_index_PP"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_middle_MCP_VL"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_middle_PP"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_pinky_MC"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_pinky_PP"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_ring_MCP_VL"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_ring_PP"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_thumb_CMC_VL"
+    ],
+    [
+      "right_hand_C_MC",
+      "right_thumb_MC"
+    ],
+    [
+      "right_index_DP",
+      "right_index_MP"
+    ],
+    [
+      "right_index_DP",
+      "right_index_elastomer"
+    ],
+    [
+      "right_index_MCP_VL",
+      "right_index_PP"
+    ],
+    [
+      "right_index_MP",
+      "right_index_PP"
+    ],
+    [
+      "right_middle_DP",
+      "right_middle_MP"
+    ],
+    [
+      "right_middle_DP",
+      "right_middle_elastomer"
+    ],
+    [
+      "right_middle_MCP_VL",
+      "right_middle_PP"
+    ],
+    [
+      "right_middle_MP",
+      "right_middle_PP"
+    ],
+    [
+      "right_pinky_DP",
+      "right_pinky_MP"
+    ],
+    [
+      "right_pinky_DP",
+      "right_pinky_elastomer"
+    ],
+    [
+      "right_pinky_MC",
+      "right_pinky_MCP_VL"
+    ],
+    [
+      "right_pinky_MC",
+      "right_pinky_PP"
+    ],
+    [
+      "right_pinky_MCP_VL",
+      "right_pinky_PP"
+    ],
+    [
+      "right_pinky_MP",
+      "right_pinky_PP"
+    ],
+    [
+      "right_ring_DP",
+      "right_ring_MP"
+    ],
+    [
+      "right_ring_DP",
+      "right_ring_elastomer"
+    ],
+    [
+      "right_ring_MCP_VL",
+      "right_ring_PP"
+    ],
+    [
+      "right_ring_MP",
+      "right_ring_PP"
+    ],
+    [
+      "right_thumb_DP",
+      "right_thumb_PP"
+    ],
+    [
+      "right_thumb_DP",
+      "right_thumb_elastomer"
+    ],
+    [
+      "right_thumb_MC",
+      "right_thumb_MCP_VL"
+    ],
+    [
+      "right_thumb_MC",
+      "right_thumb_PP"
+    ],
+    [
+      "right_thumb_MCP_VL",
+      "right_thumb_PP"
+    ]
+  ],
+  "tactile": {
+    "left": {
+      "frames": [
+        "left_thumb_elastomer",
+        "left_index_elastomer",
+        "left_middle_elastomer",
+        "left_ring_elastomer",
+        "left_pinky_elastomer"
+      ],
+      "mode": "official_tacmap_depth",
+      "real_sensor_calibration": "not_available",
+      "force_source": "PhysX contact force, separate from geometric depth; never convert depth to N without a calibrated law"
+    },
+    "right": {
+      "frames": [
+        "right_thumb_elastomer",
+        "right_index_elastomer",
+        "right_middle_elastomer",
+        "right_ring_elastomer",
+        "right_pinky_elastomer"
+      ],
+      "mode": "official_tacmap_depth",
+      "real_sensor_calibration": "not_available",
+      "force_source": "PhysX contact force, separate from geometric depth; never convert depth to N without a calibrated law"
+    }
+  },
+  "forbidden_runtime_interfaces": [
+    "DDS",
+    "real_camera",
+    "hardware_SDK"
+  ],
+  "presentation_pose": "mechanical_zero_not_natural_open",
+  "mount_orientation_contract": "thumb_side_up_and_positive_index_flexion_inward",
+  "action_layout": [
+    "left_arm_7_rad",
+    "left_hand_22_rad",
+    "right_arm_7_rad",
+    "right_hand_22_rad"
+  ],
+  "action_dimension": 58,
+  "optional_body_commands": {
+    "waist_joint_state": 2,
+    "lift_joint_state": 1
+  }
+}

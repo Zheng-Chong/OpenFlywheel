@@ -1,0 +1,62 @@
+# 倒半杯 with rigid beans (variant of g1d_pour_beans_half_cup, same cups, check and env config g1d_lab_beans_eps380):
+# the Fluid entry is physics.type "granular", red, mung or black beans one convex rigid body each from a settled pack
+# (env/scene_manager/objects/granular.py). Layouts come from scripts/g1d/prepare_pour_half_layouts.py --rigid; the
+# ranges below only document a default layout for the random-layout path.
+Rigid:
+  -
+    common:
+      xlim: [0.10, 0.20]
+      ylim: [-0.54, -0.46]
+      rotate_rand: False
+      rotate_deg: 0
+      relative_plane: "Table"
+      margin: 0.04
+
+    category:
+      -
+        name: "measuring_cup"
+        index: [1]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["source_cup"]
+
+  -
+    common:
+      xlim: [-0.25, -0.10]
+      ylim: [-0.54, -0.46]
+      rotate_rand: False
+      rotate_deg: 0
+      relative_plane: "Table"
+      margin: 0.04
+
+    category:
+      -
+        name: "plastic_cup"
+        index: [9, 8]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["target_cup"]
+
+Fluid:
+  -
+    common:
+      xlim: [0.0, 0.0]
+      ylim: [0.0, 0.0]
+      zlim: [-0.0435, -0.0435]
+      rotate_rand: False
+      relative_plane: "source_cup"
+      check_mode: "enforce"
+
+    category:
+      -
+        name: "wuliangye"
+        index: [0]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["beans"]

@@ -1,0 +1,248 @@
+{
+ "note": "tall-cup tilt from FK of the recorded joints; onset_seen_deg: the tilt at which beans first reach the target cup in the left wrist video (by eye, grey-cup episodes)",
+ "peak_deg_median": 95.6,
+ "peak_deg_p10_p90": [
+  86.7,
+  98.9
+ ],
+ "episodes": {
+  "0": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 99.2,
+   "s_close_to_peak": 22.13,
+   "s_over_80_deg": 10.1,
+   "onset_seen_deg": "88-90"
+  },
+  "10": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 98.8,
+   "s_close_to_peak": 19.53,
+   "s_over_80_deg": 11.9,
+   "onset_seen_deg": "90-93"
+  },
+  "13": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 97.8,
+   "s_close_to_peak": 19.73,
+   "s_over_80_deg": 10.2,
+   "onset_seen_deg": null
+  },
+  "42": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 13.0,
+   "s_close_to_peak": 15.97,
+   "s_over_80_deg": 0.0,
+   "onset_seen_deg": null
+  },
+  "57": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 12.6,
+   "s_close_to_peak": 2.03,
+   "s_over_80_deg": 0.0,
+   "onset_seen_deg": null
+  },
+  "120": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 99.6,
+   "s_close_to_peak": 16.9,
+   "s_over_80_deg": 10.53,
+   "onset_seen_deg": "~90"
+  },
+  "122": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 99.3,
+   "s_close_to_peak": 16.23,
+   "s_over_80_deg": 8.87,
+   "onset_seen_deg": null
+  },
+  "134": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 98.8,
+   "s_close_to_peak": 9.83,
+   "s_over_80_deg": 4.83,
+   "onset_seen_deg": "86-90"
+  },
+  "139": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 98.2,
+   "s_close_to_peak": 12.33,
+   "s_over_80_deg": 7.4,
+   "onset_seen_deg": null
+  },
+  "143": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 89.4,
+   "s_close_to_peak": 18.07,
+   "s_over_80_deg": 7.1,
+   "onset_seen_deg": null
+  },
+  "148": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 93.6,
+   "s_close_to_peak": 13.93,
+   "s_over_80_deg": 6.53,
+   "onset_seen_deg": "80-85"
+  },
+  "158": {
+   "target_object": "Rigid/plastic_cup/00009",
+   "peak_deg": 94.7,
+   "s_close_to_peak": 13.9,
+   "s_over_80_deg": 5.93,
+   "onset_seen_deg": "~88"
+  },
+  "184": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 92.8,
+   "s_close_to_peak": 8.9,
+   "s_over_80_deg": 4.8,
+   "onset_seen_deg": null
+  },
+  "185": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 98.0,
+   "s_close_to_peak": 9.77,
+   "s_over_80_deg": 5.1,
+   "onset_seen_deg": null
+  },
+  "189": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 96.0,
+   "s_close_to_peak": 11.97,
+   "s_over_80_deg": 6.53,
+   "onset_seen_deg": null
+  },
+  "197": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 95.6,
+   "s_close_to_peak": 10.8,
+   "s_over_80_deg": 5.23,
+   "onset_seen_deg": null
+  },
+  "199": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 92.5,
+   "s_close_to_peak": 9.13,
+   "s_over_80_deg": 4.03,
+   "onset_seen_deg": null
+  },
+  "200": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 98.5,
+   "s_close_to_peak": 9.97,
+   "s_over_80_deg": 5.6,
+   "onset_seen_deg": null
+  },
+  "207": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 96.6,
+   "s_close_to_peak": 9.77,
+   "s_over_80_deg": 4.77,
+   "onset_seen_deg": null
+  },
+  "220": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 98.9,
+   "s_close_to_peak": 11.8,
+   "s_over_80_deg": 6.77,
+   "onset_seen_deg": null
+  },
+  "266": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 90.6,
+   "s_close_to_peak": 13.83,
+   "s_over_80_deg": 3.33,
+   "onset_seen_deg": null
+  },
+  "272": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 92.7,
+   "s_close_to_peak": 9.73,
+   "s_over_80_deg": 3.77,
+   "onset_seen_deg": null
+  },
+  "278": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 92.3,
+   "s_close_to_peak": 11.5,
+   "s_over_80_deg": 4.83,
+   "onset_seen_deg": null
+  },
+  "283": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 97.7,
+   "s_close_to_peak": 12.9,
+   "s_over_80_deg": 5.3,
+   "onset_seen_deg": null
+  },
+  "294": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 95.6,
+   "s_close_to_peak": 11.0,
+   "s_over_80_deg": 3.8,
+   "onset_seen_deg": null
+  },
+  "299": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 93.6,
+   "s_close_to_peak": 11.63,
+   "s_over_80_deg": 4.93,
+   "onset_seen_deg": null
+  },
+  "300": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 96.5,
+   "s_close_to_peak": 9.9,
+   "s_over_80_deg": 4.1,
+   "onset_seen_deg": null
+  },
+  "305": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 96.3,
+   "s_close_to_peak": 9.3,
+   "s_over_80_deg": 3.7,
+   "onset_seen_deg": null
+  },
+  "310": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 95.4,
+   "s_close_to_peak": 9.23,
+   "s_over_80_deg": 4.5,
+   "onset_seen_deg": null
+  },
+  "317": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 95.9,
+   "s_close_to_peak": 10.1,
+   "s_over_80_deg": 4.2,
+   "onset_seen_deg": null
+  },
+  "327": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 94.5,
+   "s_close_to_peak": 11.3,
+   "s_over_80_deg": 3.4,
+   "onset_seen_deg": null
+  },
+  "328": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 93.2,
+   "s_close_to_peak": 11.87,
+   "s_over_80_deg": 3.23,
+   "onset_seen_deg": null
+  },
+  "366": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 81.1,
+   "s_close_to_peak": 9.77,
+   "s_over_80_deg": 0.53,
+   "onset_seen_deg": null
+  },
+  "368": {
+   "target_object": "Rigid/plastic_cup/00008",
+   "peak_deg": 85.5,
+   "s_close_to_peak": 6.73,
+   "s_over_80_deg": 1.67,
+   "onset_seen_deg": null
+  }
+ }
+}

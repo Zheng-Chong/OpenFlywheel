@@ -1,0 +1,39 @@
+{
+  "embodiment": "g1d_inspire_rh56dftp",
+  "name": "G1-D · Inspire RH56DFTP",
+  "name_en": "G1-D Inspire RH56DFTP",
+  "model": "Unitree G1-D + Inspire RH56DFTP-0L / -0R",
+  "variant": "完整桌面 G1-D，双侧厂家手模型；CAD 法兰中心对齐；安装与实测 TCP 待确认",
+  "dof": "双臂各7 + 双手各6主动/6联动；保留腰部2与升降柱1",
+  "end_effector": "双侧 RH56DFTP 触觉灵巧手",
+  "cameras": "头部双目（继承参考外参）；未沿用 Dex1 腕相机",
+  "control_hz": 30,
+  "urdf": "real2sim/robot/g1d_inspire_rh56dftp/robot.urdf",
+  "calib_camera": "pending",
+  "calib_joint": "pending",
+  "calib_gripper": "pending",
+  "calib_dynamics": "pending",
+  "calib_notes": "厂家关节与网格保留，主动范围取联动可行交集。G1-D 孔位、转接板、实测 TCP、当前硬件零位、伺服/摩擦/惯量和触觉 SN 标定均未实测。",
+  "notes": "26维弧度动作，六路主动指令，十二条原生联动约束。支持压阻17分区/1062点原始数值与电容58字节模块离线解码；仿真接触力独立以N保存，未伪造硬件触点位置或ADC到力标定。 40秒有限运动、半程及闭合接触、回位核验通过；全机械端点受自接触限制，不能标为全范围无碰撞通过。 2026-11-03 有限运动、三形状接触及同帧数据核验通过；抓起/保持/释放矩阵见综合核验，Wuji 2.1 球体失败，精确回置与全姿态验证保持待办。",
+  "owner": {
+    "username": "liuzhonghan",
+    "name": "liuzhonghan"
+  },
+  "updated_by": "Joker-of-Gotham (simulation integration)",
+  "updated_at": "2026-11-03",
+  "model_origin": "user_supplied_manufacturer_urdf_and_CAD",
+  "model_version": "20261102.sim.v1",
+  "wrist_mount_verified": false,
+  "tactile_response_validated": false,
+  "tactile_simulation_verified": true,
+  "full_task_simulation_verified": false,
+  "simulation_review_url": "http://127.0.0.1:8790/",
+  "hardware_connected": false,
+  "preview_pose": {
+    "run": "native07",
+    "frame": 0,
+    "phase": "open",
+    "is_calibrated_natural_open": false
+  },
+  "validation_evidence": "scripts/dexhands/evidence/20261103/final_validation.json"
+}

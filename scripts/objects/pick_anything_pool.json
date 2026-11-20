@@ -1,0 +1,6631 @@
+{
+ "rules": {
+  "width": [
+   0.015,
+   0.068
+  ],
+  "height": [
+   0.02,
+   0.2
+  ],
+  "long": 0.22,
+  "mass": 0.5,
+  "slender": 6.0
+ },
+ "group_cap": 4,
+ "scanned": 956,
+ "objects": [
+  {
+   "cat": "airpods",
+   "idx": 0,
+   "family": "electronics",
+   "name": "earbud case",
+   "size": [
+    0.0544,
+    0.0464,
+    0.0214
+   ],
+   "mass": 0.038
+  },
+  {
+   "cat": "aurora_flange",
+   "idx": 0,
+   "family": "hardware",
+   "name": "flange",
+   "size": [
+    0.068,
+    0.068,
+    0.0225
+   ],
+   "mass": 0.0937
+  },
+  {
+   "cat": "b",
+   "idx": 0,
+   "family": "toy",
+   "name": "letter b toy",
+   "size": [
+    0.0383,
+    0.0176,
+    0.049
+   ],
+   "mass": 0.14
+  },
+  {
+   "cat": "block",
+   "idx": 2,
+   "family": "block",
+   "name": "rectangular block",
+   "size": [
+    0.0383,
+    0.0622,
+    0.038
+   ],
+   "mass": 0.2
+  },
+  {
+   "cat": "block",
+   "idx": 3,
+   "family": "block",
+   "name": "triangular block",
+   "size": [
+    0.0606,
+    0.0375,
+    0.046
+   ],
+   "mass": 0.2
+  },
+  {
+   "cat": "car",
+   "idx": 1,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.068,
+    0.1764,
+    0.048
+   ],
+   "mass": 0.45
+  },
+  {
+   "cat": "car",
+   "idx": 3,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1353,
+    0.0582,
+    0.04
+   ],
+   "mass": 0.45
+  },
+  {
+   "cat": "car",
+   "idx": 4,
+   "family": "toy",
+   "name": "toy police car",
+   "size": [
+    0.1456,
+    0.0654,
+    0.045
+   ],
+   "mass": 0.45
+  },
+  {
+   "cat": "car",
+   "idx": 6,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1178,
+    0.06,
+    0.038
+   ],
+   "mass": 0.45
+  },
+  {
+   "cat": "car",
+   "idx": 7,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1288,
+    0.0576,
+    0.036
+   ],
+   "mass": 0.45
+  },
+  {
+   "cat": "ceramic_cup",
+   "idx": 1,
+   "family": "cup",
+   "name": "ceramic cup",
+   "size": [
+    0.064,
+    0.064,
+    0.075
+   ],
+   "mass": 0.0847
+  },
+  {
+   "cat": "charger",
+   "idx": 0,
+   "family": "electronics",
+   "name": "charger",
+   "size": [
+    0.042,
+    0.0631,
+    0.027
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "cube",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "cube",
+   "idx": 2,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "cube",
+   "idx": 5,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.025,
+    0.025,
+    0.025
+   ],
+   "mass": 0.35
+  },
+  {
+   "cat": "cube",
+   "idx": 7,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "drink_bottle",
+   "idx": 2,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.0597,
+    0.046,
+    0.1784
+   ],
+   "mass": 0.3928
+  },
+  {
+   "cat": "drink_bottle",
+   "idx": 4,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.0763,
+    0.061,
+    0.1896
+   ],
+   "mass": 0.5
+  },
+  {
+   "cat": "empty_bottle",
+   "idx": 0,
+   "family": "bottle",
+   "name": "empty bottle",
+   "size": [
+    0.0556,
+    0.0556,
+    0.198
+   ],
+   "mass": 0.025
+  },
+  {
+   "cat": "empty_bottle",
+   "idx": 1,
+   "family": "bottle",
+   "name": "empty bottle",
+   "size": [
+    0.0502,
+    0.0502,
+    0.198
+   ],
+   "mass": 0.0211
+  },
+  {
+   "cat": "empty_bottle",
+   "idx": 4,
+   "family": "bottle",
+   "name": "empty bottle",
+   "size": [
+    0.0453,
+    0.0453,
+    0.1584
+   ],
+   "mass": 0.016
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 0,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.03,
+    0.1,
+    0.1
+   ],
+   "mass": 0.1332
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 1,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.2,
+    0.037,
+    0.037
+   ],
+   "mass": 0.1643
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 2,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.03,
+    0.161,
+    0.1
+   ],
+   "mass": 0.1377
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 4,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.18,
+    0.03,
+    0.1
+   ],
+   "mass": 0.1442
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 6,
+   "family": "part",
+   "name": "pin part",
+   "size": [
+    0.0231,
+    0.02,
+    0.1
+   ],
+   "mass": 0.0162
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 7,
+   "family": "part",
+   "name": "pin part",
+   "size": [
+    0.0231,
+    0.02,
+    0.1
+   ],
+   "mass": 0.0162
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 8,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.037,
+    0.2,
+    0.037
+   ],
+   "mass": 0.1643
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 9,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.037,
+    0.2,
+    0.037
+   ],
+   "mass": 0.1643
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 10,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.156,
+    0.03,
+    0.1
+   ],
+   "mass": 0.1255
+  },
+  {
+   "cat": "fmb_peg_arch",
+   "idx": 0,
+   "family": "peg",
+   "name": "arch peg",
+   "size": [
+    0.0593,
+    0.0356,
+    0.1
+   ],
+   "mass": 0.0918
+  },
+  {
+   "cat": "fmb_peg_arch",
+   "idx": 10,
+   "family": "peg",
+   "name": "arch peg",
+   "size": [
+    0.0593,
+    0.0356,
+    0.15
+   ],
+   "mass": 0.1377
+  },
+  {
+   "cat": "fmb_peg_arch",
+   "idx": 20,
+   "family": "peg",
+   "name": "arch peg",
+   "size": [
+    0.048,
+    0.0288,
+    0.1
+   ],
+   "mass": 0.0601
+  },
+  {
+   "cat": "fmb_peg_arch",
+   "idx": 30,
+   "family": "peg",
+   "name": "arch peg",
+   "size": [
+    0.048,
+    0.0288,
+    0.15
+   ],
+   "mass": 0.0902
+  },
+  {
+   "cat": "fmb_peg_double_square",
+   "idx": 0,
+   "family": "peg",
+   "name": "double square peg",
+   "size": [
+    0.0636,
+    0.0245,
+    0.1
+   ],
+   "mass": 0.0819
+  },
+  {
+   "cat": "fmb_peg_double_square",
+   "idx": 4,
+   "family": "peg",
+   "name": "double square peg",
+   "size": [
+    0.0636,
+    0.0245,
+    0.1
+   ],
+   "mass": 0.0819
+  },
+  {
+   "cat": "fmb_peg_double_square",
+   "idx": 16,
+   "family": "peg",
+   "name": "double square peg",
+   "size": [
+    0.053,
+    0.0204,
+    0.1
+   ],
+   "mass": 0.0569
+  },
+  {
+   "cat": "fmb_peg_double_square",
+   "idx": 20,
+   "family": "peg",
+   "name": "double square peg",
+   "size": [
+    0.053,
+    0.0204,
+    0.1
+   ],
+   "mass": 0.0569
+  },
+  {
+   "cat": "fmb_peg_hexagon",
+   "idx": 0,
+   "family": "peg",
+   "name": "hexagon peg",
+   "size": [
+    0.0452,
+    0.0511,
+    0.1
+   ],
+   "mass": 0.1058
+  },
+  {
+   "cat": "fmb_peg_hexagon",
+   "idx": 12,
+   "family": "peg",
+   "name": "hexagon peg",
+   "size": [
+    0.0452,
+    0.0511,
+    0.15
+   ],
+   "mass": 0.1588
+  },
+  {
+   "cat": "fmb_peg_hexagon",
+   "idx": 24,
+   "family": "peg",
+   "name": "hexagon peg",
+   "size": [
+    0.0366,
+    0.0413,
+    0.15
+   ],
+   "mass": 0.1041
+  },
+  {
+   "cat": "fmb_peg_hexagon",
+   "idx": 36,
+   "family": "peg",
+   "name": "hexagon peg",
+   "size": [
+    0.0294,
+    0.0333,
+    0.1
+   ],
+   "mass": 0.0449
+  },
+  {
+   "cat": "fmb_peg_oval",
+   "idx": 0,
+   "family": "peg",
+   "name": "oval peg",
+   "size": [
+    0.0534,
+    0.0356,
+    0.1
+   ],
+   "mass": 0.0894
+  },
+  {
+   "cat": "fmb_peg_oval",
+   "idx": 10,
+   "family": "peg",
+   "name": "oval peg",
+   "size": [
+    0.0534,
+    0.0356,
+    0.15
+   ],
+   "mass": 0.134
+  },
+  {
+   "cat": "fmb_peg_oval",
+   "idx": 20,
+   "family": "peg",
+   "name": "oval peg",
+   "size": [
+    0.0432,
+    0.0288,
+    0.1
+   ],
+   "mass": 0.0586
+  },
+  {
+   "cat": "fmb_peg_oval",
+   "idx": 30,
+   "family": "peg",
+   "name": "oval peg",
+   "size": [
+    0.0432,
+    0.0288,
+    0.15
+   ],
+   "mass": 0.0878
+  },
+  {
+   "cat": "fmb_peg_rectangle",
+   "idx": 0,
+   "family": "peg",
+   "name": "rectangle peg",
+   "size": [
+    0.0498,
+    0.032,
+    0.1
+   ],
+   "mass": 0.095
+  },
+  {
+   "cat": "fmb_peg_rectangle",
+   "idx": 10,
+   "family": "peg",
+   "name": "rectangle peg",
+   "size": [
+    0.0498,
+    0.032,
+    0.15
+   ],
+   "mass": 0.1425
+  },
+  {
+   "cat": "fmb_peg_rectangle",
+   "idx": 20,
+   "family": "peg",
+   "name": "rectangle peg",
+   "size": [
+    0.0403,
+    0.0259,
+    0.1
+   ],
+   "mass": 0.0623
+  },
+  {
+   "cat": "fmb_peg_rectangle",
+   "idx": 30,
+   "family": "peg",
+   "name": "rectangle peg",
+   "size": [
+    0.0403,
+    0.0259,
+    0.15
+   ],
+   "mass": 0.0934
+  },
+  {
+   "cat": "fmb_peg_round",
+   "idx": 0,
+   "family": "peg",
+   "name": "round peg",
+   "size": [
+    0.0498,
+    0.0498,
+    0.1
+   ],
+   "mass": 0.1167
+  },
+  {
+   "cat": "fmb_peg_round",
+   "idx": 12,
+   "family": "peg",
+   "name": "round peg",
+   "size": [
+    0.0498,
+    0.0498,
+    0.15
+   ],
+   "mass": 0.1751
+  },
+  {
+   "cat": "fmb_peg_round",
+   "idx": 24,
+   "family": "peg",
+   "name": "round peg",
+   "size": [
+    0.0403,
+    0.0403,
+    0.15
+   ],
+   "mass": 0.1147
+  },
+  {
+   "cat": "fmb_peg_round",
+   "idx": 36,
+   "family": "peg",
+   "name": "round peg",
+   "size": [
+    0.0324,
+    0.0324,
+    0.1
+   ],
+   "mass": 0.0495
+  },
+  {
+   "cat": "fmb_peg_square_circle",
+   "idx": 0,
+   "family": "peg",
+   "name": "square and circle peg",
+   "size": [
+    0.0634,
+    0.0238,
+    0.1
+   ],
+   "mass": 0.0727
+  },
+  {
+   "cat": "fmb_peg_square_circle",
+   "idx": 4,
+   "family": "peg",
+   "name": "square and circle peg",
+   "size": [
+    0.0634,
+    0.0238,
+    0.1
+   ],
+   "mass": 0.0727
+  },
+  {
+   "cat": "fmb_peg_square_circle",
+   "idx": 16,
+   "family": "peg",
+   "name": "square and circle peg",
+   "size": [
+    0.0528,
+    0.0198,
+    0.1
+   ],
+   "mass": 0.0505
+  },
+  {
+   "cat": "fmb_peg_square_circle",
+   "idx": 20,
+   "family": "peg",
+   "name": "square and circle peg",
+   "size": [
+    0.0528,
+    0.0198,
+    0.1
+   ],
+   "mass": 0.0505
+  },
+  {
+   "cat": "fmb_peg_star",
+   "idx": 0,
+   "family": "peg",
+   "name": "star peg",
+   "size": [
+    0.0543,
+    0.052,
+    0.1
+   ],
+   "mass": 0.0819
+  },
+  {
+   "cat": "fmb_peg_star",
+   "idx": 12,
+   "family": "peg",
+   "name": "star peg",
+   "size": [
+    0.0543,
+    0.052,
+    0.15
+   ],
+   "mass": 0.1229
+  },
+  {
+   "cat": "fmb_peg_star",
+   "idx": 24,
+   "family": "peg",
+   "name": "star peg",
+   "size": [
+    0.044,
+    0.0421,
+    0.15
+   ],
+   "mass": 0.0805
+  },
+  {
+   "cat": "fmb_peg_star",
+   "idx": 36,
+   "family": "peg",
+   "name": "star peg",
+   "size": [
+    0.0354,
+    0.0338,
+    0.1
+   ],
+   "mass": 0.0347
+  },
+  {
+   "cat": "fmb_peg_three_prong",
+   "idx": 0,
+   "family": "peg",
+   "name": "three-prong peg",
+   "size": [
+    0.0634,
+    0.0591,
+    0.1
+   ],
+   "mass": 0.1028
+  },
+  {
+   "cat": "fmb_peg_three_prong",
+   "idx": 12,
+   "family": "peg",
+   "name": "three-prong peg",
+   "size": [
+    0.0634,
+    0.0591,
+    0.15
+   ],
+   "mass": 0.1306
+  },
+  {
+   "cat": "fmb_peg_three_prong",
+   "idx": 24,
+   "family": "peg",
+   "name": "three-prong peg",
+   "size": [
+    0.0528,
+    0.0493,
+    0.15
+   ],
+   "mass": 0.0907
+  },
+  {
+   "cat": "fmb_peg_three_prong",
+   "idx": 36,
+   "family": "peg",
+   "name": "three-prong peg",
+   "size": [
+    0.04,
+    0.0373,
+    0.1
+   ],
+   "mass": 0.041
+  },
+  {
+   "cat": "game_controller",
+   "idx": 0,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.13,
+    0.062,
+    0.057
+   ],
+   "mass": 0.16
+  },
+  {
+   "cat": "game_controller",
+   "idx": 2,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.13,
+    0.0467,
+    0.044
+   ],
+   "mass": 0.1469
+  },
+  {
+   "cat": "game_controller",
+   "idx": 4,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.104,
+    0.0489,
+    0.044
+   ],
+   "mass": 0.0999
+  },
+  {
+   "cat": "game_controller",
+   "idx": 5,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.1625,
+    0.056,
+    0.0543
+   ],
+   "mass": 0.2334
+  },
+  {
+   "cat": "geniesim_benchmark_balance_benchmark_balance_001",
+   "idx": 0,
+   "family": "hardware",
+   "name": "weight",
+   "size": [
+    0.0272,
+    0.0282,
+    0.0504
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_balance_benchmark_balance_002",
+   "idx": 0,
+   "family": "hardware",
+   "name": "weight",
+   "size": [
+    0.0218,
+    0.0224,
+    0.0402
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_balance_benchmark_balance_003",
+   "idx": 0,
+   "family": "hardware",
+   "name": "weight",
+   "size": [
+    0.0184,
+    0.019,
+    0.0342
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_balance_benchmark_balance_004",
+   "idx": 0,
+   "family": "hardware",
+   "name": "weight",
+   "size": [
+    0.0168,
+    0.0174,
+    0.0312
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_bearing_benchmark_bearing_000",
+   "idx": 0,
+   "family": "hardware",
+   "name": "bushing",
+   "size": [
+    0.03,
+    0.03,
+    0.0403
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_beer_benchmark_beer_000",
+   "idx": 0,
+   "family": "can",
+   "name": "beer can",
+   "size": [
+    0.0665,
+    0.0666,
+    0.169
+   ],
+   "mass": 0.3919
+  },
+  {
+   "cat": "geniesim_benchmark_beer_benchmark_beer_001",
+   "idx": 0,
+   "family": "can",
+   "name": "beer can",
+   "size": [
+    0.0665,
+    0.0666,
+    0.169
+   ],
+   "mass": 0.3919
+  },
+  {
+   "cat": "geniesim_benchmark_beer_benchmark_beer_002",
+   "idx": 0,
+   "family": "can",
+   "name": "beer can",
+   "size": [
+    0.0666,
+    0.0666,
+    0.1225
+   ],
+   "mass": 0.284
+  },
+  {
+   "cat": "geniesim_benchmark_beer_benchmark_beer_003",
+   "idx": 0,
+   "family": "can",
+   "name": "beer can",
+   "size": [
+    0.0665,
+    0.0666,
+    0.169
+   ],
+   "mass": 0.3919
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_001",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0647,
+    0.0647,
+    0.1151
+   ],
+   "mass": 0.252
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_002",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0659,
+    0.0657,
+    0.1138
+   ],
+   "mass": 0.2581
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_003",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0665,
+    0.0665,
+    0.1159
+   ],
+   "mass": 0.2681
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_004",
+   "idx": 0,
+   "family": "bottle",
+   "name": "tea bottle",
+   "size": [
+    0.0615,
+    0.0615,
+    0.1499
+   ],
+   "mass": 0.2973
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_008",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0487,
+    0.0598,
+    0.1669
+   ],
+   "mass": 0.2548
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_023",
+   "idx": 0,
+   "family": "bottle",
+   "name": "coffee bottle",
+   "size": [
+    0.0635,
+    0.0615,
+    0.117
+   ],
+   "mass": 0.2394
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_024",
+   "idx": 0,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.0633,
+    0.0625,
+    0.1438
+   ],
+   "mass": 0.298
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_025",
+   "idx": 0,
+   "family": "bottle",
+   "name": "probiotic drink bottle",
+   "size": [
+    0.0461,
+    0.0456,
+    0.0829
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_026",
+   "idx": 0,
+   "family": "bottle",
+   "name": "probiotic drink bottle",
+   "size": [
+    0.0455,
+    0.0457,
+    0.0829
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_029",
+   "idx": 0,
+   "family": "can",
+   "name": "herbal tea can",
+   "size": [
+    0.0661,
+    0.0665,
+    0.1149
+   ],
+   "mass": 0.2647
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_073",
+   "idx": 0,
+   "family": "can",
+   "name": "energy drink can",
+   "size": [
+    0.0641,
+    0.0642,
+    0.0901
+   ],
+   "mass": 0.1941
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_076",
+   "idx": 0,
+   "family": "bottle",
+   "name": "tea bottle",
+   "size": [
+    0.0671,
+    0.0671,
+    0.157
+   ],
+   "mass": 0.3703
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_077",
+   "idx": 0,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.0613,
+    0.0613,
+    0.1975
+   ],
+   "mass": 0.3885
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_085",
+   "idx": 0,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.06,
+    0.0748,
+    0.1507
+   ],
+   "mass": 0.3543
+  },
+  {
+   "cat": "geniesim_benchmark_beverage_bottle_benchmark_beverage_bottle_086",
+   "idx": 0,
+   "family": "bottle",
+   "name": "tea bottle",
+   "size": [
+    0.048,
+    0.0709,
+    0.1898
+   ],
+   "mass": 0.3382
+  },
+  {
+   "cat": "geniesim_benchmark_blackboard_eraser_benchmark_blackboard_eraser_000",
+   "idx": 0,
+   "family": "stationery",
+   "name": "eraser",
+   "size": [
+    0.051,
+    0.114,
+    0.0412
+   ],
+   "mass": 0.1254
+  },
+  {
+   "cat": "geniesim_benchmark_box_benchmark_box_000",
+   "idx": 0,
+   "family": "box",
+   "name": "glue stick box",
+   "size": [
+    0.0553,
+    0.0803,
+    0.1
+   ],
+   "mass": 0.2324
+  },
+  {
+   "cat": "geniesim_benchmark_box_benchmark_box_002",
+   "idx": 0,
+   "family": "box",
+   "name": "toy box",
+   "size": [
+    0.0493,
+    0.073,
+    0.0973
+   ],
+   "mass": 0.1835
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_001",
+   "idx": 0,
+   "family": "block",
+   "name": "half-cylinder block",
+   "size": [
+    0.0266,
+    0.0468,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_002",
+   "idx": 0,
+   "family": "block",
+   "name": "cylinder block",
+   "size": [
+    0.0339,
+    0.0339,
+    0.038
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_003",
+   "idx": 0,
+   "family": "block",
+   "name": "star block",
+   "size": [
+    0.0392,
+    0.0408,
+    0.038
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_004",
+   "idx": 0,
+   "family": "block",
+   "name": "oval block",
+   "size": [
+    0.0466,
+    0.029,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_005",
+   "idx": 0,
+   "family": "block",
+   "name": "triangle block",
+   "size": [
+    0.046,
+    0.033,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_006",
+   "idx": 0,
+   "family": "block",
+   "name": "square prism block",
+   "size": [
+    0.0338,
+    0.0342,
+    0.0404
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_007",
+   "idx": 0,
+   "family": "block",
+   "name": "cross block",
+   "size": [
+    0.0375,
+    0.0376,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_008",
+   "idx": 0,
+   "family": "block",
+   "name": "rectangular block",
+   "size": [
+    0.0368,
+    0.0536,
+    0.0386
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_009",
+   "idx": 0,
+   "family": "block",
+   "name": "octagon block",
+   "size": [
+    0.0364,
+    0.0364,
+    0.0382
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_010",
+   "idx": 0,
+   "family": "block",
+   "name": "hexagon block",
+   "size": [
+    0.041,
+    0.0356,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_011",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.0392,
+    0.0364,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_012",
+   "idx": 0,
+   "family": "block",
+   "name": "triangle block",
+   "size": [
+    0.0512,
+    0.0268,
+    0.0282
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_013",
+   "idx": 0,
+   "family": "block",
+   "name": "L-shaped block",
+   "size": [
+    0.0376,
+    0.035,
+    0.0358
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_014",
+   "idx": 0,
+   "family": "block",
+   "name": "rectangular block",
+   "size": [
+    0.034,
+    0.0246,
+    0.0272
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_015",
+   "idx": 0,
+   "family": "block",
+   "name": "pentagon block",
+   "size": [
+    0.0388,
+    0.0406,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_016",
+   "idx": 0,
+   "family": "block",
+   "name": "quarter-cylinder block",
+   "size": [
+    0.0303,
+    0.0446,
+    0.0346
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_018",
+   "idx": 0,
+   "family": "block",
+   "name": "wedge block",
+   "size": [
+    0.0582,
+    0.0241,
+    0.0289
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_020",
+   "idx": 0,
+   "family": "block",
+   "name": "rectangular block",
+   "size": [
+    0.0602,
+    0.0305,
+    0.0297
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_023",
+   "idx": 0,
+   "family": "block",
+   "name": "cylinder block",
+   "size": [
+    0.0298,
+    0.0298,
+    0.0598
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_024",
+   "idx": 0,
+   "family": "block",
+   "name": "cylinder block",
+   "size": [
+    0.0498,
+    0.0502,
+    0.025
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_026",
+   "idx": 0,
+   "family": "block",
+   "name": "cone block",
+   "size": [
+    0.0497,
+    0.0495,
+    0.0749
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_057",
+   "idx": 0,
+   "family": "toy",
+   "name": "fish peg",
+   "size": [
+    0.0176,
+    0.0176,
+    0.0304
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_058",
+   "idx": 0,
+   "family": "toy",
+   "name": "fish peg",
+   "size": [
+    0.0176,
+    0.0176,
+    0.0304
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_059",
+   "idx": 0,
+   "family": "toy",
+   "name": "fish peg",
+   "size": [
+    0.0176,
+    0.0176,
+    0.0304
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_060",
+   "idx": 0,
+   "family": "toy",
+   "name": "fish peg",
+   "size": [
+    0.0176,
+    0.0176,
+    0.0304
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_061",
+   "idx": 0,
+   "family": "toy",
+   "name": "fish peg",
+   "size": [
+    0.0176,
+    0.0176,
+    0.0304
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_072",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_073",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_074",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_076",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_077",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_078",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_080",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_081",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_082",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_084",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_085",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_086",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_088",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_089",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_090",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_092",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_093",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_094",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_096",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_097",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_098",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_100",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_101",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_102",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_104",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_105",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_106",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_108",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_109",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.04,
+    0.04,
+    0.04
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_building_blocks_benchmark_building_blocks_110",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.05,
+    0.05,
+    0.05
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_016",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0898,
+    0.0509
+   ],
+   "mass": 0.1396
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_017",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0628,
+    0.095,
+    0.0545
+   ],
+   "mass": 0.1704
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_019",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0663,
+    0.1006,
+    0.0572
+   ],
+   "mass": 0.1997
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_020",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0662,
+    0.1014,
+    0.0577
+   ],
+   "mass": 0.2029
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_022",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0898,
+    0.0509
+   ],
+   "mass": 0.1396
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_023",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0628,
+    0.095,
+    0.0545
+   ],
+   "mass": 0.1704
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_025",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0898,
+    0.0509
+   ],
+   "mass": 0.1396
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_026",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0628,
+    0.095,
+    0.0545
+   ],
+   "mass": 0.1704
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_028",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0654,
+    0.0509
+   ],
+   "mass": 0.1016
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_029",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0654,
+    0.0509
+   ],
+   "mass": 0.1016
+  },
+  {
+   "cat": "geniesim_benchmark_carton_benchmark_carton_030",
+   "idx": 0,
+   "family": "box",
+   "name": "parcel box",
+   "size": [
+    0.0584,
+    0.0654,
+    0.0509
+   ],
+   "mass": 0.1016
+  },
+  {
+   "cat": "geniesim_benchmark_ceiling_light_benchmark_ceiling_light_000",
+   "idx": 0,
+   "family": "lamp",
+   "name": "ceiling light",
+   "size": [
+    0.052,
+    0.052,
+    0.025
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_000",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess pawn",
+   "size": [
+    0.029,
+    0.029,
+    0.0565
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_001",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess rook",
+   "size": [
+    0.0338,
+    0.0338,
+    0.0664
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_002",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess knight",
+   "size": [
+    0.0337,
+    0.0389,
+    0.071
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_003",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess bishop",
+   "size": [
+    0.0338,
+    0.0338,
+    0.08
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_004",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess queen",
+   "size": [
+    0.0391,
+    0.0391,
+    0.095
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_005",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess king",
+   "size": [
+    0.0391,
+    0.0391,
+    0.1085
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_006",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess pawn",
+   "size": [
+    0.029,
+    0.029,
+    0.0565
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_007",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess rook",
+   "size": [
+    0.0338,
+    0.0338,
+    0.0664
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_008",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess knight",
+   "size": [
+    0.0337,
+    0.0389,
+    0.071
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_009",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess bishop",
+   "size": [
+    0.0338,
+    0.0338,
+    0.08
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_010",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess queen",
+   "size": [
+    0.0391,
+    0.0391,
+    0.095
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_chess_benchmark_chess_011",
+   "idx": 0,
+   "family": "game piece",
+   "name": "chess king",
+   "size": [
+    0.0391,
+    0.0391,
+    0.1085
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cigarette_benchmark_cigarette_001",
+   "idx": 0,
+   "family": "cigarettes",
+   "name": "cigarette pack",
+   "size": [
+    0.0237,
+    0.0562,
+    0.0889
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cigarette_benchmark_cigarette_002",
+   "idx": 0,
+   "family": "cigarettes",
+   "name": "cigarette pack",
+   "size": [
+    0.0241,
+    0.0566,
+    0.0894
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cigarette_benchmark_cigarette_003",
+   "idx": 0,
+   "family": "cigarettes",
+   "name": "cigarette pack",
+   "size": [
+    0.0277,
+    0.0568,
+    0.089
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cigarette_benchmark_cigarette_004",
+   "idx": 0,
+   "family": "cigarettes",
+   "name": "cigarette pack",
+   "size": [
+    0.0271,
+    0.0568,
+    0.0897
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cigarette_benchmark_cigarette_005",
+   "idx": 0,
+   "family": "cigarettes",
+   "name": "cigarette pack",
+   "size": [
+    0.0239,
+    0.0561,
+    0.089
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cleaning_products_benchmark_cleaning_products_005",
+   "idx": 0,
+   "family": "cleaning supply",
+   "name": "cleaner bottle",
+   "size": [
+    0.0458,
+    0.0461,
+    0.1698
+   ],
+   "mass": 0.1877
+  },
+  {
+   "cat": "geniesim_benchmark_cleaning_products_benchmark_cleaning_products_006",
+   "idx": 0,
+   "family": "cleaning supply",
+   "name": "shampoo bottle",
+   "size": [
+    0.0281,
+    0.0506,
+    0.1267
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cleaning_products_benchmark_cleaning_products_010",
+   "idx": 0,
+   "family": "cleaning supply",
+   "name": "toothpaste box",
+   "size": [
+    0.0395,
+    0.1924,
+    0.0566
+   ],
+   "mass": 0.2252
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_001",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "dropper bottle",
+   "size": [
+    0.0514,
+    0.0514,
+    0.1808
+   ],
+   "mass": 0.2504
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_003",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "cream jar",
+   "size": [
+    0.053,
+    0.053,
+    0.0432
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_005",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "perfume bottle",
+   "size": [
+    0.0437,
+    0.0485,
+    0.1188
+   ],
+   "mass": 0.1319
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_006",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "toner bottle",
+   "size": [
+    0.0463,
+    0.0463,
+    0.1564
+   ],
+   "mass": 0.1753
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_007",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "pump bottle",
+   "size": [
+    0.0477,
+    0.0519,
+    0.1655
+   ],
+   "mass": 0.2143
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_008",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "pump bottle",
+   "size": [
+    0.0656,
+    0.0656,
+    0.1906
+   ],
+   "mass": 0.4297
+  },
+  {
+   "cat": "geniesim_benchmark_cosmetics_benchmark_cosmetics_009",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "cosmetic tube",
+   "size": [
+    0.0427,
+    0.0773,
+    0.1842
+   ],
+   "mass": 0.3183
+  },
+  {
+   "cat": "geniesim_benchmark_cup_benchmark_cup_105",
+   "idx": 0,
+   "family": "cup",
+   "name": "paper cup",
+   "size": [
+    0.0634,
+    0.0634,
+    0.0783
+   ],
+   "mass": 0.165
+  },
+  {
+   "cat": "geniesim_benchmark_cup_benchmark_cup_106",
+   "idx": 0,
+   "family": "cup",
+   "name": "paper cup",
+   "size": [
+    0.0508,
+    0.0508,
+    0.0626
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_docking_station_benchmark_docking_station_000",
+   "idx": 0,
+   "family": "electronics",
+   "name": "USB hub",
+   "size": [
+    0.0706,
+    0.0331,
+    0.0314
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_docking_station_benchmark_docking_station_001",
+   "idx": 0,
+   "family": "electronics",
+   "name": "USB hub",
+   "size": [
+    0.0703,
+    0.0242,
+    0.0211
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_docking_station_benchmark_docking_station_002",
+   "idx": 0,
+   "family": "electronics",
+   "name": "USB hub",
+   "size": [
+    0.0703,
+    0.0242,
+    0.0211
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_docking_station_benchmark_docking_station_003",
+   "idx": 0,
+   "family": "electronics",
+   "name": "USB hub",
+   "size": [
+    0.0706,
+    0.0331,
+    0.0314
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_docking_station_benchmark_docking_station_004",
+   "idx": 0,
+   "family": "electronics",
+   "name": "USB hub",
+   "size": [
+    0.0482,
+    0.0511,
+    0.0211
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_electrical_appliance_benchmark_electrical_appliance_006",
+   "idx": 0,
+   "family": "electronics",
+   "name": "power bank",
+   "size": [
+    0.0378,
+    0.0713,
+    0.1607
+   ],
+   "mass": 0.2269
+  },
+  {
+   "cat": "geniesim_benchmark_electrical_appliance_benchmark_electrical_appliance_009",
+   "idx": 0,
+   "family": "electronics",
+   "name": "power bank",
+   "size": [
+    0.0203,
+    0.065,
+    0.0954
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_electrical_appliance_benchmark_electrical_appliance_010",
+   "idx": 0,
+   "family": "electronics",
+   "name": "power bank",
+   "size": [
+    0.0378,
+    0.0713,
+    0.1233
+   ],
+   "mass": 0.1742
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_026",
+   "idx": 0,
+   "family": "block",
+   "name": "letter A cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_027",
+   "idx": 0,
+   "family": "block",
+   "name": "letter B cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_028",
+   "idx": 0,
+   "family": "block",
+   "name": "letter C cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_029",
+   "idx": 0,
+   "family": "block",
+   "name": "letter D cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_030",
+   "idx": 0,
+   "family": "block",
+   "name": "letter E cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_031",
+   "idx": 0,
+   "family": "block",
+   "name": "letter F cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_032",
+   "idx": 0,
+   "family": "block",
+   "name": "letter G cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_033",
+   "idx": 0,
+   "family": "block",
+   "name": "letter H cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_034",
+   "idx": 0,
+   "family": "block",
+   "name": "letter I cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_035",
+   "idx": 0,
+   "family": "block",
+   "name": "letter J cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_036",
+   "idx": 0,
+   "family": "block",
+   "name": "letter K cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_037",
+   "idx": 0,
+   "family": "block",
+   "name": "letter L cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_038",
+   "idx": 0,
+   "family": "block",
+   "name": "letter M cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_039",
+   "idx": 0,
+   "family": "block",
+   "name": "letter N cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_040",
+   "idx": 0,
+   "family": "block",
+   "name": "letter O cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_041",
+   "idx": 0,
+   "family": "block",
+   "name": "letter P cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_042",
+   "idx": 0,
+   "family": "block",
+   "name": "letter Q cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_043",
+   "idx": 0,
+   "family": "block",
+   "name": "letter R cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_044",
+   "idx": 0,
+   "family": "block",
+   "name": "letter S cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_045",
+   "idx": 0,
+   "family": "block",
+   "name": "letter T cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_046",
+   "idx": 0,
+   "family": "block",
+   "name": "letter U cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_047",
+   "idx": 0,
+   "family": "block",
+   "name": "letter V cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_048",
+   "idx": 0,
+   "family": "block",
+   "name": "letter W cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_049",
+   "idx": 0,
+   "family": "block",
+   "name": "letter X cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_050",
+   "idx": 0,
+   "family": "block",
+   "name": "letter Y cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_letter_benchmark_letter_051",
+   "idx": 0,
+   "family": "block",
+   "name": "letter Z cube",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_000",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "red light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_001",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "mint green light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_002",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "blue light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_003",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "yellow light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_004",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "orange light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_005",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "purple light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_006",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "aqua light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_007",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "sky blue light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_008",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "pink light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_light_bulb_benchmark_light_bulb_009",
+   "idx": 0,
+   "family": "light bulb",
+   "name": "white light bulb",
+   "size": [
+    0.061,
+    0.061,
+    0.1062
+   ],
+   "mass": 0.2069
+  },
+  {
+   "cat": "geniesim_benchmark_medicine_bottle_benchmark_medicine_bottle_000",
+   "idx": 0,
+   "family": "bottle",
+   "name": "supplement bottle",
+   "size": [
+    0.0615,
+    0.0621,
+    0.1103
+   ],
+   "mass": 0.2206
+  },
+  {
+   "cat": "geniesim_benchmark_mouse_benchmark_mouse_000",
+   "idx": 0,
+   "family": "electronics",
+   "name": "mouse",
+   "size": [
+    0.0879,
+    0.0595,
+    0.0293
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_network_device_benchmark_network_device_001",
+   "idx": 0,
+   "family": "electronics",
+   "name": "network connector",
+   "size": [
+    0.0708,
+    0.0213,
+    0.0252
+   ],
+   "mass": 0.1045
+  },
+  {
+   "cat": "geniesim_benchmark_plug_benchmark_plug_008",
+   "idx": 0,
+   "family": "plug",
+   "name": "three-pin plug",
+   "size": [
+    0.0712,
+    0.0275,
+    0.0307
+   ],
+   "mass": 0.1612
+  },
+  {
+   "cat": "geniesim_benchmark_rubik_cube_benchmark_rubik_cube_001",
+   "idx": 0,
+   "family": "toy",
+   "name": "Rubik's cube",
+   "size": [
+    0.057,
+    0.057,
+    0.057
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_seasoning_bottle_benchmark_seasoning_bottle_004",
+   "idx": 0,
+   "family": "condiment",
+   "name": "seasoning shaker",
+   "size": [
+    0.0437,
+    0.0437,
+    0.1106
+   ],
+   "mass": 0.1105
+  },
+  {
+   "cat": "geniesim_benchmark_seasoning_bottle_benchmark_seasoning_bottle_005",
+   "idx": 0,
+   "family": "condiment",
+   "name": "cumin powder",
+   "size": [
+    0.046,
+    0.046,
+    0.1057
+   ],
+   "mass": 0.1169
+  },
+  {
+   "cat": "geniesim_benchmark_seasoning_bottle_benchmark_seasoning_bottle_006",
+   "idx": 0,
+   "family": "condiment",
+   "name": "barbecue seasoning",
+   "size": [
+    0.046,
+    0.046,
+    0.1057
+   ],
+   "mass": 0.1169
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_000",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "lotion bottle",
+   "size": [
+    0.0296,
+    0.0579,
+    0.13
+   ],
+   "mass": 0.1168
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_004",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "kids lotion",
+   "size": [
+    0.0451,
+    0.0729,
+    0.1288
+   ],
+   "mass": 0.2216
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_005",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "kids face wash",
+   "size": [
+    0.0336,
+    0.0524,
+    0.0936
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_009",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "SOD lotion",
+   "size": [
+    0.0305,
+    0.0611,
+    0.1305
+   ],
+   "mass": 0.1272
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_010",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "Pond's face wash",
+   "size": [
+    0.0487,
+    0.0765,
+    0.1539
+   ],
+   "mass": 0.3007
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_011",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "Clean & Clear cleanser",
+   "size": [
+    0.0395,
+    0.0604,
+    0.1677
+   ],
+   "mass": 0.2097
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_012",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "Pond's rice face wash",
+   "size": [
+    0.0488,
+    0.0777,
+    0.1546
+   ],
+   "mass": 0.307
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_013",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "hand cream",
+   "size": [
+    0.0341,
+    0.0532,
+    0.1246
+   ],
+   "mass": 0.1184
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_014",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "hand sanitizer",
+   "size": [
+    0.0339,
+    0.0527,
+    0.115
+   ],
+   "mass": 0.1076
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_015",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "slim tube",
+   "size": [
+    0.0322,
+    0.0344,
+    0.1531
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_skincare_products_benchmark_skincare_products_016",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "white lotion bottle",
+   "size": [
+    0.0267,
+    0.0592,
+    0.13
+   ],
+   "mass": 0.1075
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_214",
+   "idx": 0,
+   "family": "snack",
+   "name": "RITZ crackers",
+   "size": [
+    0.056,
+    0.1005,
+    0.1389
+   ],
+   "mass": 0.4095
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_215",
+   "idx": 0,
+   "family": "snack",
+   "name": "Danisa cookies",
+   "size": [
+    0.0432,
+    0.1429,
+    0.1469
+   ],
+   "mass": 0.4742
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_219",
+   "idx": 0,
+   "family": "snack",
+   "name": "Dove chocolate",
+   "size": [
+    0.0307,
+    0.113,
+    0.1128
+   ],
+   "mass": 0.2051
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_243",
+   "idx": 0,
+   "family": "snack",
+   "name": "fish and almond snack",
+   "size": [
+    0.0466,
+    0.1208,
+    0.164
+   ],
+   "mass": 0.4873
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_246",
+   "idx": 0,
+   "family": "snack",
+   "name": "ham sausage",
+   "size": [
+    0.129,
+    0.0564,
+    0.0328
+   ],
+   "mass": 0.125
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_253",
+   "idx": 0,
+   "family": "snack",
+   "name": "strawberry mousse cake",
+   "size": [
+    0.0706,
+    0.0642,
+    0.0747
+   ],
+   "mass": 0.1771
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_254",
+   "idx": 0,
+   "family": "snack",
+   "name": "mango mousse cake",
+   "size": [
+    0.0706,
+    0.0642,
+    0.0747
+   ],
+   "mass": 0.1771
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_255",
+   "idx": 0,
+   "family": "snack",
+   "name": "matcha mousse cake",
+   "size": [
+    0.074,
+    0.0642,
+    0.0744
+   ],
+   "mass": 0.1848
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_257",
+   "idx": 0,
+   "family": "snack",
+   "name": "blue mousse cake",
+   "size": [
+    0.074,
+    0.0642,
+    0.0744
+   ],
+   "mass": 0.1848
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_258",
+   "idx": 0,
+   "family": "snack",
+   "name": "chocolate mousse cake",
+   "size": [
+    0.074,
+    0.0642,
+    0.0744
+   ],
+   "mass": 0.1848
+  },
+  {
+   "cat": "geniesim_benchmark_snack_benchmark_snack_259",
+   "idx": 0,
+   "family": "snack",
+   "name": "berry mousse cake",
+   "size": [
+    0.0756,
+    0.0642,
+    0.0695
+   ],
+   "mass": 0.1763
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_004",
+   "idx": 0,
+   "family": "stationery",
+   "name": "glue bottle",
+   "size": [
+    0.0262,
+    0.0505,
+    0.1151
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_006",
+   "idx": 0,
+   "family": "stationery",
+   "name": "glue stick",
+   "size": [
+    0.0278,
+    0.0278,
+    0.1001
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_007",
+   "idx": 0,
+   "family": "stationery",
+   "name": "glue stick",
+   "size": [
+    0.0219,
+    0.0219,
+    0.1141
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_008",
+   "idx": 0,
+   "family": "stationery",
+   "name": "stapler",
+   "size": [
+    0.04,
+    0.1417,
+    0.0608
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_009",
+   "idx": 0,
+   "family": "stationery",
+   "name": "stapler",
+   "size": [
+    0.0353,
+    0.1336,
+    0.0617
+   ],
+   "mass": 0.001
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_016",
+   "idx": 0,
+   "family": "stationery",
+   "name": "stapler",
+   "size": [
+    0.0197,
+    0.1189,
+    0.0357
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_017",
+   "idx": 0,
+   "family": "stationery",
+   "name": "glue stick",
+   "size": [
+    0.0274,
+    0.0274,
+    0.1073
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_018",
+   "idx": 0,
+   "family": "stationery",
+   "name": "pencil case",
+   "size": [
+    0.0606,
+    0.2,
+    0.0943
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_stationery_benchmark_stationery_021",
+   "idx": 0,
+   "family": "stationery",
+   "name": "pen holder",
+   "size": [
+    0.0607,
+    0.0607,
+    0.0796
+   ],
+   "mass": 0.1604
+  },
+  {
+   "cat": "geniesim_benchmark_toiletries_benchmark_toiletries_009",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "face wash",
+   "size": [
+    0.034,
+    0.0598,
+    0.1401
+   ],
+   "mass": 0.1492
+  },
+  {
+   "cat": "geniesim_benchmark_toy_benchmark_toy_024",
+   "idx": 0,
+   "family": "toy",
+   "name": "Labubu figure",
+   "size": [
+    0.0255,
+    0.0281,
+    0.0556
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_toy_benchmark_toy_025",
+   "idx": 0,
+   "family": "toy",
+   "name": "Labubu figure",
+   "size": [
+    0.0383,
+    0.0421,
+    0.0761
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_toy_benchmark_toy_026",
+   "idx": 0,
+   "family": "toy",
+   "name": "doll figure",
+   "size": [
+    0.0363,
+    0.0375,
+    0.0602
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_toy_benchmark_toy_027",
+   "idx": 0,
+   "family": "toy",
+   "name": "Labubu figure",
+   "size": [
+    0.0296,
+    0.0374,
+    0.0696
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_toy_benchmark_toy_028",
+   "idx": 0,
+   "family": "toy",
+   "name": "Oshawott figure",
+   "size": [
+    0.0554,
+    0.0649,
+    0.077
+   ],
+   "mass": 0.1448
+  },
+  {
+   "cat": "geniesim_benchmark_toy_car_benchmark_toy_car_018",
+   "idx": 0,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.0849,
+    0.0414,
+    0.0329
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_benchmark_trash_benchmark_trash_024",
+   "idx": 0,
+   "family": "food",
+   "name": "fried chicken",
+   "size": [
+    0.0466,
+    0.1038,
+    0.0469
+   ],
+   "mass": 0.1188
+  },
+  {
+   "cat": "geniesim_benchmark_trash_benchmark_trash_027",
+   "idx": 0,
+   "family": "food",
+   "name": "fried chicken",
+   "size": [
+    0.046,
+    0.0713,
+    0.0347
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_001",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk tea bottle",
+   "size": [
+    0.0617,
+    0.0615,
+    0.1321
+   ],
+   "mass": 0.2623
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_002",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk tea bottle",
+   "size": [
+    0.0554,
+    0.0553,
+    0.1642
+   ],
+   "mass": 0.2636
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_003",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk bottle",
+   "size": [
+    0.0499,
+    0.0654,
+    0.1697
+   ],
+   "mass": 0.2899
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_004",
+   "idx": 0,
+   "family": "bottle",
+   "name": "yogurt bottle",
+   "size": [
+    0.0538,
+    0.0538,
+    0.1238
+   ],
+   "mass": 0.1878
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_005",
+   "idx": 0,
+   "family": "bottle",
+   "name": "yogurt bottle",
+   "size": [
+    0.0538,
+    0.0538,
+    0.1238
+   ],
+   "mass": 0.1878
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_006",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0597,
+    0.0597,
+    0.1581
+   ],
+   "mass": 0.2949
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_007",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.05,
+    0.05,
+    0.1546
+   ],
+   "mass": 0.202
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_008",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0487,
+    0.0598,
+    0.1669
+   ],
+   "mass": 0.2548
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_009",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0487,
+    0.0598,
+    0.1669
+   ],
+   "mass": 0.2548
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_010",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk tea bottle",
+   "size": [
+    0.0554,
+    0.0553,
+    0.1642
+   ],
+   "mass": 0.2636
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_011",
+   "idx": 0,
+   "family": "bottle",
+   "name": "coconut water bottle",
+   "size": [
+    0.053,
+    0.053,
+    0.1842
+   ],
+   "mass": 0.2706
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_012",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk drink bottle",
+   "size": [
+    0.0551,
+    0.0551,
+    0.1297
+   ],
+   "mass": 0.2065
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_013",
+   "idx": 0,
+   "family": "bottle",
+   "name": "coffee bottle",
+   "size": [
+    0.0552,
+    0.0564,
+    0.1529
+   ],
+   "mass": 0.2493
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_014",
+   "idx": 0,
+   "family": "bottle",
+   "name": "coffee bottle",
+   "size": [
+    0.0552,
+    0.0564,
+    0.1529
+   ],
+   "mass": 0.2493
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_015",
+   "idx": 0,
+   "family": "bottle",
+   "name": "milk drink bottle",
+   "size": [
+    0.0474,
+    0.0474,
+    0.149
+   ],
+   "mass": 0.1754
+  },
+  {
+   "cat": "geniesim_genie_beverage_bottle_genie_beverage_bottle_016",
+   "idx": 0,
+   "family": "bottle",
+   "name": "oat drink bottle",
+   "size": [
+    0.0648,
+    0.065,
+    0.1401
+   ],
+   "mass": 0.3092
+  },
+  {
+   "cat": "geniesim_genie_blocks",
+   "idx": 0,
+   "family": "block",
+   "name": "cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.0608
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_genie_cola",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0646,
+    0.0646,
+    0.1152
+   ],
+   "mass": 0.2517
+  },
+  {
+   "cat": "geniesim_genie_cookie",
+   "idx": 0,
+   "family": "food",
+   "name": "panettone box",
+   "size": [
+    0.035,
+    0.155,
+    0.12
+   ],
+   "mass": 0.3409
+  },
+  {
+   "cat": "geniesim_genie_facecleaner",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "face wash tube",
+   "size": [
+    0.034,
+    0.0598,
+    0.1401
+   ],
+   "mass": 0.1492
+  },
+  {
+   "cat": "geniesim_genie_juice",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0487,
+    0.0598,
+    0.1669
+   ],
+   "mass": 0.2548
+  },
+  {
+   "cat": "geniesim_genie_mouse",
+   "idx": 0,
+   "family": "electronics",
+   "name": "computer mouse",
+   "size": [
+    0.0879,
+    0.0595,
+    0.0293
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_genie_papercup",
+   "idx": 0,
+   "family": "cup",
+   "name": "paper cup",
+   "size": [
+    0.0634,
+    0.0634,
+    0.0783
+   ],
+   "mass": 0.165
+  },
+  {
+   "cat": "geniesim_genie_sponge",
+   "idx": 0,
+   "family": "cleaning supply",
+   "name": "scrub sponge",
+   "size": [
+    0.0816,
+    0.0564,
+    0.0299
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_genie_sprite",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0659,
+    0.0657,
+    0.1138
+   ],
+   "mass": 0.2581
+  },
+  {
+   "cat": "geniesim_iros_beverage_bottle_iros_beverage_bottle_000",
+   "idx": 0,
+   "family": "can",
+   "name": "energy drink can",
+   "size": [
+    0.0641,
+    0.0642,
+    0.0901
+   ],
+   "mass": 0.1941
+  },
+  {
+   "cat": "geniesim_iros_beverage_bottle_iros_beverage_bottle_001",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0554,
+    0.0555,
+    0.1413
+   ],
+   "mass": 0.2275
+  },
+  {
+   "cat": "geniesim_iros_beverage_bottle_iros_beverage_bottle_002",
+   "idx": 0,
+   "family": "bottle",
+   "name": "juice bottle",
+   "size": [
+    0.0487,
+    0.0598,
+    0.1669
+   ],
+   "mass": 0.2548
+  },
+  {
+   "cat": "geniesim_iros_beverage_bottle_iros_beverage_bottle_003",
+   "idx": 0,
+   "family": "bottle",
+   "name": "drink bottle",
+   "size": [
+    0.0673,
+    0.0673,
+    0.1687
+   ],
+   "mass": 0.4003
+  },
+  {
+   "cat": "geniesim_iros_fork_iros_fork_002",
+   "idx": 0,
+   "family": "utensil",
+   "name": "spoon",
+   "size": [
+    0.1936,
+    0.0402,
+    0.0299
+   ],
+   "mass": 0.1217
+  },
+  {
+   "cat": "geniesim_iros_hand_cream_iros_hand_cream_000",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "hand cream tube",
+   "size": [
+    0.0225,
+    0.0398,
+    0.1125
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_iros_hand_cream_iros_hand_cream_003",
+   "idx": 0,
+   "family": "cosmetics",
+   "name": "cleanser tube",
+   "size": [
+    0.0435,
+    0.0771,
+    0.1503
+   ],
+   "mass": 0.264
+  },
+  {
+   "cat": "geniesim_iros_magic_cube_iros_magic_cube_000",
+   "idx": 0,
+   "family": "toy",
+   "name": "puzzle cube",
+   "size": [
+    0.057,
+    0.057,
+    0.057
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_iros_magic_cube_iros_magic_cube_001",
+   "idx": 0,
+   "family": "toy",
+   "name": "puzzle cube",
+   "size": [
+    0.057,
+    0.057,
+    0.057
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_iros_seal_iros_seal_001",
+   "idx": 0,
+   "family": "stationery",
+   "name": "stamp",
+   "size": [
+    0.0421,
+    0.0421,
+    0.0527
+   ],
+   "mass": 0.1
+  },
+  {
+   "cat": "geniesim_iros_trash_iros_paper_cup_000",
+   "idx": 0,
+   "family": "cup",
+   "name": "crushed paper cup",
+   "size": [
+    0.0517,
+    0.102,
+    0.0836
+   ],
+   "mass": 0.2307
+  },
+  {
+   "cat": "geniesim_sft_condiment_sft_condiment_001",
+   "idx": 0,
+   "family": "condiment",
+   "name": "salt bag",
+   "size": [
+    0.0298,
+    0.1368,
+    0.1686
+   ],
+   "mass": 0.3599
+  },
+  {
+   "cat": "geniesim_sft_condiment_sft_condiment_011",
+   "idx": 0,
+   "family": "condiment",
+   "name": "sauce bottle",
+   "size": [
+    0.0494,
+    0.0494,
+    0.1582
+   ],
+   "mass": 0.202
+  },
+  {
+   "cat": "geniesim_sft_condiment_sft_condiment_012",
+   "idx": 0,
+   "family": "condiment",
+   "name": "spice jar",
+   "size": [
+    0.0535,
+    0.0535,
+    0.1139
+   ],
+   "mass": 0.1706
+  },
+  {
+   "cat": "geniesim_sft_pen_sft_pen_001",
+   "idx": 0,
+   "family": "pen",
+   "name": "marker set",
+   "size": [
+    0.0459,
+    0.0459,
+    0.1779
+   ],
+   "mass": 0.1963
+  },
+  {
+   "cat": "glass_bottle",
+   "idx": 3,
+   "family": "bottle",
+   "name": "plastic bottle",
+   "size": [
+    0.0467,
+    0.0467,
+    0.1888
+   ],
+   "mass": 0.088
+  },
+  {
+   "cat": "hammer",
+   "idx": 8,
+   "family": "hammer",
+   "name": "rubber mallet",
+   "size": [
+    0.1813,
+    0.0554,
+    0.037
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "j",
+   "idx": 0,
+   "family": "block",
+   "name": "J-shaped block",
+   "size": [
+    0.0326,
+    0.0157,
+    0.049
+   ],
+   "mass": 0.15
+  },
+  {
+   "cat": "mallet",
+   "idx": 0,
+   "family": "instrument",
+   "name": "mallet",
+   "size": [
+    0.026,
+    0.2136,
+    0.026
+   ],
+   "mass": 0.02
+  },
+  {
+   "cat": "mango_prop",
+   "idx": 0,
+   "family": "decoration",
+   "name": "mango prop",
+   "size": [
+    0.1253,
+    0.0551,
+    0.0554
+   ],
+   "mass": 0.0162
+  },
+  {
+   "cat": "marker_box",
+   "idx": 3,
+   "family": "box",
+   "name": "marker box",
+   "size": [
+    0.1144,
+    0.0599,
+    0.0282
+   ],
+   "mass": 0.0978
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 1,
+   "family": "toy",
+   "name": "nesting doll",
+   "size": [
+    0.0621,
+    0.0613,
+    0.11
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 3,
+   "family": "toy",
+   "name": "nesting doll",
+   "size": [
+    0.0395,
+    0.039,
+    0.07
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 6,
+   "family": "toy",
+   "name": "nesting doll",
+   "size": [
+    0.0614,
+    0.0614,
+    0.11
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 8,
+   "family": "toy",
+   "name": "nesting doll",
+   "size": [
+    0.0391,
+    0.0391,
+    0.07
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 12,
+   "family": "toy",
+   "name": "rubber duck",
+   "size": [
+    0.0661,
+    0.0858,
+    0.09
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "matryoshka_dolls",
+   "idx": 13,
+   "family": "toy",
+   "name": "rubber duck",
+   "size": [
+    0.0514,
+    0.0667,
+    0.07
+   ],
+   "mass": 0.05
+  },
+  {
+   "cat": "mug",
+   "idx": 4,
+   "family": "mug",
+   "name": "coffee mug",
+   "size": [
+    0.0907,
+    0.0643,
+    0.076
+   ],
+   "mass": 0.25
+  },
+  {
+   "cat": "mug",
+   "idx": 9,
+   "family": "mug",
+   "name": "wooden mug",
+   "size": [
+    0.0821,
+    0.0593,
+    0.076
+   ],
+   "mass": 0.25
+  },
+  {
+   "cat": "mug",
+   "idx": 15,
+   "family": "mug",
+   "name": "coffee mug",
+   "size": [
+    0.0907,
+    0.0643,
+    0.076
+   ],
+   "mass": 0.5
+  },
+  {
+   "cat": "o",
+   "idx": 0,
+   "family": "toy",
+   "name": "letter O",
+   "size": [
+    0.051,
+    0.0159,
+    0.051
+   ],
+   "mass": 0.08
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 0,
+   "family": "trash",
+   "name": "paper wad",
+   "size": [
+    0.0556,
+    0.0621,
+    0.039
+   ],
+   "mass": 0.006
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 1,
+   "family": "trash",
+   "name": "paper ball",
+   "size": [
+    0.0419,
+    0.0434,
+    0.0426
+   ],
+   "mass": 0.006
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 2,
+   "family": "trash",
+   "name": "paper wad",
+   "size": [
+    0.0525,
+    0.0407,
+    0.039
+   ],
+   "mass": 0.0049
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 4,
+   "family": "trash",
+   "name": "paper wad",
+   "size": [
+    0.0628,
+    0.0729,
+    0.0335
+   ],
+   "mass": 0.0078
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 5,
+   "family": "trash",
+   "name": "paper wad",
+   "size": [
+    0.0574,
+    0.0642,
+    0.0487
+   ],
+   "mass": 0.0068
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 7,
+   "family": "trash",
+   "name": "paper ball",
+   "size": [
+    0.0389,
+    0.04,
+    0.0529
+   ],
+   "mass": 0.0073
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 9,
+   "family": "trash",
+   "name": "paper ball",
+   "size": [
+    0.0552,
+    0.0571,
+    0.0362
+   ],
+   "mass": 0.0089
+  },
+  {
+   "cat": "paper_wad",
+   "idx": 10,
+   "family": "trash",
+   "name": "paper ball",
+   "size": [
+    0.0396,
+    0.0285,
+    0.0426
+   ],
+   "mass": 0.0045
+  },
+  {
+   "cat": "pen",
+   "idx": 0,
+   "family": "pen",
+   "name": "mechanical pencil",
+   "size": [
+    0.1605,
+    0.0164,
+    0.02
+   ],
+   "mass": 0.018
+  },
+  {
+   "cat": "pen",
+   "idx": 4,
+   "family": "pen",
+   "name": "fountain pen",
+   "size": [
+    0.1825,
+    0.0183,
+    0.021
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "plastic_cup",
+   "idx": 7,
+   "family": "cup",
+   "name": "plastic cup",
+   "size": [
+    0.068,
+    0.068,
+    0.15
+   ],
+   "mass": 0.0234
+  },
+  {
+   "cat": "plastic_cup",
+   "idx": 9,
+   "family": "cup",
+   "name": "plastic cup",
+   "size": [
+    0.066,
+    0.066,
+    0.089
+   ],
+   "mass": 0.06
+  },
+  {
+   "cat": "r",
+   "idx": 0,
+   "family": "toy",
+   "name": "letter R",
+   "size": [
+    0.0378,
+    0.0158,
+    0.049
+   ],
+   "mass": 0.09
+  },
+  {
+   "cat": "round_lid",
+   "idx": 0,
+   "family": "lid",
+   "name": "round cap",
+   "size": [
+    0.057,
+    0.057,
+    0.032
+   ],
+   "mass": 0.025
+  },
+  {
+   "cat": "round_lid",
+   "idx": 1,
+   "family": "lid",
+   "name": "round cap",
+   "size": [
+    0.0552,
+    0.0417,
+    0.0256
+   ],
+   "mass": 0.0173
+  },
+  {
+   "cat": "round_lid",
+   "idx": 2,
+   "family": "lid",
+   "name": "round cap",
+   "size": [
+    0.0551,
+    0.0551,
+    0.04
+   ],
+   "mass": 0.0258
+  },
+  {
+   "cat": "round_lid",
+   "idx": 4,
+   "family": "lid",
+   "name": "square cap",
+   "size": [
+    0.0656,
+    0.0656,
+    0.0272
+   ],
+   "mass": 0.0381
+  },
+  {
+   "cat": "round_lid",
+   "idx": 5,
+   "family": "lid",
+   "name": "round cap",
+   "size": [
+    0.0486,
+    0.0486,
+    0.032
+   ],
+   "mass": 0.0184
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 0,
+   "family": "bottle",
+   "name": "lab bottle",
+   "size": [
+    0.06,
+    0.0663,
+    0.1428
+   ],
+   "mass": 0.0922
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 1,
+   "family": "bottle",
+   "name": "lab bottle",
+   "size": [
+    0.067,
+    0.0669,
+    0.1729
+   ],
+   "mass": 0.1283
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 33,
+   "family": "bottle",
+   "name": "spray bottle",
+   "size": [
+    0.0447,
+    0.0663,
+    0.1912
+   ],
+   "mass": 0.0685
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 34,
+   "family": "bottle",
+   "name": "disinfectant bottle",
+   "size": [
+    0.03,
+    0.03,
+    0.1106
+   ],
+   "mass": 0.0144
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 35,
+   "family": "bottle",
+   "name": "disinfectant bottle",
+   "size": [
+    0.066,
+    0.07,
+    0.1702
+   ],
+   "mass": 0.1663
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 45,
+   "family": "box",
+   "name": "battery case",
+   "size": [
+    0.03,
+    0.065,
+    0.0226
+   ],
+   "mass": 0.0098
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 52,
+   "family": "box",
+   "name": "marker box",
+   "size": [
+    0.0367,
+    0.1009,
+    0.0697
+   ],
+   "mass": 0.0605
+  },
+  {
+   "cat": "sand3d_decor",
+   "idx": 7,
+   "family": "decor",
+   "name": "candlestick",
+   "size": [
+    0.0597,
+    0.0597,
+    0.1942
+   ],
+   "mass": 0.0687
+  },
+  {
+   "cat": "sand3d_decor",
+   "idx": 9,
+   "family": "decor",
+   "name": "candle",
+   "size": [
+    0.0601,
+    0.054,
+    0.1271
+   ],
+   "mass": 0.0582
+  },
+  {
+   "cat": "sand3d_electronics",
+   "idx": 12,
+   "family": "electronics",
+   "name": "smart switch",
+   "size": [
+    0.0169,
+    0.14,
+    0.0999
+   ],
+   "mass": 0.0592
+  },
+  {
+   "cat": "sand3d_electronics",
+   "idx": 13,
+   "family": "electronics",
+   "name": "smart switch",
+   "size": [
+    0.0999,
+    0.0171,
+    0.1
+   ],
+   "mass": 0.0426
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 2,
+   "family": "car part",
+   "name": "mega fuse",
+   "size": [
+    0.1028,
+    0.0394,
+    0.0394
+   ],
+   "mass": 0.0214
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 4,
+   "family": "car part",
+   "name": "midi fuse",
+   "size": [
+    0.029,
+    0.0666,
+    0.0289
+   ],
+   "mass": 0.0076
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 26,
+   "family": "stationery",
+   "name": "tape roll",
+   "size": [
+    0.0186,
+    0.0638,
+    0.0555
+   ],
+   "mass": 0.0123
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 27,
+   "family": "tool",
+   "name": "gun stand",
+   "size": [
+    0.0494,
+    0.1767,
+    0.1256
+   ],
+   "mass": 0.1819
+  },
+  {
+   "cat": "sand3d_fidget_toy",
+   "idx": 0,
+   "family": "toy",
+   "name": "fidget cube",
+   "size": [
+    0.062,
+    0.062,
+    0.0635
+   ],
+   "mass": 0.0558
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 30,
+   "family": "bread",
+   "name": "bread slice",
+   "size": [
+    0.062,
+    0.1578,
+    0.021
+   ],
+   "mass": 0.0347
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 51,
+   "family": "dessert",
+   "name": "cake slice",
+   "size": [
+    0.0679,
+    0.106,
+    0.1007
+   ],
+   "mass": 0.0649
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 55,
+   "family": "dessert",
+   "name": "cake bar",
+   "size": [
+    0.0523,
+    0.1197,
+    0.0706
+   ],
+   "mass": 0.0795
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 62,
+   "family": "dessert",
+   "name": "cupcake",
+   "size": [
+    0.0681,
+    0.0664,
+    0.0812
+   ],
+   "mass": 0.038
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 63,
+   "family": "dessert",
+   "name": "cupcake",
+   "size": [
+    0.0663,
+    0.0697,
+    0.0791
+   ],
+   "mass": 0.042
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 64,
+   "family": "dessert",
+   "name": "cupcake",
+   "size": [
+    0.0665,
+    0.0646,
+    0.0623
+   ],
+   "mass": 0.0351
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 105,
+   "family": "fruit",
+   "name": "apple",
+   "size": [
+    0.0633,
+    0.0622,
+    0.0689
+   ],
+   "mass": 0.0304
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 107,
+   "family": "fruit",
+   "name": "apple",
+   "size": [
+    0.0695,
+    0.0672,
+    0.0674
+   ],
+   "mass": 0.0405
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 111,
+   "family": "fruit",
+   "name": "apple",
+   "size": [
+    0.0698,
+    0.0628,
+    0.0672
+   ],
+   "mass": 0.0351
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 112,
+   "family": "fruit",
+   "name": "apple",
+   "size": [
+    0.0646,
+    0.0697,
+    0.0678
+   ],
+   "mass": 0.0373
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 147,
+   "family": "vegetable",
+   "name": "bitter melon",
+   "size": [
+    0.0372,
+    0.2,
+    0.0393
+   ],
+   "mass": 0.0315
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 150,
+   "family": "vegetable",
+   "name": "corn",
+   "size": [
+    0.0623,
+    0.1529,
+    0.062
+   ],
+   "mass": 0.0712
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 155,
+   "family": "vegetable",
+   "name": "cucumber",
+   "size": [
+    0.0381,
+    0.2,
+    0.0393
+   ],
+   "mass": 0.0397
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 157,
+   "family": "vegetable",
+   "name": "cucumber",
+   "size": [
+    0.0521,
+    0.1697,
+    0.0516
+   ],
+   "mass": 0.0548
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 161,
+   "family": "vegetable",
+   "name": "eggplant",
+   "size": [
+    0.22,
+    0.057,
+    0.045
+   ],
+   "mass": 0.0622
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 183,
+   "family": "fruit",
+   "name": "kiwi",
+   "size": [
+    0.0509,
+    0.0399,
+    0.0481
+   ],
+   "mass": 0.0124
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 202,
+   "family": "fruit",
+   "name": "lime",
+   "size": [
+    0.0639,
+    0.0719,
+    0.0612
+   ],
+   "mass": 0.0333
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 223,
+   "family": "vegetable",
+   "name": "mushroom",
+   "size": [
+    0.0502,
+    0.0441,
+    0.0355
+   ],
+   "mass": 0.0093
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 224,
+   "family": "vegetable",
+   "name": "mushroom",
+   "size": [
+    0.038,
+    0.0582,
+    0.0353
+   ],
+   "mass": 0.0078
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 233,
+   "family": "fruit",
+   "name": "orange",
+   "size": [
+    0.0531,
+    0.0543,
+    0.0378
+   ],
+   "mass": 0.0146
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 266,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1098,
+    0.06,
+    0.0492
+   ],
+   "mass": 0.0397
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 268,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1035,
+    0.0463,
+    0.036
+   ],
+   "mass": 0.021
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 272,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1096,
+    0.0679,
+    0.0579
+   ],
+   "mass": 0.0519
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 277,
+   "family": "vegetable",
+   "name": "squash",
+   "size": [
+    0.068,
+    0.1263,
+    0.0673
+   ],
+   "mass": 0.0536
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 278,
+   "family": "vegetable",
+   "name": "squash",
+   "size": [
+    0.0585,
+    0.1361,
+    0.0588
+   ],
+   "mass": 0.0618
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 288,
+   "family": "fruit",
+   "name": "tangerine",
+   "size": [
+    0.0653,
+    0.0639,
+    0.0521
+   ],
+   "mass": 0.0285
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 290,
+   "family": "fruit",
+   "name": "tangerine",
+   "size": [
+    0.0605,
+    0.0619,
+    0.042
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 292,
+   "family": "fruit",
+   "name": "tangerine",
+   "size": [
+    0.06,
+    0.0599,
+    0.0518
+   ],
+   "mass": 0.0239
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 293,
+   "family": "fruit",
+   "name": "tangerine",
+   "size": [
+    0.0528,
+    0.0487,
+    0.0522
+   ],
+   "mass": 0.0157
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 298,
+   "family": "vegetable",
+   "name": "tomato",
+   "size": [
+    0.0566,
+    0.0572,
+    0.0523
+   ],
+   "mass": 0.0213
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 16,
+   "family": "tool",
+   "name": "trim tool",
+   "size": [
+    0.0203,
+    0.1747,
+    0.0242
+   ],
+   "mass": 0.0091
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 17,
+   "family": "tool",
+   "name": "pry tool",
+   "size": [
+    0.0201,
+    0.2061,
+    0.0374
+   ],
+   "mass": 0.018
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 28,
+   "family": "tool",
+   "name": "socket",
+   "size": [
+    0.0318,
+    0.0318,
+    0.0413
+   ],
+   "mass": 0.0081
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 31,
+   "family": "tool",
+   "name": "socket",
+   "size": [
+    0.0398,
+    0.0398,
+    0.0478
+   ],
+   "mass": 0.0148
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 35,
+   "family": "tool",
+   "name": "socket",
+   "size": [
+    0.0478,
+    0.0478,
+    0.0504
+   ],
+   "mass": 0.0225
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 38,
+   "family": "tool",
+   "name": "socket",
+   "size": [
+    0.0303,
+    0.0303,
+    0.0429
+   ],
+   "mass": 0.006
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 13,
+   "family": "car part",
+   "name": "car relay",
+   "size": [
+    0.081,
+    0.056,
+    0.03
+   ],
+   "mass": 0.0236
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 15,
+   "family": "car part",
+   "name": "shaped hose",
+   "size": [
+    0.1698,
+    0.0523,
+    0.0271
+   ],
+   "mass": 0.0358
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 27,
+   "family": "car part",
+   "name": "idler pulley",
+   "size": [
+    0.06,
+    0.06,
+    0.0451
+   ],
+   "mass": 0.0207
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 35,
+   "family": "car part",
+   "name": "chain tensioner",
+   "size": [
+    0.1131,
+    0.0598,
+    0.0402
+   ],
+   "mass": 0.0232
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 1,
+   "family": "medical supply",
+   "name": "bandage roll",
+   "size": [
+    0.044,
+    0.044,
+    0.035
+   ],
+   "mass": 0.0129
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 2,
+   "family": "medical supply",
+   "name": "bandage roll",
+   "size": [
+    0.0444,
+    0.0444,
+    0.075
+   ],
+   "mass": 0.0285
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 6,
+   "family": "cleaning supply",
+   "name": "bar soap",
+   "size": [
+    0.06,
+    0.0938,
+    0.0325
+   ],
+   "mass": 0.0356
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 7,
+   "family": "cleaning supply",
+   "name": "bar soap",
+   "size": [
+    0.0635,
+    0.0933,
+    0.0261
+   ],
+   "mass": 0.0279
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 8,
+   "family": "cleaning supply",
+   "name": "bar soap",
+   "size": [
+    0.0537,
+    0.0939,
+    0.0331
+   ],
+   "mass": 0.0255
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 9,
+   "family": "cleaning supply",
+   "name": "bar soap",
+   "size": [
+    0.0465,
+    0.0948,
+    0.0227
+   ],
+   "mass": 0.0143
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 53,
+   "family": "cleaning",
+   "name": "soap bar",
+   "size": [
+    0.0644,
+    0.0936,
+    0.0258
+   ],
+   "mass": 0.029
+  },
+  {
+   "cat": "sand3d_medical_or_personal_care",
+   "idx": 54,
+   "family": "cleaning",
+   "name": "soap bar",
+   "size": [
+    0.0537,
+    0.094,
+    0.0345
+   ],
+   "mass": 0.0271
+  },
+  {
+   "cat": "sand3d_other",
+   "idx": 2,
+   "family": "cleaning supply",
+   "name": "cleaning sponge",
+   "size": [
+    0.059,
+    0.0796,
+    0.0231
+   ],
+   "mass": 0.0266
+  },
+  {
+   "cat": "sand3d_other",
+   "idx": 14,
+   "family": "power",
+   "name": "battery",
+   "size": [
+    0.0175,
+    0.027,
+    0.0534
+   ],
+   "mass": 0.0059
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 0,
+   "family": "medical supply",
+   "name": "bandage box",
+   "size": [
+    0.0494,
+    0.0519,
+    0.0424
+   ],
+   "mass": 0.0271
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 2,
+   "family": "bottle",
+   "name": "medicine vial",
+   "size": [
+    0.0288,
+    0.0287,
+    0.0502
+   ],
+   "mass": 0.0076
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 87,
+   "family": "cleaning supply",
+   "name": "powder canister",
+   "size": [
+    0.0664,
+    0.0663,
+    0.1783
+   ],
+   "mass": 0.1522
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 90,
+   "family": "bottle",
+   "name": "additive bottle",
+   "size": [
+    0.05,
+    0.0499,
+    0.1738
+   ],
+   "mass": 0.071
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 91,
+   "family": "bottle",
+   "name": "oil additive bottle",
+   "size": [
+    0.056,
+    0.056,
+    0.1796
+   ],
+   "mass": 0.0952
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 99,
+   "family": "can",
+   "name": "sealant can",
+   "size": [
+    0.0477,
+    0.0741,
+    0.1384
+   ],
+   "mass": 0.0999
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 102,
+   "family": "bottle",
+   "name": "threadlocker bottle",
+   "size": [
+    0.0221,
+    0.0393,
+    0.1104
+   ],
+   "mass": 0.0135
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 103,
+   "family": "tube",
+   "name": "threadlocker stick",
+   "size": [
+    0.0261,
+    0.0261,
+    0.0936
+   ],
+   "mass": 0.0119
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 112,
+   "family": "bottle",
+   "name": "glass vial",
+   "size": [
+    0.0323,
+    0.0323,
+    0.0829
+   ],
+   "mass": 0.0146
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 129,
+   "family": "bottle",
+   "name": "beer bottle",
+   "size": [
+    0.055,
+    0.055,
+    0.1993
+   ],
+   "mass": 0.0813
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 135,
+   "family": "bottle",
+   "name": "water bottle",
+   "size": [
+    0.0591,
+    0.0592,
+    0.1647
+   ],
+   "mass": 0.0861
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 138,
+   "family": "bottle",
+   "name": "water bottle",
+   "size": [
+    0.0623,
+    0.0623,
+    0.1652
+   ],
+   "mass": 0.0968
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 142,
+   "family": "bottle",
+   "name": "water bottle",
+   "size": [
+    0.0491,
+    0.049,
+    0.1781
+   ],
+   "mass": 0.065
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 144,
+   "family": "bottle",
+   "name": "water bottle",
+   "size": [
+    0.056,
+    0.056,
+    0.1773
+   ],
+   "mass": 0.0879
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 148,
+   "family": "drink",
+   "name": "drink carton",
+   "size": [
+    0.0408,
+    0.065,
+    0.105
+   ],
+   "mass": 0.0599
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 149,
+   "family": "drink",
+   "name": "juice box",
+   "size": [
+    0.0413,
+    0.0463,
+    0.1027
+   ],
+   "mass": 0.0389
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 150,
+   "family": "drink",
+   "name": "juice box",
+   "size": [
+    0.0436,
+    0.0495,
+    0.1011
+   ],
+   "mass": 0.0397
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 152,
+   "family": "drink",
+   "name": "juice box",
+   "size": [
+    0.0427,
+    0.0475,
+    0.1054
+   ],
+   "mass": 0.0398
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 154,
+   "family": "drink",
+   "name": "juice carton",
+   "size": [
+    0.0516,
+    0.0395,
+    0.1689
+   ],
+   "mass": 0.0726
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 155,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0672,
+    0.0671,
+    0.0912
+   ],
+   "mass": 0.0767
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 157,
+   "family": "can",
+   "name": "beer can",
+   "size": [
+    0.0659,
+    0.0658,
+    0.1218
+   ],
+   "mass": 0.0958
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 158,
+   "family": "can",
+   "name": "energy drink can",
+   "size": [
+    0.0597,
+    0.0597,
+    0.1206
+   ],
+   "mass": 0.0795
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 160,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.064,
+    0.064,
+    0.1201
+   ],
+   "mass": 0.0889
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 162,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.066,
+    0.0659,
+    0.1227
+   ],
+   "mass": 0.0897
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 164,
+   "family": "can",
+   "name": "coffee can",
+   "size": [
+    0.0578,
+    0.0577,
+    0.1044
+   ],
+   "mass": 0.0625
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 165,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0541,
+    0.0541,
+    0.121
+   ],
+   "mass": 0.064
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 170,
+   "family": "bottle",
+   "name": "gin bottle",
+   "size": [
+    0.0403,
+    0.0593,
+    0.1765
+   ],
+   "mass": 0.0633
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 171,
+   "family": "bottle",
+   "name": "liquor bottle",
+   "size": [
+    0.063,
+    0.063,
+    0.1639
+   ],
+   "mass": 0.0756
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 173,
+   "family": "bottle",
+   "name": "tequila bottle",
+   "size": [
+    0.06,
+    0.079,
+    0.1789
+   ],
+   "mass": 0.1391
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 174,
+   "family": "bottle",
+   "name": "vodka bottle",
+   "size": [
+    0.0419,
+    0.0649,
+    0.1398
+   ],
+   "mass": 0.0644
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 175,
+   "family": "bottle",
+   "name": "vodka bottle",
+   "size": [
+    0.0409,
+    0.0409,
+    0.155
+   ],
+   "mass": 0.0385
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 192,
+   "family": "condiment",
+   "name": "ketchup bottle",
+   "size": [
+    0.0531,
+    0.0857,
+    0.1653
+   ],
+   "mass": 0.131
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 193,
+   "family": "condiment",
+   "name": "mustard bottle",
+   "size": [
+    0.0452,
+    0.0736,
+    0.144
+   ],
+   "mass": 0.0821
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 194,
+   "family": "condiment",
+   "name": "mayonnaise bottle",
+   "size": [
+    0.0455,
+    0.0736,
+    0.1452
+   ],
+   "mass": 0.0835
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 208,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0372,
+    0.1294,
+    0.1298
+   ],
+   "mass": 0.1562
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 209,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.035,
+    0.135,
+    0.19
+   ],
+   "mass": 0.2244
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 211,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0372,
+    0.1294,
+    0.1298
+   ],
+   "mass": 0.1562
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 212,
+   "family": "box",
+   "name": "yogurt box",
+   "size": [
+    0.0185,
+    0.1499,
+    0.0771
+   ],
+   "mass": 0.0534
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 213,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0367,
+    0.1299,
+    0.1279
+   ],
+   "mass": 0.1524
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 216,
+   "family": "box",
+   "name": "cake mix box",
+   "size": [
+    0.0601,
+    0.1507,
+    0.1801
+   ],
+   "mass": 0.4078
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 223,
+   "family": "can",
+   "name": "meat can",
+   "size": [
+    0.0538,
+    0.0943,
+    0.0499
+   ],
+   "mass": 0.057
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 251,
+   "family": "condiment",
+   "name": "mayonnaise bottle",
+   "size": [
+    0.0611,
+    0.1012,
+    0.1778
+   ],
+   "mass": 0.1611
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 256,
+   "family": "condiment",
+   "name": "jam jar",
+   "size": [
+    0.0656,
+    0.0656,
+    0.0795
+   ],
+   "mass": 0.0634
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 257,
+   "family": "condiment",
+   "name": "jam jar",
+   "size": [
+    0.0657,
+    0.0657,
+    0.0794
+   ],
+   "mass": 0.0643
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 258,
+   "family": "condiment",
+   "name": "ketchup bottle",
+   "size": [
+    0.058,
+    0.093,
+    0.1806
+   ],
+   "mass": 0.1451
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 261,
+   "family": "condiment",
+   "name": "ketchup bottle",
+   "size": [
+    0.055,
+    0.0791,
+    0.1535
+   ],
+   "mass": 0.0963
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 266,
+   "family": "condiment",
+   "name": "squeeze bottle",
+   "size": [
+    0.0552,
+    0.0552,
+    0.1901
+   ],
+   "mass": 0.0985
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 269,
+   "family": "drink",
+   "name": "milk carton",
+   "size": [
+    0.0663,
+    0.0685,
+    0.1498
+   ],
+   "mass": 0.1216
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 270,
+   "family": "drink",
+   "name": "milk carton",
+   "size": [
+    0.0605,
+    0.0605,
+    0.115
+   ],
+   "mass": 0.0915
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 276,
+   "family": "food",
+   "name": "yogurt cup",
+   "size": [
+    0.063,
+    0.063,
+    0.051
+   ],
+   "mass": 0.0321
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 277,
+   "family": "box",
+   "name": "medicine box",
+   "size": [
+    0.0349,
+    0.085,
+    0.1505
+   ],
+   "mass": 0.1116
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 282,
+   "family": "bottle",
+   "name": "glass bottle",
+   "size": [
+    0.0416,
+    0.0415,
+    0.101
+   ],
+   "mass": 0.0236
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 289,
+   "family": "bottle",
+   "name": "dropper bottle",
+   "size": [
+    0.05,
+    0.0499,
+    0.0865
+   ],
+   "mass": 0.0271
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 297,
+   "family": "bottle",
+   "name": "dropper bottle",
+   "size": [
+    0.05,
+    0.0499,
+    0.0866
+   ],
+   "mass": 0.0271
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 305,
+   "family": "bottle",
+   "name": "dropper bottle",
+   "size": [
+    0.05,
+    0.0499,
+    0.0865
+   ],
+   "mass": 0.0271
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 313,
+   "family": "bottle",
+   "name": "dropper bottle",
+   "size": [
+    0.05,
+    0.0499,
+    0.0865
+   ],
+   "mass": 0.0273
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 321,
+   "family": "jar",
+   "name": "paint jar",
+   "size": [
+    0.0448,
+    0.0448,
+    0.0421
+   ],
+   "mass": 0.0145
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 326,
+   "family": "bottle",
+   "name": "spray can",
+   "size": [
+    0.0421,
+    0.042,
+    0.1148
+   ],
+   "mass": 0.0362
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 327,
+   "family": "bottle",
+   "name": "spray can",
+   "size": [
+    0.0421,
+    0.042,
+    0.1146
+   ],
+   "mass": 0.0363
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 330,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.0356,
+    0.0694,
+    0.0214
+   ],
+   "mass": 0.0051
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 332,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.0343,
+    0.1214,
+    0.0223
+   ],
+   "mass": 0.0088
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 333,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.034,
+    0.115,
+    0.0235
+   ],
+   "mass": 0.0075
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 334,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.0342,
+    0.1149,
+    0.0238
+   ],
+   "mass": 0.0078
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 337,
+   "family": "bottle",
+   "name": "thinner can",
+   "size": [
+    0.042,
+    0.079,
+    0.1433
+   ],
+   "mass": 0.1071
+  },
+  {
+   "cat": "sand3d_power_tool",
+   "idx": 0,
+   "family": "tool",
+   "name": "spray gun",
+   "size": [
+    0.043,
+    0.1535,
+    0.153
+   ],
+   "mass": 0.1374
+  },
+  {
+   "cat": "sand3d_remote",
+   "idx": 0,
+   "family": "electronics",
+   "name": "remote control",
+   "size": [
+    0.048,
+    0.188,
+    0.0256
+   ],
+   "mass": 0.0384
+  },
+  {
+   "cat": "sand3d_stationery",
+   "idx": 8,
+   "family": "stationery",
+   "name": "tape dispenser",
+   "size": [
+    0.0629,
+    0.1569,
+    0.066
+   ],
+   "mass": 0.1283
+  },
+  {
+   "cat": "sand3d_stationery",
+   "idx": 55,
+   "family": "lid",
+   "name": "champagne cork",
+   "size": [
+    0.0252,
+    0.0253,
+    0.0417
+   ],
+   "mass": 0.005
+  },
+  {
+   "cat": "sand3d_stationery",
+   "idx": 58,
+   "family": "pen",
+   "name": "marker pen",
+   "size": [
+    0.0191,
+    0.1356,
+    0.0269
+   ],
+   "mass": 0.0074
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 19,
+   "family": "cup",
+   "name": "plastic cup",
+   "size": [
+    0.0643,
+    0.0643,
+    0.0998
+   ],
+   "mass": 0.068
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 27,
+   "family": "cup",
+   "name": "coffee cup",
+   "size": [
+    0.067,
+    0.0669,
+    0.1092
+   ],
+   "mass": 0.0646
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 29,
+   "family": "cup",
+   "name": "coffee cup",
+   "size": [
+    0.0647,
+    0.0647,
+    0.1092
+   ],
+   "mass": 0.0608
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 64,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.025,
+    0.2001,
+    0.0227
+   ],
+   "mass": 0.014
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 71,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.028,
+    0.199,
+    0.03
+   ],
+   "mass": 0.0112
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 72,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.0355,
+    0.2195,
+    0.0223
+   ],
+   "mass": 0.0139
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 103,
+   "family": "container",
+   "name": "salt shaker",
+   "size": [
+    0.0618,
+    0.0618,
+    0.1097
+   ],
+   "mass": 0.0534
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 104,
+   "family": "container",
+   "name": "salt shaker",
+   "size": [
+    0.0619,
+    0.0619,
+    0.1095
+   ],
+   "mass": 0.0533
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 105,
+   "family": "container",
+   "name": "salt shaker",
+   "size": [
+    0.0572,
+    0.0571,
+    0.1093
+   ],
+   "mass": 0.0485
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 106,
+   "family": "container",
+   "name": "salt shaker",
+   "size": [
+    0.0451,
+    0.0451,
+    0.0957
+   ],
+   "mass": 0.0426
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 109,
+   "family": "utensil",
+   "name": "metal spoon",
+   "size": [
+    0.0431,
+    0.1842,
+    0.0264
+   ],
+   "mass": 0.0122
+  },
+  {
+   "cat": "sand3d_vehicle",
+   "idx": 20,
+   "family": "auto part",
+   "name": "rack boot",
+   "size": [
+    0.0474,
+    0.0474,
+    0.1864
+   ],
+   "mass": 0.0623
+  },
+  {
+   "cat": "sand3d_vehicle",
+   "idx": 22,
+   "family": "auto part",
+   "name": "tie rod end",
+   "size": [
+    0.0535,
+    0.152,
+    0.0965
+   ],
+   "mass": 0.0678
+  },
+  {
+   "cat": "simready_dishware_glass_8oz_a01",
+   "idx": 0,
+   "family": "cup",
+   "name": "drinking glass",
+   "size": [
+    0.0662,
+    0.0662,
+    0.1004
+   ],
+   "mass": 0.1467
+  },
+  {
+   "cat": "simready_dishware_plastic_cup_a01",
+   "idx": 0,
+   "family": "cup",
+   "name": "plastic cup",
+   "size": [
+    0.0643,
+    0.0643,
+    0.0999
+   ],
+   "mass": 0.0305
+  },
+  {
+   "cat": "small_cube",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "small_cube",
+   "idx": 2,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "small_cube",
+   "idx": 5,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "small_cube",
+   "idx": 7,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "mass": 0.03
+  },
+  {
+   "cat": "soda_can",
+   "idx": 0,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0582,
+    0.0582,
+    0.139
+   ],
+   "mass": 0.27
+  },
+  {
+   "cat": "soda_can",
+   "idx": 3,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0466,
+    0.0466,
+    0.139
+   ],
+   "mass": 0.0784
+  },
+  {
+   "cat": "soda_can",
+   "idx": 7,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0667,
+    0.0667,
+    0.1275
+   ],
+   "mass": 0.0115
+  },
+  {
+   "cat": "soda_can",
+   "idx": 10,
+   "family": "can",
+   "name": "soda can",
+   "size": [
+    0.0535,
+    0.0535,
+    0.1442
+   ],
+   "mass": 0.0109
+  },
+  {
+   "cat": "tapered_cup",
+   "idx": 2,
+   "family": "cup",
+   "name": "tapered cup",
+   "size": [
+    0.0672,
+    0.0672,
+    0.0952
+   ],
+   "mass": 0.054
+  },
+  {
+   "cat": "tapered_cup",
+   "idx": 4,
+   "family": "cup",
+   "name": "tapered cup",
+   "size": [
+    0.0566,
+    0.0566,
+    0.119
+   ],
+   "mass": 0.1779
+  },
+  {
+   "cat": "tumbler",
+   "idx": 1,
+   "family": "cup",
+   "name": "tumbler",
+   "size": [
+    0.0614,
+    0.0614,
+    0.174
+   ],
+   "mass": 0.0511
+  },
+  {
+   "cat": "water_bottle",
+   "idx": 5,
+   "family": "bottle",
+   "name": "water bottle",
+   "size": [
+    0.0634,
+    0.0634,
+    0.1962
+   ],
+   "mass": 0.3465
+  },
+  {
+   "cat": "wood_block_arch",
+   "idx": 0,
+   "family": "block",
+   "name": "arch block",
+   "size": [
+    0.0601,
+    0.0297,
+    0.03
+   ],
+   "mass": 0.0246
+  },
+  {
+   "cat": "wood_block_arch",
+   "idx": 2,
+   "family": "block",
+   "name": "arch block",
+   "size": [
+    0.0601,
+    0.0297,
+    0.03
+   ],
+   "mass": 0.0246
+  },
+  {
+   "cat": "wood_block_arch",
+   "idx": 4,
+   "family": "block",
+   "name": "arch block",
+   "size": [
+    0.0601,
+    0.0297,
+    0.03
+   ],
+   "mass": 0.0246
+  },
+  {
+   "cat": "wood_block_arch",
+   "idx": 6,
+   "family": "block",
+   "name": "arch block",
+   "size": [
+    0.0601,
+    0.0297,
+    0.03
+   ],
+   "mass": 0.0246
+  },
+  {
+   "cat": "wood_block_cube",
+   "idx": 0,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_cube",
+   "idx": 2,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_cube",
+   "idx": 4,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_cube",
+   "idx": 6,
+   "family": "block",
+   "name": "cube block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_cuboid",
+   "idx": 0,
+   "family": "block",
+   "name": "cuboid block",
+   "size": [
+    0.06,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0403
+  },
+  {
+   "cat": "wood_block_cuboid",
+   "idx": 2,
+   "family": "block",
+   "name": "cuboid block",
+   "size": [
+    0.06,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0403
+  },
+  {
+   "cat": "wood_block_cuboid",
+   "idx": 4,
+   "family": "block",
+   "name": "cuboid block",
+   "size": [
+    0.06,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0403
+  },
+  {
+   "cat": "wood_block_cuboid",
+   "idx": 6,
+   "family": "block",
+   "name": "cuboid block",
+   "size": [
+    0.06,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0403
+  },
+  {
+   "cat": "wood_block_cylinder",
+   "idx": 0,
+   "family": "block",
+   "name": "tall cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.06
+   ],
+   "mass": 0.0317
+  },
+  {
+   "cat": "wood_block_cylinder",
+   "idx": 2,
+   "family": "block",
+   "name": "tall cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.06
+   ],
+   "mass": 0.0317
+  },
+  {
+   "cat": "wood_block_cylinder",
+   "idx": 4,
+   "family": "block",
+   "name": "tall cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.06
+   ],
+   "mass": 0.0317
+  },
+  {
+   "cat": "wood_block_cylinder",
+   "idx": 6,
+   "family": "block",
+   "name": "tall cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.06
+   ],
+   "mass": 0.0317
+  },
+  {
+   "cat": "wood_block_prism",
+   "idx": 0,
+   "family": "block",
+   "name": "large triangular prism block",
+   "size": [
+    0.0557,
+    0.0293,
+    0.0293
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_prism",
+   "idx": 2,
+   "family": "block",
+   "name": "large triangular prism block",
+   "size": [
+    0.0557,
+    0.0293,
+    0.0293
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_prism",
+   "idx": 4,
+   "family": "block",
+   "name": "large triangular prism block",
+   "size": [
+    0.0557,
+    0.0293,
+    0.0293
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_prism",
+   "idx": 6,
+   "family": "block",
+   "name": "large triangular prism block",
+   "size": [
+    0.0557,
+    0.0293,
+    0.0293
+   ],
+   "mass": 0.0201
+  },
+  {
+   "cat": "wood_block_short_cylinder",
+   "idx": 0,
+   "family": "block",
+   "name": "short cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0158
+  },
+  {
+   "cat": "wood_block_short_cylinder",
+   "idx": 2,
+   "family": "block",
+   "name": "short cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0158
+  },
+  {
+   "cat": "wood_block_short_cylinder",
+   "idx": 4,
+   "family": "block",
+   "name": "short cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0158
+  },
+  {
+   "cat": "wood_block_short_cylinder",
+   "idx": 6,
+   "family": "block",
+   "name": "short cylinder block",
+   "size": [
+    0.03,
+    0.03,
+    0.03
+   ],
+   "mass": 0.0158
+  },
+  {
+   "cat": "wood_block_small_prism",
+   "idx": 0,
+   "family": "block",
+   "name": "small triangular prism block",
+   "size": [
+    0.04,
+    0.03,
+    0.0215
+   ],
+   "mass": 0.0108
+  },
+  {
+   "cat": "wood_block_small_prism",
+   "idx": 2,
+   "family": "block",
+   "name": "small triangular prism block",
+   "size": [
+    0.04,
+    0.03,
+    0.0215
+   ],
+   "mass": 0.0108
+  },
+  {
+   "cat": "wood_block_small_prism",
+   "idx": 4,
+   "family": "block",
+   "name": "small triangular prism block",
+   "size": [
+    0.04,
+    0.03,
+    0.0215
+   ],
+   "mass": 0.0108
+  },
+  {
+   "cat": "wood_block_small_prism",
+   "idx": 6,
+   "family": "block",
+   "name": "small triangular prism block",
+   "size": [
+    0.04,
+    0.03,
+    0.0215
+   ],
+   "mass": 0.0108
+  },
+  {
+   "cat": "wooden_arch_block",
+   "idx": 0,
+   "family": "block",
+   "name": "arch block",
+   "size": [
+    0.0601,
+    0.0297,
+    0.03
+   ],
+   "mass": 0.0246
+  }
+ ]
+}

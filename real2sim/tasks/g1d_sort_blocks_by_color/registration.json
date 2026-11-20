@@ -1,0 +1,83 @@
+{
+  "task": "g1d_sort_blocks_by_color",
+  "name": "按颜色分拣积木",
+  "name_en": "Sort the Blocks by Colour on the Cards",
+  "definition": "桌子中间并排放两只窄木托盘，每只托盘后方平放一张分拣卡，卡上印着一种颜色（色块），两张卡不同。四块彩色实木积木散放在托盘两侧，每张卡对应两块（漆色和卡片一致），其中一块或零块放在离它托盘较远的一侧。机器人看卡片，把每块积木拿起来放进卡片和它漆色相同的那只托盘，放完两只手都松开。指令只说按卡片分拣，不点名颜色。",
+  "instructions": {
+    "count": 3,
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "success": "回合结束时：(1) 每块积木的中心都在它所属托盘外框的水平投影内、高于托盘底、低于托盘顶；所属托盘由该托盘后方卡片的颜色决定；(2) 两只夹爪都已松开（张开 ≥ 0.8）。",
+  "hand": "both",
+  "horizon_s": 60,
+  "owner": {
+    "username": "contributor",
+    "name": "种政"
+  },
+  "objects": [
+    {
+      "label": "box",
+      "count": 2,
+      "candidates": [
+        "Rigid/block_tray/00000"
+      ]
+    },
+    {
+      "label": "card",
+      "count": 2,
+      "candidates": [
+        "Rigid/block_sort_card/00000",
+        "Rigid/block_sort_card/00001",
+        "Rigid/block_sort_card/00002",
+        "Rigid/block_sort_card/00003",
+        "Rigid/block_sort_card/00004"
+      ]
+    },
+    {
+      "label": "block",
+      "count": 4,
+      "candidates": [
+        "Rigid/wood_block_cube/00001",
+        "Rigid/wood_block_cube/00002",
+        "Rigid/wood_block_cube/00004",
+        "Rigid/wood_block_cube/00005",
+        "Rigid/wood_block_cube/00007",
+        "Rigid/wood_block_short_cylinder/00001",
+        "Rigid/wood_block_short_cylinder/00002",
+        "Rigid/wood_block_short_cylinder/00004",
+        "Rigid/wood_block_short_cylinder/00005",
+        "Rigid/wood_block_short_cylinder/00007",
+        "Rigid/wood_block_half_cylinder/00001",
+        "Rigid/wood_block_half_cylinder/00002",
+        "Rigid/wood_block_half_cylinder/00004",
+        "Rigid/wood_block_half_cylinder/00005",
+        "Rigid/wood_block_half_cylinder/00007",
+        "Rigid/wood_block_small_prism/00001",
+        "Rigid/wood_block_small_prism/00002",
+        "Rigid/wood_block_small_prism/00004",
+        "Rigid/wood_block_small_prism/00005",
+        "Rigid/wood_block_small_prism/00007",
+        "Rigid/wood_block_tile/00001",
+        "Rigid/wood_block_tile/00002",
+        "Rigid/wood_block_tile/00004",
+        "Rigid/wood_block_tile/00005",
+        "Rigid/wood_block_tile/00007"
+      ]
+    }
+  ],
+  "notes": "agent 代登记：代码里已有实现（task/RoboDojo/tasks/g1d_sort_blocks_by_color.py，规则在 scripts/objects/block_sorting.py，脚本专家 scripted_demo.block_sort_actions），按代码写定义。托盘 box_0 在左、box_1 在右，卡片 card_<i> 在托盘 i 后方，积木 block_0–3。没有真机示例视频；上传的是仿真脚本专家的四视角视频（seed 1 布局 0）。",
+  "locked": true,
+  "lock_history": [
+    {
+      "action": "lock",
+      "by": "种政",
+      "at": 1793518163.6194472,
+      "note": "登记"
+    }
+  ],
+  "updated_by": "种政",
+  "updated_at": "2026-11-01 15:29:23"
+}

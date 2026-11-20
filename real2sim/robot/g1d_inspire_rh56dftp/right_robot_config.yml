@@ -1,0 +1,27 @@
+urdf_path: ./robot.urdf
+ee_joints: right_wrist_yaw_joint
+ee_link: right_inspire_base_link
+ee_type: hand
+base_link: torso_link
+arm_joints_name:
+- right_shoulder_pitch_joint
+- right_shoulder_roll_joint
+- right_shoulder_yaw_joint
+- right_elbow_joint
+- right_wrist_roll_joint
+- right_wrist_pitch_joint
+- right_wrist_yaw_joint
+gripper_joints_name: &id001
+- right_little_1_joint
+- right_ring_1_joint
+- right_middle_1_joint
+- right_index_1_joint
+- right_thumb_2_joint
+- right_thumb_1_joint
+save_gripper_joints_name: *id001
+gripper_move: {}
+gripper_bias: 0.0
+gripper_scale:
+- 0.0
+- 1.0
+camera: []

@@ -1,0 +1,31 @@
+Third-party source attribution for the four G1-D assemblies
+
+Wuji Hand2.1 / Hand2.2:
+  https://github.com/wuji-technology/wuji-description
+  commit 5c4dfa16917355d073e2e1d7e3d03897b6cf9508, MIT.
+  Original license: licenses/wuji-description/.
+
+Sharpa Wave:
+  https://github.com/sharpa-robotics/sharpa-urdf-usd-xml
+  commit 0d19cac602f46456b819e4b6a2c09a74982c9a3e, Apache-2.0.
+  Original license and NOTICE: licenses/sharpa-models/.
+
+Sharpa TacMap (external resource, not vendored into these runtime modules):
+  https://github.com/sharpa-robotics/sharpa-tacmap
+  commit e4f8827407e15625368ef0b9cf5a72c44304e16b, Apache-2.0.
+  Original license and NOTICE: licenses/sharpa-tacmap/.
+
+Inspire RH56DFTP:
+  User-supplied manufacturer package inspire_RH56DFTP.rar.
+  SHA256 fd4eb08c419f5754df87e28d160044670a07bb0338f4dc6f18415fdec5a671ab.
+  No open-source license was supplied with that archive. The repository's MIT
+  license does not relicense those manufacturer meshes or source models.
+  Their original source names and input hashes remain in each model contract.
+
+Unitree G1-D base:
+  Retained from this repository's existing g1d_v4 inputs. The complete assembly
+  records each input in input_sha256.json; no new ownership of those inputs is
+  claimed here.
+
+The immutable delivery retains the pinned manufacturer source resources and
+their original notices. Byte-preserving license copies here can have CRLF.

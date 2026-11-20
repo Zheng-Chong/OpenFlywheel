@@ -1,0 +1,16 @@
+{
+  "zh": [
+    "拿起<food>放进<basket>，提起篮子后放回桌面并松手",
+    "将<food>装入<basket>，再提起并放下篮子",
+    "把<food>放进<basket>后，提篮并放回桌上",
+    "先将<food>放入<basket>，随后提起篮子，再放下松手",
+    "拿起<food>放入<basket>，提起装有食物的篮子，最后放回桌面并松开"
+  ],
+  "en": [
+    "Pick up the <food>, put it in the <basket>, then lift the basket and set it back on the table before letting go.",
+    "Place the <food> in the <basket>, lift the basket, and put it down on the table and release it.",
+    "Put the <food> into the <basket>, then pick up the basket and set it down before releasing it.",
+    "First move the <food> into the <basket>, then lift and lower the basket onto the table and let go.",
+    "Pick up the <food> and place it inside the <basket>, then lift the loaded basket and return it to the table and release it."
+  ]
+}

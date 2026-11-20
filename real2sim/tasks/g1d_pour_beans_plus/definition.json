@@ -1,0 +1,13 @@
+{
+  "name_en": "Pour Beans Plus",
+  "definition": "桌上有两只杯子 A 和 B，A 里装着豆子（这一版是红豆，以后还会有黑豆、绿豆、大米等）。机器人两只手各拿起一只杯子（离 A 近的手拿 A），举到桌面上方，倾斜 A 把里面的豆子全部倒进 B，然后两只杯子都杯口朝上放回桌面，双手松开。A、B 每回合从能站稳、能装豆子的杯子里各选一只（物体维度 L0 是两只真机同款孪生塑料杯，其余档位不是同一个实例；训练用训练池，评测保留池只用于评测），指令里杯子随机用它的一个名称，或者按左右位置称呼。",
+  "success": "回合结束时：(1) B 的杯腔里有至少 95% 的豆子（按本回合实际豆数）；(2) 两只杯子都直立（倾角 < 15°）放回桌面（离开局高度 < 1 cm）；(3) 两只夹爪都已张开。数据采集与基准严格验收：plus_v1（g1d_pour_beans_plus.py，评测基准默认）要求全部豆子进 B；plus_v2（g1d_pour_beans_plus_v2.py）在此基础上录到松手退开后静止 90 帧且结尾双夹爪张开；plus_v3（g1d_pour_beans_plus_v3.py）保持录到结尾静止 90 帧与夹爪张开，并将进 B 比例对齐为 ≥ 95%；三种版本均要求全程两杯外壁（不含把手）相距 1 mm 以上且干扰物水平位移不超过 2 cm。",
+  "roles": [
+    {"label": "source_cup", "count": 1, "candidates": ["real2sim/tasks/g1d_pour_beans_plus/cups.json"]},
+    {"label": "target_cup", "count": 1, "candidates": ["real2sim/tasks/g1d_pour_beans_plus/cups.json"]},
+    {"label": "beans", "count": 1, "candidates": ["Fluid/wuliangye/00000"]}
+  ],
+  "hand": "both",
+  "horizon_s": 50,
+  "notes": "用户口述（2026-11-03）：能站稳、能装的杯子（scripts/objects/check_cup_holds_beans.py，127 只）作为倒豆子 Plus 的任务、数据集和评测基准；20% 的杯子只做评测，不进训练数据；任务和评测都做 5 个维度的泛化；指令随机用名称；指令是「把 A 中的豆子全部倒到 B 中」，豆子种类后续指定。双手空中对倒（真机 G1D-PourBeansPlus），倒完两杯都平稳放回桌面。杯子池和训练 / 评测划分在 cups.json（scripts/objects/cup_pool.py）。"
+}

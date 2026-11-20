@@ -1,0 +1,19 @@
+# RSI step 7 (rsi/AGENTS.md section 5.3): official RoboDojo data and every audited generated batch, mixed per batch
+# by fixed weights. Both sources are the stock OpenWAM `robodojo` reader with M_0's normalization stats, so the
+# trained model keeps the action space and normalization the eval deploy expects. Selected by
+# scripts/datagen/rsi_train.py through `hydra.searchpath`; dataset dirs and stats path are set on the command line.
+defaults:
+  - robodojo@datasets.official
+  - robodojo@datasets.generated
+  - _self_
+
+type: mixture
+weight_strategy: manual
+
+datasets:
+  official:
+    enabled: true
+    weight: 0.5
+  generated:
+    enabled: true
+    weight: 0.5

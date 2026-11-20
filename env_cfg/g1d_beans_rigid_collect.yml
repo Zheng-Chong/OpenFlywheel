@@ -1,0 +1,23 @@
+# g1d_beans_collect.yml for rigid beans (g1d_pour_beans_plus, env/scene_manager/objects/granular.py), 办公室 (real_scene1_office):
+# the sim through Fabric (g1d_beans_rigid_sim). Layouts and results stay in g1d's namespace.
+config_name: g1d
+
+config:
+  sim: g1d_beans_rigid_sim
+  scene: default
+  robot: g1d
+  camera: g1d_camera
+
+observation:
+  collect_freq: 30
+  robot:
+    joint_states: true
+    world_ee_state: true
+    ee_state: measured  # gripper state from the finger joints, not the last command (scripts/datagen/CONTRACT.md)
+  vision:
+    cameras: [cam_head, cam_left_wrist, cam_right_wrist]  # rendered cameras; the rest are skipped
+    approximate_depth: false
+    depth: false
+    intrinsic_matrix: false
+    extrinsic_matrix: false
+    shape: true

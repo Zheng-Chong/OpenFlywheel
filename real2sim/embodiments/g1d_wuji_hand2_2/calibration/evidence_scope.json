@@ -1,0 +1,54 @@
+{
+  "status": "simulation_verified_hardware_pending",
+  "tactile_mode": "十个刚体传感器垫；逐点力/温度解码待实际模块元数据",
+  "mount": {
+    "reference": "Unitree wrist palm reference",
+    "translation_m": {
+      "left": [
+        0.0415,
+        0.003,
+        0.0
+      ],
+      "right": [
+        0.0415,
+        -0.003,
+        0.0
+      ]
+    },
+    "rotation_rpy_rad": {
+      "left": [
+        0.0,
+        -1.5707963267948966,
+        0.0
+      ],
+      "right": [
+        0.0,
+        -1.5707963267948966,
+        0.0
+      ]
+    },
+    "bolt_pattern_verified": false,
+    "measured_TCP": false
+  },
+  "joint_units": "rad; lift m",
+  "motor_caps": "per-joint official URDF; USD display gains preserved",
+  "mass_inertia": "source configuration preserved, not measured; massless query frames use vendor USD numerical placeholders",
+  "head_camera": "inherited other-unit reference, not current-unit extrinsic calibration",
+  "real_SN_calibration_available": false,
+  "hardware_connected": false,
+  "native_run": "wuji22_native_corrected02",
+  "tactile_run": "wuji22_tactile_corrected02",
+  "source_commits": {
+    "wuji-description": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+    "sharpa-models": "0d19cac602f46456b819e4b6a2c09a74982c9a3e",
+    "sharpa-tacmap": "e4f8827407e15625368ef0b9cf5a72c44304e16b"
+  },
+  "preview_pose": {
+    "run": "wuji22_native_corrected02",
+    "frame": 0,
+    "phase": "zero",
+    "is_calibrated_natural_open": false
+  },
+  "orientation_audit": "validation/placement_after.json",
+  "previous_wuji_mount_invalidated": true
+}

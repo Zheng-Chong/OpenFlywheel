@@ -1,0 +1,36 @@
+{
+  "zh": [
+    "把<source_cup>里的<beans>全部倒到<target_cup>里",
+    "把<source_cup>中的<beans>都倒进<target_cup>",
+    "拿起两个杯子，把<source_cup>里的<beans>全倒进<target_cup>，再把杯子放回桌上",
+    "将<source_cup>里的<beans>一颗不剩地倒入<target_cup>",
+    "把<beans>从<source_cup>全部倒到<target_cup>里",
+    "用<source_cup>把<beans>都倒给<target_cup>，倒完把两个杯子放好",
+    "<source_cup>里的<beans>，全部倒进<target_cup>",
+    "请把<source_cup>里装的<beans>都倒到<target_cup>中，然后放下两个杯子"
+  ],
+  "en": [
+    "Pour all the <beans> from <source_cup> into <target_cup>.",
+    "Empty the <beans> in <source_cup> into <target_cup>.",
+    "Pick up both cups, pour every one of the <beans> from <source_cup> into <target_cup>, then put the cups back.",
+    "Transfer all of the <beans> from <source_cup> to <target_cup>.",
+    "Pour the <beans> out of <source_cup> into <target_cup>, all of them.",
+    "Use <source_cup> to pour all its <beans> into <target_cup> and set both cups down.",
+    "Move all the <beans> in <source_cup> over to <target_cup>.",
+    "Please pour the <beans> held in <source_cup> into <target_cup> completely, then put both cups down."
+  ],
+  "heldout": {
+    "zh": [
+      "<target_cup>需要<beans>，把<source_cup>里的全给它",
+      "<source_cup>倒空，<beans>都要进<target_cup>",
+      "把<beans>挪个地方：从<source_cup>挪到<target_cup>，一颗也别撒",
+      "让<target_cup>装下<source_cup>里所有的<beans>"
+    ],
+    "en": [
+      "<target_cup> needs the <beans>; give it everything in <source_cup>.",
+      "Empty <source_cup>: every one of the <beans> belongs in <target_cup>.",
+      "Relocate the <beans> from <source_cup> to <target_cup> without spilling any.",
+      "Make <target_cup> hold all the <beans> that are now in <source_cup>."
+    ]
+  }
+}

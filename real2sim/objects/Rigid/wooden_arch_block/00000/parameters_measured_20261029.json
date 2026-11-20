@@ -1,0 +1,51 @@
+{
+  "registration_revision": "ff33fb65e47df98cac53a62e1c55494a3c78ab537595ae5c8748367a95bc6e75",
+  "source": "user explicit conversation confirmation 2026-10-29",
+  "measured_dimensions_mm": {
+    "长度": 60.1,
+    "宽度": 29.72,
+    "高度": 30.04,
+    "最薄处": 9.58
+  },
+  "measured_mass_g": 24.6,
+  "definitions": {
+    "长度": "X envelope",
+    "宽度": "Y tunnel depth",
+    "高度": "Z envelope",
+    "最薄处": "arch apex to upper face"
+  },
+  "derived_geometry": {
+    "aperture": "semicircle through full Y depth",
+    "radius_m": 0.02046,
+    "edge_radius_measured": null
+  },
+  "unknown": [
+    "wood species",
+    "friction",
+    "elastic modulus",
+    "edge roundover radius"
+  ],
+  "inertia_basis": "uniform-density solid arch geometry scaled to measured total mass; not inertia measurement",
+  "inertia_kg_m2": [
+    [
+      3.418237804045696e-06,
+      9.443842240039738e-23,
+      1.6925875030524301e-22
+    ],
+    [
+      9.443842240039738e-23,
+      1.1778836703470846e-05,
+      3.976354627385153e-23
+    ],
+    [
+      1.6925875030524301e-22,
+      3.976354627385153e-23,
+      1.198204033942515e-05
+    ]
+  ],
+  "center_of_mass_m": [
+    1.0049711283973445e-18,
+    0.0,
+    0.0036295852299205985
+  ]
+}

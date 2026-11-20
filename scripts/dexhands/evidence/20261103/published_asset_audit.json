@@ -1,0 +1,255 @@
+{
+  "release_id": 432671890,
+  "tag": "g1d-four-hands-validation-20261103",
+  "draft": false,
+  "author": "Joker-of-Gotham",
+  "html_url": "https://github.com/Zheng-Chong/OpenFlywheel/releases/tag/g1d-four-hands-validation-20261103",
+  "all_asset_sizes_and_digests_verified": true,
+  "assets": [
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk001",
+      "id": 708662159,
+      "bytes": 200000000,
+      "sha256": "c7a125e5d1ed227f30e559521fc0256f628781c9d18d1aa0b71a186978036ab3",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk002",
+      "id": 708662174,
+      "bytes": 200000000,
+      "sha256": "028082f5eff90020fc6d3d70c4f9a81557816125e8950f02700fa6ee9483b75f",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk003",
+      "id": 708668990,
+      "bytes": 200000000,
+      "sha256": "93f1c36294ef11d0c6de3ff99bd0e9b06e452498cbfa8583a5d81da66265e9d2",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk004",
+      "id": 708669004,
+      "bytes": 200000000,
+      "sha256": "2336ca58c4dd60fcef8f8a22c74f8aa71668393bde8ada3d378cdcccf72b85fe",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk005",
+      "id": 708670604,
+      "bytes": 200000000,
+      "sha256": "a98ab2d5f7b571cf9daddc4c64782f25da9aad124bd6caab22b308dabbbf222d",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk006",
+      "id": 708672036,
+      "bytes": 200000000,
+      "sha256": "ec4c6a7703859a9a67c837d0459d4df8e773cde1859138f6a8962c51815d9adb",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk007",
+      "id": 708672451,
+      "bytes": 200000000,
+      "sha256": "af0faa61cdacad312e224b79deb7dd926078fe50e8522195c9eaeaf494a1e10a",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk008",
+      "id": 708673651,
+      "bytes": 200000000,
+      "sha256": "1b133c0b8ad08d6b3798843d4a5c0bb826e1b3fdf1bf8c9d474f4ee26fa15b93",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk009",
+      "id": 708674222,
+      "bytes": 200000000,
+      "sha256": "1839295700415730257c17af340589511ff31f52b2c4e583d758e5ff4c9d8dc9",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk010",
+      "id": 708708050,
+      "bytes": 200000000,
+      "sha256": "927f18d35184d6408d68e025cac905fceab45bbca6df2be478947d648b7dcc17",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk011",
+      "id": 708708076,
+      "bytes": 200000000,
+      "sha256": "38122b15a894f2d045a72c412c34e374266db8b38a9271209d0ce2a3ac6ae758",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk012",
+      "id": 708714450,
+      "bytes": 200000000,
+      "sha256": "644983f33a95517557b6e8dbfa14f3b328efa39c636b1ee8dce6f58b81984662",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk013",
+      "id": 708714645,
+      "bytes": 200000000,
+      "sha256": "eb6f3e83740da6ab0f977c08b38ec69aa4daa27d13f7765890a33ac5e610fef1",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk014",
+      "id": 708721007,
+      "bytes": 200000000,
+      "sha256": "b975100fe6b283c32b6e02af818e18fdeec7f030feb6e0a6ea671008a5ac9eb3",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk015",
+      "id": 708722934,
+      "bytes": 200000000,
+      "sha256": "fbbf09c036feba6e45ac9b202371017d9bc93f9961c2a6386d4ecf3383ca1d10",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk016",
+      "id": 708727476,
+      "bytes": 200000000,
+      "sha256": "a7fb762971a682826dea756b7b92d9912407ca445b098efb0d5e8d118925cbe3",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk017",
+      "id": 708733016,
+      "bytes": 200000000,
+      "sha256": "17187a541cdea5a5555becabdc7aa4e5c2edaf0748bfcdc7e6e68519d5f31fb2",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk018",
+      "id": 708755765,
+      "bytes": 200000000,
+      "sha256": "8cdbbbb4b83eb51567120aae2addbc8fe2a588708b1f09f9cd5b28d2cd052947",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk019",
+      "id": 708750896,
+      "bytes": 200000000,
+      "sha256": "cf3d56f715ec7c54ea1bb50f639393c7d81d705de79142cb4cb48a781c16f449",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk020",
+      "id": 708750953,
+      "bytes": 200000000,
+      "sha256": "c873e32f0390724ca2ee29da5838ac5e4d5735f32cfd65e41fe73846e449e5ac",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk021",
+      "id": 708755862,
+      "bytes": 200000000,
+      "sha256": "991b746fa18dd8a0e5ee2f1ba49a0b86c0f130df5d5512568fcbee06e894984d",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk022",
+      "id": 708757161,
+      "bytes": 200000000,
+      "sha256": "0df9e47fd02d0f703baa894c5631bcc2437cea915cc2de883fee45cb0048422b",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk023",
+      "id": 708758251,
+      "bytes": 200000000,
+      "sha256": "7e2aad1bcc7a3b89223b25b43fb966d7864cdc9e09175bd69432ead94a63e412",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk024",
+      "id": 708758733,
+      "bytes": 200000000,
+      "sha256": "0fb149de50d79ee98e29baa770bf012ab4c1fb895470dae15d1812a43f6aa90a",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "G1D_FourHands_Validation_20261103.zip.chunk025",
+      "id": 708759355,
+      "bytes": 2377091,
+      "sha256": "8602030712f9445489340878fe3313b5649508025d240729940080e1905302ff",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "README.txt",
+      "id": 708674706,
+      "bytes": 1181,
+      "sha256": "d19027cfae939784dc2e8c72c7aa508c02ccbbd255f708b275e81ba7cec3a2cf",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "SHA256SUMS",
+      "id": 708674687,
+      "bytes": 2825,
+      "sha256": "1343142816e8aa3e80460f485cc9655f363ab0c814c8e1d482bc98e4f2f0e0e7",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "final_validation.json",
+      "id": 705554345,
+      "bytes": 17071,
+      "sha256": "5814d860cd76a19d9ea14fb8961460e89dcfab478f94f27c615c4163af7b1cbb",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "four_hands_validation.jpg",
+      "id": 705554497,
+      "bytes": 77325,
+      "sha256": "e42d750b478fca99137c013708a32abf4aeaecb4374af67af167a085b402499d",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "integration_cpu_checks.log",
+      "id": 705554751,
+      "bytes": 833,
+      "sha256": "9c0abdd738c15a1a0c1523050437465b8ca1240910cfcbb9ac559c3b40e85898",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "integration_on_main.patch",
+      "id": 705554864,
+      "bytes": 1217301,
+      "sha256": "b72c2e05c27126c1ade57bf1fa6378fb9db2ebdd090627324422d8d9a22b82cc",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "reassemble.py",
+      "id": 705555361,
+      "bytes": 1629,
+      "sha256": "29773d48f1ea20b39870759b83a23d31f8c737644baefddecc2ee44411585669",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "release_manifest.json",
+      "id": 708674709,
+      "bytes": 4822,
+      "sha256": "ec08ebeef6b05c85b4ac4eca51c1cb72d4450d563a9df25687c3c9d4466cec19",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "selection.json",
+      "id": 705555751,
+      "bytes": 959,
+      "sha256": "c590aa8f681132f2080a716f8465354f2347cde653e7a5199df5cf243af04fb3",
+      "uploader": "Joker-of-Gotham"
+    },
+    {
+      "name": "uploaded_assets_manifest.json",
+      "id": 708674689,
+      "bytes": 5685,
+      "sha256": "34d574fbbd3b6430d0d8368d9eb2e613df926ba12f8c1ad94e4b84deeefed044",
+      "uploader": "Joker-of-Gotham"
+    }
+  ]
+}

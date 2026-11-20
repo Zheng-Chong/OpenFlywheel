@@ -1,0 +1,26 @@
+{
+  "name": "木质拱形积木 · 2026-10-29实测重建候选",
+  "kind": "刚体研究资产",
+  "status": "CPU数值复用通过；GPU运动学接口失败、机器人及完整外观待验",
+  "summary": "实测60.10×29.72×30.04mm、拱顶9.58mm、24.6g；实拍木纹。CPU实际工厂通孔/阻挡、夹块抬升/滑移、复位/复载通过，GPU标准落地通过。旧共享模型不替换。",
+  "limits": [
+    "缺背面、右端、底面及部分内拱照片；外缘细节与颜色未完整复核",
+    "木材/摩擦未标定；惯量按均匀实体计算，非实测",
+    "GPU运动学目标setter未实现，失败报告保留；CPU夹块代理不等于机器人抓取",
+    "原始木纹照片低分辨率，插值不增加真实细节；未知面保持纯色"
+  ],
+  "sources": [
+    "reference/original_20261024.jpg",
+    "reference/measurement_20261029_03.jpg"
+  ],
+  "evidence": [
+    "REPORT.md",
+    "preview/native_report.json",
+    "preview/check.json",
+    "validation/v2/report.json",
+    "validation/v3/report.json"
+  ],
+  "updated_by": "杨开元",
+  "source_asset_id": "Rigid/wooden_arch_block/00000",
+  "object_sha256": "da4d03d9040db62ceb24b1f4fecdeb830c2a504ab6ec6c6d6f4658054d8ee6c0"
+}

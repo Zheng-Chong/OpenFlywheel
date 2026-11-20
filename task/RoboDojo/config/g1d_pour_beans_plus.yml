@@ -1,0 +1,62 @@
+# G1-D 倒豆子 Plus: the beans in cup A (source_cup) all go into cup B (target_cup), both cups held up in mid-air,
+# then put back. The cups, their cavity profiles, the bean column and the instruction are drawn per layout by
+# scripts/datagen/pour_beans_plus_layouts.py (cup pool real2sim/tasks/g1d_pour_beans_plus/cups.json); the ranges below
+# only document the default twin layout (two clear plastic cups) for the random-layout path.
+Rigid:
+  -
+    common:
+      xlim: [-0.16, -0.10]
+      ylim: [-0.39, -0.31]
+      rotate_rand: False
+      rotate_deg: 0
+      relative_plane: "Table"
+      margin: 0.04
+
+    category:
+      -
+        name: "plastic_cup"
+        index: [0]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["source_cup"]
+
+  -
+    common:
+      xlim: [0.10, 0.16]
+      ylim: [-0.39, -0.31]
+      rotate_rand: False
+      rotate_deg: 0
+      relative_plane: "Table"
+      margin: 0.04
+
+    category:
+      -
+        name: "plastic_cup"
+        index: [0]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["target_cup"]
+
+Fluid:
+  -
+    common:
+      xlim: [0.0, 0.0]
+      ylim: [0.0, 0.0]
+      zlim: [-0.03, -0.03]
+      rotate_rand: False
+      relative_plane: "source_cup"
+      check_mode: "enforce"
+
+    category:
+      -
+        name: "wuliangye"
+        index: [0]
+
+    select_mode:
+      nums: [1]
+      mode: "unique"
+      label: ["beans"]

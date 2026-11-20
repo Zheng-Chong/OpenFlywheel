@@ -1,0 +1,41 @@
+# g1d_beans_collect_sim for rigid beans (env/scene_manager/objects/granular.py, thousands of rigid bodies): PhysX
+# writes the poses to Fabric, not USD. Through USD each physics step wrote every grain's pose and its change notices
+# ran in Python, ~9 s per control step for 2930 beans.
+decimation: 1
+dt: 0.0016666666666666668
+render_interval: 20
+use_fabric: true
+scene:
+  num_envs: 1
+  env_spacing: 7
+# A cup touches hundreds of beans at once. With PhysX's default 8 GPU constraint partitions those contacts do not
+# hold: beans pressed by the heap creep up to 1 mm an action into a 2-4 mm cup wall and are pushed out through it
+# (2026-11-10/12). Second-pass CCD + per-iteration external forces + >=2 velocity iterations stop 1-2 mm wall tunneling
+# and 15 Hz heap oscillation in held cups (2026-11-13, probe-vhacd2). 32 is the maximum partition count.
+physx:
+  gpu_max_num_partitions: 32
+  enable_ccd: true
+  enable_external_forces_every_iteration: true
+  min_velocity_iteration_count: 2
+# isaaclab_newton only. On the default cpu device Warp runs the solver's kernels serially: one step took minutes.
+# Each grain is a free body (nv ~ 6 x beans): MuJoCo-Warp's Newton solver builds a dense nv x nv Hessian over every
+# constraint row and did not finish the layout check in 15 min; CG steps at ~2 control steps/s. With CG, elliptic
+# cones (impratio 10 or 1000, 100 or 300 iterations) blew the scene apart when the fingers touched the cup
+# (layout 1321/0, 11-14); pyramidal cones at impratio 1 held and lifted it. The contact slots fit a cup of grains
+# (multi-CCD up to 4 per pair).
+newton:
+  device: cuda:0
+  solver:
+    solver: cg
+    cone: pyramidal
+    impratio: 1.0
+    nconmax: 16000
+    njmax: 64000
+  # Steel (newton.solver_type / ROBODOJO_NEWTON_SOLVER = steel): the default 512 free-body rows held 1/10 of the
+  # heap's contact and friction rows (5181 requested), and the cup slid off the table during the layout check.
+  # 462 grains (g1d/1320) asked for up to 16410 rows, so 16384 drops a few at peak; 24576 do not fit the PGS kernel
+  # (its CUDA module fails to load). The robot asks for 132 articulated rows at rest and up to 258 while grasping
+  # (11-14 benchmark ran with 256; 128 overflowed at once).
+  steel:
+    free_body_constraint_max: 16384
+    articulation_constraint_max: 256

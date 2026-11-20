@@ -1,0 +1,54 @@
+{
+  "status": "simulation_verified_hardware_pending",
+  "tactile_mode": "十路 240×240 TacMap 几何深度和厂家编码；原生接触力独立保存",
+  "mount": {
+    "reference": "Unitree wrist palm reference",
+    "translation_m": {
+      "left": [
+        0.0415,
+        0.003,
+        0.0
+      ],
+      "right": [
+        0.0415,
+        -0.003,
+        0.0
+      ]
+    },
+    "rotation_rpy_rad": {
+      "left": [
+        -1.5707963267948966,
+        0.0,
+        -1.5707963267948966
+      ],
+      "right": [
+        1.5707963267948966,
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    "bolt_pattern_verified": false,
+    "measured_TCP": false
+  },
+  "joint_units": "rad; lift m",
+  "motor_caps": "per-joint official URDF; USD display gains preserved",
+  "mass_inertia": "source configuration preserved, not measured; massless query frames use vendor USD numerical placeholders",
+  "head_camera": "inherited other-unit reference, not current-unit extrinsic calibration",
+  "real_SN_calibration_available": false,
+  "hardware_connected": false,
+  "native_run": "sharpa_native_final01",
+  "tactile_run": "sharpa_tactile_closed01",
+  "source_commits": {
+    "wuji-description": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+    "sharpa-models": "0d19cac602f46456b819e4b6a2c09a74982c9a3e",
+    "sharpa-tacmap": "e4f8827407e15625368ef0b9cf5a72c44304e16b"
+  },
+  "preview_pose": {
+    "run": "sharpa_thumb_review02",
+    "frame": 119,
+    "phase": "thumb_opposition_demo",
+    "is_calibrated_natural_open": false
+  },
+  "orientation_audit": "validation/placement_after.json",
+  "previous_wuji_mount_invalidated": false
+}

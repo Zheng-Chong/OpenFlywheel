@@ -1,0 +1,24 @@
+# g1d_beans_rigid_collect.yml for the grasp exam of g1d_pour_beans_plus (scripts/datagen/grasp_exam.py), 办公室
+# (real_scene1_office): the head camera only (the exam judges the grasps from the privileged poses; the episodes'
+# images are only for looking at a failure). Layouts and results stay in g1d's namespace.
+config_name: g1d
+
+config:
+  sim: g1d_beans_rigid_sim
+  scene: default
+  robot: g1d
+  camera: g1d_camera
+
+observation:
+  collect_freq: 30
+  robot:
+    joint_states: true
+    world_ee_state: true
+    ee_state: measured
+  vision:
+    cameras: [cam_head]
+    approximate_depth: false
+    depth: false
+    intrinsic_matrix: false
+    extrinsic_matrix: false
+    shape: true

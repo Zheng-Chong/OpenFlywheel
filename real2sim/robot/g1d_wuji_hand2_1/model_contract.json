@@ -1,0 +1,651 @@
+{
+  "model": "g1d_wuji_hand2_1",
+  "source_commits": {
+    "wuji-description": "5c4dfa16917355d073e2e1d7e3d03897b6cf9508",
+    "sharpa-models": "0d19cac602f46456b819e4b6a2c09a74982c9a3e",
+    "sharpa-tacmap": "e4f8827407e15625368ef0b9cf5a72c44304e16b"
+  },
+  "joint_unit": "rad",
+  "length_unit": "m",
+  "mount_status": "simulation_candidate_not_measured",
+  "physical_calibration": "pending",
+  "hand_source_preservation": "links, joint axes/origins/limits, mass/inertia and mesh bytes preserved",
+  "hands": {
+    "left": {
+      "root": "l_mount",
+      "joints": [
+        "l_thumb_cmc_flex",
+        "l_thumb_cmc_abd",
+        "l_thumb_mcp",
+        "l_thumb_ip",
+        "l_index_finger_mcp_flex",
+        "l_index_finger_mcp_abd",
+        "l_index_finger_pip",
+        "l_index_finger_dip",
+        "l_middle_finger_mcp_flex",
+        "l_middle_finger_mcp_abd",
+        "l_middle_finger_pip",
+        "l_middle_finger_dip",
+        "l_ring_finger_mcp_flex",
+        "l_ring_finger_mcp_abd",
+        "l_ring_finger_pip",
+        "l_ring_finger_dip",
+        "l_pinky_mcp_flex",
+        "l_pinky_mcp_abd",
+        "l_pinky_pip",
+        "l_pinky_dip"
+      ],
+      "limits": {
+        "l_thumb_cmc_flex": {
+          "lower": -1.187,
+          "upper": 1.291,
+          "effort": 0.6,
+          "velocity": 8.587
+        },
+        "l_thumb_cmc_abd": {
+          "lower": -1.484,
+          "upper": 0.698,
+          "effort": 0.6,
+          "velocity": 11.1
+        },
+        "l_thumb_mcp": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "l_thumb_ip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "l_index_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "l_index_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "l_index_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "l_index_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "l_middle_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "l_middle_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "l_middle_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "l_middle_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "l_ring_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "l_ring_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "l_ring_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "l_ring_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "l_pinky_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "l_pinky_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "l_pinky_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "l_pinky_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        }
+      },
+      "mount_xyz_m": [
+        0.0415,
+        0.003,
+        0.0
+      ],
+      "mount_rpy_rad": [
+        0.0,
+        -1.5707963267948966,
+        0.0
+      ],
+      "configured_mass_kg": 0.6878000000000001,
+      "mjcf_position_gains": {
+        "l_thumb_cmc_flex": {
+          "kp": 0.40844710645048043,
+          "kv": 0.020882010257063675
+        },
+        "l_thumb_cmc_abd": {
+          "kp": 0.6858601063643346,
+          "kv": 0.030610939996373314
+        },
+        "l_thumb_mcp": {
+          "kp": 0.2391112196099482,
+          "kv": 0.010181475050560962
+        },
+        "l_thumb_ip": {
+          "kp": 0.20736128319711747,
+          "kv": 0.00909698844675045
+        },
+        "l_index_finger_mcp_flex": {
+          "kp": 0.37352218155860073,
+          "kv": 0.01882274330029718
+        },
+        "l_index_finger_mcp_abd": {
+          "kp": 0.45592448909027794,
+          "kv": 0.019798167597016643
+        },
+        "l_index_finger_pip": {
+          "kp": 0.24368366649522863,
+          "kv": 0.010477031953162727
+        },
+        "l_index_finger_dip": {
+          "kp": 0.18026971340925335,
+          "kv": 0.008240212147903584
+        },
+        "l_middle_finger_mcp_flex": {
+          "kp": 0.3687093483646485,
+          "kv": 0.01848622487024593
+        },
+        "l_middle_finger_mcp_abd": {
+          "kp": 0.4164253443634641,
+          "kv": 0.018032947229953678
+        },
+        "l_middle_finger_pip": {
+          "kp": 0.22218607502059182,
+          "kv": 0.009592200014076666
+        },
+        "l_middle_finger_dip": {
+          "kp": 0.19427606072023446,
+          "kv": 0.009152994605972402
+        },
+        "l_ring_finger_mcp_flex": {
+          "kp": 0.35718151495111794,
+          "kv": 0.018376606800780005
+        },
+        "l_ring_finger_mcp_abd": {
+          "kp": 0.42977315313086895,
+          "kv": 0.01867700966212433
+        },
+        "l_ring_finger_pip": {
+          "kp": 0.24930151196247122,
+          "kv": 0.01059512121009555
+        },
+        "l_ring_finger_dip": {
+          "kp": 0.2285032688178066,
+          "kv": 0.009917602877441107
+        },
+        "l_pinky_mcp_flex": {
+          "kp": 0.3655325975433942,
+          "kv": 0.018616960278988272
+        },
+        "l_pinky_mcp_abd": {
+          "kp": 0.41393113081120425,
+          "kv": 0.018732177029667153
+        },
+        "l_pinky_pip": {
+          "kp": 0.22729367621965954,
+          "kv": 0.00951005441616486
+        },
+        "l_pinky_dip": {
+          "kp": 0.1964723550341816,
+          "kv": 0.009017295241756363
+        }
+      },
+      "vendor_urdf": "wuji-description/hand2/hand2_1/body/urdf/left.urdf"
+    },
+    "right": {
+      "root": "r_mount",
+      "joints": [
+        "r_thumb_cmc_flex",
+        "r_thumb_cmc_abd",
+        "r_thumb_mcp",
+        "r_thumb_ip",
+        "r_index_finger_mcp_flex",
+        "r_index_finger_mcp_abd",
+        "r_index_finger_pip",
+        "r_index_finger_dip",
+        "r_middle_finger_mcp_flex",
+        "r_middle_finger_mcp_abd",
+        "r_middle_finger_pip",
+        "r_middle_finger_dip",
+        "r_ring_finger_mcp_flex",
+        "r_ring_finger_mcp_abd",
+        "r_ring_finger_pip",
+        "r_ring_finger_dip",
+        "r_pinky_mcp_flex",
+        "r_pinky_mcp_abd",
+        "r_pinky_pip",
+        "r_pinky_dip"
+      ],
+      "limits": {
+        "r_thumb_cmc_flex": {
+          "lower": -1.187,
+          "upper": 1.291,
+          "effort": 0.6,
+          "velocity": 8.587
+        },
+        "r_thumb_cmc_abd": {
+          "lower": -1.484,
+          "upper": 0.698,
+          "effort": 0.6,
+          "velocity": 11.1
+        },
+        "r_thumb_mcp": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "r_thumb_ip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "r_index_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "r_index_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "r_index_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "r_index_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "r_middle_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "r_middle_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "r_middle_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "r_middle_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "r_ring_finger_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "r_ring_finger_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "r_ring_finger_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "r_ring_finger_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        },
+        "r_pinky_mcp_flex": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 2.0,
+          "velocity": 8.203
+        },
+        "r_pinky_mcp_abd": {
+          "lower": -0.698,
+          "upper": 0.698,
+          "effort": 0.2,
+          "velocity": 8.11
+        },
+        "r_pinky_pip": {
+          "lower": -1.047,
+          "upper": 2.094,
+          "effort": 0.3,
+          "velocity": 12.86
+        },
+        "r_pinky_dip": {
+          "lower": -1.047,
+          "upper": 1.57,
+          "effort": 0.3,
+          "velocity": 13.5
+        }
+      },
+      "mount_xyz_m": [
+        0.0415,
+        -0.003,
+        0.0
+      ],
+      "mount_rpy_rad": [
+        0.0,
+        -1.5707963267948966,
+        0.0
+      ],
+      "configured_mass_kg": 0.6878000000000001,
+      "mjcf_position_gains": {
+        "r_thumb_cmc_flex": {
+          "kp": 0.40844710645048043,
+          "kv": 0.020882010257063675
+        },
+        "r_thumb_cmc_abd": {
+          "kp": 0.6858601063643346,
+          "kv": 0.030610939996373314
+        },
+        "r_thumb_mcp": {
+          "kp": 0.2391112196099482,
+          "kv": 0.010181475050560962
+        },
+        "r_thumb_ip": {
+          "kp": 0.20736128319711747,
+          "kv": 0.00909698844675045
+        },
+        "r_index_finger_mcp_flex": {
+          "kp": 0.37352218155860073,
+          "kv": 0.01882274330029718
+        },
+        "r_index_finger_mcp_abd": {
+          "kp": 0.45592448909027794,
+          "kv": 0.019798167597016643
+        },
+        "r_index_finger_pip": {
+          "kp": 0.24368366649522863,
+          "kv": 0.010477031953162727
+        },
+        "r_index_finger_dip": {
+          "kp": 0.18026971340925335,
+          "kv": 0.008240212147903584
+        },
+        "r_middle_finger_mcp_flex": {
+          "kp": 0.3687093483646485,
+          "kv": 0.01848622487024593
+        },
+        "r_middle_finger_mcp_abd": {
+          "kp": 0.4164253443634641,
+          "kv": 0.018032947229953678
+        },
+        "r_middle_finger_pip": {
+          "kp": 0.22218607502059182,
+          "kv": 0.009592200014076666
+        },
+        "r_middle_finger_dip": {
+          "kp": 0.19427606072023446,
+          "kv": 0.009152994605972402
+        },
+        "r_ring_finger_mcp_flex": {
+          "kp": 0.35718151495111794,
+          "kv": 0.018376606800780005
+        },
+        "r_ring_finger_mcp_abd": {
+          "kp": 0.42977315313086895,
+          "kv": 0.01867700966212433
+        },
+        "r_ring_finger_pip": {
+          "kp": 0.24930151196247122,
+          "kv": 0.01059512121009555
+        },
+        "r_ring_finger_dip": {
+          "kp": 0.2285032688178066,
+          "kv": 0.009917602877441107
+        },
+        "r_pinky_mcp_flex": {
+          "kp": 0.3655325975433942,
+          "kv": 0.018616960278988272
+        },
+        "r_pinky_mcp_abd": {
+          "kp": 0.41393113081120425,
+          "kv": 0.018732177029667153
+        },
+        "r_pinky_pip": {
+          "kp": 0.22729367621965954,
+          "kv": 0.00951005441616486
+        },
+        "r_pinky_dip": {
+          "kp": 0.1964723550341816,
+          "kv": 0.009017295241756363
+        }
+      },
+      "vendor_urdf": "wuji-description/hand2/hand2_1/body/urdf/right.urdf"
+    }
+  },
+  "collision_exclusions": [
+    [
+      "l_index_finger_proximal",
+      "l_wrist"
+    ],
+    [
+      "l_index_finger_proximal_abd",
+      "l_wrist"
+    ],
+    [
+      "l_middle_finger_proximal",
+      "l_wrist"
+    ],
+    [
+      "l_middle_finger_proximal_abd",
+      "l_wrist"
+    ],
+    [
+      "l_mount",
+      "l_thumb_proximal"
+    ],
+    [
+      "l_mount",
+      "l_thumb_proximal_abd"
+    ],
+    [
+      "l_pinky_proximal",
+      "l_ring_finger_proximal"
+    ],
+    [
+      "l_pinky_proximal",
+      "l_ring_finger_proximal_abd"
+    ],
+    [
+      "l_pinky_proximal",
+      "l_wrist"
+    ],
+    [
+      "l_pinky_proximal_abd",
+      "l_ring_finger_proximal_abd"
+    ],
+    [
+      "l_pinky_proximal_abd",
+      "l_wrist"
+    ],
+    [
+      "l_ring_finger_proximal",
+      "l_wrist"
+    ],
+    [
+      "l_ring_finger_proximal_abd",
+      "l_wrist"
+    ],
+    [
+      "l_thumb_proximal",
+      "l_wrist"
+    ],
+    [
+      "l_thumb_proximal_abd",
+      "l_wrist"
+    ],
+    [
+      "r_index_finger_proximal",
+      "r_wrist"
+    ],
+    [
+      "r_index_finger_proximal_abd",
+      "r_wrist"
+    ],
+    [
+      "r_middle_finger_proximal",
+      "r_wrist"
+    ],
+    [
+      "r_middle_finger_proximal_abd",
+      "r_wrist"
+    ],
+    [
+      "r_mount",
+      "r_thumb_proximal"
+    ],
+    [
+      "r_mount",
+      "r_thumb_proximal_abd"
+    ],
+    [
+      "r_pinky_proximal",
+      "r_ring_finger_proximal"
+    ],
+    [
+      "r_pinky_proximal",
+      "r_ring_finger_proximal_abd"
+    ],
+    [
+      "r_pinky_proximal",
+      "r_wrist"
+    ],
+    [
+      "r_pinky_proximal_abd",
+      "r_ring_finger_proximal_abd"
+    ],
+    [
+      "r_pinky_proximal_abd",
+      "r_wrist"
+    ],
+    [
+      "r_ring_finger_proximal",
+      "r_wrist"
+    ],
+    [
+      "r_ring_finger_proximal_abd",
+      "r_wrist"
+    ],
+    [
+      "r_thumb_proximal",
+      "r_wrist"
+    ],
+    [
+      "r_thumb_proximal_abd",
+      "r_wrist"
+    ]
+  ],
+  "tactile": {
+    "left": {
+      "frames": [],
+      "mode": "no_tip_sensor_in_vendor_model",
+      "real_sensor_calibration": "not_available",
+      "force_source": "PhysX contact force, separate from geometric depth; never convert depth to N without a calibrated law"
+    },
+    "right": {
+      "frames": [],
+      "mode": "no_tip_sensor_in_vendor_model",
+      "real_sensor_calibration": "not_available",
+      "force_source": "PhysX contact force, separate from geometric depth; never convert depth to N without a calibrated law"
+    }
+  },
+  "forbidden_runtime_interfaces": [
+    "DDS",
+    "real_camera",
+    "hardware_SDK"
+  ],
+  "presentation_pose": "mechanical_zero_not_natural_open",
+  "mount_orientation_contract": "thumb_side_up_and_positive_index_flexion_inward",
+  "action_layout": [
+    "left_arm_7_rad",
+    "left_hand_20_rad",
+    "right_arm_7_rad",
+    "right_hand_20_rad"
+  ],
+  "action_dimension": 54,
+  "optional_body_commands": {
+    "waist_joint_state": 2,
+    "lift_joint_state": 1
+  }
+}

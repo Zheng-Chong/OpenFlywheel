@@ -1,0 +1,841 @@
+{
+ "rules": {
+  "long": 0.1,
+  "mass": 0.45
+ },
+ "shift_min": 0.035,
+ "end": 0.015,
+ "grip_gap": 0.07,
+ "scanned": 551,
+ "objects": [
+  {
+   "cat": "car",
+   "idx": 1,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.068,
+    0.1764,
+    0.048
+   ],
+   "mass": 0.45,
+   "shift": 0.0441
+  },
+  {
+   "cat": "car",
+   "idx": 3,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1353,
+    0.0582,
+    0.04
+   ],
+   "mass": 0.45,
+   "shift": 0.035
+  },
+  {
+   "cat": "car",
+   "idx": 4,
+   "family": "toy",
+   "name": "toy police car",
+   "size": [
+    0.1456,
+    0.0654,
+    0.045
+   ],
+   "mass": 0.45,
+   "shift": 0.0364
+  },
+  {
+   "cat": "car",
+   "idx": 6,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1178,
+    0.06,
+    0.038
+   ],
+   "mass": 0.45,
+   "shift": 0.035
+  },
+  {
+   "cat": "car",
+   "idx": 7,
+   "family": "toy",
+   "name": "toy car",
+   "size": [
+    0.1288,
+    0.0576,
+    0.036
+   ],
+   "mass": 0.45,
+   "shift": 0.035
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 0,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.03,
+    0.1,
+    0.1
+   ],
+   "mass": 0.1332,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 1,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.2,
+    0.037,
+    0.037
+   ],
+   "mass": 0.1643,
+   "shift": 0.05
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 2,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.03,
+    0.161,
+    0.1
+   ],
+   "mass": 0.1377,
+   "shift": 0.0403
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 4,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.18,
+    0.03,
+    0.1
+   ],
+   "mass": 0.1442,
+   "shift": 0.045,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 3/3 screening episodes"
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 8,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.037,
+    0.2,
+    0.037
+   ],
+   "mass": 0.1643,
+   "shift": 0.05
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 9,
+   "family": "part",
+   "name": "bar part",
+   "size": [
+    0.037,
+    0.2,
+    0.037
+   ],
+   "mass": 0.1643,
+   "shift": 0.05
+  },
+  {
+   "cat": "fmb_assembly_part",
+   "idx": 10,
+   "family": "part",
+   "name": "plate part",
+   "size": [
+    0.156,
+    0.03,
+    0.1
+   ],
+   "mass": 0.1255,
+   "shift": 0.039
+  },
+  {
+   "cat": "game_controller",
+   "idx": 0,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.13,
+    0.062,
+    0.057
+   ],
+   "mass": 0.16,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "game_controller",
+   "idx": 2,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.13,
+    0.0467,
+    0.044
+   ],
+   "mass": 0.1469,
+   "shift": 0.035,
+   "screened_out": "accepted in 0/19 round 1 episodes (game controllers 0/95)"
+  },
+  {
+   "cat": "game_controller",
+   "idx": 4,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.104,
+    0.0489,
+    0.044
+   ],
+   "mass": 0.0999,
+   "shift": 0.035,
+   "screened_out": "accepted in 0/3 round 1 episodes (game controllers 0/95)"
+  },
+  {
+   "cat": "game_controller",
+   "idx": 5,
+   "family": "electronics",
+   "name": "game controller",
+   "size": [
+    0.1625,
+    0.056,
+    0.0543
+   ],
+   "mass": 0.2334,
+   "shift": 0.0406,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 42/73 round 1 episodes"
+  },
+  {
+   "cat": "hammer",
+   "idx": 8,
+   "family": "hammer",
+   "name": "rubber mallet",
+   "size": [
+    0.1813,
+    0.0554,
+    0.037
+   ],
+   "mass": 0.05,
+   "shift": 0.0453,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 1/2 screening episodes"
+  },
+  {
+   "cat": "mallet",
+   "idx": 0,
+   "family": "instrument",
+   "name": "mallet",
+   "size": [
+    0.026,
+    0.2136,
+    0.026
+   ],
+   "mass": 0.02,
+   "shift": 0.0534,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/4 screening episodes"
+  },
+  {
+   "cat": "mango_prop",
+   "idx": 0,
+   "family": "decoration",
+   "name": "mango prop",
+   "size": [
+    0.1253,
+    0.0551,
+    0.0554
+   ],
+   "mass": 0.0162,
+   "shift": 0.035
+  },
+  {
+   "cat": "marker_box",
+   "idx": 3,
+   "family": "box",
+   "name": "marker box",
+   "size": [
+    0.1144,
+    0.0599,
+    0.0282
+   ],
+   "mass": 0.0978,
+   "shift": 0.035
+  },
+  {
+   "cat": "pen",
+   "idx": 0,
+   "family": "pen",
+   "name": "mechanical pencil",
+   "size": [
+    0.1605,
+    0.0164,
+    0.02
+   ],
+   "mass": 0.018,
+   "shift": 0.0401
+  },
+  {
+   "cat": "pen",
+   "idx": 4,
+   "family": "pen",
+   "name": "fountain pen",
+   "size": [
+    0.1825,
+    0.0183,
+    0.021
+   ],
+   "mass": 0.03,
+   "shift": 0.0456,
+   "screened_out": "accepted in 0/127 round 1 episodes (under 10%)"
+  },
+  {
+   "cat": "sand3d_container",
+   "idx": 52,
+   "family": "box",
+   "name": "marker box",
+   "size": [
+    0.0367,
+    0.1009,
+    0.0697
+   ],
+   "mass": 0.0605,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_electronics",
+   "idx": 12,
+   "family": "electronics",
+   "name": "smart switch",
+   "size": [
+    0.0169,
+    0.14,
+    0.0999
+   ],
+   "mass": 0.0592,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 2,
+   "family": "car part",
+   "name": "mega fuse",
+   "size": [
+    0.1028,
+    0.0394,
+    0.0394
+   ],
+   "mass": 0.0214,
+   "shift": 0.035,
+   "screened_out": "accepted in 10/126 round 1 episodes (under 10%)"
+  },
+  {
+   "cat": "sand3d_fastener_or_hardware",
+   "idx": 27,
+   "family": "tool",
+   "name": "gun stand",
+   "size": [
+    0.0494,
+    0.1767,
+    0.1256
+   ],
+   "mass": 0.1819,
+   "shift": 0.0442
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 30,
+   "family": "bread",
+   "name": "bread slice",
+   "size": [
+    0.062,
+    0.1578,
+    0.021
+   ],
+   "mass": 0.0347,
+   "shift": 0.0394
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 51,
+   "family": "dessert",
+   "name": "cake slice",
+   "size": [
+    0.0679,
+    0.106,
+    0.1007
+   ],
+   "mass": 0.0649,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 55,
+   "family": "dessert",
+   "name": "cake bar",
+   "size": [
+    0.0523,
+    0.1197,
+    0.0706
+   ],
+   "mass": 0.0795,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 147,
+   "family": "vegetable",
+   "name": "bitter melon",
+   "size": [
+    0.0372,
+    0.2,
+    0.0393
+   ],
+   "mass": 0.0315,
+   "shift": 0.05
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 150,
+   "family": "vegetable",
+   "name": "corn",
+   "size": [
+    0.0623,
+    0.1529,
+    0.062
+   ],
+   "mass": 0.0712,
+   "shift": 0.0382
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 155,
+   "family": "vegetable",
+   "name": "cucumber",
+   "size": [
+    0.0381,
+    0.2,
+    0.0393
+   ],
+   "mass": 0.0397,
+   "shift": 0.05,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/4 screening episodes"
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 157,
+   "family": "vegetable",
+   "name": "cucumber",
+   "size": [
+    0.0521,
+    0.1697,
+    0.0516
+   ],
+   "mass": 0.0548,
+   "shift": 0.0424
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 161,
+   "family": "vegetable",
+   "name": "eggplant",
+   "size": [
+    0.22,
+    0.057,
+    0.045
+   ],
+   "mass": 0.0622,
+   "shift": 0.055
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 266,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1098,
+    0.06,
+    0.0492
+   ],
+   "mass": 0.0397,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 268,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1035,
+    0.0463,
+    0.036
+   ],
+   "mass": 0.021,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 272,
+   "family": "vegetable",
+   "name": "potato",
+   "size": [
+    0.1096,
+    0.0679,
+    0.0579
+   ],
+   "mass": 0.0519,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 277,
+   "family": "vegetable",
+   "name": "squash",
+   "size": [
+    0.068,
+    0.1263,
+    0.0673
+   ],
+   "mass": 0.0536,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_food_and_drink",
+   "idx": 278,
+   "family": "vegetable",
+   "name": "squash",
+   "size": [
+    0.0585,
+    0.1361,
+    0.0588
+   ],
+   "mass": 0.0618,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 16,
+   "family": "tool",
+   "name": "trim tool",
+   "size": [
+    0.0203,
+    0.1747,
+    0.0242
+   ],
+   "mass": 0.0091,
+   "shift": 0.0437
+  },
+  {
+   "cat": "sand3d_hand_tool",
+   "idx": 17,
+   "family": "tool",
+   "name": "pry tool",
+   "size": [
+    0.0201,
+    0.2061,
+    0.0374
+   ],
+   "mass": 0.018,
+   "shift": 0.0515
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 15,
+   "family": "car part",
+   "name": "shaped hose",
+   "size": [
+    0.1698,
+    0.0523,
+    0.0271
+   ],
+   "mass": 0.0358,
+   "shift": 0.0425
+  },
+  {
+   "cat": "sand3d_machine_or_industrial",
+   "idx": 35,
+   "family": "car part",
+   "name": "chain tensioner",
+   "size": [
+    0.1131,
+    0.0598,
+    0.0402
+   ],
+   "mass": 0.0232,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 4/4 screening episodes"
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 208,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0372,
+    0.1294,
+    0.1298
+   ],
+   "mass": 0.1562,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 209,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.035,
+    0.135,
+    0.19
+   ],
+   "mass": 0.2244,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 211,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0372,
+    0.1294,
+    0.1298
+   ],
+   "mass": 0.1562,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 212,
+   "family": "box",
+   "name": "yogurt box",
+   "size": [
+    0.0185,
+    0.1499,
+    0.0771
+   ],
+   "mass": 0.0534,
+   "shift": 0.0375
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 213,
+   "family": "box",
+   "name": "pasta box",
+   "size": [
+    0.0367,
+    0.1299,
+    0.1279
+   ],
+   "mass": 0.1524,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 216,
+   "family": "box",
+   "name": "cake mix box",
+   "size": [
+    0.0601,
+    0.1507,
+    0.1801
+   ],
+   "mass": 0.4078,
+   "shift": 0.0377
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 251,
+   "family": "condiment",
+   "name": "mayonnaise bottle",
+   "size": [
+    0.0611,
+    0.1012,
+    0.1778
+   ],
+   "mass": 0.1611,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 332,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.0343,
+    0.1214,
+    0.0223
+   ],
+   "mass": 0.0088,
+   "shift": 0.035
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 333,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.034,
+    0.115,
+    0.0235
+   ],
+   "mass": 0.0075,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_packaging",
+   "idx": 334,
+   "family": "tube",
+   "name": "paint tube",
+   "size": [
+    0.0342,
+    0.1149,
+    0.0238
+   ],
+   "mass": 0.0078,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 4/4 screening episodes"
+  },
+  {
+   "cat": "sand3d_power_tool",
+   "idx": 0,
+   "family": "tool",
+   "name": "spray gun",
+   "size": [
+    0.043,
+    0.1535,
+    0.153
+   ],
+   "mass": 0.1374,
+   "shift": 0.0384
+  },
+  {
+   "cat": "sand3d_remote",
+   "idx": 0,
+   "family": "electronics",
+   "name": "remote control",
+   "size": [
+    0.048,
+    0.188,
+    0.0256
+   ],
+   "mass": 0.0384,
+   "shift": 0.047
+  },
+  {
+   "cat": "sand3d_stationery",
+   "idx": 8,
+   "family": "stationery",
+   "name": "tape dispenser",
+   "size": [
+    0.0629,
+    0.1569,
+    0.066
+   ],
+   "mass": 0.1283,
+   "shift": 0.0392
+  },
+  {
+   "cat": "sand3d_stationery",
+   "idx": 58,
+   "family": "pen",
+   "name": "marker pen",
+   "size": [
+    0.0191,
+    0.1356,
+    0.0269
+   ],
+   "mass": 0.0074,
+   "shift": 0.035,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 2/2 screening episodes"
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 64,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.025,
+    0.2001,
+    0.0227
+   ],
+   "mass": 0.014,
+   "shift": 0.05
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 71,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.028,
+    0.199,
+    0.03
+   ],
+   "mass": 0.0112,
+   "shift": 0.0498,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 3/4 screening episodes"
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 72,
+   "family": "utensil",
+   "name": "fork",
+   "size": [
+    0.0355,
+    0.2195,
+    0.0223
+   ],
+   "mass": 0.0139,
+   "shift": 0.0549,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 3/3 screening episodes"
+  },
+  {
+   "cat": "sand3d_tableware",
+   "idx": 109,
+   "family": "utensil",
+   "name": "metal spoon",
+   "size": [
+    0.0431,
+    0.1842,
+    0.0264
+   ],
+   "mass": 0.0122,
+   "shift": 0.0461,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 3/3 screening episodes"
+  },
+  {
+   "cat": "sand3d_vehicle",
+   "idx": 22,
+   "family": "auto part",
+   "name": "tie rod end",
+   "size": [
+    0.0535,
+    0.152,
+    0.0965
+   ],
+   "mass": 0.0678,
+   "shift": 0.038,
+   "screened_out": "giver's grasp missed (not_lifted, wrong_hand) in 1/2 screening episodes"
+  }
+ ]
+}

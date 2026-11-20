@@ -1,0 +1,282 @@
+{
+    "dual_x5": {
+        "arm_dim": [
+            6,
+            6
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_counter": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_lab": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_lab_real_start": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_lab_real_soft": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_lab_real380_start": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_lab_eps380": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_school": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_shenzhen_lab": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_shenzhen_lab_real520": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_shenzhen_lab_wuji_hand2_2": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_shenzhen_lab_wuji_hand2_1": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_shenzhen_lab_sharpa_wave": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            22,
+            22
+        ]
+    },
+    "g1d_shenzhen_lab_inspire_rh56dftp": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            6,
+            6
+        ]
+    },
+    "g1d_office_wuji_hand2_2": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_office_wuji_hand2_1": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_office_sharpa_wave": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            22,
+            22
+        ]
+    },
+    "g1d_office_inspire_rh56dftp": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            6,
+            6
+        ]
+    },
+    "g1d_mobile": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_counter_mobile": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_aurora_lite_ws": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_eps380": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_pick_bucket": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            1,
+            1
+        ]
+    },
+    "g1d_sharpa_wave": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            22,
+            22
+        ]
+    },
+    "g1d_wuji_hand2_1": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_wuji_hand2_2": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            20,
+            20
+        ]
+    },
+    "g1d_inspire_rh56dftp": {
+        "arm_dim": [
+            7,
+            7
+        ],
+        "ee_dim": [
+            6,
+            6
+        ]
+    }
+}

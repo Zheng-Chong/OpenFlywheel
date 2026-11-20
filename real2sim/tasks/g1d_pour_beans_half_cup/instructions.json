@@ -1,0 +1,16 @@
+{
+  "zh": [
+    "把方口杯里的红豆，倒进<target_cup>里，倒半杯",
+    "用方口杯给<target_cup>倒半杯红豆",
+    "把方口杯里的红豆倒一些到<target_cup>里，倒到半杯就停",
+    "拿起方口杯和<target_cup>，往<target_cup>里倒半杯红豆，再把两个杯子放回桌上",
+    "给<target_cup>倒上大约半杯红豆"
+  ],
+  "en": [
+    "Pour the red beans from the square cup into <target_cup> until it is half full.",
+    "Fill <target_cup> halfway with red beans from the square cup.",
+    "Use the square cup to pour half a cup of red beans into <target_cup>.",
+    "Pick up both cups, pour red beans into <target_cup> until it is half full, then put both cups back.",
+    "Pour about half a cup of red beans into <target_cup>."
+  ]
+}

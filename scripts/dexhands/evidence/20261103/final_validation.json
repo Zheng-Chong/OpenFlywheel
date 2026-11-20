@@ -1,0 +1,499 @@
+{
+  "date": "2026-11-03",
+  "scope": "simulation only; controlled finite qualification, not an all-pose or hardware guarantee",
+  "active_hand_axes": 136,
+  "directional_motion_cases": 240,
+  "contact_shape_channel_cases": 126,
+  "dynamic_cases_passed": 22,
+  "dynamic_cases_total": 24,
+  "all_dynamic_cases_passed": false,
+  "models": [
+    {
+      "model": "g1d_sharpa_wave",
+      "title": "Sharpa Wave",
+      "motion_passed": true,
+      "motion_cases": 68,
+      "active_hand_axes": 44,
+      "return_error_rad": 0.00910333450883627,
+      "range_diagnostics": [
+        {
+          "phase": "coordinated_range_0.25",
+          "tracking_error_rad": 0.0041767205111682415,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.5",
+          "tracking_error_rad": 0.00645679235458374,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.8",
+          "tracking_error_rad": 0.16168808937072754,
+          "free_tracking_passed": false,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        }
+      ],
+      "contact_passed": true,
+      "contact_cases": 30,
+      "grasp_passed": true,
+      "grasp_cases_passed": 6,
+      "public_interface_loaded_passed": true,
+      "max_mimic_error_rad": null,
+      "selected_runs": {
+        "motion": "sharpa_motion01",
+        "grasp": "sharpa_grasp11",
+        "contact": "sharpa_contact06"
+      }
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "title": "Wuji Hand2 2.1",
+      "motion_passed": true,
+      "motion_cases": 80,
+      "active_hand_axes": 40,
+      "return_error_rad": 0.0008272692211903632,
+      "range_diagnostics": [
+        {
+          "phase": "coordinated_range_0.25",
+          "tracking_error_rad": 0.002375483512878418,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.5",
+          "tracking_error_rad": 0.0022798776626586914,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.8",
+          "tracking_error_rad": 0.16691875457763672,
+          "free_tracking_passed": false,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        }
+      ],
+      "contact_passed": true,
+      "contact_cases": 30,
+      "grasp_passed": false,
+      "grasp_cases_passed": 4,
+      "public_interface_loaded_passed": true,
+      "max_mimic_error_rad": null,
+      "selected_runs": {
+        "motion": "wuji21_motion01",
+        "grasp": "wuji21_grasp14",
+        "contact": "wuji21_contact07"
+      }
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "title": "Wuji Hand2 2.2",
+      "motion_passed": true,
+      "motion_cases": 80,
+      "active_hand_axes": 40,
+      "return_error_rad": 0.000827132782433182,
+      "range_diagnostics": [
+        {
+          "phase": "coordinated_range_0.25",
+          "tracking_error_rad": 0.001979827880859375,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.5",
+          "tracking_error_rad": 0.0022579431533813477,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.8",
+          "tracking_error_rad": 0.1734328269958496,
+          "free_tracking_passed": false,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        }
+      ],
+      "contact_passed": true,
+      "contact_cases": 30,
+      "grasp_passed": true,
+      "grasp_cases_passed": 6,
+      "public_interface_loaded_passed": true,
+      "max_mimic_error_rad": null,
+      "selected_runs": {
+        "motion": "wuji22_motion02",
+        "grasp": "wuji22_grasp12",
+        "contact": "wuji22_contact06"
+      }
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "title": "因时 RH56DFTP",
+      "motion_passed": true,
+      "motion_cases": 12,
+      "active_hand_axes": 12,
+      "return_error_rad": 0.0027974173426628113,
+      "range_diagnostics": [
+        {
+          "phase": "coordinated_range_0.25",
+          "tracking_error_rad": 0.005706369876861572,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.5",
+          "tracking_error_rad": 0.007577955722808838,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        },
+        {
+          "phase": "coordinated_range_0.8",
+          "tracking_error_rad": 0.008017897605895996,
+          "free_tracking_passed": true,
+          "scope": "active commanded joints; passive mimic constraints checked separately"
+        }
+      ],
+      "contact_passed": true,
+      "contact_cases": 36,
+      "grasp_passed": true,
+      "grasp_cases_passed": 6,
+      "public_interface_loaded_passed": true,
+      "max_mimic_error_rad": 0.00036644935607910156,
+      "selected_runs": {
+        "motion": "inspire_motion02",
+        "grasp": "inspire_grasp14",
+        "contact": "inspire_contact04"
+      }
+    }
+  ],
+  "dynamic_trials": [
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "left",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.09991610050201416,
+      "relative_drift_m": 0.00022111253732484996,
+      "hold_peak_speed_m_s": 0.007481159416095975,
+      "release_offset_m": 1.3393237962480817,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "left",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.11145353317260742,
+      "relative_drift_m": 0.0002390131467111579,
+      "hold_peak_speed_m_s": 0.00960579140653141,
+      "release_offset_m": 1.082259266301916,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "left",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.10213935375213623,
+      "relative_drift_m": 6.688049823758796e-06,
+      "hold_peak_speed_m_s": 0.006001883001357696,
+      "release_offset_m": 0.007236284789219778,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "right",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.10143685340881348,
+      "relative_drift_m": 4.7451826682780956e-05,
+      "hold_peak_speed_m_s": 0.005546930140990085,
+      "release_offset_m": 1.3328820566199955,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "right",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.11056745052337646,
+      "relative_drift_m": 0.00012645660116809254,
+      "hold_peak_speed_m_s": 0.030550534918700616,
+      "release_offset_m": 0.008855301652817274,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_sharpa_wave",
+      "side": "right",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.11044859886169434,
+      "relative_drift_m": 2.7267837926403226e-05,
+      "hold_peak_speed_m_s": 0.010512712866424904,
+      "release_offset_m": 0.003287291274814047,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "left",
+      "shape": "sphere",
+      "minimum_hold_lift_m": -1.104730224236846,
+      "relative_drift_m": 0.4405979270746185,
+      "hold_peak_speed_m_s": 0.3179386914926537,
+      "release_offset_m": 2.186982428862765,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 0,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": false
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "left",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.06148660182952881,
+      "relative_drift_m": 9.396305572970008e-05,
+      "hold_peak_speed_m_s": 0.040015626214203286,
+      "release_offset_m": 1.198395047791382,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "left",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.06399059295654297,
+      "relative_drift_m": 3.95609353595818e-07,
+      "hold_peak_speed_m_s": 0.052954009153335785,
+      "release_offset_m": 1.1080467397496374,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "right",
+      "shape": "sphere",
+      "minimum_hold_lift_m": -1.1047301068902016,
+      "relative_drift_m": 0.42410758106233937,
+      "hold_peak_speed_m_s": 0.3060059520720344,
+      "release_offset_m": 2.1746794555246964,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 0,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": false
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "right",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.060212135314941406,
+      "relative_drift_m": 0.00022132575322159032,
+      "hold_peak_speed_m_s": 0.061115554197225704,
+      "release_offset_m": 1.1110752045947616,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_1",
+      "side": "right",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.06334841251373291,
+      "relative_drift_m": 1.3668057104863461e-06,
+      "hold_peak_speed_m_s": 0.05786862633935229,
+      "release_offset_m": 1.1362034885346814,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "left",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.0313260555267334,
+      "relative_drift_m": 7.490162708131245e-05,
+      "hold_peak_speed_m_s": 0.039844065878416254,
+      "release_offset_m": 1.3386061557042692,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "left",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.04820430278778076,
+      "relative_drift_m": 0.0001082041379456034,
+      "hold_peak_speed_m_s": 0.051511550005905286,
+      "release_offset_m": 1.1211988426059585,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "left",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.043642520904541016,
+      "relative_drift_m": 1.6608453568135544e-06,
+      "hold_peak_speed_m_s": 0.04988429644730438,
+      "release_offset_m": 0.0003143977741035217,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "right",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.03347659111022949,
+      "relative_drift_m": 9.531959888069417e-05,
+      "hold_peak_speed_m_s": 0.045623951238509784,
+      "release_offset_m": 2.758928969152717e-06,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "right",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.047472476959228516,
+      "relative_drift_m": 0.00025690703924418956,
+      "hold_peak_speed_m_s": 0.05376268825962037,
+      "release_offset_m": 1.106718797954457,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 1,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_wuji_hand2_2",
+      "side": "right",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.04360389709472656,
+      "relative_drift_m": 5.238921375325619e-07,
+      "hold_peak_speed_m_s": 0.048826859355610194,
+      "release_offset_m": 0.00031779282618060907,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "left",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.04626786708831787,
+      "relative_drift_m": 0.007828873034146745,
+      "hold_peak_speed_m_s": 0.036674153597294035,
+      "release_offset_m": 1.687633008098636,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "left",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.05252039432525635,
+      "relative_drift_m": 3.5942687827864275e-07,
+      "hold_peak_speed_m_s": 0.008986844355570824,
+      "release_offset_m": 0.00036096440251461395,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "left",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.051946282386779785,
+      "relative_drift_m": 1.92044720600087e-06,
+      "hold_peak_speed_m_s": 0.012098809119060812,
+      "release_offset_m": 0.002318906915796448,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "right",
+      "shape": "sphere",
+      "minimum_hold_lift_m": 0.047472596168518066,
+      "relative_drift_m": 0.007399062338875878,
+      "hold_peak_speed_m_s": 0.047631400064423145,
+      "release_offset_m": 1.7943374184954607e-07,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "right",
+      "shape": "cube",
+      "minimum_hold_lift_m": 0.05516493320465088,
+      "relative_drift_m": 5.028443661697097e-07,
+      "hold_peak_speed_m_s": 0.010321667240881348,
+      "release_offset_m": 0.003491194853997125,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    },
+    {
+      "model": "g1d_inspire_rh56dftp",
+      "side": "right",
+      "shape": "cylinder",
+      "minimum_hold_lift_m": 0.0546727180480957,
+      "relative_drift_m": 0.001274716545704029,
+      "hold_peak_speed_m_s": 0.011571641357049186,
+      "release_offset_m": 1.1481368552428695,
+      "release_force_max_N": 0.0,
+      "minimum_hold_contact_channels": 2,
+      "recorded_hold_duration_s": 1.4000000730156898,
+      "passed": true
+    }
+  ],
+  "regression": {
+    "passed": 125,
+    "skipped": 1,
+    "subtests_passed": 82
+  },
+  "unresolved": [
+    "Wuji 2.1 left/right sphere free holding failed",
+    "Several successful lift/hold/release cases drop objects instead of accurate replacement",
+    "Three models have tracking limitations at the tested 80% combined target",
+    "Real installation, TCP, sensor serial calibration, material identification and optical/FEM tactile fidelity remain unverified"
+  ],
+  "validated_public_interface_reports": [
+    "sharpa_framework_contact09",
+    "wuji21_framework_contact10",
+    "wuji22_framework_contact10",
+    "inspire_framework_contact10"
+  ]
+}

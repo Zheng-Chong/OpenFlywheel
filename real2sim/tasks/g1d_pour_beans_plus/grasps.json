@@ -1,0 +1,241 @@
+{
+ "note": "Per-cup grasp entries of the scripted expert (scripts/g1d/scripted_demo.plus_grip / plus_tilt), from the grasp exam (scripts/datagen/grasp_exam.py --grasps): rim_down = pads this share of the cup's height under its rim, pitch = fingers this far below horizontal (deg), width_max = widest body (m) the pads may slide past (default pour_beans_plus_layouts.GRIP_WIDTH); a source / target sub-entry applies to that role only. Cups without an entry keep the profile rule. drop: cups the expert cannot hold (wider than the 95 mm open pads where they close, or no room to slide past), never drawn by the layout generator.",
+ "cups": {
+  "Real2Sim/Clutter/metal_cup/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Clutter/metal_cup/00005": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Clutter/paper_cup/00002": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Clutter/paper_cup/00003": {
+   "source": {
+    "width_max": 0.088
+   },
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Clutter/paper_cup/00006": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/ceramic_cup/00001": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/ceramic_cup/00002": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/ceramic_cup/00006": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/measuring_cup/00005": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/plastic_cup/00000": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/plastic_cup/00004": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/plastic_cup/00008": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/plastic_cup/00009": {
+   "source": {
+    "rim_down": 0.6,
+    "width_max": 0.088
+   }
+  },
+  "Real2Sim/Rigid/tapered_cup/00001": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/tapered_cup/00004": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/tapered_cup/00005": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/tumbler/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/tumbler/00004": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/tumbler/00005": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/wide_cup/00002": {
+   "rim_down": 0.6
+  },
+  "Real2Sim/Rigid/wide_cup/00004": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "Real2Sim/Rigid/wide_cup/00005": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Clutter/cup/00003": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/cup/00001": {
+   "rim_down": 0.6,
+   "source": {
+    "width_max": 0.088
+   }
+  },
+  "RoboDojo/Rigid/cup/00007": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_043/00000": {
+   "width_max": 0.088
+  },
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_105/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_106/00000": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_107/00000": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/geniesim_genie_markcup/00000": {
+   "width_max": 0.088
+  },
+  "RoboDojo/Rigid/geniesim_genie_papercup/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/geniesim_iros_pen_cup_iros_pen_cup_000/00000": {
+   "width_max": 0.088,
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/mug/00003": {
+   "target": {
+    "width_max": 0.088
+   }
+  },
+  "RoboDojo/Rigid/mug/00010": {
+   "target": {
+    "width_max": 0.088
+   }
+  },
+  "RoboDojo/Rigid/mug/00015": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/mug/00016": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/mug/00018": {
+   "width_max": 0.088
+  },
+  "RoboDojo/Rigid/mug/00019": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_dishware_cup_paper_a01/00000": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/simready_dishware_plastic_cup_a01/00000": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_kitchenware_cup_b01/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_kitchenware_cup_c01/00000": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_b01/00000": {
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_c01/00000": {
+   "width_max": 0.088
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_h01/00000": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_k01/00000": {
+   "target": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_n01/00000": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_p01/00000": {
+   "width_max": 0.088,
+   "source": {
+    "rim_down": 0.6
+   }
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_q01/00000": {
+   "rim_down": 0.6
+  },
+  "RoboDojo/Rigid/simready_kitchenware_mug_r01/00000": {
+   "width_max": 0.088
+  },
+  "RoboDojo/Rigid/mug/00012": {
+   "source": {
+    "rim_down": 0.6
+   }
+  }
+ },
+ "drop": {
+  "RoboDojo/Rigid/simready_kitchenware_mug_j01/00000": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 140 mm（缩放 1，0.85 时 119 mm），轮廓只有 85 mm；张开的夹爪 95 mm；考试 4/4 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/simready_kitchenware_mug_a01/00000": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 118 mm（缩放 1，0.85 时 100 mm），轮廓只有 84 mm；张开的夹爪 95 mm；考试 10/10 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/simready_kitchenware_mug_l01/00000": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 123 mm（缩放 1，0.85 时 105 mm），轮廓只有 98 mm；张开的夹爪 95 mm；考试 4/4 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/simready_kitchenware_mug_g01/00000": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 110 mm（缩放 1，0.85 时 94 mm），轮廓只有 88 mm；张开的夹爪 95 mm；考试 11/11 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/mug/00014": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 104 mm（缩放 1，0.85 时 88 mm），轮廓只有 82 mm；张开的夹爪 95 mm；考试 10/10 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/mug/00001": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 102 mm（缩放 1，0.85 时 87 mm），轮廓只有 93 mm；张开的夹爪 95 mm；考试 8/15 次在夹爪滑进去时被碰倒，换哪种抓法都一样",
+  "RoboDojo/Rigid/mug/00011": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 92 mm（缩放 1，0.85 时 78 mm），轮廓只有 56 mm；张开的夹爪 95 mm；考试 4/4 次在夹爪滑进去时被碰倒，换哪种抓法都一样（0.85 时 78 mm 也许夹得住，但轮廓读成 56 mm，生成器会在整个缩放范围里抽它；轮廓修好后可在小缩放下重测）",
+  "RoboDojo/Rigid/simready_kitchenware_mug_f01/00000": "杯身是鼓肚，比轮廓读到的宽（轮廓从上往下看，肚子被截成杯口宽）：合拢方向上实际 111 mm（缩放 1，0.85 时 94 mm），轮廓只有 104 mm；张开的夹爪 95 mm；没进过考试",
+  "RoboDojo/Rigid/mug/00000": "杯身比夹爪宽：夹持高度处 114 mm（缩放 1），最小缩放 0.85 时仍有 97 mm，张开的夹爪 95 mm，比张口还宽；没进过考试",
+  "RoboDojo/Clutter/cup/00001": "杯身比夹爪宽：夹持高度处 107 mm（缩放 1），最小缩放 0.85 时仍有 91 mm，张开的夹爪 95 mm，每边只剩 2 mm，滑不过去；没进过考试"
+ }
+}

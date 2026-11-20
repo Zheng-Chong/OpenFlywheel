@@ -1,0 +1,17 @@
+{
+  "recorded_simulation_base": "2cf5b6d177a82ce54c18dc26cfe8e61d06f47788",
+  "prepared_integration_base": "96466f8d2e90b20493a13c7a25101661db395aef",
+  "package_sha256": "9b6f211f910960b06098b682c73cefb17cc079c25cc27773be3af383874b6483",
+  "scope": "Frozen simulation evidence is from the recorded base. The prepared integration preserves current main reset/init-joint behavior; it is not a new native simulation recording.",
+  "hardware_connected": false,
+  "release_state": "published; 35 attachment sizes and SHA256 digests verified",
+  "release_id": 432671890,
+  "release_url": "https://github.com/Zheng-Chong/OpenFlywheel/releases/tag/g1d-four-hands-validation-20261103",
+  "pr_url": "https://github.com/Zheng-Chong/OpenFlywheel/pull/168",
+  "publication_date": "2026-11-04",
+  "published_by": "Joker-of-Gotham",
+  "commit_email": "1211095767@qq.com",
+  "github_cpu_ci": "SUCCESS",
+  "github_cpu_core_run": "https://github.com/Zheng-Chong/OpenFlywheel/actions/runs/41637089798",
+  "release_tag": "g1d-four-hands-validation-20261103"
+}

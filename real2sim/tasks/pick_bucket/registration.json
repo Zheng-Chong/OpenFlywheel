@@ -1,0 +1,53 @@
+{
+  "task": "pick_bucket",
+  "name": "食物入篮并提篮",
+  "name_en": "pick bucket",
+  "definition": "右手拿起桌面上的芒果摆件，放入编织提篮并松开；随后抓稳篮子提手，提起装有芒果的篮子，最后放回桌面并松手。",
+  "instructions": {
+    "count": 5,
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "success": "按顺序完成：芒果离桌至少20 mm；进入篮内并脱离夹爪；篮底离桌至少30 mm并持续0.5 s且芒果留在篮内；最后篮底回到桌面上方10 mm以内，夹爪松开并稳定0.5 s。阈值为仿真验收值，不代表实物材料或接触标定。",
+  "hand": "right",
+  "horizon_s": 40,
+  "owner": {
+    "username": "yangkaiyuan",
+    "name": "杨开元"
+  },
+  "objects": [
+    {
+      "label": "food",
+      "count": 1,
+      "candidates": [
+        "Rigid/mango_prop/00000"
+      ]
+    },
+    {
+      "label": "basket",
+      "count": 1,
+      "candidates": [
+        "Rigid/basket/00014"
+      ]
+    }
+  ],
+  "notes": "用户2026-11-03确认按五阶段 config：提起后放回桌面并松手。参照原始真机 episode_0001，主操作为右手。采用已登记芒果摆件与编织篮；不宣称材料/接触已实物标定。",
+  "locked": true,
+  "lock_history": [
+    {
+      "action": "edit",
+      "by": "杨开元",
+      "at": 1793672995.930349
+    },
+    {
+      "action": "lock",
+      "by": "杨开元",
+      "at": 1793672996.158087,
+      "note": "用户确认按五阶段config，提起后放回桌面并松手；采用已展示的候选阈值与物体角色"
+    }
+  ],
+  "updated_by": "杨开元",
+  "updated_at": "2026-11-03 10:29:56"
+}

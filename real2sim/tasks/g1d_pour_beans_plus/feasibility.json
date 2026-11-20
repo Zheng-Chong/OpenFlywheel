@@ -1,0 +1,628 @@
+{
+ "note": "Cups the scripted expert can pour (cup_pool.py split --feasible), from the feasibility batches of 2026-11-04 (<gpu-server>/<gpu-server> batch/feas_train_office, feas_train_shenzhen, feas_probe; expert 03d875d). Excluded: beans leave the cup through its wall or floor >= 2 per use (thin collision walls), never task_success, or never run (no probe scale the expert holds). The twin plastic_cup/00000 is kept (1.35 per use).",
+ "leak_beans_per_use_max": 2,
+ "feasible": [
+  "Real2Sim/Clutter/metal_cup/00000",
+  "Real2Sim/Clutter/metal_cup/00001",
+  "Real2Sim/Clutter/metal_cup/00003",
+  "Real2Sim/Clutter/metal_cup/00004",
+  "Real2Sim/Clutter/metal_cup/00006",
+  "Real2Sim/Clutter/paper_cup/00000",
+  "Real2Sim/Clutter/paper_cup/00001",
+  "Real2Sim/Clutter/paper_cup/00002",
+  "Real2Sim/Clutter/paper_cup/00005",
+  "Real2Sim/Rigid/ceramic_cup/00001",
+  "Real2Sim/Rigid/ceramic_cup/00002",
+  "Real2Sim/Rigid/ceramic_cup/00004",
+  "Real2Sim/Rigid/ceramic_cup/00006",
+  "Real2Sim/Rigid/measuring_cup/00002",
+  "Real2Sim/Rigid/plastic_cup/00000",
+  "Real2Sim/Rigid/plastic_cup/00001",
+  "Real2Sim/Rigid/tapered_cup/00000",
+  "Real2Sim/Rigid/tapered_cup/00001",
+  "Real2Sim/Rigid/tapered_cup/00002",
+  "Real2Sim/Rigid/tapered_cup/00003",
+  "Real2Sim/Rigid/tapered_cup/00004",
+  "Real2Sim/Rigid/tapered_cup/00005",
+  "Real2Sim/Rigid/tumbler/00000",
+  "Real2Sim/Rigid/tumbler/00001",
+  "Real2Sim/Rigid/tumbler/00003",
+  "Real2Sim/Rigid/tumbler/00004",
+  "Real2Sim/Rigid/tumbler/00005",
+  "Real2Sim/Rigid/water_cup/00000",
+  "Real2Sim/Rigid/wave_curve_cup/00000",
+  "Real2Sim/Rigid/wave_curve_cup/00001",
+  "Real2Sim/Rigid/wave_curve_cup/00002",
+  "Real2Sim/Rigid/wide_cup/00000",
+  "Real2Sim/Rigid/wide_cup/00001",
+  "Real2Sim/Rigid/wide_cup/00002",
+  "Real2Sim/Rigid/wide_cup/00003",
+  "Real2Sim/Rigid/wide_cup/00004",
+  "RoboDojo/Clutter/cup/00003",
+  "RoboDojo/Rigid/cup/00001",
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_105/00000",
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_106/00000",
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_107/00000",
+  "RoboDojo/Rigid/geniesim_benchmark_cup_benchmark_cup_112/00000",
+  "RoboDojo/Rigid/geniesim_genie_papercup/00000",
+  "RoboDojo/Rigid/mug/00002",
+  "RoboDojo/Rigid/mug/00004",
+  "RoboDojo/Rigid/mug/00006",
+  "RoboDojo/Rigid/mug/00007",
+  "RoboDojo/Rigid/mug/00009",
+  "RoboDojo/Rigid/mug/00017",
+  "RoboDojo/Rigid/simready_dishware_cup_paper_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_cup_tea_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_glass_8oz_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_glass_tumbler_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_glass_wineFlute_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_mug_coffee_a01/00000",
+  "RoboDojo/Rigid/simready_dishware_mug_coffee_b01/00000",
+  "RoboDojo/Rigid/simready_dishware_plastic_cup_a01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_cup_a01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_cup_b01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_b01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_e01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_h01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_i01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_m01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_n01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_o01/00000",
+  "RoboDojo/Rigid/simready_kitchenware_mug_q01/00000"
+ ],
+ "excluded": {
+  "leaky": [
+   "ceramic_cup/00000",
+   "ceramic_cup/00003",
+   "cup/00007",
+   "measuring_cup/00001",
+   "measuring_cup/00003",
+   "measuring_cup/00004",
+   "measuring_cup/00005",
+   "metal_cup/00002",
+   "metal_cup/00005",
+   "mug/00005",
+   "mug/00011",
+   "mug/00012",
+   "mug/00013",
+   "mug/00015",
+   "paper_cup/00004",
+   "paper_cup/00006",
+   "plastic_cup/00002",
+   "plastic_cup/00003",
+   "plastic_cup/00004",
+   "plastic_cup/00005",
+   "plastic_cup/00006",
+   "plastic_cup/00007",
+   "plastic_cup/00008",
+   "simready_dishware_glass_wine_a01/00000",
+   "simready_kitchenware_cup_c01/00000",
+   "simready_kitchenware_mug_k01/00000",
+   "wave_curve_cup/00003",
+   "wide_cup/00005"
+  ],
+  "never": [
+   "mug/00011",
+   "simready_dishware_glass_wine_a01/00000",
+   "simready_kitchenware_mug_j01/00000",
+   "tumbler/00002"
+  ],
+  "unseen": [
+   "ceramic_cup/00005",
+   "cup/00002",
+   "cup/00006",
+   "geniesim_benchmark_beer_mug_benchmark_beer_mug_002/00000",
+   "geniesim_benchmark_beer_mug_benchmark_beer_mug_004/00000",
+   "geniesim_benchmark_beer_mug_benchmark_beer_mug_008/00000",
+   "geniesim_benchmark_beer_mug_benchmark_beer_mug_009/00000",
+   "geniesim_benchmark_cup_benchmark_cup_043/00000",
+   "geniesim_genie_markcup/00000",
+   "geniesim_iros_pen_cup_iros_pen_cup_000/00000",
+   "mug/00000",
+   "mug/00001",
+   "mug/00003",
+   "mug/00008",
+   "mug/00010",
+   "mug/00014",
+   "mug/00016",
+   "mug/00018",
+   "mug/00019",
+   "paper_cup/00003",
+   "plastic_cup/00009",
+   "simready_kitchenware_mug_a01/00000",
+   "simready_kitchenware_mug_c01/00000",
+   "simready_kitchenware_mug_f01/00000",
+   "simready_kitchenware_mug_g01/00000",
+   "simready_kitchenware_mug_l01/00000",
+   "simready_kitchenware_mug_p01/00000",
+   "simready_kitchenware_mug_r01/00000"
+  ]
+ },
+ "leak": {
+  "measuring_cup/00001": {
+   "rate": 126.2,
+   "leak": 631,
+   "uses": 5
+  },
+  "measuring_cup/00003": {
+   "rate": 83.8,
+   "leak": 419,
+   "uses": 5
+  },
+  "mug/00015": {
+   "rate": 82.0,
+   "leak": 246,
+   "uses": 3
+  },
+  "mug/00011": {
+   "rate": 50.714285714285715,
+   "leak": 355,
+   "uses": 7
+  },
+  "measuring_cup/00004": {
+   "rate": 43.0,
+   "leak": 86,
+   "uses": 2
+  },
+  "simready_dishware_glass_wine_a01/00000": {
+   "rate": 43.0,
+   "leak": 43,
+   "uses": 1
+  },
+  "mug/00012": {
+   "rate": 22.0,
+   "leak": 110,
+   "uses": 5
+  },
+  "wide_cup/00005": {
+   "rate": 13.2,
+   "leak": 66,
+   "uses": 5
+  },
+  "mug/00005": {
+   "rate": 10.166666666666666,
+   "leak": 61,
+   "uses": 6
+  },
+  "metal_cup/00002": {
+   "rate": 8.5,
+   "leak": 34,
+   "uses": 4
+  },
+  "mug/00013": {
+   "rate": 7.333333333333333,
+   "leak": 22,
+   "uses": 3
+  },
+  "cup/00007": {
+   "rate": 5.8,
+   "leak": 58,
+   "uses": 10
+  },
+  "plastic_cup/00004": {
+   "rate": 5.571428571428571,
+   "leak": 39,
+   "uses": 7
+  },
+  "plastic_cup/00005": {
+   "rate": 5.0,
+   "leak": 10,
+   "uses": 2
+  },
+  "plastic_cup/00003": {
+   "rate": 4.838709677419355,
+   "leak": 150,
+   "uses": 31
+  },
+  "plastic_cup/00006": {
+   "rate": 4.56,
+   "leak": 114,
+   "uses": 25
+  },
+  "measuring_cup/00005": {
+   "rate": 4.333333333333333,
+   "leak": 13,
+   "uses": 3
+  },
+  "paper_cup/00006": {
+   "rate": 4.25,
+   "leak": 17,
+   "uses": 4
+  },
+  "ceramic_cup/00003": {
+   "rate": 4.125,
+   "leak": 33,
+   "uses": 8
+  },
+  "wave_curve_cup/00003": {
+   "rate": 4.0,
+   "leak": 8,
+   "uses": 2
+  },
+  "paper_cup/00004": {
+   "rate": 4.0,
+   "leak": 8,
+   "uses": 2
+  },
+  "plastic_cup/00008": {
+   "rate": 3.6666666666666665,
+   "leak": 154,
+   "uses": 42
+  },
+  "plastic_cup/00007": {
+   "rate": 3.4347826086956523,
+   "leak": 158,
+   "uses": 46
+  },
+  "metal_cup/00005": {
+   "rate": 3.25,
+   "leak": 13,
+   "uses": 4
+  },
+  "simready_kitchenware_cup_c01/00000": {
+   "rate": 2.5,
+   "leak": 15,
+   "uses": 6
+  },
+  "ceramic_cup/00000": {
+   "rate": 2.5,
+   "leak": 5,
+   "uses": 2
+  },
+  "simready_kitchenware_mug_k01/00000": {
+   "rate": 2.25,
+   "leak": 9,
+   "uses": 4
+  },
+  "plastic_cup/00002": {
+   "rate": 2.0,
+   "leak": 10,
+   "uses": 5
+  },
+  "simready_dishware_plastic_cup_a01/00000": {
+   "rate": 1.8571428571428572,
+   "leak": 13,
+   "uses": 7
+  },
+  "wave_curve_cup/00001": {
+   "rate": 1.5,
+   "leak": 3,
+   "uses": 2
+  },
+  "paper_cup/00001": {
+   "rate": 1.5,
+   "leak": 3,
+   "uses": 2
+  },
+  "plastic_cup/00000": {
+   "rate": 1.3484848484848484,
+   "leak": 89,
+   "uses": 66
+  },
+  "tapered_cup/00005": {
+   "rate": 1.3333333333333333,
+   "leak": 12,
+   "uses": 9
+  },
+  "plastic_cup/00001": {
+   "rate": 1.3333333333333333,
+   "leak": 8,
+   "uses": 6
+  },
+  "wide_cup/00004": {
+   "rate": 1.3333333333333333,
+   "leak": 4,
+   "uses": 3
+  },
+  "metal_cup/00004": {
+   "rate": 1.0,
+   "leak": 7,
+   "uses": 7
+  },
+  "metal_cup/00000": {
+   "rate": 1.0,
+   "leak": 3,
+   "uses": 3
+  },
+  "tapered_cup/00003": {
+   "rate": 1.0,
+   "leak": 2,
+   "uses": 2
+  },
+  "simready_kitchenware_cup_b01/00000": {
+   "rate": 1.0,
+   "leak": 2,
+   "uses": 2
+  },
+  "simready_kitchenware_mug_e01/00000": {
+   "rate": 1.0,
+   "leak": 2,
+   "uses": 2
+  },
+  "simready_dishware_cup_paper_a01/00000": {
+   "rate": 0.875,
+   "leak": 7,
+   "uses": 8
+  },
+  "tumbler/00004": {
+   "rate": 0.75,
+   "leak": 3,
+   "uses": 4
+  },
+  "wide_cup/00003": {
+   "rate": 0.5555555555555556,
+   "leak": 5,
+   "uses": 9
+  },
+  "water_cup/00000": {
+   "rate": 0.5,
+   "leak": 3,
+   "uses": 6
+  },
+  "geniesim_benchmark_cup_benchmark_cup_107/00000": {
+   "rate": 0.5,
+   "leak": 2,
+   "uses": 4
+  },
+  "wave_curve_cup/00002": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "wave_curve_cup/00000": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "tumbler/00001": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "simready_dishware_glass_tumbler_a01/00000": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "measuring_cup/00002": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "simready_kitchenware_mug_j01/00000": {
+   "rate": 0.5,
+   "leak": 1,
+   "uses": 2
+  },
+  "metal_cup/00001": {
+   "rate": 0.42857142857142855,
+   "leak": 6,
+   "uses": 14
+  },
+  "tumbler/00005": {
+   "rate": 0.375,
+   "leak": 3,
+   "uses": 8
+  },
+  "ceramic_cup/00006": {
+   "rate": 0.3333333333333333,
+   "leak": 3,
+   "uses": 9
+  },
+  "tapered_cup/00001": {
+   "rate": 0.3333333333333333,
+   "leak": 2,
+   "uses": 6
+  },
+  "paper_cup/00000": {
+   "rate": 0.3333333333333333,
+   "leak": 1,
+   "uses": 3
+  },
+  "tapered_cup/00000": {
+   "rate": 0.25,
+   "leak": 1,
+   "uses": 4
+  },
+  "simready_dishware_mug_coffee_a01/00000": {
+   "rate": 0.25,
+   "leak": 1,
+   "uses": 4
+  },
+  "metal_cup/00006": {
+   "rate": 0.2222222222222222,
+   "leak": 2,
+   "uses": 9
+  },
+  "tapered_cup/00004": {
+   "rate": 0.2,
+   "leak": 2,
+   "uses": 10
+  },
+  "cup/00003": {
+   "rate": 0.2,
+   "leak": 1,
+   "uses": 5
+  },
+  "ceramic_cup/00004": {
+   "rate": 0.18181818181818182,
+   "leak": 2,
+   "uses": 11
+  },
+  "tapered_cup/00002": {
+   "rate": 0.14285714285714285,
+   "leak": 1,
+   "uses": 7
+  },
+  "ceramic_cup/00001": {
+   "rate": 0.1111111111111111,
+   "leak": 1,
+   "uses": 9
+  },
+  "mug/00017": {
+   "rate": 0.1,
+   "leak": 1,
+   "uses": 10
+  },
+  "geniesim_genie_papercup/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 13
+  },
+  "ceramic_cup/00002": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 11
+  },
+  "tumbler/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 10
+  },
+  "simready_kitchenware_mug_o01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 7
+  },
+  "simready_kitchenware_mug_m01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 7
+  },
+  "mug/00009": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 7
+  },
+  "geniesim_benchmark_cup_benchmark_cup_112/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 7
+  },
+  "simready_dishware_mug_coffee_b01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 6
+  },
+  "geniesim_benchmark_cup_benchmark_cup_106/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 6
+  },
+  "simready_kitchenware_cup_a01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 6
+  },
+  "simready_dishware_cup_tea_a01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 5
+  },
+  "tumbler/00003": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 5
+  },
+  "simready_kitchenware_mug_i01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 4
+  },
+  "simready_kitchenware_mug_n01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "simready_kitchenware_mug_h01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "paper_cup/00005": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "mug/00006": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "simready_kitchenware_mug_q01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "paper_cup/00002": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 3
+  },
+  "wide_cup/00002": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "wide_cup/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "tumbler/00002": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "simready_kitchenware_mug_b01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "simready_dishware_glass_wineFlute_a01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "simready_dishware_glass_8oz_a01/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "mug/00004": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "mug/00002": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "metal_cup/00003": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "geniesim_benchmark_cup_benchmark_cup_105/00000": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "cup/00001": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 2
+  },
+  "mug/00007": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 1
+  },
+  "wide_cup/00001": {
+   "rate": 0.0,
+   "leak": 0,
+   "uses": 1
+  }
+ }
+}

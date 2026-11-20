@@ -1,0 +1,31 @@
+# Text line-ending rules for deterministic manifests and robot specs.
+
+# Frozen Aurora hashes are byte based; keep these text sources identical on Windows/Linux.
+real2sim/robot/g1d_aurora_lite_ws/*.urdf text eol=lf
+real2sim/robot/g1d_aurora_lite_ws/*.json text eol=lf
+real2sim/robot/g1d_aurora_lite_ws/*.yml text eol=lf
+real2sim/embodiments/g1d_aurora_lite_ws/**/*.json text eol=lf
+# Other-unit examples include original CRLF files referenced by source SHA256.
+real2sim/embodiments/g1d_aurora_lite_ws/calibration/reference_other_unit/** -text whitespace=cr-at-eol
+# Unpacked Windows archives verified by their own SHA256SUMS.txt (real2sim/ARCHIVES.md); keep the bytes as delivered.
+real2sim/robot/g1d_calibrated_colored/** -text whitespace=cr-at-eol
+scripts/g1d/calib_toolkit/** -text whitespace=cr-at-eol
+real2sim/grippers/**/*.json text eol=lf
+scripts/g1d/xense_gripper/*.py text eol=lf
+
+# Complete dexterous assemblies have byte-addressed input and asset manifests.
+real2sim/robot/g1d_sharpa_wave/*.urdf text eol=lf
+real2sim/robot/g1d_sharpa_wave/*.json text eol=lf
+real2sim/robot/g1d_sharpa_wave/*.yml text eol=lf
+real2sim/robot/g1d_wuji_hand2_1/*.urdf text eol=lf
+real2sim/robot/g1d_wuji_hand2_1/*.json text eol=lf
+real2sim/robot/g1d_wuji_hand2_1/*.yml text eol=lf
+real2sim/robot/g1d_wuji_hand2_2/*.urdf text eol=lf
+real2sim/robot/g1d_wuji_hand2_2/*.json text eol=lf
+real2sim/robot/g1d_wuji_hand2_2/*.yml text eol=lf
+real2sim/robot/g1d_inspire_rh56dftp/*.urdf text eol=lf
+real2sim/robot/g1d_inspire_rh56dftp/*.json text eol=lf
+real2sim/robot/g1d_inspire_rh56dftp/*.yml text eol=lf
+
+# Preserve pinned vendor license/NOTICE bytes, including their original line endings.
+scripts/dexhands/licenses/** -text -whitespace

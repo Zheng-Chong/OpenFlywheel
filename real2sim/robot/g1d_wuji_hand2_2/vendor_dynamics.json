@@ -1,0 +1,888 @@
+{
+  "left": {
+    "entry": "/mnt/data2/Codex-dexhands-20261029/source_remote/wuji-description/hand2/hand2_2/body/usd/left/wujihand2_2.usd",
+    "joints": {
+      "l_wrist_fixed": {},
+      "l_index_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "l_index_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "l_index_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "l_index_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "l_index_finger_tip_fixed": {},
+      "l_index_finger_tip_sensor_frame_fixed": {},
+      "l_middle_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "l_middle_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "l_middle_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "l_middle_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "l_middle_finger_tip_fixed": {},
+      "l_middle_finger_tip_sensor_frame_fixed": {},
+      "l_pinky_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "l_pinky_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "l_pinky_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "l_pinky_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "l_pinky_tip_fixed": {},
+      "l_pinky_tip_sensor_frame_fixed": {},
+      "l_ring_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "l_ring_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "l_ring_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "l_ring_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "l_ring_finger_tip_fixed": {},
+      "l_ring_finger_tip_sensor_frame_fixed": {},
+      "l_thumb_cmc_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -68.01008605957031,
+        "physics:upperLimit": 73.9688491821289,
+        "physxJoint:maxJointVelocity": 491.99884033203125
+      },
+      "l_thumb_cmc_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -85.02693176269531,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 635.983154296875
+      },
+      "l_thumb_mcp": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "l_thumb_ip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "l_thumb_tip_fixed": {},
+      "l_thumb_tip_sensor_frame_fixed": {},
+      "l_wrist_imu_frame_fixed": {},
+      "root_joint": {}
+    },
+    "filtered_pairs": {
+      "l_mount": [
+        "/wujihand2_2_left/l_thumb_proximal",
+        "/wujihand2_2_left/l_thumb_proximal_abd"
+      ],
+      "l_wrist": [],
+      "l_index_finger_proximal": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_index_finger_proximal_abd": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_index_finger_middle": [
+        "/wujihand2_2_left/l_index_finger_tip_sensor_frame"
+      ],
+      "l_index_finger_distal": [
+        "/wujihand2_2_left/l_index_finger_tip_sensor_frame"
+      ],
+      "l_middle_finger_proximal": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_middle_finger_proximal_abd": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_middle_finger_middle": [
+        "/wujihand2_2_left/l_middle_finger_tip_sensor_frame"
+      ],
+      "l_middle_finger_distal": [
+        "/wujihand2_2_left/l_middle_finger_tip_sensor_frame"
+      ],
+      "l_pinky_proximal": [
+        "/wujihand2_2_left/l_ring_finger_proximal",
+        "/wujihand2_2_left/l_ring_finger_proximal_abd",
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_pinky_proximal_abd": [
+        "/wujihand2_2_left/l_ring_finger_proximal_abd",
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_pinky_middle": [
+        "/wujihand2_2_left/l_pinky_tip_sensor_frame"
+      ],
+      "l_pinky_distal": [
+        "/wujihand2_2_left/l_pinky_tip_sensor_frame"
+      ],
+      "l_ring_finger_proximal": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_ring_finger_proximal_abd": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_ring_finger_middle": [
+        "/wujihand2_2_left/l_ring_finger_tip_sensor_frame"
+      ],
+      "l_ring_finger_distal": [
+        "/wujihand2_2_left/l_ring_finger_tip_sensor_frame"
+      ],
+      "l_thumb_proximal": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_thumb_proximal_abd": [
+        "/wujihand2_2_left/l_wrist"
+      ],
+      "l_thumb_middle": [
+        "/wujihand2_2_left/l_thumb_tip_sensor_frame"
+      ],
+      "l_thumb_distal": [
+        "/wujihand2_2_left/l_thumb_tip_sensor_frame"
+      ]
+    },
+    "rigid_bodies": {
+      "l_mount": {
+        "physics:diagonalInertia": "(0.000016928469, 0.000025088084, 0.00002604731)",
+        "physics:mass": "0.0689999982714653"
+      },
+      "l_wrist": {
+        "physics:diagonalInertia": "(0.00009356615, 0.00014996022, 0.000077678276)",
+        "physics:mass": "0.23229999840259552"
+      },
+      "l_index_finger_proximal": {
+        "physics:diagonalInertia": "(9.411464e-7, 8.9101866e-7, 7.2808007e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "l_index_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014765, 0.0000070141214, 9.1458537e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "l_index_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052636, 0.0000024779622, 6.524929e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "l_index_finger_distal": {
+        "physics:diagonalInertia": "(3.6418868e-7, 4.627605e-7, 1.759201e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "l_index_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "l_index_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677832e-8, 1.1727445e-7, 6.3095975e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "l_middle_finger_proximal": {
+        "physics:diagonalInertia": "(9.411464e-7, 8.9101866e-7, 7.2808007e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "l_middle_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014765, 0.0000070141214, 9.1458537e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "l_middle_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052636, 0.0000024779622, 6.524929e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "l_middle_finger_distal": {
+        "physics:diagonalInertia": "(3.6418868e-7, 4.627605e-7, 1.759201e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "l_middle_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "l_middle_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677832e-8, 1.1727445e-7, 6.3095975e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "l_pinky_proximal": {
+        "physics:diagonalInertia": "(9.4239925e-7, 8.911893e-7, 7.2781916e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "l_pinky_proximal_abd": {
+        "physics:diagonalInertia": "(0.0000053790473, 0.0000053798417, 8.177249e-7)",
+        "physics:mass": "0.030400000512599945"
+      },
+      "l_pinky_middle": {
+        "physics:diagonalInertia": "(0.0000019868226, 0.0000020598106, 5.850232e-7)",
+        "physics:mass": "0.018799999728798866"
+      },
+      "l_pinky_distal": {
+        "physics:diagonalInertia": "(3.641887e-7, 4.6276048e-7, 1.759201e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "l_pinky_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "l_pinky_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677832e-8, 1.1727446e-7, 6.3095975e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "l_ring_finger_proximal": {
+        "physics:diagonalInertia": "(9.411464e-7, 8.9101866e-7, 7.2808007e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "l_ring_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014765, 0.0000070141214, 9.1458537e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "l_ring_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052636, 0.0000024779622, 6.524929e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "l_ring_finger_distal": {
+        "physics:diagonalInertia": "(3.6418868e-7, 4.627605e-7, 1.759201e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "l_ring_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "l_ring_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677832e-8, 1.1727445e-7, 6.3095975e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "l_thumb_proximal": {
+        "physics:diagonalInertia": "(8.282159e-7, 7.734902e-7, 6.263967e-7)",
+        "physics:mass": "0.010999999940395355"
+      },
+      "l_thumb_proximal_abd": {
+        "physics:diagonalInertia": "(0.0000040238924, 0.0000041532976, 0.0000012777986)",
+        "physics:mass": "0.03359999880194664"
+      },
+      "l_thumb_middle": {
+        "physics:diagonalInertia": "(0.0000063954058, 0.0000063600028, 0.0000012815019)",
+        "physics:mass": "0.038100000470876694"
+      },
+      "l_thumb_distal": {
+        "physics:diagonalInertia": "(5.4963954e-7, 6.4886757e-7, 1.8435253e-7)",
+        "physics:mass": "0.00570000009611249"
+      },
+      "l_thumb_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "l_thumb_tip_sensor_frame": {
+        "physics:diagonalInertia": "(3.037658e-7, 3.7878053e-7, 2.2457996e-7)",
+        "physics:mass": "0.006000000052154064"
+      },
+      "l_wrist_imu_frame": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      }
+    },
+    "unresolved_relationships": []
+  },
+  "right": {
+    "entry": "/mnt/data2/Codex-dexhands-20261029/source_remote/wuji-description/hand2/hand2_2/body/usd/right/wujihand2_2.usd",
+    "joints": {
+      "r_wrist_fixed": {},
+      "r_index_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "r_index_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "r_index_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "r_index_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "r_index_finger_tip_fixed": {},
+      "r_index_finger_tip_sensor_frame_fixed": {},
+      "r_middle_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "r_middle_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "r_middle_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "r_middle_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "r_middle_finger_tip_fixed": {},
+      "r_middle_finger_tip_sensor_frame_fixed": {},
+      "r_pinky_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "r_pinky_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "r_pinky_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "r_pinky_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "r_pinky_tip_fixed": {},
+      "r_pinky_tip_sensor_frame_fixed": {},
+      "r_ring_finger_mcp_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 469.99725341796875
+      },
+      "r_ring_finger_mcp_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -39.992454528808594,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 464.6687316894531
+      },
+      "r_ring_finger_pip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 119.97736358642578,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "r_ring_finger_dip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "r_ring_finger_tip_fixed": {},
+      "r_ring_finger_tip_sensor_frame_fixed": {},
+      "r_thumb_cmc_flex": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -68.01008605957031,
+        "physics:upperLimit": 73.9688491821289,
+        "physxJoint:maxJointVelocity": 491.99884033203125
+      },
+      "r_thumb_cmc_abd": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -85.02693176269531,
+        "physics:upperLimit": 39.992454528808594,
+        "physxJoint:maxJointVelocity": 635.983154296875
+      },
+      "r_thumb_mcp": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 736.8236694335938
+      },
+      "r_thumb_ip": {
+        "drive:angular:physics:damping": 2.0,
+        "drive:angular:physics:maxForce": 2.0,
+        "drive:angular:physics:stiffness": 50.0,
+        "drive:angular:physics:targetPosition": 0.0,
+        "drive:angular:physics:targetVelocity": 0.0,
+        "drive:angular:physics:type": "force",
+        "physics:lowerLimit": -59.98868179321289,
+        "physics:upperLimit": 89.9543685913086,
+        "physxJoint:maxJointVelocity": 773.4929809570312
+      },
+      "r_thumb_tip_fixed": {},
+      "r_thumb_tip_sensor_frame_fixed": {},
+      "r_wrist_imu_frame_fixed": {},
+      "root_joint": {}
+    },
+    "filtered_pairs": {
+      "r_mount": [
+        "/wujihand2_2_right/r_thumb_proximal",
+        "/wujihand2_2_right/r_thumb_proximal_abd"
+      ],
+      "r_wrist": [],
+      "r_index_finger_proximal": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_index_finger_proximal_abd": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_index_finger_middle": [
+        "/wujihand2_2_right/r_index_finger_tip_sensor_frame"
+      ],
+      "r_index_finger_distal": [
+        "/wujihand2_2_right/r_index_finger_tip_sensor_frame"
+      ],
+      "r_middle_finger_proximal": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_middle_finger_proximal_abd": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_middle_finger_middle": [
+        "/wujihand2_2_right/r_middle_finger_tip_sensor_frame"
+      ],
+      "r_middle_finger_distal": [
+        "/wujihand2_2_right/r_middle_finger_tip_sensor_frame"
+      ],
+      "r_pinky_proximal": [
+        "/wujihand2_2_right/r_ring_finger_proximal",
+        "/wujihand2_2_right/r_ring_finger_proximal_abd",
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_pinky_proximal_abd": [
+        "/wujihand2_2_right/r_ring_finger_proximal_abd",
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_pinky_middle": [
+        "/wujihand2_2_right/r_pinky_tip_sensor_frame"
+      ],
+      "r_pinky_distal": [
+        "/wujihand2_2_right/r_pinky_tip_sensor_frame"
+      ],
+      "r_ring_finger_proximal": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_ring_finger_proximal_abd": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_ring_finger_middle": [
+        "/wujihand2_2_right/r_ring_finger_tip_sensor_frame"
+      ],
+      "r_ring_finger_distal": [
+        "/wujihand2_2_right/r_ring_finger_tip_sensor_frame"
+      ],
+      "r_thumb_proximal": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_thumb_proximal_abd": [
+        "/wujihand2_2_right/r_wrist"
+      ],
+      "r_thumb_middle": [
+        "/wujihand2_2_right/r_thumb_tip_sensor_frame"
+      ],
+      "r_thumb_distal": [
+        "/wujihand2_2_right/r_thumb_tip_sensor_frame"
+      ]
+    },
+    "rigid_bodies": {
+      "r_mount": {
+        "physics:diagonalInertia": "(0.00001692689, 0.00002508476, 0.000026045422)",
+        "physics:mass": "0.0689999982714653"
+      },
+      "r_wrist": {
+        "physics:diagonalInertia": "(0.00009356041, 0.00014994966, 0.00007767123)",
+        "physics:mass": "0.23229999840259552"
+      },
+      "r_index_finger_proximal": {
+        "physics:diagonalInertia": "(9.411432e-7, 8.910278e-7, 7.280807e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "r_index_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014296, 0.000007013757, 9.1467837e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "r_index_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052579, 0.0000024779574, 6.52508e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "r_index_finger_distal": {
+        "physics:diagonalInertia": "(3.641864e-7, 4.6276563e-7, 1.7592826e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "r_index_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "r_index_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677771e-8, 1.1728045e-7, 6.310055e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "r_middle_finger_proximal": {
+        "physics:diagonalInertia": "(9.411432e-7, 8.910278e-7, 7.280807e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "r_middle_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014296, 0.000007013757, 9.1467837e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "r_middle_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052579, 0.0000024779574, 6.52508e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "r_middle_finger_distal": {
+        "physics:diagonalInertia": "(3.641864e-7, 4.6276563e-7, 1.7592826e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "r_middle_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "r_middle_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677771e-8, 1.1728045e-7, 6.310055e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "r_pinky_proximal": {
+        "physics:diagonalInertia": "(9.4242193e-7, 8.9121215e-7, 7.2783064e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "r_pinky_proximal_abd": {
+        "physics:diagonalInertia": "(0.0000053787066, 0.0000053795975, 8.1780126e-7)",
+        "physics:mass": "0.030400000512599945"
+      },
+      "r_pinky_middle": {
+        "physics:diagonalInertia": "(0.0000019868644, 0.000002059841, 5.8499324e-7)",
+        "physics:mass": "0.018799999728798866"
+      },
+      "r_pinky_distal": {
+        "physics:diagonalInertia": "(3.641864e-7, 4.627656e-7, 1.7592826e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "r_pinky_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "r_pinky_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677771e-8, 1.17280436e-7, 6.310055e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "r_ring_finger_proximal": {
+        "physics:diagonalInertia": "(9.411432e-7, 8.910278e-7, 7.280807e-7)",
+        "physics:mass": "0.011599999852478504"
+      },
+      "r_ring_finger_proximal_abd": {
+        "physics:diagonalInertia": "(0.000007014296, 0.000007013757, 9.1467837e-7)",
+        "physics:mass": "0.033900000154972076"
+      },
+      "r_ring_finger_middle": {
+        "physics:diagonalInertia": "(0.0000024052579, 0.0000024779574, 6.52508e-7)",
+        "physics:mass": "0.021199999377131462"
+      },
+      "r_ring_finger_distal": {
+        "physics:diagonalInertia": "(3.641864e-7, 4.6276563e-7, 1.7592826e-7)",
+        "physics:mass": "0.004900000058114529"
+      },
+      "r_ring_finger_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "r_ring_finger_tip_sensor_frame": {
+        "physics:diagonalInertia": "(9.677771e-8, 1.1728045e-7, 6.310055e-8)",
+        "physics:mass": "0.002899999963119626"
+      },
+      "r_thumb_proximal": {
+        "physics:diagonalInertia": "(8.2815825e-7, 7.7345584e-7, 6.263752e-7)",
+        "physics:mass": "0.010999999940395355"
+      },
+      "r_thumb_proximal_abd": {
+        "physics:diagonalInertia": "(0.0000040238624, 0.000004153458, 0.0000012778338)",
+        "physics:mass": "0.03359999880194664"
+      },
+      "r_thumb_middle": {
+        "physics:diagonalInertia": "(0.0000063954058, 0.0000063600028, 0.0000012815019)",
+        "physics:mass": "0.038100000470876694"
+      },
+      "r_thumb_distal": {
+        "physics:diagonalInertia": "(5.4963795e-7, 6.488567e-7, 1.8434787e-7)",
+        "physics:mass": "0.00570000009611249"
+      },
+      "r_thumb_tip": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      },
+      "r_thumb_tip_sensor_frame": {
+        "physics:diagonalInertia": "(3.0377083e-7, 3.7876603e-7, 2.2457529e-7)",
+        "physics:mass": "0.006000000052154064"
+      },
+      "r_wrist_imu_frame": {
+        "physics:diagonalInertia": "(1e-7, 1e-7, 1e-7)",
+        "physics:mass": "1.0000000116860974e-07"
+      }
+    },
+    "unresolved_relationships": []
+  }
+}

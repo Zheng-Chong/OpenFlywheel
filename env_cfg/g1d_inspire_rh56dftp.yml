@@ -1,0 +1,20 @@
+config_name: g1d_inspire_rh56dftp
+
+config:
+  sim: g1d_inspire_sim
+  scene: default
+  robot: g1d_inspire_rh56dftp
+  camera: g1d_dexhands_camera
+
+observation:
+  collect_freq: 30
+  robot:
+    joint_states: true
+    world_ee_state: true
+    ee_state: measured
+  vision:
+    approximate_depth: false
+    depth: false
+    intrinsic_matrix: false
+    extrinsic_matrix: false
+    shape: true

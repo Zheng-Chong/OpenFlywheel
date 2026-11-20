@@ -1,0 +1,4055 @@
+{
+  "source": "https://huggingface.co/datasets/X-Humanoid/ArtVIP",
+  "revision": "d22f2095bc9db29fdd4b60f4a3c4f8177e1f5e9e",
+  "license": "Apache-2.0",
+  "summary": {
+    "candidates": 229,
+    "dropped": 107,
+    "converted": 122,
+    "passed": 96,
+    "failed": 26,
+    "failure_reasons": {
+      "size": 4,
+      "joint_blocked": 19,
+      "joint_return": 8,
+      "render": 1
+    }
+  },
+  "passed": [
+    {
+      "id": "Articulation/artvip_airfryer/00000",
+      "src": "Articulated_objects/small_appliances/airfryer/bakingchamber",
+      "size_m": [
+        0.2665,
+        0.3352,
+        0.3023
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_basket/00000",
+      "src": "Articulated_objects/household_items/basket/basket_1",
+      "size_m": [
+        0.2762,
+        0.4674,
+        0.2421
+      ],
+      "reason": "tabletop, 2 joint(s): handle",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_basket/00001",
+      "src": "Articulated_objects/household_items/basket/basket_20",
+      "size_m": [
+        0.6873,
+        0.4488,
+        0.2676
+      ],
+      "reason": "table side, 2 joint(s): handle, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_basket/00003",
+      "src": "Articulated_objects/household_items/basket/basket_22",
+      "size_m": [
+        0.5189,
+        0.3813,
+        0.2618
+      ],
+      "reason": "tabletop, 2 joint(s): handle",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_basket/00004",
+      "src": "Articulated_objects/household_items/basket/basket_23",
+      "size_m": [
+        0.5184,
+        0.3138,
+        0.323
+      ],
+      "reason": "tabletop, 2 joint(s): handle",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_cabinet/00001",
+      "src": "Articulated_objects/small_furniture/cabinet/cabinet_12",
+      "size_m": [
+        0.5764,
+        0.8399,
+        0.7285
+      ],
+      "reason": "table side, 3 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00000",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_1",
+      "size_m": [
+        0.5308,
+        0.5303,
+        0.6749
+      ],
+      "reason": "table side, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00006",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_6",
+      "size_m": [
+        0.5308,
+        0.5303,
+        0.6749
+      ],
+      "reason": "table side, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_cash_register/00000",
+      "src": "Articulated_objects/small_appliances/cash_register/cash register",
+      "size_m": [
+        0.3717,
+        0.3713,
+        0.4431
+      ],
+      "reason": "tabletop, 2 joint(s): button, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_coffee_machine/00000",
+      "src": "Articulated_objects/small_appliances/coffee machine/capsule_coffee_maker_1",
+      "size_m": [
+        0.1907,
+        0.5277,
+        0.3899
+      ],
+      "reason": "tabletop, 4 joint(s): button, drawer, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_coffee_machine/00002",
+      "src": "Articulated_objects/small_appliances/coffee machine/coffee_machine_5",
+      "size_m": [
+        0.2555,
+        0.327,
+        0.2926
+      ],
+      "reason": "tabletop, 2 joint(s): knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_coffee_machine/00003",
+      "src": "Articulated_objects/small_appliances/coffee machine/coffee_machine_6",
+      "size_m": [
+        0.2948,
+        0.3513,
+        0.2911
+      ],
+      "reason": "tabletop, 6 joint(s): button, knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_coffee_machine/00004",
+      "src": "Articulated_objects/small_appliances/coffee machine/coffee_machine_8",
+      "size_m": [
+        0.1431,
+        0.3259,
+        0.3109
+      ],
+      "reason": "tabletop, 2 joint(s): knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00000",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp001",
+      "size_m": [
+        0.2874,
+        0.1541,
+        0.3861
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00001",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp002",
+      "size_m": [
+        0.214,
+        0.1541,
+        0.4567
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00002",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp003",
+      "size_m": [
+        0.3344,
+        0.1541,
+        0.3961
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00003",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp004",
+      "size_m": [
+        0.2559,
+        0.0602,
+        0.2921
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00004",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp005",
+      "size_m": [
+        0.3656,
+        0.1448,
+        0.2919
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00005",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp006",
+      "size_m": [
+        0.2572,
+        0.0826,
+        0.1896
+      ],
+      "reason": "tabletop, 4 joint(s): knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00006",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp007",
+      "size_m": [
+        0.191,
+        0.067,
+        0.2641
+      ],
+      "reason": "tabletop, 2 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00007",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp008",
+      "size_m": [
+        0.3847,
+        0.1406,
+        0.2754
+      ],
+      "reason": "tabletop, 2 joint(s): knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00008",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp009",
+      "size_m": [
+        0.216,
+        0.1502,
+        0.3621
+      ],
+      "reason": "tabletop, 3 joint(s): button, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_desk_lamp/00009",
+      "src": "Articulated_objects/small_appliances/desk_lamp/desk lamp010",
+      "size_m": [
+        0.0834,
+        0.2235,
+        0.236
+      ],
+      "reason": "tabletop, 2 joint(s): knob, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_double_door/00000",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/double_door/double_door_3",
+      "size_m": [
+        0.6491,
+        0.3023,
+        0.8668
+      ],
+      "reason": "table side, 4 joint(s): door, drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_drawers/00000",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/drawers/chest_of_drawers_1",
+      "size_m": [
+        0.5291,
+        0.39,
+        0.555
+      ],
+      "reason": "tabletop, 3 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_drawers/00002",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/drawers/chest_of_drawers_3",
+      "size_m": [
+        0.501,
+        0.5022,
+        0.7627
+      ],
+      "reason": "table side, 3 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_drawers/00003",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/drawers/chest_of_drawers_4",
+      "size_m": [
+        0.5028,
+        0.5022,
+        0.7627
+      ],
+      "reason": "table side, 3 joint(s): door, drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_laptop/00000",
+      "src": "Articulated_objects/small_appliances/laptop/computer001",
+      "size_m": [
+        0.3309,
+        0.2385,
+        0.2407
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_laptop/00001",
+      "src": "Articulated_objects/small_appliances/laptop/computer_21",
+      "size_m": [
+        0.3579,
+        0.2412,
+        0.0162
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_laptop/00002",
+      "src": "Articulated_objects/small_appliances/laptop/computer_5",
+      "size_m": [
+        0.3703,
+        0.2602,
+        0.0135
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_laptop/00003",
+      "src": "Articulated_objects/small_appliances/laptop/computer_9",
+      "size_m": [
+        0.3282,
+        0.23,
+        0.0175
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_match/00000",
+      "src": "Articulated_objects/household_items/match/match",
+      "size_m": [
+        0.031,
+        0.0612,
+        0.011
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_microwave/00000",
+      "src": "Articulated_objects/small_appliances/microwave/microwave_1",
+      "size_m": [
+        0.5739,
+        0.432,
+        0.3405
+      ],
+      "reason": "tabletop, 3 joint(s): button, door, turntable",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_microwave/00001",
+      "src": "Articulated_objects/small_appliances/microwave/microwave_2",
+      "size_m": [
+        0.558,
+        0.4454,
+        0.3288
+      ],
+      "reason": "tabletop, 4 joint(s): button, door, turntable",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_microwave/00002",
+      "src": "Articulated_objects/small_appliances/microwave/microwave_3",
+      "size_m": [
+        0.558,
+        0.4602,
+        0.3288
+      ],
+      "reason": "tabletop, 5 joint(s): button, door, knob, turntable",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_oven/00000",
+      "src": "Articulated_objects/small_appliances/oven/Collected_model_oven03",
+      "size_m": [
+        0.4702,
+        0.3554,
+        0.2747
+      ],
+      "reason": "tabletop, 2 joint(s): button, door",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_oven/00001",
+      "src": "Articulated_objects/small_appliances/oven/oven_2",
+      "size_m": [
+        0.497,
+        0.4216,
+        0.33
+      ],
+      "reason": "tabletop, 5 joint(s): door, drawer, knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_printer/00000",
+      "src": "Articulated_objects/small_appliances/printer/printer",
+      "size_m": [
+        0.4058,
+        0.3264,
+        0.26
+      ],
+      "reason": "tabletop, 8 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_pump_bottle/00000",
+      "src": "Articulated_objects/household_items/pump_bottle/pressure_pump_13",
+      "size_m": [
+        0.1045,
+        0.0954,
+        0.2819
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_pump_bottle/00001",
+      "src": "Articulated_objects/household_items/pump_bottle/pressure_pump_14",
+      "size_m": [
+        0.0742,
+        0.0743,
+        0.2281
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_pump_bottle/00002",
+      "src": "Articulated_objects/household_items/pump_bottle/pressure_pump_15",
+      "size_m": [
+        0.0468,
+        0.0468,
+        0.1856
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_rice_cooker/00000",
+      "src": "Articulated_objects/small_appliances/rice cooker/rice_cooker_21",
+      "size_m": [
+        0.2967,
+        0.3667,
+        0.2351
+      ],
+      "reason": "tabletop, 4 joint(s): button, handle, lid, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_rice_cooker/00002",
+      "src": "Articulated_objects/small_appliances/rice cooker/rice_cooker_7",
+      "size_m": [
+        0.3269,
+        0.3241,
+        0.2925
+      ],
+      "reason": "tabletop, 3 joint(s): handle, lid, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_shoe_cabinet/00000",
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/flip_shoe_cabinet_2",
+      "size_m": [
+        0.84,
+        0.2502,
+        0.8182
+      ],
+      "reason": "table side, 5 joint(s): door, drawer, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_shoe_cabinet/00001",
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/pull_shoe_cabinet_1",
+      "size_m": [
+        0.3174,
+        0.4632,
+        0.674
+      ],
+      "reason": "table side, 1 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_sound/00000",
+      "src": "Articulated_objects/small_appliances/sound/sound001",
+      "size_m": [
+        0.377,
+        0.362,
+        0.4571
+      ],
+      "reason": "tabletop, 3 joint(s): button, knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_sound/00001",
+      "src": "Articulated_objects/small_appliances/sound/sound002",
+      "size_m": [
+        0.286,
+        0.3412,
+        0.53
+      ],
+      "reason": "tabletop, 4 joint(s): button, knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_sound/00002",
+      "src": "Articulated_objects/small_appliances/sound/sound003",
+      "size_m": [
+        0.1513,
+        0.2093,
+        0.3827
+      ],
+      "reason": "tabletop, 2 joint(s): button, knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_sound/00003",
+      "src": "Articulated_objects/small_appliances/sound/sound004",
+      "size_m": [
+        0.2411,
+        0.3455,
+        0.3686
+      ],
+      "reason": "tabletop, 1 joint(s): knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_sound/00004",
+      "src": "Articulated_objects/small_appliances/sound/sound005",
+      "size_m": [
+        0.2562,
+        0.4004,
+        0.3497
+      ],
+      "reason": "tabletop, 5 joint(s): button, knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00000",
+      "src": "Articulated_objects/household_items/stationery/folder/file_12",
+      "size_m": [
+        0.283,
+        0.3634,
+        0.0438
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00001",
+      "src": "Articulated_objects/household_items/stationery/folder/file_7",
+      "size_m": [
+        0.2477,
+        0.3474,
+        0.0408
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00002",
+      "src": "Articulated_objects/household_items/stationery/folder/file_9",
+      "size_m": [
+        0.1915,
+        0.2327,
+        0.0518
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00003",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_2",
+      "size_m": [
+        0.3328,
+        0.3087,
+        0.0747
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00004",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_20",
+      "size_m": [
+        0.2213,
+        0.302,
+        0.0538
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00005",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_21",
+      "size_m": [
+        0.2529,
+        0.3527,
+        0.0248
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00006",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_22",
+      "size_m": [
+        0.327,
+        0.2862,
+        0.0857
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00007",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_23",
+      "size_m": [
+        0.2958,
+        0.2424,
+        0.0682
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00008",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_24",
+      "size_m": [
+        0.2864,
+        0.2027,
+        0.0332
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_folder/00009",
+      "src": "Articulated_objects/household_items/stationery/folder/folder_25",
+      "size_m": [
+        0.32,
+        0.261,
+        0.071
+      ],
+      "reason": "tabletop, 1 joint(s): knob",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_globe/00000",
+      "src": "Articulated_objects/household_items/stationery/globe/globe",
+      "size_m": [
+        0.4282,
+        0.4153,
+        0.4573
+      ],
+      "reason": "tabletop, 1 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_knife/00000",
+      "src": "Articulated_objects/household_items/stationery/knife/utility_knife_2",
+      "size_m": [
+        0.0396,
+        0.1938,
+        0.0209
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_knife/00001",
+      "src": "Articulated_objects/household_items/stationery/knife/utility_knife_3",
+      "size_m": [
+        0.0473,
+        0.1656,
+        0.019
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_knife/00002",
+      "src": "Articulated_objects/household_items/stationery/knife/utility_knife_6",
+      "size_m": [
+        0.0626,
+        0.2412,
+        0.0216
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_knife/00003",
+      "src": "Articulated_objects/household_items/stationery/knife/utility_knife_7",
+      "size_m": [
+        0.1549,
+        0.0294,
+        0.0073
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_knife/00004",
+      "src": "Articulated_objects/household_items/stationery/knife/utility_knife_8",
+      "size_m": [
+        0.1855,
+        0.0191,
+        0.0443
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_letter_tray/00000",
+      "src": "Articulated_objects/household_items/stationery/letter_tray/Letter disk",
+      "size_m": [
+        0.3297,
+        0.26,
+        0.32
+      ],
+      "reason": "tabletop, 4 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_letter_tray/00001",
+      "src": "Articulated_objects/household_items/stationery/letter_tray/Storage box01",
+      "size_m": [
+        0.275,
+        0.4839,
+        0.29
+      ],
+      "reason": "tabletop, 4 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_notebook/00000",
+      "src": "Articulated_objects/household_items/stationery/notebook/notebook",
+      "size_m": [
+        0.1759,
+        0.2094,
+        0.0182
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_pencil/00000",
+      "src": "Articulated_objects/household_items/stationery/pencil/mechanical pencil",
+      "size_m": [
+        0.0172,
+        0.2112,
+        0.0151
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_pencil_case/00000",
+      "src": "Articulated_objects/household_items/stationery/pencil_case/pencil case",
+      "size_m": [
+        0.1827,
+        0.0551,
+        0.0184
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00000",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_16",
+      "size_m": [
+        0.0774,
+        0.2,
+        0.0087
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00001",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_17",
+      "size_m": [
+        0.0515,
+        0.1539,
+        0.0068
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00002",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_18",
+      "size_m": [
+        0.0656,
+        0.1622,
+        0.0104
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00003",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_19",
+      "size_m": [
+        0.0739,
+        0.1409,
+        0.0075
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00004",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_2",
+      "size_m": [
+        0.069,
+        0.1981,
+        0.0127
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00005",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_20",
+      "size_m": [
+        0.0725,
+        0.2003,
+        0.0099
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00006",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_21",
+      "size_m": [
+        0.096,
+        0.2,
+        0.0157
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00007",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_22",
+      "size_m": [
+        0.0756,
+        0.1989,
+        0.0098
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00008",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_23",
+      "size_m": [
+        0.0823,
+        0.2341,
+        0.0123
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_scissors/00009",
+      "src": "Articulated_objects/household_items/stationery/scissors/scissors_3",
+      "size_m": [
+        0.0968,
+        0.2218,
+        0.015
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_stapler/00000",
+      "src": "Articulated_objects/household_items/stationery/stapler/stapler_1",
+      "size_m": [
+        0.1945,
+        0.07,
+        0.0806
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_stapler/00001",
+      "src": "Articulated_objects/household_items/stationery/stapler/stapler_21",
+      "size_m": [
+        0.1417,
+        0.04,
+        0.0663
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_stapler/00002",
+      "src": "Articulated_objects/household_items/stationery/stapler/stapler_5",
+      "size_m": [
+        0.045,
+        0.1662,
+        0.0862
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_stationery_stapler/00003",
+      "src": "Articulated_objects/household_items/stationery/stapler/stapler_6",
+      "size_m": [
+        0.0318,
+        0.1101,
+        0.0519
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_table_fan/00000",
+      "src": "Articulated_objects/small_appliances/table fan/electric_fan_1",
+      "size_m": [
+        0.3055,
+        0.2059,
+        0.3246
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_table_fan/00001",
+      "src": "Articulated_objects/small_appliances/table fan/electric_fan_10",
+      "size_m": [
+        0.4751,
+        0.1902,
+        0.4754
+      ],
+      "reason": "tabletop, 1 joint(s): rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_table_fan/00002",
+      "src": "Articulated_objects/small_appliances/table fan/electric_fan_11",
+      "size_m": [
+        0.38,
+        0.3457,
+        0.3657
+      ],
+      "reason": "tabletop, 3 joint(s): button, lid, rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_table_fan/00003",
+      "src": "Articulated_objects/small_appliances/table fan/electric_fan_6",
+      "size_m": [
+        0.4457,
+        0.234,
+        0.4531
+      ],
+      "reason": "tabletop, 2 joint(s): lid, rotor",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_tongs/00000",
+      "src": "Articulated_objects/household_items/tongs/tongs_10",
+      "size_m": [
+        0.213,
+        0.0636,
+        0.0266
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_tongs/00002",
+      "src": "Articulated_objects/household_items/tongs/tongs_20",
+      "size_m": [
+        0.0996,
+        0.0609,
+        0.2723
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_tongs/00004",
+      "src": "Articulated_objects/household_items/tongs/tongs_9",
+      "size_m": [
+        0.2146,
+        0.0633,
+        0.0241
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_toolbox/00000",
+      "src": "Articulated_objects/household_items/toolbox/clamshell _tool_box_2",
+      "size_m": [
+        0.6115,
+        0.4948,
+        0.1236
+      ],
+      "reason": "tabletop, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_toolbox/00002",
+      "src": "Articulated_objects/household_items/toolbox/drawer_kit_10",
+      "size_m": [
+        0.3765,
+        0.2588,
+        0.3436
+      ],
+      "reason": "tabletop, 5 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00003",
+      "src": "Articulated_objects/household_items/trash_can/stepping_dustbin_6",
+      "size_m": [
+        0.3249,
+        0.3926,
+        0.5021
+      ],
+      "reason": "tabletop, 2 joint(s): lid, pedal",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00005",
+      "src": "Articulated_objects/household_items/trash_can/trash_can_21",
+      "size_m": [
+        0.415,
+        0.4859,
+        0.8109
+      ],
+      "reason": "table side, 1 joint(s): lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "pass",
+        "render": "pass"
+      }
+    }
+  ],
+  "failed": [
+    {
+      "id": "Articulation/artvip_coffee_machine/00001",
+      "src": "Articulated_objects/small_appliances/coffee machine/capsule_coffee_maker_3",
+      "size_m": [
+        0.1657,
+        0.6392,
+        0.3979
+      ],
+      "reason": "tabletop, 3 joint(s): button, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "fail",
+        "render": "pass"
+      },
+      "why": [
+        "size"
+      ]
+    },
+    {
+      "id": "Articulation/artvip_rice_cooker/00001",
+      "src": "Articulated_objects/small_appliances/rice cooker/rice_cooker_3",
+      "size_m": [
+        0.341,
+        0.5315,
+        0.308
+      ],
+      "reason": "tabletop, 3 joint(s): button, handle, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "fail",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked",
+        "size"
+      ]
+    },
+    {
+      "id": "Articulation/artvip_cabinet/00000",
+      "src": "Articulated_objects/small_furniture/cabinet/bedside_table",
+      "size_m": [
+        0.4095,
+        0.5017,
+        0.4996
+      ],
+      "reason": "tabletop, 2 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "PrismaticJoint_bedsidetable_up",
+          "part": "other",
+          "role": "other",
+          "unit": "m",
+          "nominal": [
+            0.0,
+            0.2
+          ],
+          "reached": [
+            0.0925,
+            0.2
+          ],
+          "back_error": 0.0
+        },
+        {
+          "name": "PrismaticJoint_bedsidetable_down",
+          "part": "other",
+          "role": "other",
+          "unit": "m",
+          "nominal": [
+            0.0,
+            0.2
+          ],
+          "reached": [
+            0.0925,
+            0.2
+          ],
+          "back_error": 0.0
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_drawers/00001",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/drawers/chest_of_drawers_2",
+      "size_m": [
+        0.5012,
+        0.4057,
+        0.5094
+      ],
+      "reason": "tabletop, 2 joint(s): drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "PrismaticJoint_chest_of_drawers_2_down",
+          "part": "drawer",
+          "role": "drawer",
+          "unit": "m",
+          "nominal": [
+            -0.2,
+            0.0
+          ],
+          "reached": [
+            -0.2,
+            0.0
+          ],
+          "back_error": 0.0205
+        },
+        {
+          "name": "PrismaticJoint_chest_of_drawers_2_up",
+          "part": "drawer",
+          "role": "drawer",
+          "unit": "m",
+          "nominal": [
+            -0.2,
+            0.0
+          ],
+          "reached": [
+            -0.2,
+            0.0
+          ],
+          "back_error": 0.0191
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_filing_cabinet_sliding_door/00000",
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_20",
+      "size_m": [
+        0.8,
+        0.3078,
+        0.83
+      ],
+      "reason": "table side, 2 joint(s): door",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked",
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "PrismaticJoint_sliding_door_20_right",
+          "part": "door",
+          "role": "door",
+          "unit": "m",
+          "nominal": [
+            -0.2,
+            0.0
+          ],
+          "reached": [
+            -0.1919,
+            0.0
+          ],
+          "back_error": 0.0
+        },
+        {
+          "name": "PrismaticJoint_sliding_door_20_left",
+          "part": "door",
+          "role": "door",
+          "unit": "m",
+          "nominal": [
+            -0.0,
+            0.2
+          ],
+          "reached": [
+            -0.0,
+            0.194
+          ],
+          "back_error": 0.0
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_basket/00002",
+      "src": "Articulated_objects/household_items/basket/basket_21",
+      "size_m": [
+        0.3425,
+        0.5015,
+        0.2233
+      ],
+      "reason": "tabletop, 2 joint(s): handle, other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked",
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_basket_21_left",
+          "part": "other",
+          "role": "other",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            0.0
+          ],
+          "back_error": 6.8825
+        },
+        {
+          "name": "RevoluteJoint_basket_21_right",
+          "part": "handle",
+          "role": "handle",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            -0.0,
+            107.5272
+          ],
+          "back_error": 0.0032
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00001",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_10",
+      "size_m": [
+        0.2211,
+        0.11,
+        0.084
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked",
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_10_left",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            78.5664,
+            120.0
+          ],
+          "back_error": 0.0
+        },
+        {
+          "name": "RevoluteJoint_carton_10_up",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            0.0
+          ],
+          "back_error": 4.4826
+        },
+        {
+          "name": "RevoluteJoint__carton_10_down",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            -0.0,
+            120.0
+          ],
+          "back_error": 4.315
+        },
+        {
+          "name": "RevoluteJoint_carton_10_right",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            -76.685
+          ],
+          "back_error": 0.0
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00002",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_2",
+      "size_m": [
+        0.5638,
+        0.4537,
+        0.3754
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_2_left",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            -81.7051
+          ],
+          "back_error": 0.7569
+        },
+        {
+          "name": "RevoluteJoint_carton_2_right",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            79.7213,
+            120.0
+          ],
+          "back_error": 0.9093
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00003",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_3",
+      "size_m": [
+        0.5171,
+        0.3151,
+        0.3994
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked",
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_3_left",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -90.0,
+            0.0
+          ],
+          "reached": [
+            -90.0,
+            -70.2212
+          ],
+          "back_error": 0.0
+        },
+        {
+          "name": "RevoluteJoint_carton_3_up",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            -0.0,
+            120.0
+          ],
+          "back_error": 3.7212
+        },
+        {
+          "name": "RevoluteJoint_carton_3_right",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            22.0396,
+            120.0
+          ],
+          "back_error": 0.5105
+        },
+        {
+          "name": "RevoluteJoint_carton_3_down",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -90.0,
+            0.0
+          ],
+          "reached": [
+            -90.0,
+            0.0
+          ],
+          "back_error": 3.3306
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00004",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_4",
+      "size_m": [
+        0.4096,
+        0.3535,
+        0.2839
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_4_up",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            -71.3673
+          ],
+          "back_error": 1.2381
+        },
+        {
+          "name": "RevoluteJoint_carton_4_down",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            74.3709,
+            120.0
+          ],
+          "back_error": 1.3612
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00005",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_5",
+      "size_m": [
+        0.5184,
+        0.4024,
+        0.3994
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_5_left",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -90.0,
+            0.0
+          ],
+          "reached": [
+            -90.0,
+            -81.5362
+          ],
+          "back_error": 0.0273
+        },
+        {
+          "name": "RevoluteJoint_carton_5_right",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            71.3893,
+            120.0
+          ],
+          "back_error": 0.1944
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00007",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_8",
+      "size_m": [
+        0.3307,
+        0.22,
+        0.2253
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_8_right",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            -83.7531
+          ],
+          "back_error": 1.1457
+        },
+        {
+          "name": "RevoluteJoint_carton_8_left",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            84.5548,
+            120.0
+          ],
+          "back_error": 0.5137
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_cardboard_box/00008",
+      "src": "Articulated_objects/household_items/cardboard_box/carton_9",
+      "size_m": [
+        0.2204,
+        0.22,
+        0.1178
+      ],
+      "reason": "tabletop, 4 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_carton_9_down",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            120.0
+          ],
+          "reached": [
+            83.4441,
+            120.0
+          ],
+          "back_error": 0.4403
+        },
+        {
+          "name": "RevoluteJoint_carton_9_up",
+          "part": "lid",
+          "role": "lid",
+          "unit": "deg",
+          "nominal": [
+            -120.0,
+            0.0
+          ],
+          "reached": [
+            -120.0,
+            -84.0466
+          ],
+          "back_error": 0.2579
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_clock/00000",
+      "src": "Articulated_objects/household_items/clock/clock009",
+      "size_m": [
+        0.088,
+        0.0592,
+        0.1227
+      ],
+      "reason": "tabletop, 4 joint(s): button, knob, pointer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint__clock009_middle1",
+          "part": "pointer",
+          "role": "pointer",
+          "unit": "deg",
+          "nominal": [
+            93.2631,
+            273.2631
+          ],
+          "reached": [
+            101.1357,
+            267.9669
+          ],
+          "back_error": 7.4486
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_clock/00001",
+      "src": "Articulated_objects/household_items/clock/clock010",
+      "size_m": [
+        0.0948,
+        0.0426,
+        0.1164
+      ],
+      "reason": "tabletop, 4 joint(s): button, pointer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_clock010_down",
+          "part": "pointer",
+          "role": "pointer",
+          "unit": "deg",
+          "nominal": [
+            259.3274,
+            439.3274
+          ],
+          "reached": [
+            270.1733,
+            328.6886
+          ],
+          "back_error": 27.5835
+        },
+        {
+          "name": "RevoluteJoint_clock010_middle",
+          "part": "pointer",
+          "role": "pointer",
+          "unit": "deg",
+          "nominal": [
+            121.2723,
+            301.2723
+          ],
+          "reached": [
+            132.0506,
+            291.8195
+          ],
+          "back_error": 6.841
+        },
+        {
+          "name": "RevoluteJoint_clock010_middle1",
+          "part": "pointer",
+          "role": "pointer",
+          "unit": "deg",
+          "nominal": [
+            -86.0953,
+            93.9047
+          ],
+          "reached": [
+            -66.5692,
+            73.9183
+          ],
+          "back_error": 0.8667
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_pump_bottle/00003",
+      "src": "Articulated_objects/household_items/pump_bottle/pressure_pump_2",
+      "size_m": [
+        0.1453,
+        0.1444,
+        0.3824
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "fail",
+        "render": "fail"
+      },
+      "why": [
+        "render",
+        "size"
+      ]
+    },
+    {
+      "id": "Articulation/artvip_pump_bottle/00004",
+      "src": "Articulated_objects/household_items/pump_bottle/pressure_pump_3",
+      "size_m": [
+        0.1396,
+        0.1388,
+        0.3861
+      ],
+      "reason": "tabletop, 1 joint(s): button",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "pass",
+        "size": "fail",
+        "render": "pass"
+      },
+      "why": [
+        "size"
+      ]
+    },
+    {
+      "id": "Articulation/artvip_tongs/00001",
+      "src": "Articulated_objects/household_items/tongs/tongs_2",
+      "size_m": [
+        0.1704,
+        0.0381,
+        0.0181
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_tongs_2_left",
+          "part": "other",
+          "role": "other",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            10.0
+          ],
+          "reached": [
+            -0.0,
+            7.6272
+          ],
+          "back_error": 0.0002
+        },
+        {
+          "name": "RevoluteJoint_tongs_2_right",
+          "part": "other",
+          "role": "other",
+          "unit": "deg",
+          "nominal": [
+            -10.0,
+            0.0
+          ],
+          "reached": [
+            -7.6464,
+            0.0
+          ],
+          "back_error": 0.0034
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_tongs/00003",
+      "src": "Articulated_objects/household_items/tongs/tongs_3",
+      "size_m": [
+        0.2263,
+        0.1015,
+        0.0279
+      ],
+      "reason": "tabletop, 2 joint(s): other",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_tongs_3_left",
+          "part": "other",
+          "role": "other",
+          "unit": "deg",
+          "nominal": [
+            -20.0,
+            0.0
+          ],
+          "reached": [
+            -17.647,
+            0.0
+          ],
+          "back_error": 0.0003
+        },
+        {
+          "name": "RevoluteJoint_tongs_3_right",
+          "part": "other",
+          "role": "other",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            20.0
+          ],
+          "reached": [
+            -0.0,
+            17.8077
+          ],
+          "back_error": 0.0003
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_toolbox/00001",
+      "src": "Articulated_objects/household_items/toolbox/clamshell_tool_box_1",
+      "size_m": [
+        0.5951,
+        0.4451,
+        0.2496
+      ],
+      "reason": "tabletop, 2 joint(s): handle, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_clamshell__tool_box_1_middle",
+          "part": "handle",
+          "role": "handle",
+          "unit": "deg",
+          "nominal": [
+            -95.0,
+            0.0
+          ],
+          "reached": [
+            -94.7667,
+            0.0
+          ],
+          "back_error": 4.7745
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_toolbox/00003",
+      "src": "Articulated_objects/household_items/toolbox/drawer_kit_3",
+      "size_m": [
+        0.5019,
+        0.32,
+        0.3142
+      ],
+      "reason": "tabletop, 5 joint(s): door, drawer",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_drawer_kit_3_middle",
+          "part": "door",
+          "role": "door",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            90.0
+          ],
+          "reached": [
+            85.6912,
+            90.0
+          ],
+          "back_error": 0.0
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_toolbox/00004",
+      "src": "Articulated_objects/household_items/toolbox/drawer_kit_5",
+      "size_m": [
+        0.4906,
+        0.2963,
+        0.2745
+      ],
+      "reason": "tabletop, 4 joint(s): drawer, handle, lid",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_drawer_kit_5_up",
+          "part": "handle",
+          "role": "handle",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            90.0
+          ],
+          "reached": [
+            -0.0,
+            87.2462
+          ],
+          "back_error": 0.3354
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00000",
+      "src": "Articulated_objects/household_items/trash_can/steping_dustbin_20",
+      "size_m": [
+        0.2658,
+        0.21,
+        0.3151
+      ],
+      "reason": "tabletop, 3 joint(s): handle, lid, pedal",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_steping_dustbin_20_up1",
+          "part": "handle",
+          "role": "handle",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            90.0
+          ],
+          "reached": [
+            -0.0,
+            90.0
+          ],
+          "back_error": 2.7462
+        },
+        {
+          "name": "RevoluteJoint_steping_dustbin_20_down",
+          "part": "pedal",
+          "role": "pedal",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            50.0
+          ],
+          "reached": [
+            0.0516,
+            50.0
+          ],
+          "back_error": 3.4456
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00001",
+      "src": "Articulated_objects/household_items/trash_can/stepping_dustbin_16",
+      "size_m": [
+        0.2322,
+        0.2512,
+        0.355
+      ],
+      "reason": "tabletop, 2 joint(s): lid, pedal",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_Stepping_dustbin_16_down",
+          "part": "pedal",
+          "role": "pedal",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            30.0
+          ],
+          "reached": [
+            2.3976,
+            30.0
+          ],
+          "back_error": 4.339
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00002",
+      "src": "Articulated_objects/household_items/trash_can/stepping_dustbin_4",
+      "size_m": [
+        0.2443,
+        0.4528,
+        0.5455
+      ],
+      "reason": "tabletop, 2 joint(s): lid, pedal",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_blocked"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_stepping_dustbin_4_down",
+          "part": "pedal",
+          "role": "pedal",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            30.0
+          ],
+          "reached": [
+            3.3822,
+            30.0
+          ],
+          "back_error": 5.768
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    },
+    {
+      "id": "Articulation/artvip_trash_can/00004",
+      "src": "Articulated_objects/household_items/trash_can/stepping_dustbin_9",
+      "size_m": [
+        0.3286,
+        0.3094,
+        0.4264
+      ],
+      "reason": "tabletop, 3 joint(s): lid, other, pedal",
+      "checks": {
+        "fixed_base": "pass",
+        "settle": "pass",
+        "joints": "fail",
+        "size": "pass",
+        "render": "pass"
+      },
+      "why": [
+        "joint_return"
+      ],
+      "failing_joints": [
+        {
+          "name": "RevoluteJoint_Stepping_dustbin_9_down",
+          "part": "pedal",
+          "role": "pedal",
+          "unit": "deg",
+          "nominal": [
+            0.0,
+            30.0
+          ],
+          "reached": [
+            0.0506,
+            30.0
+          ],
+          "back_error": 2.7158
+        }
+      ],
+      "rechecked": "2026-11-18: rechecked with check_articulation.py after #344 (a joint blocked with the doors / lids as they start is swept again with them open), one process per object with a warm-up render: still fails"
+    }
+  ],
+  "dropped": [
+    {
+      "src": "Articulated_objects/small_appliances/oven/oven_1",
+      "model": "model_oven.usd",
+      "kind": "small_appliances/oven",
+      "size_m": [
+        0.3607,
+        0.2377,
+        0.2045
+      ],
+      "reason": "RevoluteJoint hinges a link to the world, not to the body"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/table fan/electric_fan_8",
+      "model": "model_electric_fan_8.usda",
+      "kind": "small_appliances/table fan",
+      "size_m": [
+        0.4472,
+        0.2749,
+        0.4583
+      ],
+      "reason": "two joints share a prim name, so their DOFs cannot be told apart"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/television/television002",
+      "model": "model_television002.usd",
+      "kind": "small_appliances/television",
+      "size_m": [
+        1.4027,
+        0.0965,
+        0.8513
+      ],
+      "reason": "1.40 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/television/television003",
+      "model": "model_television003.usd",
+      "kind": "small_appliances/television",
+      "size_m": [
+        0.9596,
+        0.3604,
+        1.332
+      ],
+      "reason": "1.33 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/television/television004",
+      "model": "model_television004_0.usd",
+      "kind": "small_appliances/television",
+      "size_m": [
+        0.8586,
+        0.1628,
+        1.0389
+      ],
+      "reason": "1.04 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/television/television005",
+      "model": "model_television005.usd",
+      "kind": "small_appliances/television",
+      "size_m": [
+        1.2206,
+        0.5717,
+        1.739
+      ],
+      "reason": "model 1.74 m, far outside a real television (0.3-1.0 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/small_appliances/water dispenser/water_dispenser_8",
+      "model": "model_water_dispenser_8.usd",
+      "kind": "small_appliances/water dispenser",
+      "size_m": [
+        0.285,
+        0.3942,
+        0.3893
+      ],
+      "reason": "floor-standing water dispenser"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/bookcase/bookcase006",
+      "model": "model_bookcase006.usd",
+      "kind": "small_furniture/bookcase",
+      "size_m": [
+        7.1939,
+        0.3067,
+        2.9252
+      ],
+      "reason": "bookcase: large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/bookcase/bookcase007",
+      "model": "model_bookcase007.usd",
+      "kind": "small_furniture/bookcase",
+      "size_m": [
+        2.5895,
+        0.2977,
+        2.9252
+      ],
+      "reason": "bookcase: large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/chair_1",
+      "model": "model_chair_1.usda",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.4893,
+        0.5463,
+        0.77
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/chair_2",
+      "model": "model_chair_2.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.4913,
+        0.8353,
+        0.8889
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/model_office_chair_3",
+      "model": "model_office_chair_3.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.6108,
+        0.6267,
+        0.9577
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/office chair003",
+      "model": "model_officechair003.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.728,
+        0.7182,
+        1.0456
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/office chair004",
+      "model": "model office chair001.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.5687,
+        0.5653,
+        0.9176
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/office chair005",
+      "model": "model_office_chair002.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.6671,
+        0.6621,
+        1.0989
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/chair/office chair008",
+      "model": "model_chair.usd",
+      "kind": "small_furniture/chair",
+      "size_m": [
+        0.7548,
+        0.758,
+        1.0359
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/door/Entrance_door",
+      "model": "model_Entrance_door.usd",
+      "kind": "small_furniture/door",
+      "size_m": [
+        1.2149,
+        0.2064,
+        2.1718
+      ],
+      "reason": "room door"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/door/door001",
+      "model": "model_door001.usd",
+      "kind": "small_furniture/door",
+      "size_m": [
+        0.8854,
+        0.1114,
+        2.7848
+      ],
+      "reason": "room door"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/door/door002",
+      "model": "model_door.usd",
+      "kind": "small_furniture/door",
+      "size_m": [
+        1.0995,
+        0.1165,
+        3.008
+      ],
+      "reason": "room door"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/door/fire_rated_door",
+      "model": "model_door.usd",
+      "kind": "small_furniture/door",
+      "size_m": [
+        1.5,
+        0.1986,
+        2.1
+      ],
+      "reason": "room door"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/easel/easel",
+      "model": "model_easel_0.usd",
+      "kind": "small_furniture/easel",
+      "size_m": [
+        0.7256,
+        0.8575,
+        1.7825
+      ],
+      "reason": "floor-standing easel"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/faucet/faucet_10",
+      "model": "model_faucet_10.usda",
+      "kind": "small_furniture/faucet",
+      "size_m": [
+        0.2139,
+        0.1967,
+        0.2795
+      ],
+      "reason": "sink fixture, needs a basin"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/faucet/faucet_3",
+      "model": "model_faucet_3.usd",
+      "kind": "small_furniture/faucet",
+      "size_m": [
+        0.455,
+        0.2198,
+        0.2133
+      ],
+      "reason": "sink fixture, needs a basin"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/faucet/faucet_4",
+      "model": "model_faucet_4.usd",
+      "kind": "small_furniture/faucet",
+      "size_m": [
+        0.3647,
+        0.274,
+        0.238
+      ],
+      "reason": "sink fixture, needs a basin"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/faucet/faucet_7",
+      "model": "model_faucet_7.usda",
+      "kind": "small_furniture/faucet",
+      "size_m": [
+        0.2058,
+        0.0527,
+        0.2963
+      ],
+      "reason": "sink fixture, needs a basin"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/faucet/faucet_9",
+      "model": "model_faucet_9.usda",
+      "kind": "small_furniture/faucet",
+      "size_m": [
+        0.1313,
+        0.0477,
+        0.3308
+      ],
+      "reason": "sink fixture, needs a basin"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/double_door/double_door_1",
+      "model": "model_double_door_1.usd",
+      "kind": "small_furniture/filing_cabinet/double_door",
+      "size_m": [
+        0.9255,
+        0.4761,
+        2.0193
+      ],
+      "reason": "model 2.02 m, far outside a real double_door (0.25-0.9 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/double_door/double_door_2",
+      "model": "model_double_door_2.usda",
+      "kind": "small_furniture/filing_cabinet/double_door",
+      "size_m": [
+        0.6491,
+        0.3196,
+        1.3745
+      ],
+      "reason": "model 1.37 m, far outside a real double_door (0.25-0.9 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/double_door/double_door_4",
+      "model": "model_double_door_4.usd",
+      "kind": "small_furniture/filing_cabinet/double_door",
+      "size_m": [
+        0.6491,
+        0.3014,
+        1.3745
+      ],
+      "reason": "model 1.37 m, far outside a real double_door (0.25-0.9 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/drawers/chest_of_drawers_5",
+      "model": "model_chest_of_drawers_5.usda",
+      "kind": "small_furniture/filing_cabinet/drawers",
+      "size_m": [
+        0.8074,
+        0.4247,
+        1.2142
+      ],
+      "reason": "1.21 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_1",
+      "model": "model_sliding_door_1.usd",
+      "kind": "small_furniture/filing_cabinet/sliding_door",
+      "size_m": [
+        1.2117,
+        0.5196,
+        1.3009
+      ],
+      "reason": "1.30 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_2",
+      "model": "model_sliding_door_2.usda",
+      "kind": "small_furniture/filing_cabinet/sliding_door",
+      "size_m": [
+        1.2,
+        0.4,
+        0.7
+      ],
+      "reason": "1.20 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_3",
+      "model": "model_sliding_door_3.usd",
+      "kind": "small_furniture/filing_cabinet/sliding_door",
+      "size_m": [
+        1.2117,
+        0.5227,
+        1.2923
+      ],
+      "reason": "1.29 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_4",
+      "model": "model_sliding_door_4.usda",
+      "kind": "small_furniture/filing_cabinet/sliding_door",
+      "size_m": [
+        1.2117,
+        0.5196,
+        0.8788
+      ],
+      "reason": "1.21 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/filing_cabinet/sliding_door/sliding_door_5",
+      "model": "model_sliding_door_5.usd",
+      "kind": "small_furniture/filing_cabinet/sliding_door",
+      "size_m": [
+        1.2,
+        0.4044,
+        0.7
+      ],
+      "reason": "1.20 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp001",
+      "model": "model_floor_lamp_001.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.4739,
+        0.3537,
+        1.7435
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp002",
+      "model": "model_floor_lamp_002.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        1.17,
+        0.3065,
+        1.6636
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp003",
+      "model": "model_floor_lamp_003.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.578,
+        0.4499,
+        1.7756
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp004",
+      "model": "model_floor_lamp_004.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.3116,
+        0.3116,
+        1.7014
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp005",
+      "model": "model_floor_lamp_005.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.7044,
+        0.2605,
+        1.6411
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp006",
+      "model": "model_floor_lamp_006.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.3875,
+        0.2498,
+        1.4857
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp007",
+      "model": "model_floor_lamp_007.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.4385,
+        0.1812,
+        1.4308
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp008",
+      "model": "model_floor_lamp_008.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.7526,
+        0.705,
+        1.433
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor lamp009",
+      "model": "model_floor_lamp_009.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.364,
+        0.364,
+        1.4815
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/floor_lamp/floor_lamp_010",
+      "model": "model_floor_lamp_010.usd",
+      "kind": "small_furniture/floor_lamp",
+      "size_m": [
+        0.7344,
+        0.176,
+        1.6248
+      ],
+      "reason": "floor-standing lamp"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/flip_shoe_cabinet_1",
+      "model": "model_flip_shoe_cabinet_1.usd",
+      "kind": "small_furniture/shoe_cabinet",
+      "size_m": [
+        0.9499,
+        0.4627,
+        0.8239
+      ],
+      "reason": "0.95 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/pull_shoe_cabinet_20",
+      "model": "model_pull_shoe_cabinet_20.usd",
+      "kind": "small_furniture/shoe_cabinet",
+      "size_m": [
+        0.3,
+        0.5442,
+        2.086
+      ],
+      "reason": "model 2.09 m, far outside a real shoe_cabinet (0.5-1.3 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/shoe_cabinet_1",
+      "model": "model_shoe_cabinet_1.usda",
+      "kind": "small_furniture/shoe_cabinet",
+      "size_m": [
+        0.8401,
+        0.3477,
+        1.2
+      ],
+      "reason": "1.20 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/shoe_cabinet_2",
+      "model": "model_shoe_cabinet_2.usd",
+      "kind": "small_furniture/shoe_cabinet",
+      "size_m": [
+        0.3304,
+        1.2158,
+        0.9177
+      ],
+      "reason": "1.22 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/shoe_cabinet/shoe_cabinet_4",
+      "model": "model_shoe_cabinet_4.usda",
+      "kind": "small_furniture/shoe_cabinet",
+      "size_m": [
+        1.35,
+        0.5,
+        1.16
+      ],
+      "reason": "1.35 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/stool/stool",
+      "model": "model_stool_0.usd",
+      "kind": "small_furniture/stool",
+      "size_m": [
+        0.3803,
+        0.4025,
+        0.5791
+      ],
+      "reason": "seating, not a tabletop or table-side object"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/ShoolDesk",
+      "model": "model_shoolDesk.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.2428,
+        0.5564,
+        1.9486
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table001",
+      "model": "model_dressing_table_001.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.5859,
+        0.5139,
+        1.5036
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table002",
+      "model": "model_dressing_table_002.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.7461,
+        0.6126,
+        1.7101
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table003",
+      "model": "model_dressing_table_003.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.6208,
+        0.4917,
+        1.4768
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table004",
+      "model": "model_dressing_table_004.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.6859,
+        0.6003,
+        1.7971
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table005",
+      "model": "model_dressing_table_005.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.9393,
+        0.4737,
+        1.8668
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table006",
+      "model": "model_dressing_table_006.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.497,
+        0.484,
+        1.6591
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table007",
+      "model": "model_dressing_table_007.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.6093,
+        0.5239,
+        1.6591
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table008",
+      "model": "model_dressing_table_008.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.8653,
+        0.6524,
+        1.7971
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table009",
+      "model": "model_dressing_table_009.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.4208,
+        0.4503,
+        1.4768
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/dressing table010",
+      "model": "model_dressing_table_010.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.9038,
+        0.5541,
+        1.6591
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table",
+      "model": "model_table.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.7692,
+        1.011,
+        0.7789
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_1",
+      "model": "model_table_1.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.3022,
+        0.6159,
+        0.7888
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_2",
+      "model": "model_table_2.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.5635,
+        0.6295,
+        0.8732
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_3",
+      "model": "model_table_3.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.8251,
+        0.565,
+        2.037
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_4",
+      "model": "model_table_4.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.0,
+        0.5583,
+        0.805
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_5",
+      "model": "model_table_5.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.6292,
+        0.5756,
+        0.7626
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_6",
+      "model": "model_table_6.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        0.68,
+        1.2,
+        0.7549
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/table_7",
+      "model": "model_table_7.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.7418,
+        0.82,
+        0.7435
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench01",
+      "model": "model_desk014.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.3976,
+        1.5923,
+        1.0135
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench02",
+      "model": "model_desk013.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.4411,
+        1.4831,
+        0.8707
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench03",
+      "model": "model_desk012.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        3.2238,
+        1.6949,
+        0.7649
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench04",
+      "model": "model_desk011.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.3112,
+        1.8493,
+        0.7687
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench05",
+      "model": "model_desk010.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        2.3112,
+        1.8493,
+        0.7687
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench06",
+      "model": "model_desk009.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        3.6625,
+        2.2602,
+        0.9297
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench07",
+      "model": "model_desk008.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        1.9693,
+        0.9587,
+        0.6549
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench08",
+      "model": "model_desk007.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        3.923,
+        2.0358,
+        1.2944
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/table/workbench09",
+      "model": "model_lab_bench001.usd",
+      "kind": "small_furniture/table",
+      "size_m": [
+        3.0,
+        0.739,
+        0.8959
+      ],
+      "reason": "a table itself (desks, dressing tables, workbenches): large furniture"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table007",
+      "model": "model_tea_table_001.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        1.2437,
+        0.7145,
+        0.2323
+      ],
+      "reason": "1.24 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table008",
+      "model": "model_tea_table_002.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        0.9549,
+        0.6654,
+        0.2208
+      ],
+      "reason": "0.95 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table009",
+      "model": "model_tea_table_003.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        1.0873,
+        0.7989,
+        0.2663
+      ],
+      "reason": "1.09 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table010",
+      "model": "model_tea_table_004.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        1.1134,
+        0.5791,
+        0.3912
+      ],
+      "reason": "1.11 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table011",
+      "model": "model_tea_table_005.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        1.0898,
+        0.5731,
+        0.3869
+      ],
+      "reason": "two joints share a prim name, so their DOFs cannot be told apart"
+    },
+    {
+      "src": "Articulated_objects/small_furniture/tea_table/tea table012",
+      "model": "model_tea_table_006.usd",
+      "kind": "small_furniture/tea_table",
+      "size_m": [
+        0.9749,
+        0.5369,
+        0.3512
+      ],
+      "reason": "0.97 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/household_items/basket/basket_7",
+      "model": "model_basket_7.usda",
+      "kind": "household_items/basket",
+      "size_m": [
+        1.213,
+        0.8932,
+        0.8631
+      ],
+      "reason": "model 1.21 m, far outside a real basket (0.15-0.75 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/household_items/cardboard_box/carton_7",
+      "model": "model_carton_7.usd",
+      "kind": "household_items/cardboard_box",
+      "size_m": [
+        3.7733,
+        3.0694,
+        2.8946
+      ],
+      "reason": "model 3.77 m, far outside a real cardboard_box (0.1-0.7 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock001",
+      "model": "model_clock_001.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.2775,
+        0.0093,
+        0.2775
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock002",
+      "model": "model_clock_002.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.3427,
+        0.0411,
+        0.3427
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock003",
+      "model": "model_clock_003.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.3465,
+        0.0339,
+        0.3453
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock004",
+      "model": "model_clock_004.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.3281,
+        0.0338,
+        0.3281
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock005",
+      "model": "model_clock_005.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.6754,
+        0.0502,
+        0.6752
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock006",
+      "model": "model_clock_006.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.6081,
+        0.0298,
+        0.6081
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock007",
+      "model": "model_clock007.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.0901,
+        0.0673,
+        0.0978
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock008",
+      "model": "model_clock_008.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.0798,
+        0.0319,
+        0.1007
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/clock/clock011",
+      "model": "model_clock_011.usd",
+      "kind": "household_items/clock",
+      "size_m": [
+        0.452,
+        0.0626,
+        0.4759
+      ],
+      "reason": "only clock hands move (unlimited, display only): no joint to work"
+    },
+    {
+      "src": "Articulated_objects/household_items/mop/mop_10",
+      "model": "model_mop_10.usd",
+      "kind": "household_items/mop",
+      "size_m": [
+        0.3987,
+        0.1422,
+        1.4635
+      ],
+      "reason": "floor-cleaning tool"
+    },
+    {
+      "src": "Articulated_objects/household_items/mop/mop_11",
+      "model": "model_mop_11.usd",
+      "kind": "household_items/mop",
+      "size_m": [
+        0.4862,
+        0.1961,
+        1.5547
+      ],
+      "reason": "floor-cleaning tool"
+    },
+    {
+      "src": "Articulated_objects/household_items/mop/mop_9",
+      "model": "model_mop_9.usd",
+      "kind": "household_items/mop",
+      "size_m": [
+        0.5231,
+        0.2107,
+        1.535
+      ],
+      "reason": "floor-cleaning tool"
+    },
+    {
+      "src": "Articulated_objects/household_items/showerhead/showerhead",
+      "model": "model_Showerhead.usd",
+      "kind": "household_items/showerhead",
+      "size_m": [
+        0.5919,
+        0.2464,
+        1.639
+      ],
+      "reason": "bathroom wall fixture"
+    },
+    {
+      "src": "Articulated_objects/household_items/stationery/stapler/stapler_4",
+      "model": "model_stapler_4.usd",
+      "kind": "household_items/stationery/stapler",
+      "size_m": [
+        1.7475,
+        0.2934,
+        0.4164
+      ],
+      "reason": "model 1.75 m, far outside a real stapler (0.1-0.3 m): wrong scale"
+    },
+    {
+      "src": "Articulated_objects/household_items/toolbox/clamshell _tool_box_7",
+      "model": "model_clamshell _tool_box_7.usd",
+      "kind": "household_items/toolbox",
+      "size_m": [
+        1.0156,
+        0.9363,
+        0.4742
+      ],
+      "reason": "1.02 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/household_items/toolbox/clamshell _tool_box_8",
+      "model": "model_clamshell _tool_box_8.usd",
+      "kind": "household_items/toolbox",
+      "size_m": [
+        0.4971,
+        0.4013,
+        0.2418
+      ],
+      "reason": "two joints share a prim name, so their DOFs cannot be told apart"
+    },
+    {
+      "src": "Articulated_objects/household_items/toolbox/drawer_kit_7",
+      "model": "model_drawer_kit_7.usd",
+      "kind": "household_items/toolbox",
+      "size_m": [
+        0.4631,
+        0.3277,
+        0.2697
+      ],
+      "reason": "two joints share a prim name, so their DOFs cannot be told apart"
+    },
+    {
+      "src": "Articulated_objects/household_items/trash_can/trash_can_1",
+      "model": "model_trash_can_1.usda",
+      "kind": "household_items/trash_can",
+      "size_m": [
+        0.5818,
+        0.5876,
+        0.9572
+      ],
+      "reason": "0.96 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/household_items/trash_can/trash_can_20",
+      "model": "model_trash_can_20.usd",
+      "kind": "household_items/trash_can",
+      "size_m": [
+        0.6445,
+        0.7405,
+        1.0639
+      ],
+      "reason": "1.06 m: large furniture, out of reach next to the table"
+    },
+    {
+      "src": "Articulated_objects/household_items/trash_can/trash_can_22",
+      "model": "model_trash_can_22.usd",
+      "kind": "household_items/trash_can",
+      "size_m": [
+        1.0132,
+        0.7121,
+        0.8195
+      ],
+      "reason": "1.01 m: large furniture, out of reach next to the table"
+    }
+  ]
+}

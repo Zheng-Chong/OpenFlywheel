@@ -1,0 +1,8 @@
+# Validated RH56DFTP integration timestep; preserve the 30 Hz public observation rate.
+device: cpu  # Full recorded acceptance uses CPU PhysX; rendering can use the available GPU.
+decimation: 1
+dt: 0.0020833333333333333  # 1/480 s
+render_interval: 16
+scene:
+  num_envs: 1
+  env_spacing: 7

@@ -1,0 +1,283 @@
+{
+    "Rigid": {
+        "measuring_cup": [
+            {
+                "category": "measuring_cup",
+                "category_idx": 1,
+                "group": null,
+                "xlim": [
+                    [
+                        -0.3,
+                        -0.05
+                    ],
+                    [
+                        0.05,
+                        0.3
+                    ]
+                ],
+                "ylim": [
+                    -0.2,
+                    0.05
+                ],
+                "zlim": null,
+                "qpos": [
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "rotate_deg": 0,
+                "rotate_rand": false,
+                "relative_plane": "Table",
+                "place_tag": null,
+                "margin": 0.04,
+                "check_mode": "bbox",
+                "need_check_stable": true,
+                "label": "source_cup",
+                "default_pos": [
+                    0.1111,
+                    -0.4976,
+                    0.9150999999999999
+                ],
+                "default_ori": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "physics": {
+                    "mass": 0.06,
+                    "friction": 0.5,
+                    "size": [
+                        0.082,
+                        0.075,
+                        0.17
+                    ],
+                    "type": "rigid"
+                },
+                "visual": {}
+            }
+        ],
+        "plastic_cup": [
+            {
+                "category": "plastic_cup",
+                "category_idx": 1,
+                "group": null,
+                "xlim": [
+                    [
+                        -0.3,
+                        -0.05
+                    ],
+                    [
+                        0.05,
+                        0.3
+                    ]
+                ],
+                "ylim": [
+                    -0.2,
+                    0.05
+                ],
+                "zlim": null,
+                "qpos": [
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "rotate_deg": 0,
+                "rotate_rand": false,
+                "relative_plane": "Table",
+                "place_tag": null,
+                "margin": 0.04,
+                "check_mode": "bbox",
+                "need_check_stable": true,
+                "label": "target_cup",
+                "default_pos": [
+                    -0.1137,
+                    -0.485,
+                    0.8744999999999999
+                ],
+                "default_ori": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "physics": {
+                    "mass": 0.06,
+                    "friction": 0.5,
+                    "size": [
+                        0.066,
+                        0.066,
+                        0.089
+                    ],
+                    "type": "rigid"
+                },
+                "visual": {},
+                "cavity": {
+                    "height": 0.089,
+                    "radius": 0.031,
+                    "bottom": 0.004
+                }
+            }
+        ]
+    },
+    "Fluid": {
+        "wuliangye": [
+            {
+                "category": "wuliangye",
+                "category_idx": 0,
+                "group": null,
+                "xlim": [
+                    0.0,
+                    0.0
+                ],
+                "ylim": [
+                    0.0,
+                    0.0
+                ],
+                "zlim": [
+                    -0.0487,
+                    -0.0487
+                ],
+                "qpos": [
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "rotate_deg": 0,
+                "rotate_rand": false,
+                "relative_plane": "source_cup",
+                "place_tag": null,
+                "margin": 0.01,
+                "check_mode": "enforce",
+                "need_check_stable": true,
+                "label": "beans",
+                "default_pos": [
+                    0.1111,
+                    -0.4976,
+                    0.9165
+                ],
+                "default_ori": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0869565217391304,
+                    1.0869565217391304,
+                    0.4347826086956521
+                ],
+                "physics": {
+                    "type": "fluid",
+                    "particle_system": {
+                        "particle_contact_offset": 0.0034,
+                        "contact_offset": 0.0034,
+                        "rest_offset": 0.0028,
+                        "solid_rest_offset": 0.0028,
+                        "fluid_rest_offset": 0.0017,
+                        "max_velocity": 2.5,
+                        "smoothing": false,
+                        "anisotropy": false,
+                        "isosurface": false
+                    },
+                    "particle_material": {
+                        "friction": 0.2,
+                        "particle_friction_scale": 1.0,
+                        "damping": 0.0,
+                        "adhesion": 0.0,
+                        "particle_adhesion_scale": 0.0,
+                        "cohesion": 0.0,
+                        "viscosity": 0.0,
+                        "surface_tension": 0.0,
+                        "drag": 0.0,
+                        "lift": 0.0
+                    },
+                    "interaction_with_object": true,
+                    "granular": true,
+                    "particle_mass": 0.0001
+                },
+                "visual": {
+                    "visible": true,
+                    "visual_mdl_path": "$Robodojo_ASSETS/Material/Fluid/RedBean.mdl",
+                    "scale": [
+                        0.92,
+                        0.92,
+                        2.3
+                    ]
+                }
+            }
+        ]
+    },
+    "Room": {
+        "default": "real_scene3",
+        "default_pos": [
+            0.0,
+            -0.257,
+            0.0
+        ],
+        "default_ori": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "collision": false,
+        "table_height": 0.83,
+        "table_lift": {
+            "dz": 0.081,
+            "move": [
+                "Table/Top/slab",
+                "Table/Top/surface",
+                "Table/Colliders/top",
+                "Table/Colliders/panel",
+                "Table/Colliders/beam",
+                "Table/Colliders/bracket_pos",
+                "Table/Colliders/bracket_neg",
+                "Table/Panel/board",
+                "Table/Frame/beam",
+                "Table/Legs/pos/bracket",
+                "Table/Legs/neg/bracket"
+            ],
+            "stretch": [
+                [
+                    "Table/Colliders/column_pos",
+                    0.075,
+                    0.728
+                ],
+                [
+                    "Table/Colliders/column_neg",
+                    0.075,
+                    0.728
+                ],
+                [
+                    "Table/Legs/pos/column",
+                    0.075,
+                    0.728
+                ],
+                [
+                    "Table/Legs/neg/column",
+                    0.075,
+                    0.728
+                ]
+            ]
+        }
+    }
+}

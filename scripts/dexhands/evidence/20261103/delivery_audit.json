@@ -1,0 +1,9 @@
+{
+  "file": "/home/sys01/Downloads/G1D_FourHands_Validation_20261103.zip",
+  "bytes": 4802377091,
+  "sha256": "9b6f211f910960b06098b682c73cefb17cc079c25cc27773be3af383874b6483",
+  "files": 2189,
+  "zip_crc_passed": true,
+  "all_member_hashes_passed": true,
+  "data_symlinks_dereferenced_in_zip": true
+}

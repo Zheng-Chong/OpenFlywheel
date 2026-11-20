@@ -1,0 +1,106 @@
+{
+  "urdf_path": "./robot.urdf",
+  "ee_joints": "left_wrist_yaw_joint",
+  "ee_link": "left_hand_flange",
+  "ee_type": "hand",
+  "base_link": "torso_link",
+  "arm_joints_name": [
+    "left_shoulder_pitch_joint",
+    "left_shoulder_roll_joint",
+    "left_shoulder_yaw_joint",
+    "left_elbow_joint",
+    "left_wrist_roll_joint",
+    "left_wrist_pitch_joint",
+    "left_wrist_yaw_joint"
+  ],
+  "gripper_joints_name": [
+    "left_thumb_CMC_FE",
+    "left_thumb_CMC_AA",
+    "left_thumb_MCP_FE",
+    "left_thumb_MCP_AA",
+    "left_thumb_IP",
+    "left_index_MCP_FE",
+    "left_index_MCP_AA",
+    "left_index_PIP",
+    "left_index_DIP",
+    "left_middle_MCP_FE",
+    "left_middle_MCP_AA",
+    "left_middle_PIP",
+    "left_middle_DIP",
+    "left_ring_MCP_FE",
+    "left_ring_MCP_AA",
+    "left_ring_PIP",
+    "left_ring_DIP",
+    "left_pinky_CMC",
+    "left_pinky_MCP_FE",
+    "left_pinky_MCP_AA",
+    "left_pinky_PIP",
+    "left_pinky_DIP"
+  ],
+  "save_gripper_joints_name": [
+    "left_thumb_CMC_FE",
+    "left_thumb_CMC_AA",
+    "left_thumb_MCP_FE",
+    "left_thumb_MCP_AA",
+    "left_thumb_IP",
+    "left_index_MCP_FE",
+    "left_index_MCP_AA",
+    "left_index_PIP",
+    "left_index_DIP",
+    "left_middle_MCP_FE",
+    "left_middle_MCP_AA",
+    "left_middle_PIP",
+    "left_middle_DIP",
+    "left_ring_MCP_FE",
+    "left_ring_MCP_AA",
+    "left_ring_PIP",
+    "left_ring_DIP",
+    "left_pinky_CMC",
+    "left_pinky_MCP_FE",
+    "left_pinky_MCP_AA",
+    "left_pinky_PIP",
+    "left_pinky_DIP"
+  ],
+  "gripper_move": {},
+  "gripper_bias": 0.0,
+  "gripper_scale": [
+    0.0,
+    1.0
+  ],
+  "camera": [
+    {
+      "link": "head_link",
+      "name": "cam_head",
+      "type": "g1d_head",
+      "mesh": "pinhole",
+      "pos": [
+        0.0442,
+        0.0296,
+        0.49
+      ],
+      "ori": [
+        0.6593,
+        0.2557,
+        -0.2557,
+        -0.6593
+      ]
+    },
+    {
+      "link": "head_link",
+      "name": "cam_head_right",
+      "type": "g1d_head",
+      "mesh": "pinhole",
+      "pos": [
+        0.0442,
+        -0.03,
+        0.49
+      ],
+      "ori": [
+        0.6593,
+        0.2557,
+        -0.2557,
+        -0.6593
+      ]
+    }
+  ]
+}

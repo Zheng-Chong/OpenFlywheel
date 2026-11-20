@@ -1,0 +1,49 @@
+{
+  "task": "g1d_pour_beans_half_cup",
+  "name": "倒半杯",
+  "name_en": "Pour Half a Cup of Beans",
+  "definition": "右手拿起桌上装着红豆的透明方口高杯，左手拿起桌上的目标杯（灰色粗口杯或蓝色杯子），两手把杯子举到桌面上方，右手倾斜高杯把红豆倒进左手的杯子，倒到大约半杯就停，然后两只杯子都杯口朝上放回桌面，双手松开。",
+  "instructions": {
+    "count": 5,
+    "languages": [
+      "zh",
+      "en"
+    ]
+  },
+  "success": "回合结束时：(1) 目标杯杯腔里的红豆占它容量的 30%–75%（约半杯）；(2) 两只杯子都直立放在桌面上（倾角 < 15°），夹爪已松开；(3) 洒在两只杯子外面的红豆不超过倒出量的 5%。",
+  "hand": "both",
+  "horizon_s": 35,
+  "owner": {
+    "username": "contributor",
+    "name": "种政"
+  },
+  "objects": [
+    {
+      "label": "source_cup",
+      "count": 1,
+      "candidates": [
+        "Rigid/measuring_cup/00001"
+      ]
+    },
+    {
+      "label": "target_cup",
+      "count": 1,
+      "candidates": [
+        "Rigid/plastic_cup/00009",
+        "Rigid/plastic_cup/00008"
+      ]
+    }
+  ],
+  "notes": "agent 代登记：真机数据 OSS G1D-自采数据/G1D-PourBeansEps380（380 条，其中倒进灰杯 160、蓝杯 160 条）；示例为第 0 回合（灰杯）和第 184 回合（蓝杯）的头部相机",
+  "locked": true,
+  "lock_history": [
+    {
+      "action": "lock",
+      "by": "种政",
+      "at": 1793462279.2966437,
+      "note": "agent 代负责人确认：草稿按真机第 0、184 回合起草"
+    }
+  ],
+  "updated_by": "种政",
+  "updated_at": "2026-10-31 23:57:59"
+}

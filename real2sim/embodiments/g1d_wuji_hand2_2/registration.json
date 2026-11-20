@@ -1,0 +1,39 @@
+{
+  "embodiment": "g1d_wuji_hand2_2",
+  "name": "G1-D · Wuji Hand2.2",
+  "name_en": "G1-D Wuji Hand2.2",
+  "model": "Unitree G1-D + Wuji Hand2.2",
+  "variant": "完整桌面 G1-D，双侧厂家手；腕端方向已修正；预览为厂家关节机械零位",
+  "dof": "双臂各7 + 双手各20；保留腰部2与升降柱1",
+  "end_effector": "双侧 Wuji Hand2.2",
+  "cameras": "头部双目（继承参考外参）；未沿用 Dex1 腕相机",
+  "control_hz": 10,
+  "urdf": "real2sim/robot/g1d_wuji_hand2_2/robot.urdf",
+  "calib_camera": "pending",
+  "calib_joint": "pending",
+  "calib_gripper": "pending",
+  "calib_dynamics": "pending",
+  "calib_notes": "仿真中关节顺序、FK、复位与接触坐标核查通过。腕端孔位、转接板、实测TCP、当前硬件零位/相机/惯量/摩擦/材料和SN标定未实测。",
+  "notes": "十个刚体传感器垫；逐点力/温度解码待实际模块元数据。已验证有重力、自碰撞的有限空载关节运动和三形状接触夹具；不代表抓取任务成功率或实物标定。 2026-10-30 拇指复核：腕端方向已修正；预览为厂家关节机械零位。 2026-11-03 有限运动、三形状接触及同帧数据核验通过；抓起/保持/释放矩阵见综合核验，Wuji 2.1 球体失败，精确回置与全姿态验证保持待办。",
+  "owner": {
+    "username": "liuzhonghan",
+    "name": "liuzhonghan"
+  },
+  "updated_by": "Joker-of-Gotham (simulation integration)",
+  "updated_at": "2026-11-03",
+  "model_origin": "pinned_official_urdf",
+  "model_version": "20261030.sim.v2",
+  "wrist_mount_verified": false,
+  "tactile_response_validated": false,
+  "tactile_simulation_verified": true,
+  "full_task_simulation_verified": false,
+  "simulation_review_url": "http://127.0.0.1:8790/",
+  "hardware_connected": false,
+  "preview_pose": {
+    "run": "wuji22_native_corrected02",
+    "frame": 0,
+    "phase": "zero",
+    "is_calibrated_natural_open": false
+  },
+  "validation_evidence": "scripts/dexhands/evidence/20261103/final_validation.json"
+}
