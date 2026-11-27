@@ -89,6 +89,12 @@ See [`scripts/datagen/SKILL.md`](scripts/datagen/SKILL.md) and [`scripts/datagen
 
 ---
 
+## Changelog & Releases
+
+See [CHANGELOG.md](CHANGELOG.md) and [GitHub Releases](https://github.com/Zheng-Chong/OpenFlywheel/releases) for version history and release notes.
+
+---
+
 ## License & Acknowledgements
 
 OpenFlywheel is released under the [MIT License](LICENSE).

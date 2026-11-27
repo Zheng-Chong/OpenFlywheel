@@ -1,0 +1,54 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract release notes from CHANGELOG.md
+        id: notes
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, re
+
+          tag = os.environ["TAG"]
+          bare = tag.lstrip("v")
+          text = pathlib.Path("CHANGELOG.md").read_text(encoding="utf-8") if pathlib.Path("CHANGELOG.md").is_file() else ""
+          pattern = re.compile(
+              rf"^## \[(?:{re.escape(tag)}|{re.escape(bare)})\][^\n]*\n(.*?)(?=^## \[|\Z)",
+              re.M | re.S,
+          )
+          m = pattern.search(text)
+          notes = m.group(1).strip() if m else ""
+          pathlib.Path("release_notes.md").write_text(notes + ("\n" if notes else ""), encoding="utf-8")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"has_notes={'true' if notes else 'false'}\n")
+          PY
+
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            if [ "${{ steps.notes.outputs.has_notes }}" = "true" ]; then
+              gh release edit "$TAG" --notes-file release_notes.md
+            fi
+          else
+            if [ "${{ steps.notes.outputs.has_notes }}" = "true" ]; then
+              gh release create "$TAG" --title "OpenFlywheel $TAG" --notes-file release_notes.md
+            else
+              gh release create "$TAG" --title "OpenFlywheel $TAG" --generate-notes
+            fi
+          fi
