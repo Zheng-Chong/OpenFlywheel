@@ -84,19 +84,26 @@ def receptacle_maker(assets, top, kind):
     return entry
 
 
+WHOLEBODY_DEFAULT = dict(pal.WHOLEBODY_DEFAULT, target_y=(-0.50, -0.24), receptacle_y=(-0.46, -0.28))
+
+
 class Generator(pal.Generator):
-    def __init__(self, task, assets, pool=None, receptacles=None, names=None, levels=None, round_=None):
+    def __init__(self, task, assets, pool=None, receptacles=None, names=None, levels=None, round_=None, wholebody=None):
         round_ = round_ or ROUNDS[task]
         pool = commercial(pool or pick_anything.load_pool())
         if round_ not in DRAWN_BEFORE_EXCLUDED:
             pool = pick_anything.usable(pool, task)
-        super().__init__(assets, pool, names, levels, round_)
+        wb = dict(WHOLEBODY_DEFAULT, **(wholebody if isinstance(wholebody, dict) else {})) if wholebody else None
+        super().__init__(assets, pool, names, levels, round_, wholebody=wb)
         self.task, self.kind = task, KIND[task]
         self.receptacles = receptacles or pa.load_receptacles()
         lv = self.levels
         spec = dict(SPEC_L2 if lv["spatial"] >= 2 else pa.SPEC)
         spec.update(same_family=self.spec["same_family"], scale=self.spec["scale"])
         spec["other_receptacle"] = OTHER_RECEPTACLE if lv["language"] >= 2 else 0.0
+        if self.wholebody:
+            spec["target_y"] = tuple(self.wholebody["target_y"])
+            spec["receptacle_y"] = tuple(self.wholebody["receptacle_y"])
         self.spec = spec
         self.order = pa.x_order(self.pool, self.receptacles, self.kind)
         self.drawn = None
@@ -132,12 +139,24 @@ def main(argv=None):
     parser.add_argument("--levels", default="", help="diagnostics: axis=level,... (the rest at L2)")
     parser.add_argument("--round", default=None, help="collection round (default <task>-r1)")
     parser.add_argument("--receptacles", type=Path, default=pa.RECEPTACLES, help="receptacle pool (default round 1's)")
+    parser.add_argument(
+        "--wholebody",
+        action="store_true",
+        help="enable 19D fixed-base wholebody recipe (expanded reach depth y, table height & initial lift/waist)",
+    )
     args = parser.parse_args(argv)
     levels = {k: int(v) for k, v in (item.split("=") for item in args.levels.split(",") if item)}
     if set(levels) - set(pal.DIMS) or not all(0 <= v <= pal.LEVEL for v in levels.values()):
         parser.error(f"--levels: axes of {pal.DIMS} at 0-{pal.LEVEL}")
     receptacles = pa.load_receptacles(args.receptacles)
-    gen = Generator(args.task, args.assets, receptacles=receptacles, levels=levels, round_=args.round)
+    gen = Generator(
+        args.task,
+        args.assets,
+        receptacles=receptacles,
+        levels=levels,
+        round_=args.round,
+        wholebody=args.wholebody,
+    )
     print(f"{args.task}: {len(gen.order)} of {len(gen.pool)} pool objects fit a training receptacle")
     for folder in range(args.folders[0], args.folders[1] + 1):
         for k in range(args.units):

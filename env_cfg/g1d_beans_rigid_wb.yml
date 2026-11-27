@@ -1,0 +1,23 @@
+# Wholebody (waist + lift, fixed base, 19-dim g1d_wb19) env config for rigid beans (g1d_pour_beans_plus), 办公室.
+config_name: g1d
+
+config:
+  sim: g1d_beans_rigid_sim
+  scene: default
+  robot: g1d
+  camera: g1d_camera
+
+observation:
+  collect_freq: 30
+  robot:
+    joint_states: true
+    world_ee_state: true
+    ee_state: measured  # gripper state from the finger joints, not the last command (scripts/datagen/CONTRACT.md)
+    body_states: true  # record waist_joint_state [yaw, pitch] + lift_joint_state [height] (no base_velocity)
+  vision:
+    cameras: [cam_head, cam_left_wrist, cam_right_wrist]  # rendered cameras; the rest are skipped
+    approximate_depth: false
+    depth: false
+    intrinsic_matrix: false
+    extrinsic_matrix: false
+    shape: true

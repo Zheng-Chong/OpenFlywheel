@@ -18,6 +18,7 @@ from env.camera_manager.camera_pose import (
     sample_camera_pose,
     split_camera_config,
 )
+from env.observation_manager.vision_utils import requested_depth_cameras
 from env.seeding import seed_everywhere
 
 DEPTH_ANNOTATORS = ("depth", "distance_to_image_plane")
@@ -173,6 +174,7 @@ class MujocoCaptureManager:
 
     def init_cameras(self):
         annotators = OmegaConf.to_container(self.config.annotator, resolve=True) if "annotator" in self.config else None
+        depth_sel = requested_depth_cameras(getattr(self, "_requested_depth_cameras", None))
         self.annotator_type = []
         names = self.camera_manager.camera_names[0]
         for camera_name in names:
@@ -185,6 +187,9 @@ class MujocoCaptureManager:
                     if setting["type"] not in RGB_ANNOTATORS + DEPTH_ANNOTATORS:
                         raise NotImplementedError(f"MuJoCo backend: annotator '{setting['type']}' is not supported")
                     types.append(setting["type"])
+            wants_depth = depth_sel is True or (isinstance(depth_sel, set) and camera_name in depth_sel)
+            if wants_depth and not any(t in DEPTH_ANNOTATORS for t in types):
+                types.append("distance_to_image_plane")
             self.annotator_type.append(types)
 
     def reset(self):

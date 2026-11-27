@@ -4,10 +4,10 @@
 
 Built on top of [RoboDojo](https://github.com/RoboDojo-Benchmark/RoboDojo) and NVIDIA Isaac Sim (with optional CPU MuJoCo backend), OpenFlywheel provides:
 
-- **Unitree G1-D** bimanual manipulation setup (`env_cfg/g1d_school.yml`) with Dex1-1 parallel grippers and optional dexterous hand configurations.
+- **Unitree G1-D** bimanual manipulation setup (`env_cfg/g1d_school.yml`, `env_cfg/g1d_wb.yml`) with Dex1-1 parallel grippers (16-DoF tabletop & 19-DoF fixed-base wholebody with waist/lift) and optional dexterous hand configurations (including 61-DoF Sharpa Wave wholebody pipelines).
 - **School Laboratory Scene** (`real2sim/scenes/real_scene4_school/`): a calibrated tabletop workspace tailored for university lab experiments.
-- **Curated Basic Objects** (`real2sim/objects/`): cups, measuring cups, bowls/baskets, blocks, beans, bottles, cans, and deformable cloth assets for manipulation tasks.
-- **Scripted Data Generation & Evaluation**: reproducible layout generation, scripted expert rollouts, HDF5/LeRobot v3 export (`scripts/datagen/`), and closed-loop policy evaluation (`src/eval_client/`).
+- **Object Affordance & Public Asset Adapters** (`scripts/objects/`): automated Stage 1–3 object affordance annotation (`affordance.py`, `affordance_vlm.py`, `affordance_dexhand.py`, `affordance_2d.py`), Isaac Sim physical grasp verification, and adapters for public datasets (RoboCasa, SimReady, GSO, Poly Haven, MolmoSpaces THOR/Objaverse, Palatial, USDCraft-10K, ProjectSim, ArtVIP, PartNet-Mobility, FMB, Sand3D).
+- **Scripted Data Generation & Evaluation**: reproducible layout generation, scripted & affordance-guided experts (`scripts/g1d/`, `scripts/dexhands/`), opt-in depth/intrinsics/extrinsics & 2D affordance recording (`env/observation_manager/vision_utils.py`, `scripts/datagen/collect.py`), twitch motion filtering (`scripts/datagen/twitch.py`), dynamic layout pooling, HDF5/LeRobot v3 export (`scripts/datagen/export.py`), and closed-loop policy evaluation (`src/eval_client/`).
 
 ---
 

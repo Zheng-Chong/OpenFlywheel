@@ -41,12 +41,30 @@ ROUND = f"{TASK}-r1"
 RECEPTACLES = ROOT / "scripts/objects/place_anything_receptacles_r2.json"
 
 
+WHOLEBODY_DEFAULT = {
+    **{k: v for k, v in pal.WHOLEBODY_DEFAULT.items() if k != "target_y"},
+    "x_y": (-0.48, -0.25),
+    "y_y": (-0.48, -0.28),
+}
+
+
 class Generator(pal.Generator):
     task = TASK
 
-    def __init__(self, assets, pool=None, distractors=None, receptacles=None, names=None, levels=None, round_=ROUND):
+    def __init__(
+        self,
+        assets,
+        pool=None,
+        distractors=None,
+        receptacles=None,
+        names=None,
+        levels=None,
+        round_=ROUND,
+        wholebody=None,
+    ):
         distractors = plal.commercial(distractors or pick_anything.load_pool())
-        super().__init__(assets, distractors, names, levels, round_)
+        wb = dict(WHOLEBODY_DEFAULT, **(wholebody if isinstance(wholebody, dict) else {})) if wholebody else None
+        super().__init__(assets, distractors, names, levels, round_, wholebody=wb)
         self.x_pool = pool or ho.load_pool()
         self.receptacles = receptacles or pa.load_receptacles(RECEPTACLES)
         lv = self.levels
@@ -54,6 +72,9 @@ class Generator(pal.Generator):
         if lv["language"] < 2:
             spec.update(same_family=ho.SPEC_L1["same_family"], other_receptacle=0.0)
         spec["scale"] = self.spec["scale"]
+        if self.wholebody:
+            spec["x_y"] = tuple(self.wholebody["x_y"])
+            spec["y_y"] = tuple(self.wholebody["y_y"])
         self.spec = spec
         self.order = ho.order(self.x_pool, self.receptacles)
         self.family.update({(o["cat"], o["idx"]): o["family"] for o in self.x_pool})
@@ -89,11 +110,22 @@ def main(argv=None):
     parser.add_argument("--levels", default="", help="diagnostics: axis=level,... (the rest at L2)")
     parser.add_argument("--round", default=ROUND, help=f"collection round (default {ROUND})")
     parser.add_argument("--receptacles", type=Path, default=RECEPTACLES, help="support pool (default round 2's)")
+    parser.add_argument(
+        "--wholebody",
+        action="store_true",
+        help="enable 19D fixed-base wholebody recipe (expanded reach depth y, table height & initial lift/waist)",
+    )
     args = parser.parse_args(argv)
     levels = {k: int(v) for k, v in (item.split("=") for item in args.levels.split(",") if item)}
     if set(levels) - set(pal.DIMS) or not all(0 <= v <= pal.LEVEL for v in levels.values()):
         parser.error(f"--levels: axes of {pal.DIMS} at 0-{pal.LEVEL}")
-    gen = Generator(args.assets, receptacles=pa.load_receptacles(args.receptacles), levels=levels, round_=args.round)
+    gen = Generator(
+        args.assets,
+        receptacles=pa.load_receptacles(args.receptacles),
+        levels=levels,
+        round_=args.round,
+        wholebody=args.wholebody,
+    )
     print(f"{TASK}: {len(gen.order)} of {len(gen.x_pool)} pool objects fit a training support")
     for folder in range(args.folders[0], args.folders[1] + 1):
         for k in range(args.units):

@@ -19,7 +19,7 @@ Place outcome (`place`), first that applies:
     receptacle_moved / distractor_moved / moving / ...: the sidecar's final_fail otherwise, with when it moved
                     (`moved_in`: grasp, carry, place, after)
 
-    python scripts/datagen/place_failures.py scan --runs '/obs/Employee/filler/raw/place-anything-r2-g1d/*' \
+    python scripts/datagen/place_failures.py scan --runs '<data-root>/raw/place-anything-r2-g1d/*' \
         --out /shared/tmp/$USER/pl42/r2-g1d.jsonl --sample 120 --sample-accepted 20
     python scripts/datagen/place_failures.py report a.jsonl b.jsonl --out report.md
 """

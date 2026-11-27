@@ -24,7 +24,7 @@ Grasp outcome (`outcome`), first that applies:
     lifted        pick: rose LIFTED and stayed; place / put: rose HELD within LIFT_WINDOW and was carried to the
                   release: the grasp worked (a reject is then a distractor or the place)
 
-    python scripts/datagen/pick_failures.py scan --runs '/obs/Employee/filler/raw/pick-anything-r3-g1d/*' \
+    python scripts/datagen/pick_failures.py scan --runs '<data-root>/raw/pick-anything-r3-g1d/*' \
         --out /shared/tmp/$USER/pk4/r3.jsonl --sample 150 --sample-accepted 25
     python scripts/datagen/pick_failures.py report a.jsonl b.jsonl --out report.md [--json report.json]
     python scripts/datagen/pick_failures.py frames a.jsonl --out frames/ --per 3

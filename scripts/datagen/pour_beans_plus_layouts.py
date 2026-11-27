@@ -82,7 +82,12 @@ INSTRUCTIONS = ROOT / "real2sim" / "tasks" / TASK / "instructions.json"
 # (scripts/datagen/grasp_exam.py): copied into the layout entries ("grasp"), read by scripted_demo.plus_actions;
 # the cups under "drop" ({id: reason}) are never drawn
 GRASPS = ROOT / "real2sim" / "tasks" / TASK / "grasps.json"
-SCENES = {"g1d": "real_scene1_office", "g1d_shenzhen_lab": "real_scene5_shenzhen_lab", "g1d_lab": "real_scene3_lab"}
+SCENES = {
+    "g1d": "real_scene4_school",
+    "g1d_school": "real_scene4_school",
+    "g1d_shenzhen_lab": "real_scene4_school",
+    "g1d_lab": "real_scene4_school",
+}
 TRAIN_SCENES, HELD_SCENE, TWIN_SCENE = ("g1d", "g1d_shenzhen_lab"), "g1d_lab", "g1d"
 TEMPLATE = "Eval_Layout/RoboDojo/{scene}/0/g1d_pour_beans_cup_to_cup_0.json"  # the twin cups on each scene's desk
 TRAIN_MIX = (0.1, 0.3, 0.6)  # chance of L0 / L1 / L2 per dimension in a training layout
@@ -293,7 +298,10 @@ def handle_yaw(rng, cup, out, level, by_handle=False, base_yaw=0.0):
 
 def lift_of(scene):
     """The robot's lift (m, the sum of its two stages) in the scene's robot config."""
-    text = (ROOT / "env_cfg" / "robot" / f"{scene}.yml").read_text()
+    cfg_path = ROOT / "env_cfg" / "robot" / f"{scene}.yml"
+    if not cfg_path.is_file():
+        cfg_path = ROOT / "env_cfg" / "robot" / "g1d_school.yml"
+    text = cfg_path.read_text()
     return sum(float(v) for v in re.findall(r"LZ_\w+_Joint:\s*([-\d.eE]+)", text))
 
 

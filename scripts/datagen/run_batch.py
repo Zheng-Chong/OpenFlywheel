@@ -37,8 +37,10 @@ import time
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from env.global_configs import object_dir  # noqa: E402
+from env.observation_manager.vision_utils import parse_heatmap_hw  # noqa: E402
 from scripts.datagen import experts  # noqa: E402
 from scripts.datagen.collect import SECTIONS, code_revision, layout_dir, layout_files, load_yaml, sha256  # noqa: E402
+from scripts.datagen.layout_pool import LayoutPool  # noqa: E402
 
 SOURCES = ("scripts/datagen", "scripts/g1d", "scripts/objects", "src/eval_client", "env", "task/RoboDojo", "utils")
 THREADS = {k: "4" for k in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS")}  # 8 Kit processes per box
@@ -173,6 +175,46 @@ def chunks(args, seed, ids):
     return [(seed, ids[i : i + args.chunk]) for i in range(0, len(ids), args.chunk)]
 
 
+def dynamic_queue(todo, slots, raw, skipped, broken, stop):
+    """Initialize one flock-protected LayoutPool per active shard and return persistent worker jobs:
+    [(seed, ids, worker_idx, pool)]."""
+    active_seeds = [s for s, ids in todo.items() if ids]
+    if not active_seeds:
+        return [], {}
+    per_seed = max(1, (len(slots) + len(active_seeds) - 1) // len(active_seeds))
+    queue, pools = [], {}
+    for seed in active_seeds:
+        ids = todo[seed]
+        seed_dir = raw / f"seed{seed}"
+        seed_skipped = [int(x.split("_", 1)[1]) for x in skipped if x.startswith(f"{seed}_")]
+        seed_broken = {k.split("_", 1)[1]: v for k, v in broken.items() if k.startswith(f"{seed}_")}
+        pool = LayoutPool(seed_dir / ".claim_pool.json", seed_dir, stop_file=stop, broken_tries=BROKEN_TRIES)
+        pool.ensure_initialized(ids, skipped=seed_skipped, broken=seed_broken)
+        pools[seed] = pool
+        for w in range(min(per_seed, len(ids))):
+            queue.append((seed, ids, w))
+    return queue, pools
+
+
+def should_retry_dynamic(hung_slot, returncode, hang_count, crash_count, max_tries=START_TRIES):
+    """True when an exited dynamic worker should be re-queued (bounded separately for startup hangs and crashes)."""
+    if hung_slot:
+        return hang_count < max_tries
+    return returncode != 0 and crash_count < max_tries
+
+
+def sync_pool_state(seed, pool, skipped, broken):
+    """Merge a shard LayoutPool's skipped/broken outcomes back into run_batch's status collections."""
+    snap = pool.snapshot()
+    for lid in snap["skipped"]:
+        name = f"{seed}_{lid}"
+        if name not in skipped:
+            skipped.append(name)
+    for lid_str, count in snap["broken"].items():
+        name = f"{seed}_{lid_str}"
+        broken[name] = max(broken.get(name, 0), int(count))
+
+
 def accepted_count(raw):
     return sum(json.loads(p.read_text()).get("accepted", False) for p in raw.glob("seed*/episode_*.json"))
 
@@ -213,19 +255,72 @@ def main():
     parser.add_argument("--python", default=sys.executable, help="Isaac env interpreter for the workers")
     parser.add_argument("--revision", help="code commit to record when this run dir is not a git checkout")
     parser.add_argument("--no-trajectory", action="store_true", help="sidecars only (expert feasibility filter)")
+    parser.add_argument(
+        "--keep-rejected-hdf5",
+        action="store_true",
+        help="collect.py --keep-rejected-hdf5: write full image HDF5 for rejected episodes too",
+    )
+    parser.add_argument(
+        "--dynamic",
+        action="store_true",
+        help="share one flock-protected layout_id pool per shard across persistent workers instead of static --chunk",
+    )
     parser.add_argument("--plugin", help="collect.py --plugin: another plugin of the task")
     parser.add_argument("--expert", help="collect.py --expert: expert version of the task (experts.json), e.g. v2")
     parser.add_argument("--no-early-abort", action="store_true", help="collect.py --no-early-abort")
+    parser.add_argument("--record-depth", action="store_true", help="collect.py --record-depth")
+    parser.add_argument("--depth-cameras", default="", help="collect.py --depth-cameras")
+    parser.add_argument(
+        "--record-affordance-2d",
+        "--record-affordance",
+        dest="record_affordance_2d",
+        action="store_true",
+        help="collect.py --record-affordance-2d",
+    )
+    parser.add_argument(
+        "--affordance-2d-cameras",
+        "--affordance-cameras",
+        dest="affordance_2d_cameras",
+        default="",
+        help="collect.py --affordance-2d-cameras",
+    )
+    parser.add_argument("--affordance-2d-heatmap-size", default="", help="collect.py --affordance-2d-heatmap-size")
+    parser.add_argument("--affordance-2d-top-k", type=int, default=0, help="collect.py --affordance-2d-top-k")
     args = parser.parse_args()
+    if args.affordance_2d_heatmap_size:
+        try:
+            parse_heatmap_hw(args.affordance_2d_heatmap_size)
+        except ValueError as err:
+            parser.error(str(err))
+    if args.affordance_2d_top_k < 0:
+        parser.error(f"--affordance-2d-top-k must be >= 0, got {args.affordance_2d_top_k!r}")
     config_path = args.output / "collection_config.json"
     if args.resume:
         config = json.loads(config_path.read_text())
         for key in ("task", "env_cfg", "candidates", "shards", "per_shard", "target"):
             setattr(args, key, config[key])
         args.no_trajectory = config.get("no_trajectory", False)
+        args.keep_rejected_hdf5 = args.keep_rejected_hdf5 or config.get("keep_rejected_hdf5", False)
+        args.dynamic = args.dynamic or config.get("dynamic", False)
+        config["keep_rejected_hdf5"] = args.keep_rejected_hdf5
+        config["dynamic"] = args.dynamic
         args.plugin = config.get("plugin")
         args.no_early_abort = not config.get("early_abort", False)  # runs from before early_abort.py ran to the end
         args.expert = (config.get("expert") or {}).get("version") if config.get("expert_pinned") else None
+        args.record_depth = args.record_depth or config.get("record_depth", False)
+        args.depth_cameras = args.depth_cameras or config.get("depth_cameras", "")
+        args.record_affordance_2d = args.record_affordance_2d or config.get("record_affordance_2d", False)
+        args.affordance_2d_cameras = args.affordance_2d_cameras or config.get("affordance_2d_cameras", "")
+        args.affordance_2d_heatmap_size = args.affordance_2d_heatmap_size or config.get(
+            "affordance_2d_heatmap_size", ""
+        )
+        args.affordance_2d_top_k = args.affordance_2d_top_k or config.get("affordance_2d_top_k", 0)
+        config["record_depth"] = args.record_depth
+        config["depth_cameras"] = args.depth_cameras
+        config["record_affordance_2d"] = args.record_affordance_2d
+        config["affordance_2d_cameras"] = args.affordance_2d_cameras
+        config["affordance_2d_heatmap_size"] = args.affordance_2d_heatmap_size
+        config["affordance_2d_top_k"] = args.affordance_2d_top_k
         config.setdefault("resumed_unix", []).append(time.time())
         expert_version(args)
     else:
@@ -245,9 +340,17 @@ def main():
             per_shard=args.per_shard,
             target=args.target,
             no_trajectory=args.no_trajectory,
+            keep_rejected_hdf5=args.keep_rejected_hdf5,
+            dynamic=args.dynamic,
             plugin=args.plugin,
             early_abort=not args.no_early_abort,
             expert_pinned=bool(args.expert),
+            record_depth=args.record_depth,
+            depth_cameras=args.depth_cameras,
+            record_affordance_2d=args.record_affordance_2d,
+            affordance_2d_cameras=args.affordance_2d_cameras,
+            affordance_2d_heatmap_size=args.affordance_2d_heatmap_size,
+            affordance_2d_top_k=args.affordance_2d_top_k,
             revision=code_revision() or (dict(commit=args.revision, dirty=None) if args.revision else None),
             started_unix=time.time(),
         )
@@ -261,29 +364,45 @@ def main():
     status_path = args.output / "status.json"
     skipped = json.loads(status_path.read_text()).get("skipped", []) if args.resume and status_path.exists() else []
     todo = {s: [i for i in remaining(args, s) if f"{s}_{i}" not in skipped] for s in span(args.shards)}
-    queue = [job for s, ids in todo.items() for job in chunks(args, s, ids)]
     slots = [(gpu, k) for k in range(args.per_gpu) for gpu in span(args.gpus)]  # fill every GPU once, then again
     active, starting, hangs, exits, crashes, status = {}, {}, {}, {}, {}, {}
     broken = json.loads(status_path.read_text()).get("physx_broken", {}) if args.resume and status_path.exists() else {}
+    if args.dynamic:
+        queue, pools = dynamic_queue(todo, slots, raw, skipped, broken, stop)
+    else:
+        queue = [(s, ids, None) for s, ids_all in todo.items() for s, ids in chunks(args, s, ids_all)]
+        pools = {}
     env = dict(os.environ, PYTHONPATH=".:XPolicyLab", OMNI_KIT_ACCEPT_EULA="YES", **THREADS)
+    env.setdefault("OPENFLYWHEEL_NO_VIDEO", "1")
     env["OPENFLYWHEEL_REVISION"] = env["ROBODOJO_REVISION"] = json.dumps(config["revision"])
     while queue or active:
         accepted = accepted_count(raw)
         if accepted >= args.target:
             stop.touch()
             queue.clear()
-        for slot, (seed, ids) in assign(slots, active, queue, {gpu for gpu, _ in starting}):
-            gpu, name = slot[0], f"{seed}_{ids[0]}"
+        for slot, (seed, ids, worker_idx) in assign(slots, active, queue, {gpu for gpu, _ in starting}):
+            gpu = slot[0]
+            name = f"{seed}_w{worker_idx}" if worker_idx is not None else f"{seed}_{ids[0]}"
             log_path = args.output / f"worker_{name}.log"
             log = log_path.open("a")
             offset = log_path.stat().st_size
             cmd = [args.python, "-u", "scripts/datagen/collect.py", "--task", args.task, "--env-cfg", args.env_cfg]
             cmd += ["--seed", str(seed), "--output", str(raw / f"seed{seed}"), "--stop-file", str(stop)]
             cmd += ["--layout-ids", ",".join(map(str, ids)), "--device", "cuda:0", "--device_id", "0"]
+            if worker_idx is not None:
+                cmd += ["--claim-pool", str(pools[seed].path)]
             cmd += ["--no-trajectory"] if args.no_trajectory else []
+            cmd += ["--keep-rejected-hdf5"] if args.keep_rejected_hdf5 else []
             cmd += ["--plugin", args.plugin] if args.plugin else []
             cmd += ["--expert", args.expert] if args.expert else []
             cmd += ["--no-early-abort"] if args.no_early_abort else []
+            cmd += ["--record-depth"] if args.record_depth else []
+            cmd += ["--depth-cameras", args.depth_cameras] if args.depth_cameras else []
+            cmd += ["--record-affordance-2d"] if args.record_affordance_2d else []
+            cmd += ["--affordance-2d-cameras", args.affordance_2d_cameras] if args.affordance_2d_cameras else []
+            if args.affordance_2d_heatmap_size:
+                cmd += ["--affordance-2d-heatmap-size", args.affordance_2d_heatmap_size]
+            cmd += ["--affordance-2d-top-k", str(args.affordance_2d_top_k)] if args.affordance_2d_top_k else []
             # With every GPU visible each worker also keeps a CUDA context on all the others (~250 MB each), which
             # with 4 workers per GPU on 8 GPUs pushes a card past 32 GB.
             run_env = dict(env, CUDA_VISIBLE_DEVICES=str(gpu))
@@ -291,12 +410,13 @@ def main():
             proc = subprocess.Popen(
                 cmd, cwd=ROOT, env=run_env, stdout=log, stderr=subprocess.STDOUT, start_new_session=True
             )
-            active[slot] = (seed, ids, proc, log, log_path, offset)
+            active[slot] = (seed, ids, worker_idx, name, proc, log, log_path, offset)
             starting[slot] = (time.time(), log_path, offset)
-            print(f"[run_batch] seed {seed} layouts {ids[0]}-{ids[-1]} on GPU {gpu}, pid {proc.pid}", flush=True)
+            mode = f"dynamic worker {worker_idx}" if worker_idx is not None else f"layouts {ids[0]}-{ids[-1]}"
+            print(f"[run_batch] seed {seed} {mode} on GPU {gpu}, pid {proc.pid}", flush=True)
         hung = set()
         for slot, (t0, log_path, offset) in list(starting.items()):
-            seed, ids, proc, *_ = active[slot]
+            seed, ids, worker_idx, name, proc, *_ = active[slot]
             if proc.poll() is not None or stepped(log_path, offset):
                 del starting[slot]
             elif time.time() - t0 > args.start_timeout:
@@ -305,16 +425,30 @@ def main():
                 proc.wait()
                 del starting[slot]
                 hung.add(slot)
-                name = f"{seed}_{ids[0]}"
                 hangs[name] = hangs.get(name, 0) + 1
-                print(f"[run_batch] seed {seed} layouts {ids[0]}-{ids[-1]} hung at startup, killed", flush=True)
-        for slot, (seed, ids, proc, log, log_path, offset) in list(active.items()):
+                mode = f"dynamic worker {worker_idx}" if worker_idx is not None else f"layouts {ids[0]}-{ids[-1]}"
+                print(f"[run_batch] seed {seed} {mode} hung at startup, killed", flush=True)
+        for slot, (seed, ids, worker_idx, name, proc, log, log_path, offset) in list(active.items()):
             if proc.poll() is not None:
                 log.close()
-                name = f"{seed}_{ids[0]}"
                 exits.setdefault(name, []).append(proc.returncode)
                 del active[slot]
                 starting.pop(slot, None)  # it can exit between the startup check above and here
+                if worker_idx is not None:
+                    pool = pools[seed]
+                    sync_pool_state(seed, pool, skipped, broken)
+                    if slot not in hung and proc.returncode != 0:
+                        crashes[name] = crashes.get(name, 0) + 1
+                        print(
+                            f"[run_batch] seed {seed} dynamic worker {worker_idx} crashed (rc={proc.returncode})",
+                            flush=True,
+                        )
+                    can_retry = should_retry_dynamic(
+                        slot in hung, proc.returncode, hangs.get(name, 0), crashes.get(name, 0)
+                    )
+                    if can_retry and not stop.exists() and pool.has_pending():
+                        queue.append((seed, ids, worker_idx))
+                    continue
                 todo_ids = set(remaining(args, seed))
                 lost = [i for i in abandoned(log_path, offset) if i in ids]
                 physx = skip_broken(seed, lost, {i for i in ids if i not in todo_ids}, broken, skipped)
@@ -322,7 +456,7 @@ def main():
                 left.sort()
                 if physx and proc.returncode == 0:  # tried and failed, not a crash: the rest again
                     if left and not stop.exists():
-                        queue.append((seed, left))
+                        queue.append((seed, left, None))
                     continue
                 unstable = worker_unstable(log_path, offset) if proc.returncode == 0 and len(left) == len(ids) else True
                 if slot not in hung and (proc.returncode != 0 or not unstable):
@@ -333,14 +467,14 @@ def main():
                 if retry and not stop.exists() and left:
                     left = retry_layouts(seed, ids, left, skipped, proc.returncode, unstable=unstable)
                     if left:
-                        queue.append((seed, left))
+                        queue.append((seed, left, None))
         status = dict(
             accepted=accepted,
             attempted=len(list(raw.glob("seed*/episode_*.json"))),
             target=args.target,
-            active={f"{s}_{ids[0]}": p.pid for s, ids, p, *_ in active.values()},
-            queued=[f"{s}_{ids[0]}" for s, ids in queue],
-            starting=[f"{s}_{ids[0]}" for s, ids, *_ in (active[slot] for slot in starting)],
+            active={name: p.pid for _, _, _, name, p, *_ in active.values()},
+            queued=[f"{s}_w{w}" if w is not None else f"{s}_{ids[0]}" for s, ids, w in queue],
+            starting=[active[slot][3] for slot in starting],
             startup_hangs=hangs,
             exit_codes=exits,
             crashes=crashes,

@@ -88,6 +88,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dataset", type=Path, required=True)
     parser.add_argument("--strict-motion", action="store_true", help="fail if any episode exceeds the real limits")
+    parser.add_argument("--strict-twitch", action="store_true", help="fail if any episode exhibits arm twitching")
     args = parser.parse_args()
     root = args.dataset
     verification = json.loads((root / "export_verification.json").read_text())
@@ -95,18 +96,33 @@ def main():
         raise SystemExit("export.py did not verify this dataset")
     qualities = json.loads((root / "collection_quality.json").read_text())
     plugin = importlib.import_module(qualities[0]["plugin"])
-    metrics, over = [], {}
+    metrics, over, twitched = [], {}, {}
     for i, q in enumerate(qualities):
         episode_metrics, violations = check_episode(Path(q["raw"]), q, plugin)
         metrics.append(episode_metrics)
         if violations:
             over[Path(q["raw"]).name] = violations
+        if episode_metrics.get("motion_twitch", 0) > 0:
+            raw_path = Path(q["raw"])
+            ep_key = f"{i}:{raw_path.parent.name}/{raw_path.name}" if raw_path.parent.name else f"{i}:{raw_path.name}"
+            twitched[ep_key] = {
+                k: episode_metrics[k]
+                for k in (
+                    "motion_rev_burst_max",
+                    "motion_speed_max",
+                    "motion_track_err_max",
+                    "motion_osc_wiggle_max",
+                )
+                if k in episode_metrics
+            }
         if (i + 1) % 10 == 0:
             print(f"audit {i + 1}/{len(qualities)}: pass", flush=True)
     if len({layout_key(q) for q in qualities}) != len(qualities):
         raise SystemExit("Duplicate layouts in the dataset")
     if args.strict_motion and over:
         raise SystemExit(f"{len(over)} episodes exceed the real arm's limits: {json.dumps(over)}")
+    if args.strict_twitch and twitched:
+        raise SystemExit(f"{len(twitched)} episodes exhibit arm twitching: {json.dumps(twitched)}")
     rows, report = coverage(qualities)
     numeric = {k for m in metrics for k, v in m.items() if isinstance(v, int | float)}
     summary = {
@@ -119,6 +135,7 @@ def main():
         metrics=summary,
         coverage=report,
         motion_over_real_limits=over,
+        motion_twitch=twitched,
     )
     (root / "validation_raw.json").write_text(json.dumps(validation, indent=2) + "\n")
     header = "layout_seed,layout_id,label,x,y,yaw_deg\n"
@@ -134,6 +151,7 @@ def main():
             distinct_layouts=True,
             coverage_plot=plotted,
             motion_over_real_limits=len(over),
+            motion_twitch=len(twitched),
         ),
     )
     (root / "final_validation.json").write_text(json.dumps(final, indent=2) + "\n")

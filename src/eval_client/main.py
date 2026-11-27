@@ -78,6 +78,19 @@ parser.add_argument(
     help="Allow a seed folder marked as training layouts (split.json); data collection and replay only",
 )
 parser.add_argument(
+    "--no-video",
+    "--no_video",
+    dest="no_video",
+    action="store_true",
+    help="Skip ffmpeg MP4 video streaming and saving (also enabled by OPENFLYWHEEL_NO_VIDEO=1).",
+)
+parser.add_argument(
+    "--claim_pool",
+    type=str,
+    default="",
+    help="Path to a flock-protected dynamic layout_id pool file (also read from OPENFLYWHEEL_CLAIM_POOL).",
+)
+parser.add_argument(
     "--sim_backend",
     choices=sim_backend.BACKENDS,
     default=None,
@@ -301,6 +314,21 @@ def _close_model_client(env):
         print(f"[main] failed to close model client: {e}")
 
 
+def _release_claimed_seeds(env):
+    """Best-effort release of any dynamic LayoutPool claims held by this process.
+
+    Must run before os.execv (which keeps the same PID, so dead-PID reaping would not
+    reclaim the layout) and before os._exit / process exit.
+    """
+    try:
+        seed_manager = getattr(env, "seed_manager", None)
+        release_current = getattr(seed_manager, "release_current", None)
+        if callable(release_current):
+            release_current()
+    except Exception as e:
+        print(f"[main] failed to release claimed seeds: {e}")
+
+
 def _restart_or_exit(env, simulation_app, fatal_msg):
     """Persist progress and either os.execv-restart or sys.exit(99).
 
@@ -308,6 +336,7 @@ def _restart_or_exit(env, simulation_app, fatal_msg):
     failure cannot put us in an infinite loop. The bash retry loop in
     eval_policy.sh provides a second layer of bounded restarts.
     """
+    _release_claimed_seeds(env)
     restart_count = int(os.environ.get("ROBODOJO_FATAL_RESTART_COUNT", "0")) + 1
     try:
         env.persist_resume_manifest(restart_count=restart_count)
@@ -333,6 +362,7 @@ def _restart_or_exit(env, simulation_app, fatal_msg):
 
 def _exit_for_shell_restart(env, fatal_msg):
     """Persist progress, then let eval_policy.sh restart a fresh process."""
+    _release_claimed_seeds(env)
     restart_count = int(os.environ.get("ROBODOJO_FATAL_RESTART_COUNT", "0"))
     try:
         env.persist_resume_manifest(restart_count=restart_count)
@@ -363,6 +393,9 @@ def main():
     eval_cfg["physx_monitor_enabled"] = enable_monitor
     eval_cfg["layout_ids"] = [int(i) for i in args_cli.layout_ids.split(",") if i.strip()]
     eval_cfg["allow_train_layouts"] = args_cli.allow_train_layouts
+    eval_cfg["no_video"] = bool(args_cli.no_video)
+    if args_cli.claim_pool:
+        eval_cfg["claim_pool"] = args_cli.claim_pool
 
     deploy_cfg = {}
     deploy_cfg["policy_name"] = args_cli.policy_name
@@ -469,7 +502,7 @@ def main():
             bad_envs = sorted(e.broken_envs)
 
         except UnStableError:
-            env.seed_manager.eval_step()
+            getattr(env.seed_manager, "mark_unstable", env.seed_manager.eval_step)()
         except Exception as e:
             import traceback
 
@@ -501,6 +534,9 @@ def main():
             # retry this round iff there is at least one real seed left.
             bad_seeds = env.get_seeds_for_envs(bad_envs)
             env.abandoned_seeds.update(bad_seeds)
+            mark_broken = getattr(env.seed_manager, "mark_broken", None)
+            if callable(mark_broken):
+                mark_broken(bad_seeds)
 
             replacements = env.seed_manager.get_seeds(max_count=len(bad_envs)) or []
             bad_env_set = set(bad_envs)
@@ -541,6 +577,7 @@ def main():
 
         env.close()
 
+    _release_claimed_seeds(env)
     _delete_resume_manifest(env)
     _close_model_client(env)
     env.close()

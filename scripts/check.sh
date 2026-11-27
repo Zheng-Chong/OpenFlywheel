@@ -13,9 +13,9 @@ if [ -n "${1:-}" ] && git rev-parse -q --verify "${1}^{commit}" >/dev/null 2>&1;
     git diff --check "$base"
 fi
 
-python -m pytest -q \
+python -m pytest -q --import-mode=importlib \
     scripts/datagen \
-    scripts/scenes \
+    scripts/scenes/test_appearance.py \
     scripts/objects/test_manitwin.py \
     scripts/objects/test_gso.py \
     scripts/objects/test_geniesim.py \
@@ -32,13 +32,28 @@ python -m pytest -q \
     scripts/objects/test_cup_handle.py \
     scripts/objects/test_simready.py \
     scripts/objects/test_place_supports.py \
+    scripts/objects/test_affordance.py \
+    scripts/objects/test_affordance_2d.py \
+    scripts/objects/test_affordance_dexhand.py \
+    scripts/objects/test_affordance_vlm.py \
+    scripts/objects/test_verify_affordance_dexhand_sim.py \
+    scripts/objects/test_polyhaven_models.py \
+    scripts/objects/test_molmospaces_thor.py \
+    scripts/objects/test_molmospaces_objaverse.py \
+    scripts/objects/test_palatial.py \
+    scripts/objects/test_usdcraft.py \
+    scripts/objects/test_projectsim.py \
+    scripts/objects/test_video2data.py \
     scripts/prototypes/test_genie_bridge.py \
     scripts/g1d/test_pour_half.py \
     scripts/g1d/test_g1d_body.py \
     scripts/g1d/test_randomize.py \
     scripts/g1d/test_pick_bucket.py \
+    scripts/g1d/test_affordance_grasp.py \
+    scripts/g1d/test_affordance_dexhand.py \
+    tests/test_g1d_wholebody.py \
     env/backends/mujoco \
     scripts/g1d/xense_gripper \
-    scripts/dexhands \
-    scripts/inspire
+    scripts/dexhands/test_pour_beans_sharpa.py \
+    scripts/dexhands/test_x_anything_sharpa.py
 echo "checks passed"

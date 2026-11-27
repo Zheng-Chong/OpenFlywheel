@@ -41,6 +41,17 @@ def _patch_websockets_proxy_compat():
     websockets.connect = connect_without_proxy
 
 
+def _env_truthy(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def is_video_disabled(eval_cfg=None) -> bool:
+    """True when MP4 video streaming/saving is disabled via eval_cfg['no_video'] or OPENFLYWHEEL_NO_VIDEO."""
+    if eval_cfg is not None and bool(eval_cfg.get("no_video", False)):
+        return True
+    return _env_truthy("OPENFLYWHEEL_NO_VIDEO")
+
+
 class _InProcessClient:
     """Stands in for the policy server when the policy runs in-process (--policy_module)."""
 
@@ -104,8 +115,10 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
             # a hard kill (SIGKILL/crash) can't be cleaned via the in-memory
             # writer dict, so sweep them from disk on startup: any *.tmp.mp4
             # here belongs to an unfinished episode that will be re-run.
+            self.record_video = not is_video_disabled(self.eval_cfg)
             self._stream_dir = os.path.join(self.save_dir, "_stream")
-            self._sweep_stream_dir()
+            if self.record_video:
+                self._sweep_stream_dir()
 
             self.obs_config = deepcopy(self.eval_cfg.get("observation", {}))
             self.obs_config["save_dir"] = self.save_dir
@@ -185,6 +198,17 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
                 completed_layout_ids=completed_layout_ids,
                 abandoned_layout_ids=abandoned_layout_ids,
             )
+            claim_pool_path = self.eval_cfg.get("claim_pool") or os.environ.get("OPENFLYWHEEL_CLAIM_POOL")
+            if claim_pool_path:
+                from scripts.datagen.layout_pool import ClaimingSeedManager, LayoutPool
+
+                datagen_cfg = json.loads(
+                    os.environ.get("OPENFLYWHEEL_DATAGEN") or os.environ.get("ROBODOJO_DATAGEN") or "{}"
+                )
+                output_dir = datagen_cfg.get("output") or os.path.dirname(claim_pool_path)
+                stop_file = datagen_cfg.get("stop_file")
+                pool = LayoutPool(claim_pool_path, output_dir, stop_file=stop_file)
+                self.seed_manager = ClaimingSeedManager(self.seed_manager, pool)
 
             self.deploy_cfg = config.deploy_cfg
             self.port = self.deploy_cfg.get("port", None)
@@ -275,13 +299,10 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
             self.episode_nums -= len(unstable_envs)
             if not success or self.episode_nums <= 0:
                 raise UnStableError("All scene Unstable Error!")
-            for _ in range(10):
+            for _ in range(200):
+                self.sim_step(render=False)
+            for _ in range(5):
                 self.render()
-            for idx in range(200):
-                self.sim_step()
-                if idx % 5 == 0:
-                    self.obs_manager.render_for_capture()
-                    self.obs_manager.get_obs()
             if self.physx_monitor_enabled:
                 self._check_physx_broken_envs()
 
@@ -299,7 +320,7 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
             data = self.obs_manager.get_obs(env_idx_list=env_idx_list)
             data_list = []
             for env_idx in env_idx_list:
-                if not self.end_flag[env_idx] or last_frame:
+                if self.record_video and (not self.end_flag[env_idx] or last_frame):
                     self._stream_vision(env_idx, data[env_idx])
                 # Frames are fresh arrays every call; only the rest of the obs may alias manager state.
                 frames = {
@@ -883,8 +904,9 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
                     "score": episode_score,
                     "instruction": str(self.obs_manager.instruction[env_idx]),  # as given to the policy this episode
                 }
-                video_path = os.path.join(self.save_dir, f"episode_{index:07d}.mp4")
-                self.save_video(env_idx, video_path, tag)
+                if self.record_video:
+                    video_path = os.path.join(self.save_dir, f"episode_{index:07d}.mp4")
+                    self.save_video(env_idx, video_path, tag)
 
             # Drop streams for envs not saved this batch (e.g. unstable ones).
             self._abort_video_writers()
@@ -946,6 +968,8 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
             lazily on the first frame (when the resolution is known) and write
             to temporary files until the episode outcome decides the name.
             """
+            if not self.record_video:
+                return
             vision = frame.get("vision") if isinstance(frame, dict) else None
             if not vision:
                 return
@@ -989,6 +1013,8 @@ def create_eval_env(config, app, resume_state=None, **kwargs):
                         pass
 
         def save_video(self, env_idx, video_path, tag):
+            if not self.record_video:
+                return
             writers = self.video_writers.pop(env_idx, {})
             for cam_key, writer in writers.items():
                 tmp_path = writer.out_path

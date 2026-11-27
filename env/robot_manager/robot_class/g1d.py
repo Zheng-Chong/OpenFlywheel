@@ -7,6 +7,8 @@ from env.robot_manager.robot_class.x5 import X5
 # takes Move(vx, vyaw). The URDF names the waist joints by the wrong axes: torso_Joint turns about z, Yaw_Joint about y.
 WAIST_JOINTS = ["torso_Joint", "Yaw_Joint"]  # waist_joint_state: [yaw, pitch] rad
 LIFT_JOINTS = ["LZ_mt_Joint", "LZ_it_Joint"]  # lift_joint_state: [height] m, 0..0.42, split equally over the stages
+WAIST_LIMITS = np.array([[-2.7053, 2.7053], [-0.04363, 2.3562]])  # URDF [yaw, pitch] rad
+LIFT_LIMITS = np.array([0.0, 0.42])  # combined two-stage lift stroke (m)
 BASE_JOINTS = ["base_x_joint", "base_y_joint", "base_yaw_joint"]  # g1d_mobile_dex1.urdf, in the start-pose frame
 BASE_LIMITS = np.array([1.5, 0.6])  # base_velocity: [vx m/s, vyaw rad/s], AgvClient.Move limits
 # A blocked chassis stalls instead of winding up force: its target leads the measured pose by at most this (m, rad).
@@ -45,8 +47,10 @@ class G1DLeft(X5):
     def body_targets(self, command, target, q, dt):
         """Joint position and velocity targets for one control step from the body_dims command; `target` holds the
         last position targets and `q` the measured positions."""
-        lift = np.full(2, command["lift_joint_state"][0] / 2)
-        pos = np.concatenate([command["waist_joint_state"], lift])
+        waist = np.clip(np.asarray(command["waist_joint_state"], dtype=float), WAIST_LIMITS[:, 0], WAIST_LIMITS[:, 1])
+        lift_h = float(np.clip(command["lift_joint_state"][0], LIFT_LIMITS[0], LIFT_LIMITS[1]))
+        lift = np.full(2, lift_h / 2)
+        pos = np.concatenate([waist, lift])
         if not self.mobile:
             return pos, np.zeros(4)
         vx, vyaw = np.clip(command["base_velocity"], -BASE_LIMITS, BASE_LIMITS)

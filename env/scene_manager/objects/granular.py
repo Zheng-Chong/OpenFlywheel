@@ -42,7 +42,7 @@ VELOCITY_ITERATIONS = 2
 MAX_DEPENETRATION_VELOCITY = 0.5
 FRICTION_COMBINE = "min"
 
-# Verified default physics preset for new pour-beans tasks (validated on 5090 Slurm GPU in pour_beans_real520_sz@v2):
+# Verified default physics preset for new pour-beans tasks (validated on GPU Slurm GPU in pour_beans_real520_sz@v2):
 # analytic capsule beans stop within ~4 cm / 0.3 s on the tabletop while pouring cleanly without wall/floor leaks.
 POUR_BEANS_DEFAULT_PHYSICS: dict[str, object] = {
     "type": "granular",

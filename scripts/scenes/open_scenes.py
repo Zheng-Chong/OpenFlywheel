@@ -1,6 +1,6 @@
 """Open-source indoor scene libraries (GRScenes, SceneSmith) for the Real2Sim platform's scene page.
 
-The raw packages are kept off the platform machine: extracted on <asset-server>'s NAS (/mnt/workspace/r2s-scene-sources/<lib>/)
+The raw packages are kept off the platform machine: extracted on <asset-server>'s NAS (<scene-sources-root>/<lib>/)
 with the original archives, as downloaded, in the long-term asset library (sources/scenes/<lib>/, archived to OSS); a
 GPU host downloads its own copy for loading and rendering. Both copies are pinned to one Hugging Face revision and
 checked against its LFS SHA-256, so they hold the same bytes.
@@ -12,9 +12,10 @@ checked against its LFS SHA-256, so they hold the same bytes.
         --slot root@<cluster-host>:34142:4 --run /data/robodojo-runs/<run>                # into <src>/renders/<scene>/
     python scripts/scenes/open_scenes.py catalog grscenes /path/to/sources/grscenes <out dir>
 
-`render` runs where the sources are (<asset-server>, no GPU): for each scene it copies only the files that scene uses to a GPU
-host (`--slot user@host:port:gpu`, repeatable; one scene at a time per slot), runs render_library_scene.py there, brings
-stats.json and the jpgs back and deletes the copy. `catalog` turns the renders into the platform's scenes.json and
+`render` runs where the sources are (<asset-server>, no GPU): for each scene it copies only the files that scene uses
+to a GPU host (`--slot user@host:port:gpu`, repeatable; one scene at a time per slot), runs render_library_scene.py
+there, brings stats.json and the jpgs back and deletes the copy. `catalog` turns the renders into the platform's
+scenes.json and
 preview/<scene>/ (publish preview/ with `r2s publish`, commit scenes.json under real2sim/scene_libraries/<lib>/).
 
 Downloads go through HF_ENDPOINT (default https://hf-mirror.com; huggingface.co is not reachable from our servers).

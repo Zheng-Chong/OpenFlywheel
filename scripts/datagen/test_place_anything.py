@@ -234,6 +234,33 @@ class Licenses(unittest.TestCase):
             self.assertFalse(any(o["cat"].startswith(pa.NONCOMMERCIAL) for o in gen.pool), task)
 
 
+class Release(unittest.TestCase):
+    def test_readme_lists_sources_and_licenses(self):
+        from scripts.datagen import place_anything_release as rel
+
+        recs = Path(pa.__file__).with_name("place_anything_receptacles_r2.json")
+        quality = [
+            dict(objects=dict(target=["sand3d_packaging", 269], receptacle=["clutter_book", 0],
+                              distractor_0=["wood_block_cube", 2])),
+            dict(objects=dict(target=["game_controller", 0], receptacle=["marker_box", 2],
+                              distractor_0=["fmb_peg_round", 24])),
+        ]  # fmt: skip
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "collection_quality.json").write_text(json.dumps(quality))
+            (d / "README.md").write_text("# x\n")
+            (d / "sha256.json").write_text("{}")
+            for _ in range(2):  # a second run replaces the section
+                sys.argv = ["x", "readme", "--dataset", str(d), "--receptacles", str(recs), "--new-in", "r2"]
+                rel.main()
+            text = (d / "README.md").read_text()
+            self.assertEqual(text.count(rel.HEAD), 1)
+            self.assertIn("| Sand3D | CC-BY-4.0 | 1 | 1 |", text)
+            self.assertIn("Receptacles added in r2: 1 of the 2 episodes.", text)
+            self.assertIn("No object on the table has a non-commercial license", text)
+            self.assertEqual(len(json.loads((d / "sha256.json").read_text())["README.md"]), 64)
+
+
 class Plugin(unittest.TestCase):
     def episode(self, kind, frames=40, release=True, pushed=False):
         from scripts.datagen.plugins import g1d_place_anything as plugin

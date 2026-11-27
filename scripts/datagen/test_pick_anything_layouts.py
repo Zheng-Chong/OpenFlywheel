@@ -120,6 +120,13 @@ class PickAnythingR3Layouts(unittest.TestCase):
             labels = {f"{e['category']}/{e['category_idx']:05d}" for es in lay["Rigid"].values() for e in es}
             self.assertLessEqual(labels, keys)
 
+    def test_round_pool(self):
+        r6 = pal.round_pool("g1d_pick_anything-r6", commercial=True, pool=self.pool)
+        r7 = pal.round_pool("g1d_pick_anything-r7", commercial=True, pool=self.pool)
+        self.assertEqual((len(r6), len(r7)), (295, 293))
+        self.assertEqual({o["cat"] for o in r6} - {o["cat"] for o in r7}, {"sand3d_vehicle"})
+        self.assertEqual(len(pal.round_pool("g1d_pick_anything-r3", pool=self.pool)), 551)
+
     def test_write_unit(self):
         dst = self.gen.write_unit("g1d_shenzhen_lab", 780, 2, per=3)
         self.assertEqual(dst.relative_to(self.tmp.name).as_posix(), "Eval_Layout/RoboDojo/g1d_shenzhen_lab/78052")

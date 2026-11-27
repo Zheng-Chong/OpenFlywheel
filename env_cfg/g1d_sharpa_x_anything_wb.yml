@@ -1,0 +1,23 @@
+# Wholebody (waist + lift + 22-DoF/hand Sharpa Wave, 61-dim) env config for X-Anything tasks.
+config_name: g1d
+
+config:
+  sim: g1d_sim_config
+  scene: default
+  robot: g1d_sharpa_wave
+  camera: g1d_camera
+
+observation:
+  collect_freq: 30
+  robot:
+    joint_states: true
+    world_ee_state: true
+    ee_state: measured
+    body_states: true
+  vision:
+    cameras: [cam_head, cam_head_right]
+    approximate_depth: false
+    depth: false
+    intrinsic_matrix: false
+    extrinsic_matrix: false
+    shape: true

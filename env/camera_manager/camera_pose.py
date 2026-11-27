@@ -10,6 +10,10 @@ import torch
 from env_cfg.camera.template import (
     D435,
     DEX1_RGB,
+    G1D_CALIB_HEAD_LEFT,
+    G1D_CALIB_HEAD_RIGHT,
+    G1D_CALIB_LEFT_WRIST,
+    G1D_CALIB_RIGHT_WRIST,
     G1D_HEAD,
     GEMINI_345LG,
     LARGE_D435,
@@ -25,6 +29,10 @@ REAL_MAP = {
     "large_d435": LARGE_D435,
     "dex1_rgb": DEX1_RGB,
     "g1d_head": G1D_HEAD,
+    "g1d_calib_head_left": G1D_CALIB_HEAD_LEFT,
+    "g1d_calib_head_right": G1D_CALIB_HEAD_RIGHT,
+    "g1d_calib_left_wrist": G1D_CALIB_LEFT_WRIST,
+    "g1d_calib_right_wrist": G1D_CALIB_RIGHT_WRIST,
 }
 
 VISUAL_MAP = {

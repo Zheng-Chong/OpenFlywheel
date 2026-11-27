@@ -3,6 +3,7 @@ from typing import Any, List
 from omegaconf import OmegaConf, open_dict
 from omegaconf.dictconfig import DictConfig
 
+from env.observation_manager.vision_utils import merge_camera_selections, parse_camera_selection
 from env.robot_manager.control_manager import ControlSeq
 
 
@@ -65,6 +66,13 @@ class TaskEnvCommon:
             self.camera_manager,
             self.device,
         )
+        vision_cfg = OmegaConf.select(config, "eval_cfg.observation.vision")
+        if vision_cfg is not None:
+            depth_sel = parse_camera_selection(vision_cfg.get("depth", None))
+            if vision_cfg.get("approximate_depth", None) is True:
+                depth_sel = merge_camera_selections(depth_sel, True)
+            if depth_sel is not None:
+                self.capture_manager._requested_depth_cameras = depth_sel
 
     @staticmethod
     def _keep_only_cameras(config):

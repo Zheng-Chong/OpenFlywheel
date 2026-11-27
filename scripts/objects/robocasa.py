@@ -32,9 +32,12 @@ table (CABINET_UNITS), so they are reproducible.
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 import shutil
 import sys
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 import zipfile
@@ -87,7 +90,8 @@ UPSTREAM_EXCLUDED = {
 }
 # the same registry gives each toaster oven its depth (Y), m: the meshes are not at real size (largest sides 0.34-0.70
 # m), RoboCasa scales them to these in its scenes, and so do we. Its microwave default (0.8 m wide) is a placement
-# default for over-the-range slots, not a per-model size, and its ovens have none: those keep their mesh size.
+# default for over-the-range slots, not a per-model size, and its ovens have none: those keep their mesh size, except
+# the 12 off-scale upstream fixtures in FIXTURE_TARGET_MAX_M below.
 TOASTER_OVEN_DEPTH_M = {
     "ToasterOven001": 0.33,
     "ToasterOven002": 0.36,
@@ -137,6 +141,26 @@ TOASTER_OVEN_DEPTH_M = {
     "ToasterOven063": 0.38,
     "ToasterOven064": 0.36,
 }
+# Upstream fixtures whose authored meshes are clearly off-scale (all passed physics/joints/render in the 2026-11-19
+# import and failed only size_check): normalized uniformly to a typical retail largest side within SIZE_M.
+FIXTURE_TARGET_MAX_M = {
+    "Oven041": 0.68,
+    "Oven044": 0.68,
+    "Oven047": 0.68,
+    "Oven053": 0.68,
+    "ElectricKettle024": 0.28,
+    "ElectricKettle025": 0.28,
+    "RangeHood004": 1.0,
+    "RangeHood005": 1.0,
+    "StandMixer020": 0.40,
+    "StandMixer021": 0.40,
+    "Toaster020": 0.35,
+    "Toaster035": 0.35,
+}
+# Rigid objects exported in wrong units (TomatoSlice004 is 5.18 m = cm authored as m vs 0.052 m for TomatoSlice005).
+OBJECT_SCALE_OVERRIDES = {
+    "TomatoSlice004": 0.01,
+}
 MASS_KG = {  # estimated: typical retail weights
     "microwave": 12.0, "oven": 30.0, "toaster_oven": 6.0, "blender": 4.0, "coffee_machine": 8.0, "dishwasher": 45.0,
     "electric_kettle": 1.2, "fridge": 90.0, "hood": 15.0, "sink": 20.0, "stand_mixer": 9.0, "stove": 60.0,
@@ -146,8 +170,8 @@ MASS_KG = {  # estimated: typical retail weights
 # and the full-size fixtures at retail sizes (estimated ranges)
 SIZE_M = {
     "microwave": (0.4, 0.85), "oven": (0.5, 0.85), "toaster_oven": (0.3, 0.6), "blender": (0.25, 0.6),
-    "coffee_machine": (0.2, 0.7), "dishwasher": (0.5, 1.0), "electric_kettle": (0.15, 0.4), "fridge": (1.2, 2.2),
-    "hood": (0.4, 1.6), "sink": (0.35, 1.6), "stand_mixer": (0.25, 0.55), "stove": (0.5, 1.6), "stovetop": (0.4, 1.2),
+    "coffee_machine": (0.2, 0.76), "dishwasher": (0.5, 1.0), "electric_kettle": (0.15, 0.4), "fridge": (1.2, 2.2),
+    "hood": (0.4, 1.66), "sink": (0.35, 1.6), "stand_mixer": (0.2, 0.55), "stove": (0.5, 1.6), "stovetop": (0.4, 1.3),
     "toaster": (0.18, 0.5), "window": (0.4, 2.5),
 }  # fmt: skip
 TABLESIDE_MAX_M = 0.9
@@ -161,11 +185,31 @@ def fetch(out):
     zips = [f"fixtures_lightwheel/{z}.zip" for z in (*ZIPS, *MORE_FIXTURES)] + [
         f"objects_lightwheel/{z}.zip" for z in OBJECTS
     ]
+    base = os.environ.get("HF_ENDPOINT", "https://huggingface.co").rstrip("/")
+    download_url = f"{base}/datasets/{REPO}"
     for name in ["README.md", *zips]:
         dest = out / "_download" / name
         dest.parent.mkdir(parents=True, exist_ok=True)
         if not dest.is_file():
-            urllib.request.urlretrieve(f"{URL}/resolve/{REVISION}/{name}", dest)
+            req = urllib.request.Request(
+                f"{download_url}/resolve/{REVISION}/{name}",
+                headers={"User-Agent": "curl/8.0"},
+            )
+            tmp = dest.with_suffix(dest.suffix + ".part")
+            for attempt in range(8):
+                try:
+                    with urllib.request.urlopen(req, timeout=120) as resp, open(tmp, "wb") as fh:
+                        shutil.copyfileobj(resp, fh)
+                    break
+                except urllib.error.HTTPError as exc:
+                    if exc.code in (429, 500, 502, 503, 504) and attempt < 7:
+                        retry_after = exc.headers.get("Retry-After") if exc.headers else None
+                        wait = float(retry_after) if retry_after and retry_after.isdigit() else min(60.0, 2.0**attempt)
+                        time.sleep(wait)
+                        continue
+                    raise
+            tmp.replace(dest)
+            time.sleep(0.5)
         if name.endswith(".zip"):
             with zipfile.ZipFile(dest) as z:
                 z.extractall(out / name.split("/")[0])
@@ -232,7 +276,7 @@ def parse_mjcf(path):
         m.get("name"): {"rgba": floats(m.get("rgba"), 4, [1, 1, 1, 1]), "texture": textures.get(m.get("texture"))}
         for m in root.iter("material")
     }
-    links, joints = {}, []
+    links, joints, body_to_link = {}, [], {}
 
     def visit(body, link, pose=((0.0, 0.0, 0.0), (1.0, 0.0, 0.0, 0.0))):
         if body.get("pos") or body.get("quat") or body.get("euler"):
@@ -269,6 +313,8 @@ def parse_mjcf(path):
                 }
             )
             link = name
+        if body.get("name"):
+            body_to_link[body.get("name")] = link
         links.setdefault(link, [])
         for g in body.findall("geom"):
             cls = g.get("class") or ""
@@ -298,7 +344,23 @@ def parse_mjcf(path):
 
     for body in root.find("worldbody").findall("body"):
         visit(body, "base")
-    return {"materials": materials, "links": links, "joints": joints, "base": "base"}
+    exclude_contacts = []
+    seen_pairs = set()
+    for exc in root.findall("./contact/exclude"):
+        l1 = body_to_link.get(exc.get("body1"))
+        l2 = body_to_link.get(exc.get("body2"))
+        if l1 and l2 and l1 != l2:
+            pair = (l1, l2) if l1 < l2 else (l2, l1)
+            if pair not in seen_pairs:
+                seen_pairs.add(pair)
+                exclude_contacts.append(pair)
+    return {
+        "materials": materials,
+        "links": links,
+        "joints": joints,
+        "base": "base",
+        "exclude_contacts": exclude_contacts,
+    }
 
 
 # ---------------------------------------------------------------- model -> USD
@@ -451,8 +513,99 @@ def write_usd(model, out_dir):
             drive.CreateDampingAttr(float(j["damping"] / unit))
             drive.CreateTargetPositionAttr(float(j["springref"] * unit))
         joint_axis_params(joint.GetPrim(), angular, max(j["frictionloss"], 0.0), max(j["armature"], 0.0))
+    for link_a, link_b in model.get("exclude_contacts", ()):
+        pa = f"/model/{'base' if link_a == model['base'] else articulated.slug(link_a)}"
+        pb = f"/model/{'base' if link_b == model['base'] else articulated.slug(link_b)}"
+        prim_a = stage.GetPrimAtPath(pa)
+        prim_b = stage.GetPrimAtPath(pb)
+        if prim_a and prim_b:
+            UsdPhysics.FilteredPairsAPI.Apply(prim_a).CreateFilteredPairsRel().AddTarget(prim_b.GetPath())
     stage.GetRootLayer().Save()
     return out_dir / "model.usdc"
+
+
+def _axis_angle_quat(axis, angle):
+    n = math.sqrt(sum(a * a for a in axis))
+    if n < 1e-12:
+        return (1.0, 0.0, 0.0, 0.0)
+    c, s = math.cos(angle / 2.0), math.sin(angle / 2.0)
+    return (c, axis[0] / n * s, axis[1] / n * s, axis[2] / n * s)
+
+
+def _link_collider_points(geoms):
+    """Model-frame sample points of all collision geoms on a link."""
+    pts = []
+    for g in geoms:
+        if g["kind"] != "collision":
+            continue
+        if g["type"] == "mesh" and g["mesh"] is not None:
+            pts.extend(_placed(_obj(g["mesh"])[0], g).tolist())
+            continue
+        s = g["size"]
+        half = s[:3] if g["type"] == "box" else [s[0], s[0], s[1] if g["type"] == "cylinder" else s[0]]
+        for sx in (-half[0], half[0]):
+            for sy in (-half[1], half[1]):
+                for sz in (-half[2], half[2]):
+                    p = _rotate(g["quat"], [sx, sy, sz])
+                    pts.append([g["pos"][i] + p[i] for i in range(3)])
+    return pts
+
+
+def open_door_rack_pairs(model, clearance=0.01):
+    """(door_link, rack_link) pairs whose colliders overlap (within `clearance` m) when the door is swung to its open
+    limit and the rack slides over its prismatic range. Used for dishwashers whose lower rack rides on the open door."""
+    doors = [
+        j
+        for j in model["joints"]
+        if j["type"] == "revolute"
+        and j["range"]
+        and (
+            articulated.part_of(j["child"], "revolute") in ("door", "lid")
+            or "door" in j["child"].lower()
+            or "door" in j["name"].lower()
+        )
+    ]
+    rack_words = ("rack", "basket", "tray", "drawer", "shelf", "grill")
+    racks = [
+        j
+        for j in model["joints"]
+        if j["type"] == "prismatic"
+        and j["range"]
+        and (
+            articulated.part_of(j["child"], "prismatic") in ("rack", "drawer", "tray")
+            or any(w in j["child"].lower() or w in j["name"].lower() for w in rack_words)
+        )
+    ]
+    pairs = []
+    for jd in doors:
+        dpts = _link_collider_points(model["links"].get(jd["child"], ()))
+        if not dpts:
+            continue
+        q_open = jd["range"][1] if abs(jd["range"][1]) >= abs(jd["range"][0]) else jd["range"][0]
+        rot = _axis_angle_quat(jd["axis"], q_open)
+        pivot = jd["pos"]
+        rotated = [
+            [pivot[i] + r[i] for i in range(3)]
+            for p in dpts
+            for r in (_rotate(rot, [p[i] - pivot[i] for i in range(3)]),)
+        ]
+        d_lo = [min(p[i] for p in rotated) for i in range(3)]
+        d_hi = [max(p[i] for p in rotated) for i in range(3)]
+        for jr in racks:
+            rpts = _link_collider_points(model["links"].get(jr["child"], ()))
+            if not rpts:
+                continue
+            ax = jr["axis"]
+            n = math.sqrt(sum(a * a for a in ax)) or 1.0
+            u = [a / n for a in ax]
+            swept = [[p[i] + d * u[i] for i in range(3)] for d in jr["range"] for p in rpts]
+            r_lo = [min(p[i] for p in swept) for i in range(3)]
+            r_hi = [max(p[i] for p in swept) for i in range(3)]
+            if all(d_lo[i] - clearance <= r_hi[i] and r_lo[i] - clearance <= d_hi[i] for i in range(3)):
+                pair = (jd["child"], jr["child"])
+                if pair not in pairs:
+                    pairs.append(pair)
+    return pairs
 
 
 def joint_axis_params(prim, angular, friction, armature):
@@ -516,11 +669,207 @@ def _unit_sphere():
     return np.stack([r * np.cos(t), r * np.sin(t), z], 1)
 
 
-def write_rigid(model, target):
+STABLE_MARGIN_DEG = 6.0  # minimum tipping angle (deg) to keep a rigid object's authored orientation
+STABLE_TARGET_DEG = 10.0  # preferred tipping angle when choosing a rotated resting face
+
+
+def _hull_centroid(vertices, faces):
+    """Volume-weighted centroid of a closed outward-oriented triangle mesh."""
+    import numpy as np
+
+    v = np.asarray(vertices, float)
+    f = np.asarray(faces, int)
+    p0 = v[0]
+    a, b, c = v[f[:, 0]] - p0, v[f[:, 1]] - p0, v[f[:, 2]] - p0
+    vols = np.einsum("ij,ij->i", a, np.cross(b, c)) / 6.0
+    total = float(vols.sum())
+    if abs(total) < 1e-12:
+        return v.mean(0)
+    centroids = p0 + (a + b + c) / 4.0
+    return (vols[:, None] * centroids).sum(0) / total
+
+
+def _polygon_margin_2d(pts2, query2):
+    """Signed distance from `query2` to the nearest edge of the 2D convex hull of `pts2` (>0 strictly inside)."""
+    import numpy as np
+    from scipy.spatial import ConvexHull, QhullError
+
+    pts2 = np.asarray(pts2, float)
+    if len(pts2) < 3:
+        return -1.0
+    try:
+        hull = ConvexHull(pts2)
+    except QhullError:
+        return -1.0
+    # equations rows are (a, b, c) with a*x + b*y + c <= 0 inside and ||(a, b)|| == 1
+    signed = -(hull.equations[:, :2] @ np.asarray(query2, float) + hull.equations[:, 2])
+    return float(signed.min())
+
+
+def _rot_to_neg_z(normal):
+    """Minimum-angle 3x3 rotation matrix mapping unit vector `normal` onto [0, 0, -1]."""
+    import numpy as np
+
+    n = np.asarray(normal, float)
+    n = n / max(float(np.linalg.norm(n)), 1e-12)
+    target = np.array([0.0, 0.0, -1.0])
+    c = float(np.dot(n, target))
+    if c > 1.0 - 1e-9:
+        return np.eye(3)
+    if c < -1.0 + 1e-9:
+        return np.diag([1.0, -1.0, -1.0])
+    axis = np.cross(n, target)
+    s2 = float(np.dot(axis, axis))
+    kx, ky, kz = axis
+    k = np.array([[0.0, -kz, ky], [kz, 0.0, -kx], [-ky, kx, 0.0]])
+    return np.eye(3) + k + (k @ k) * ((1.0 - c) / s2)
+
+
+def compute_stable_pose(raw_hulls, min_margin_deg=STABLE_MARGIN_DEG):
+    """Return (R, tilt_deg) rotating a rigid object onto a statically stable resting face of its combined collider
+    convex hull if its authored orientation has tipping margin < `min_margin_deg` (or CoM outside its support polygon).
+    Returns (eye(3), 0.0) when the authored orientation is already stable."""
+    import numpy as np
+    from scipy.spatial import ConvexHull, QhullError
+
+    total_vol = sum(h[2] for h in raw_hulls)
+    if total_vol <= 0:
+        return np.eye(3), 0.0
+    com = sum(_hull_centroid(v, f) * vol for v, f, vol in raw_hulls) / total_vol
+    all_pts = np.concatenate([v for v, _, _ in raw_hulls], axis=0)
+    span = float((all_pts.max(0) - all_pts.min(0)).max())
+    # Tight coplanarity tolerance (0.05-0.5 mm): wide enough for float32/OBJ quantization on flat bases, tight enough
+    # that curved bottoms (balls, drumsticks) and thin slices (4-8 mm) do not form a fake support polygon.
+    tol = min(5e-4, max(5e-5, 5e-4 * span))
+
+    # 1. Check whether the authored pose (gravity along -Z) is already statically stable.
+    z_min = float(all_pts[:, 2].min())
+    bottom = all_pts[all_pts[:, 2] <= z_min + tol]
+    authored_margin = _polygon_margin_2d(bottom[:, :2], com[:2])
+    com_h = max(float(com[2]) - z_min, 1e-6)
+    if authored_margin > 0.0 and math.degrees(math.atan2(authored_margin, com_h)) >= min_margin_deg:
+        return np.eye(3), 0.0
+
+    # 2. Search unique coplanar faces of the overall 3D convex hull for the best stable resting face.
+    try:
+        hull3 = ConvexHull(all_pts)
+    except QhullError:
+        return np.eye(3), 0.0
+    hull_pts = all_pts[hull3.vertices]
+    planes = []
+    for eq in hull3.equations:
+        n, d = eq[:3], float(eq[3])
+        if not any(float(np.dot(n, pn)) > 0.999 and abs(d - pd) < 1e-4 for pn, pd in planes):
+            planes.append((n, d))
+
+    candidates = []
+    for n, d in planes:
+        # points on the plane satisfy n . p + d == 0; interior points have n . p + d <= 0
+        on_face = hull_pts[hull_pts @ n + d >= -tol]
+        if len(on_face) < 3:
+            continue
+        h = -float(np.dot(n, com) + d)
+        if h <= 1e-6:
+            continue
+        ref = np.array([1.0, 0.0, 0.0]) if abs(float(n[0])) < 0.9 else np.array([0.0, 1.0, 0.0])
+        u = np.cross(n, ref)
+        u /= float(np.linalg.norm(u))
+        v = np.cross(n, u)
+        pts2 = np.column_stack((on_face @ u, on_face @ v))
+        com2 = np.array([float(np.dot(com, u)), float(np.dot(com, v))])
+        margin = _polygon_margin_2d(pts2, com2)
+        if margin <= 0.0:
+            continue
+        margin_deg = math.degrees(math.atan2(margin, h))
+        tilt_deg = math.degrees(math.acos(max(-1.0, min(1.0, float(-n[2])))))
+        candidates.append((margin_deg, tilt_deg, n))
+
+    if not candidates:
+        return np.eye(3), 0.0
+    solid = [c for c in candidates if c[0] >= STABLE_TARGET_DEG]
+    if solid:
+        # Closest-to-authored stable face; break near-ties (within 2 deg) by larger stability margin.
+        min_tilt = min(c[1] for c in solid)
+        near = [c for c in solid if c[1] <= min_tilt + 2.0]
+        _, tilt_deg, best_n = max(near, key=lambda c: c[0])
+    else:
+        _, tilt_deg, best_n = max(candidates, key=lambda c: c[0])
+    if tilt_deg < 0.5:
+        return np.eye(3), 0.0
+    return _rot_to_neg_z(best_n), tilt_deg
+
+
+def align_hulls_to_visual_z(hulls, visual_pts, vis_z_min, vis_z_max):
+    """Align collider hulls' lowest Z to the visual mesh's lowest Z (`vis_z_min`) so rigid objects neither float nor
+    sink when check_object.py compares settled z against visual half-height."""
+    import numpy as np
+    from sand3d import convex_hull
+
+    col_z_min = min(float(v[:, 2].min()) for v, _, _ in hulls)
+    col_z_max = max(float(v[:, 2].max()) for v, _, _ in hulls)
+    info = {}
+
+    # 1. Pure Z-offset: both bottom and top of the collider set are shifted in the same direction.
+    shift_lo = vis_z_min - col_z_min
+    shift_hi = vis_z_max - col_z_max
+    shift = 0.0
+    if shift_lo > 0.001 and shift_hi > 0.001:
+        shift = min(shift_lo, shift_hi)
+    elif shift_lo < -0.001 and shift_hi < -0.001:
+        shift = max(shift_lo, shift_hi)
+    if shift:
+        dz = np.array([0.0, 0.0, shift])
+        hulls = [(v + dz, f, vol) for v, f, vol in hulls]
+        col_z_min += shift
+        info["shift_z_m"] = round(shift, 5)
+
+    # 2. Floating fix: collider still protrudes > 1 mm below visual bottom -> clamp or shift up.
+    if col_z_min < vis_z_min - 0.001:
+        clamped = []
+        for v, f, vol in hulls:
+            h_min, h_max = float(v[:, 2].min()), float(v[:, 2].max())
+            if h_min >= vis_z_min:
+                clamped.append((v, f, vol))
+            elif h_max <= vis_z_min + 0.001:
+                clamped.append((v + np.array([0.0, 0.0, vis_z_min - h_min]), f, vol))
+            else:
+                vc = v.copy()
+                vc[:, 2] = np.maximum(vc[:, 2], vis_z_min)
+                try:
+                    nv, nf, nvol, _ = convex_hull(vc)
+                    clamped.append((nv, nf, nvol))
+                except ValueError:
+                    clamped.append((v + np.array([0.0, 0.0, vis_z_min - h_min]), f, vol))
+        hulls = clamped
+        col_z_min = min(float(v[:, 2].min()) for v, _, _ in hulls)
+        info["clamped_bottom"] = True
+
+    # 3. Sinking fix: visual bottom extends > 2 mm below lowest collider -> add a base support hull from visual mesh.
+    if col_z_min > vis_z_min + 0.002:
+        height = vis_z_max - vis_z_min
+        for cutoff in (col_z_min + 0.005, vis_z_min + max(0.02, 0.25 * height), vis_z_max):
+            base_pts = visual_pts[visual_pts[:, 2] <= cutoff]
+            if len(base_pts) < 4:
+                continue
+            try:
+                bv, bf, bvol, _ = convex_hull(base_pts)
+                hulls = [*hulls, (bv, bf, bvol)]
+                info["added_base_hull"] = True
+                break
+            except ValueError:
+                continue
+
+    return hulls, (info or None)
+
+
+def write_rigid(model, target, scale=1.0, stabilize=True, align_collider_bottom=True, info=None):
     """object.usdz (object.usda + textures/) for a jointless model: /World is the rigid body, centred on its visual
     bounding box; visual meshes keep the MJCF materials and textures; every collider (the release's own convex
     decomposition, or a primitive) becomes a convexHull mesh of at most sand3d.HULL_VERTICES points; mass is the hull
-    volume x OBJECT_DENSITY, clamped to OBJECT_MASS_KG. Returns (size m, hull volume m^3, mass kg, colliders, faces)."""
+    volume x OBJECT_DENSITY, clamped to OBJECT_MASS_KG. When `stabilize` is True, objects whose authored orientation is
+    not statically stable are rotated onto a stable resting face of their collider hull; when `align_collider_bottom`
+    is True, collider Z-bottom mismatches against the visual mesh are corrected. Returns (size m, hull volume m^3,
+    mass kg, colliders, faces)."""
     import numpy as np
     from pxr import Gf, Sdf, Usd, UsdGeom, UsdPhysics, UsdShade, Vt
     from sand3d import HULL_VERTICES, add_mesh, convex_hull
@@ -530,26 +879,43 @@ def write_rigid(model, target):
     for g in geoms:
         if g["kind"] == "visual" and g["type"] == "mesh" and g["mesh"] is not None:
             pts, faces, uv = _obj(g["mesh"])
-            visuals.append((g, _placed(pts, g), faces, uv))
+            visuals.append((g, _placed(pts, g) * scale, faces, uv))
     if not visuals:
         raise ValueError("no visual mesh")
-    stacked = np.concatenate([v[1] for v in visuals])
-    lo, hi = stacked.min(0), stacked.max(0)
-    size, center = hi - lo, (lo + hi) / 2
-    if not OBJECT_SIZE_M[0] <= float(size.max()) <= OBJECT_SIZE_M[1] or float(size.min()) < OBJECT_THIN_M:
-        raise ValueError(f"size {size.round(4).tolist()} m outside {OBJECT_SIZE_M}")
-    hulls = []
+    raw_hulls = []
     for g in geoms:
         if g["kind"] != "collision":
             continue
         local = _obj(g["mesh"])[0] if g["type"] == "mesh" else _primitive_points(g)
         try:
-            v, f, vol, _ = convex_hull(_placed(local, g) - center)
+            v, f, vol, _ = convex_hull(_placed(local, g) * scale)
         except ValueError:
             continue  # a flat sliver: no volume to collide with
-        hulls.append((v, f, vol))
-    if not hulls:
+        raw_hulls.append((v, f, vol))
+    if not raw_hulls:
         raise ValueError("no collider with volume")
+
+    rot_deg = 0.0
+    if stabilize:
+        rot, rot_deg = compute_stable_pose(raw_hulls)
+        if rot_deg > 0.0:
+            visuals = [(g, pts @ rot.T, faces, uv) for g, pts, faces, uv in visuals]
+            raw_hulls = [(v @ rot.T, f, vol) for v, f, vol in raw_hulls]
+
+    stacked = np.concatenate([v[1] for v in visuals])
+    lo, hi = stacked.min(0), stacked.max(0)
+    size, center = hi - lo, (lo + hi) / 2
+    if not OBJECT_SIZE_M[0] <= float(size.max()) <= OBJECT_SIZE_M[1] or float(size.min()) < OBJECT_THIN_M:
+        raise ValueError(f"size {size.round(4).tolist()} m outside {OBJECT_SIZE_M}")
+    hulls = [(v - center, f, vol) for v, f, vol in raw_hulls]
+    z_fix = None
+    if align_collider_bottom:
+        hulls, z_fix = align_hulls_to_visual_z(hulls, stacked - center, float(-size[2] / 2), float(size[2] / 2))
+    if info is not None:
+        if rot_deg > 0.0:
+            info["stable_pose_rotation_deg"] = round(rot_deg, 2)
+        if z_fix:
+            info["collider_z_fix"] = z_fix
     target = Path(target)
     target.mkdir(parents=True, exist_ok=True)
     tex_dir = target / "textures"
@@ -615,7 +981,8 @@ def write_rigid(model, target):
     stage.GetRootLayer().Save()
     package = target / "object.usdz"
     package.unlink(missing_ok=True)
-    with Sdf.ZipFileWriter.CreateNew(str(package)) as archive:
+    zip_writer = getattr(Sdf, "ZipFileWriter", Usd.ZipFileWriter)
+    with zip_writer.CreateNew(str(package)) as archive:
         archive.AddFile(str(wrapper), "object.usda")
         for t in textures:
             archive.AddFile(str(t), f"textures/{t.name}")
@@ -806,9 +1173,42 @@ def model_size(model):
 
 
 def registry_scale(name, raw_size):
-    """Uniform scale bringing a model to its RoboCasa registry depth, 1 where the registry gives none."""
+    """Uniform scale bringing a model to its RoboCasa registry depth or retail target size, 1 where none applies."""
     depth = TOASTER_OVEN_DEPTH_M.get(name)
-    return round(depth / raw_size[1], 5) if depth else 1.0
+    if depth:
+        return round(depth / raw_size[1], 5)
+    target = FIXTURE_TARGET_MAX_M.get(name)
+    if target:
+        return round(target / max(raw_size), 5)
+    return 1.0
+
+
+def select_failed(report, source=None):
+    """Build a targeted recovery manifest from the `failed` list of a prior import report (e.g.
+    real2sim/articulated/robocasa.json), preserving every existing asset ID so passed assets stay untouched."""
+    data = json.loads(Path(report).read_text()) if isinstance(report, str | Path) else report
+    source = Path(source) if source is not None else None
+    chosen = []
+    for item in data.get("failed", ()):
+        oid = item["id"]
+        src = item["src"]
+        rigid = oid.startswith("Rigid/")
+        kind = oid.split("/")[1].removeprefix("robocasa_")
+        entry = {"id": oid, "src": src, "kind": kind}
+        if rigid:
+            entry["rigid"] = True
+        else:
+            raw = item.get("size_m")
+            if source is not None and (source / src / "model.xml").is_file():
+                raw = model_size(parse_mjcf(source / src / "model.xml"))
+            if raw:
+                scale = registry_scale(Path(src).name, raw)
+                entry["scale"] = scale
+                entry["size_m"] = [round(v * scale, 4) for v in raw]
+        if "why" in item:
+            entry["prior_why"] = item["why"]
+        chosen.append(entry)
+    return {"source": URL, "revision": REVISION, "license": LICENSE, "chosen": chosen, "dropped": []}
 
 
 def select(source):
@@ -881,7 +1281,17 @@ def size_check(kind, size):
     }
 
 
+def _ensure_pxr():
+    try:
+        import pxr  # noqa: F401
+    except ImportError:
+        from isaacsim import SimulationApp
+
+        globals()["_SIM_APP"] = SimulationApp({"headless": True})
+
+
 def convert(root, manifest):
+    _ensure_pxr()
     root = Path(root)
     source = root / "sources/robocasa"
     done, failed = [], []
@@ -896,6 +1306,13 @@ def convert(root, manifest):
                 usd_dir = source / "usd/cabinet_units" / entry["unit"]["name"]
             else:
                 model = parse_mjcf(source / entry["src"] / "model.xml")
+                if entry["kind"] == "dishwasher":
+                    existing = {tuple(sorted(p)) for p in model.get("exclude_contacts", ())}
+                    for pair in open_door_rack_pairs(model):
+                        key = tuple(sorted(pair))
+                        if key not in existing:
+                            existing.add(key)
+                            model.setdefault("exclude_contacts", []).append(pair)
                 mass, basis = MASS_KG[entry["kind"]], f"estimated: typical {entry['kind']} weight"
                 usd_dir = source / "usd" / entry["src"].split("/", 1)[1]
             usd = write_usd(model, usd_dir)
@@ -920,7 +1337,15 @@ def convert(root, manifest):
                 "joint_friction": "MJCF frictionloss -> PhysxJointAxisAPI static and dynamic friction effort; armature",
             }
             if entry.get("scale", 1.0) != 1.0:
-                src["scale"] = {"factor": entry["scale"], "basis": "RoboCasa fixture registry depth for this model"}
+                model_name = Path(entry["src"]).name
+                basis_note = (
+                    "RoboCasa fixture registry depth for this model"
+                    if model_name in TOASTER_OVEN_DEPTH_M
+                    else "normalized to typical retail size for this fixture kind (upstream mesh off-scale)"
+                )
+                src["scale"] = {"factor": entry["scale"], "basis": basis_note}
+            if model.get("exclude_contacts"):
+                src["filtered_pairs"] = [list(p) for p in model["exclude_contacts"]]
             if "unit" in entry:
                 src["generated"] = {**entry["unit"], "size_m": entry["size_m"], "board_m": BOARD, "gap_m": GAP}
             meta = articulated.metadata(entry["id"], facts, mass, basis, src)
@@ -948,33 +1373,39 @@ def convert_object(root, source, entry):
 
     target = Path(root) / "Assets/Object/RoboDojo" / entry["id"]
     model = parse_mjcf(source / entry["src"] / "model.xml")
-    size, volume, mass, colliders, faces = write_rigid(model, target)
+    scale = entry.get("scale") or OBJECT_SCALE_OVERRIDES.get(Path(entry["src"]).name, 1.0)
+    info = {}
+    size, volume, mass, colliders, faces = write_rigid(model, target, scale=scale, info=info)
     geometry, active = placement_metadata(size.tolist())
     geometry["faces"] = faces
+    src_meta = {
+        "dataset": REPO,
+        "url": URL,
+        "revision": REVISION,
+        "object": entry["src"],
+        "license": LICENSE,
+        "attribution": ATTRIBUTION,
+        "rsi_pools": "allowed (CC BY 4.0, NVIDIA release; user decision 2026-11-17)",
+        "converted_by": "scripts/objects/robocasa.py (MJCF -> self-contained object.usdz)",
+        "measured": False,
+        "mass": {
+            "measured": False,
+            "method": f"collider hull volume x {OBJECT_DENSITY} kg/m^3 (MJCF density), clamped to {OBJECT_MASS_KG}",
+            "volume_m3": round(volume, 6),
+        },
+        "collision": {"approximation": "convexHull", "count": colliders, "source": "the release's own colliders"},
+        "dropped_from_mjcf": "solref / solimp / friction, region and spawn helper geoms",
+    }
+    if scale != 1.0:
+        src_meta["scale"] = {"factor": scale, "basis": "unit override (upstream MJCF exported in centimetres)"}
+    src_meta.update(info)
     meta = {
         "uuid": str(uuid.uuid5(uuid.NAMESPACE_URL, f"{URL}/{entry['src']}")),
         "physics": {"mass": mass, "size": r4(size)},
         "geometry": geometry,
         "active": active,
         "passive": {"functional": {}, "support": {}},
-        "source": {
-            "dataset": REPO,
-            "url": URL,
-            "revision": REVISION,
-            "object": entry["src"],
-            "license": LICENSE,
-            "attribution": ATTRIBUTION,
-            "rsi_pools": "allowed (CC BY 4.0, NVIDIA release; user decision 2026-11-17)",
-            "converted_by": "scripts/objects/robocasa.py (MJCF -> self-contained object.usdz)",
-            "measured": False,
-            "mass": {
-                "measured": False,
-                "method": f"collider hull volume x {OBJECT_DENSITY} kg/m^3 (MJCF density), clamped to {OBJECT_MASS_KG}",
-                "volume_m3": round(volume, 6),
-            },
-            "collision": {"approximation": "convexHull", "count": colliders, "source": "the release's own colliders"},
-            "dropped_from_mjcf": "solref / solimp / friction, region and spawn helper geoms",
-        },
+        "source": src_meta,
         "runtime_ready": False,
     }
     articulated.write_json(target / "metadata.json", meta)
@@ -1147,7 +1578,10 @@ def names(root, manifest, previews):
     for entry in manifest["chosen"]:
         if entry["id"] in out:
             continue
-        meta = json.loads((Path(root) / "Assets/Object/RoboDojo" / entry["id"] / "metadata.json").read_text())
+        meta_path = Path(root) / "Assets/Object/RoboDojo" / entry["id"] / "metadata.json"
+        if not meta_path.is_file():
+            continue
+        meta = json.loads(meta_path.read_text())
         png = Path(previews) / entry["id"] / "preview" / "sim.png"
         if not png.is_file():
             continue
@@ -1187,7 +1621,7 @@ def names(root, manifest, previews):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=("fetch", "select", "convert", "names", "ready"))
+    parser.add_argument("command", choices=("fetch", "select", "select-failed", "convert", "names", "ready"))
     parser.add_argument(
         "--previews", type=Path, help="names: the checks' --image-dir; ready: check_object.py's --image-dir"
     )
@@ -1195,6 +1629,9 @@ def main():
     parser.add_argument("--source", type=Path)
     parser.add_argument("--root", type=Path)
     parser.add_argument("--manifest", type=Path)
+    parser.add_argument(
+        "--report", type=Path, help="select-failed: prior import report (real2sim/articulated/robocasa.json)"
+    )
     args = parser.parse_args()
     if args.command == "fetch":
         fetch(args.out)
@@ -1202,6 +1639,10 @@ def main():
         result = select(args.source)
         args.manifest.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
         print(f"chosen={len(result['chosen'])}, dropped={len(result['dropped'])}")
+    elif args.command == "select-failed":
+        result = select_failed(args.report, args.source)
+        args.manifest.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
+        print(f"recovery_chosen={len(result['chosen'])}")
     elif args.command == "names":
         print(json.dumps(names(args.root, json.loads(args.manifest.read_text()), args.previews), ensure_ascii=False))
     elif args.command == "ready":

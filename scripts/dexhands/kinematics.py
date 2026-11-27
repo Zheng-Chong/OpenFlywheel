@@ -4,7 +4,6 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 import numpy as np
-import trimesh
 
 
 def vector(text, default=(0, 0, 0)):
@@ -83,6 +82,8 @@ def fk(root, supplied=None):
 
 
 def visuals(path, q=None, simplify_faces=None, measured_mimics=False):
+    import trimesh
+
     path = Path(path)
     root = ET.parse(path).getroot()
     if measured_mimics and q is not None:

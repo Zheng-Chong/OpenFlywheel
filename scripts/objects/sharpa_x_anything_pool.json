@@ -1,0 +1,1446 @@
+{
+  "about": "Commercially usable Sharpa Wave X-Anything object pool screened from pick_anything_pool.json",
+  "rules": {
+    "mass": [
+      0.015,
+      0.4
+    ],
+    "narrow": [
+      0.022,
+      0.068
+    ],
+    "long_max": 0.19,
+    "height": [
+      0.024,
+      0.195
+    ],
+    "power_wrap": {
+      "height_min": 0.072,
+      "narrow_min": 0.03,
+      "long_max": 0.14
+    },
+    "tripod_pinch": {
+      "height_min": 0.036,
+      "narrow_min": 0.024,
+      "long_max": 0.12
+    },
+    "lateral": {
+      "height_min": 0.024,
+      "height_max": 0.06,
+      "long_min": 0.06,
+      "narrow_max": 0.06
+    }
+  },
+  "count": 108,
+  "primitive_counts": {
+    "tripod_pinch": 36,
+    "power_wrap": 52,
+    "lateral": 20
+  },
+  "objects": [
+    {
+      "cat": "block",
+      "idx": 2,
+      "family": "block",
+      "name": "rectangular block",
+      "size": [
+        0.0383,
+        0.0622,
+        0.038
+      ],
+      "mass": 0.2,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "block",
+      "idx": 3,
+      "family": "block",
+      "name": "triangular block",
+      "size": [
+        0.0606,
+        0.0375,
+        0.046
+      ],
+      "mass": 0.2,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "ceramic_cup",
+      "idx": 1,
+      "family": "cup",
+      "name": "ceramic cup",
+      "size": [
+        0.064,
+        0.064,
+        0.075
+      ],
+      "mass": 0.0847,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "charger",
+      "idx": 0,
+      "family": "electronics",
+      "name": "charger",
+      "size": [
+        0.042,
+        0.0631,
+        0.027
+      ],
+      "mass": 0.03,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "drink_bottle",
+      "idx": 2,
+      "family": "bottle",
+      "name": "drink bottle",
+      "size": [
+        0.0597,
+        0.046,
+        0.1784
+      ],
+      "mass": 0.3928,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_assembly_part",
+      "idx": 0,
+      "family": "part",
+      "name": "plate part",
+      "size": [
+        0.03,
+        0.1,
+        0.1
+      ],
+      "mass": 0.1332,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_peg_arch",
+      "idx": 20,
+      "family": "peg",
+      "name": "arch peg",
+      "size": [
+        0.048,
+        0.0288,
+        0.1
+      ],
+      "mass": 0.0601,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_arch",
+      "idx": 30,
+      "family": "peg",
+      "name": "arch peg",
+      "size": [
+        0.048,
+        0.0288,
+        0.15
+      ],
+      "mass": 0.0902,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_double_square",
+      "idx": 4,
+      "family": "peg",
+      "name": "double square peg",
+      "size": [
+        0.0636,
+        0.0245,
+        0.1
+      ],
+      "mass": 0.0819,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_hexagon",
+      "idx": 12,
+      "family": "peg",
+      "name": "hexagon peg",
+      "size": [
+        0.0452,
+        0.0511,
+        0.15
+      ],
+      "mass": 0.1588,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_peg_hexagon",
+      "idx": 36,
+      "family": "peg",
+      "name": "hexagon peg",
+      "size": [
+        0.0294,
+        0.0333,
+        0.1
+      ],
+      "mass": 0.0449,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_oval",
+      "idx": 30,
+      "family": "peg",
+      "name": "oval peg",
+      "size": [
+        0.0432,
+        0.0288,
+        0.15
+      ],
+      "mass": 0.0878,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_rectangle",
+      "idx": 0,
+      "family": "peg",
+      "name": "rectangle peg",
+      "size": [
+        0.0498,
+        0.032,
+        0.1
+      ],
+      "mass": 0.095,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_peg_rectangle",
+      "idx": 20,
+      "family": "peg",
+      "name": "rectangle peg",
+      "size": [
+        0.0403,
+        0.0259,
+        0.1
+      ],
+      "mass": 0.0623,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "fmb_peg_round",
+      "idx": 12,
+      "family": "peg",
+      "name": "round peg",
+      "size": [
+        0.0498,
+        0.0498,
+        0.15
+      ],
+      "mass": 0.1751,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_peg_star",
+      "idx": 12,
+      "family": "peg",
+      "name": "star peg",
+      "size": [
+        0.0543,
+        0.052,
+        0.15
+      ],
+      "mass": 0.1229,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "fmb_peg_three_prong",
+      "idx": 0,
+      "family": "peg",
+      "name": "three-prong peg",
+      "size": [
+        0.0634,
+        0.0591,
+        0.1
+      ],
+      "mass": 0.1028,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "game_controller",
+      "idx": 2,
+      "family": "electronics",
+      "name": "game controller",
+      "size": [
+        0.13,
+        0.0467,
+        0.044
+      ],
+      "mass": 0.1469,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "game_controller",
+      "idx": 4,
+      "family": "electronics",
+      "name": "game controller",
+      "size": [
+        0.104,
+        0.0489,
+        0.044
+      ],
+      "mass": 0.0999,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "game_controller",
+      "idx": 5,
+      "family": "electronics",
+      "name": "game controller",
+      "size": [
+        0.1625,
+        0.056,
+        0.0543
+      ],
+      "mass": 0.2334,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "hammer",
+      "idx": 8,
+      "family": "hammer",
+      "name": "rubber mallet",
+      "size": [
+        0.1813,
+        0.0554,
+        0.037
+      ],
+      "mass": 0.05,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "mango_prop",
+      "idx": 0,
+      "family": "decoration",
+      "name": "mango prop",
+      "size": [
+        0.1253,
+        0.0551,
+        0.0554
+      ],
+      "mass": 0.0162,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "marker_box",
+      "idx": 3,
+      "family": "box",
+      "name": "marker box",
+      "size": [
+        0.1144,
+        0.0599,
+        0.0282
+      ],
+      "mass": 0.0978,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "matryoshka_dolls",
+      "idx": 1,
+      "family": "toy",
+      "name": "nesting doll",
+      "size": [
+        0.0621,
+        0.0613,
+        0.11
+      ],
+      "mass": 0.05,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "matryoshka_dolls",
+      "idx": 3,
+      "family": "toy",
+      "name": "nesting doll",
+      "size": [
+        0.0395,
+        0.039,
+        0.07
+      ],
+      "mass": 0.05,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "matryoshka_dolls",
+      "idx": 6,
+      "family": "toy",
+      "name": "nesting doll",
+      "size": [
+        0.0614,
+        0.0614,
+        0.11
+      ],
+      "mass": 0.05,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "matryoshka_dolls",
+      "idx": 8,
+      "family": "toy",
+      "name": "nesting doll",
+      "size": [
+        0.0391,
+        0.0391,
+        0.07
+      ],
+      "mass": 0.05,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "matryoshka_dolls",
+      "idx": 13,
+      "family": "toy",
+      "name": "rubber duck",
+      "size": [
+        0.0514,
+        0.0667,
+        0.07
+      ],
+      "mass": 0.05,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "mug",
+      "idx": 4,
+      "family": "mug",
+      "name": "coffee mug",
+      "size": [
+        0.0907,
+        0.0643,
+        0.076
+      ],
+      "mass": 0.25,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "mug",
+      "idx": 9,
+      "family": "mug",
+      "name": "wooden mug",
+      "size": [
+        0.0821,
+        0.0593,
+        0.076
+      ],
+      "mass": 0.25,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "plastic_cup",
+      "idx": 7,
+      "family": "cup",
+      "name": "plastic cup",
+      "size": [
+        0.068,
+        0.068,
+        0.15
+      ],
+      "mass": 0.0234,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "round_lid",
+      "idx": 2,
+      "family": "lid",
+      "name": "round cap",
+      "size": [
+        0.0551,
+        0.0551,
+        0.04
+      ],
+      "mass": 0.0258,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_container",
+      "idx": 1,
+      "family": "bottle",
+      "name": "lab bottle",
+      "size": [
+        0.067,
+        0.0669,
+        0.1729
+      ],
+      "mass": 0.1283,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_container",
+      "idx": 52,
+      "family": "box",
+      "name": "marker box",
+      "size": [
+        0.0367,
+        0.1009,
+        0.0697
+      ],
+      "mass": 0.0605,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_decor",
+      "idx": 7,
+      "family": "decor",
+      "name": "candlestick",
+      "size": [
+        0.0597,
+        0.0597,
+        0.1942
+      ],
+      "mass": 0.0687,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_decor",
+      "idx": 9,
+      "family": "decor",
+      "name": "candle",
+      "size": [
+        0.0601,
+        0.054,
+        0.1271
+      ],
+      "mass": 0.0582,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_fastener_or_hardware",
+      "idx": 2,
+      "family": "car part",
+      "name": "mega fuse",
+      "size": [
+        0.1028,
+        0.0394,
+        0.0394
+      ],
+      "mass": 0.0214,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_fidget_toy",
+      "idx": 0,
+      "family": "toy",
+      "name": "fidget cube",
+      "size": [
+        0.062,
+        0.062,
+        0.0635
+      ],
+      "mass": 0.0558,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 51,
+      "family": "dessert",
+      "name": "cake slice",
+      "size": [
+        0.0679,
+        0.106,
+        0.1007
+      ],
+      "mass": 0.0649,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 55,
+      "family": "dessert",
+      "name": "cake bar",
+      "size": [
+        0.0523,
+        0.1197,
+        0.0706
+      ],
+      "mass": 0.0795,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 62,
+      "family": "dessert",
+      "name": "cupcake",
+      "size": [
+        0.0681,
+        0.0664,
+        0.0812
+      ],
+      "mass": 0.038,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 63,
+      "family": "dessert",
+      "name": "cupcake",
+      "size": [
+        0.0663,
+        0.0697,
+        0.0791
+      ],
+      "mass": 0.042,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 64,
+      "family": "dessert",
+      "name": "cupcake",
+      "size": [
+        0.0665,
+        0.0646,
+        0.0623
+      ],
+      "mass": 0.0351,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 105,
+      "family": "fruit",
+      "name": "apple",
+      "size": [
+        0.0633,
+        0.0622,
+        0.0689
+      ],
+      "mass": 0.0304,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 107,
+      "family": "fruit",
+      "name": "apple",
+      "size": [
+        0.0695,
+        0.0672,
+        0.0674
+      ],
+      "mass": 0.0405,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 112,
+      "family": "fruit",
+      "name": "apple",
+      "size": [
+        0.0646,
+        0.0697,
+        0.0678
+      ],
+      "mass": 0.0373,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 157,
+      "family": "vegetable",
+      "name": "cucumber",
+      "size": [
+        0.0521,
+        0.1697,
+        0.0516
+      ],
+      "mass": 0.0548,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 266,
+      "family": "vegetable",
+      "name": "potato",
+      "size": [
+        0.1098,
+        0.06,
+        0.0492
+      ],
+      "mass": 0.0397,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 268,
+      "family": "vegetable",
+      "name": "potato",
+      "size": [
+        0.1035,
+        0.0463,
+        0.036
+      ],
+      "mass": 0.021,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 272,
+      "family": "vegetable",
+      "name": "potato",
+      "size": [
+        0.1096,
+        0.0679,
+        0.0579
+      ],
+      "mass": 0.0519,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 278,
+      "family": "vegetable",
+      "name": "squash",
+      "size": [
+        0.0585,
+        0.1361,
+        0.0588
+      ],
+      "mass": 0.0618,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 290,
+      "family": "fruit",
+      "name": "tangerine",
+      "size": [
+        0.0605,
+        0.0619,
+        0.042
+      ],
+      "mass": 0.0201,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_food_and_drink",
+      "idx": 292,
+      "family": "fruit",
+      "name": "tangerine",
+      "size": [
+        0.06,
+        0.0599,
+        0.0518
+      ],
+      "mass": 0.0239,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_hand_tool",
+      "idx": 35,
+      "family": "tool",
+      "name": "socket",
+      "size": [
+        0.0478,
+        0.0478,
+        0.0504
+      ],
+      "mass": 0.0225,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_machine_or_industrial",
+      "idx": 13,
+      "family": "car part",
+      "name": "car relay",
+      "size": [
+        0.081,
+        0.056,
+        0.03
+      ],
+      "mass": 0.0236,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_machine_or_industrial",
+      "idx": 15,
+      "family": "car part",
+      "name": "shaped hose",
+      "size": [
+        0.1698,
+        0.0523,
+        0.0271
+      ],
+      "mass": 0.0358,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_machine_or_industrial",
+      "idx": 27,
+      "family": "car part",
+      "name": "idler pulley",
+      "size": [
+        0.06,
+        0.06,
+        0.0451
+      ],
+      "mass": 0.0207,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_machine_or_industrial",
+      "idx": 35,
+      "family": "car part",
+      "name": "chain tensioner",
+      "size": [
+        0.1131,
+        0.0598,
+        0.0402
+      ],
+      "mass": 0.0232,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_medical_or_personal_care",
+      "idx": 2,
+      "family": "medical supply",
+      "name": "bandage roll",
+      "size": [
+        0.0444,
+        0.0444,
+        0.075
+      ],
+      "mass": 0.0285,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_medical_or_personal_care",
+      "idx": 6,
+      "family": "cleaning supply",
+      "name": "bar soap",
+      "size": [
+        0.06,
+        0.0938,
+        0.0325
+      ],
+      "mass": 0.0356,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_medical_or_personal_care",
+      "idx": 8,
+      "family": "cleaning supply",
+      "name": "bar soap",
+      "size": [
+        0.0537,
+        0.0939,
+        0.0331
+      ],
+      "mass": 0.0255,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_medical_or_personal_care",
+      "idx": 54,
+      "family": "cleaning",
+      "name": "soap bar",
+      "size": [
+        0.0537,
+        0.094,
+        0.0345
+      ],
+      "mass": 0.0271,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 0,
+      "family": "medical supply",
+      "name": "bandage box",
+      "size": [
+        0.0494,
+        0.0519,
+        0.0424
+      ],
+      "mass": 0.0271,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 87,
+      "family": "cleaning supply",
+      "name": "powder canister",
+      "size": [
+        0.0664,
+        0.0663,
+        0.1783
+      ],
+      "mass": 0.1522,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 91,
+      "family": "bottle",
+      "name": "oil additive bottle",
+      "size": [
+        0.056,
+        0.056,
+        0.1796
+      ],
+      "mass": 0.0952,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 99,
+      "family": "can",
+      "name": "sealant can",
+      "size": [
+        0.0477,
+        0.0741,
+        0.1384
+      ],
+      "mass": 0.0999,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 148,
+      "family": "drink",
+      "name": "drink carton",
+      "size": [
+        0.0408,
+        0.065,
+        0.105
+      ],
+      "mass": 0.0599,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 149,
+      "family": "drink",
+      "name": "juice box",
+      "size": [
+        0.0413,
+        0.0463,
+        0.1027
+      ],
+      "mass": 0.0389,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 152,
+      "family": "drink",
+      "name": "juice box",
+      "size": [
+        0.0427,
+        0.0475,
+        0.1054
+      ],
+      "mass": 0.0398,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 154,
+      "family": "drink",
+      "name": "juice carton",
+      "size": [
+        0.0516,
+        0.0395,
+        0.1689
+      ],
+      "mass": 0.0726,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 155,
+      "family": "can",
+      "name": "soda can",
+      "size": [
+        0.0672,
+        0.0671,
+        0.0912
+      ],
+      "mass": 0.0767,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 158,
+      "family": "can",
+      "name": "energy drink can",
+      "size": [
+        0.0597,
+        0.0597,
+        0.1206
+      ],
+      "mass": 0.0795,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 162,
+      "family": "can",
+      "name": "soda can",
+      "size": [
+        0.066,
+        0.0659,
+        0.1227
+      ],
+      "mass": 0.0897,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 170,
+      "family": "bottle",
+      "name": "gin bottle",
+      "size": [
+        0.0403,
+        0.0593,
+        0.1765
+      ],
+      "mass": 0.0633,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 175,
+      "family": "bottle",
+      "name": "vodka bottle",
+      "size": [
+        0.0409,
+        0.0409,
+        0.155
+      ],
+      "mass": 0.0385,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 192,
+      "family": "condiment",
+      "name": "ketchup bottle",
+      "size": [
+        0.0531,
+        0.0857,
+        0.1653
+      ],
+      "mass": 0.131,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 193,
+      "family": "condiment",
+      "name": "mustard bottle",
+      "size": [
+        0.0452,
+        0.0736,
+        0.144
+      ],
+      "mass": 0.0821,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 208,
+      "family": "box",
+      "name": "pasta box",
+      "size": [
+        0.0372,
+        0.1294,
+        0.1298
+      ],
+      "mass": 0.1562,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 211,
+      "family": "box",
+      "name": "pasta box",
+      "size": [
+        0.0372,
+        0.1294,
+        0.1298
+      ],
+      "mass": 0.1562,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 213,
+      "family": "box",
+      "name": "pasta box",
+      "size": [
+        0.0367,
+        0.1299,
+        0.1279
+      ],
+      "mass": 0.1524,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 223,
+      "family": "can",
+      "name": "meat can",
+      "size": [
+        0.0538,
+        0.0943,
+        0.0499
+      ],
+      "mass": 0.057,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 251,
+      "family": "condiment",
+      "name": "mayonnaise bottle",
+      "size": [
+        0.0611,
+        0.1012,
+        0.1778
+      ],
+      "mass": 0.1611,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 256,
+      "family": "condiment",
+      "name": "jam jar",
+      "size": [
+        0.0656,
+        0.0656,
+        0.0795
+      ],
+      "mass": 0.0634,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 258,
+      "family": "condiment",
+      "name": "ketchup bottle",
+      "size": [
+        0.058,
+        0.093,
+        0.1806
+      ],
+      "mass": 0.1451,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 261,
+      "family": "condiment",
+      "name": "ketchup bottle",
+      "size": [
+        0.055,
+        0.0791,
+        0.1535
+      ],
+      "mass": 0.0963,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 269,
+      "family": "drink",
+      "name": "milk carton",
+      "size": [
+        0.0663,
+        0.0685,
+        0.1498
+      ],
+      "mass": 0.1216,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 276,
+      "family": "food",
+      "name": "yogurt cup",
+      "size": [
+        0.063,
+        0.063,
+        0.051
+      ],
+      "mass": 0.0321,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 277,
+      "family": "box",
+      "name": "medicine box",
+      "size": [
+        0.0349,
+        0.085,
+        0.1505
+      ],
+      "mass": 0.1116,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_packaging",
+      "idx": 305,
+      "family": "bottle",
+      "name": "dropper bottle",
+      "size": [
+        0.05,
+        0.0499,
+        0.0865
+      ],
+      "mass": 0.0271,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_remote",
+      "idx": 0,
+      "family": "electronics",
+      "name": "remote control",
+      "size": [
+        0.048,
+        0.188,
+        0.0256
+      ],
+      "mass": 0.0384,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "sand3d_tableware",
+      "idx": 19,
+      "family": "cup",
+      "name": "plastic cup",
+      "size": [
+        0.0643,
+        0.0643,
+        0.0998
+      ],
+      "mass": 0.068,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_tableware",
+      "idx": 29,
+      "family": "cup",
+      "name": "coffee cup",
+      "size": [
+        0.0647,
+        0.0647,
+        0.1092
+      ],
+      "mass": 0.0608,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_tableware",
+      "idx": 104,
+      "family": "container",
+      "name": "salt shaker",
+      "size": [
+        0.0619,
+        0.0619,
+        0.1095
+      ],
+      "mass": 0.0533,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_tableware",
+      "idx": 105,
+      "family": "container",
+      "name": "salt shaker",
+      "size": [
+        0.0572,
+        0.0571,
+        0.1093
+      ],
+      "mass": 0.0485,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_tableware",
+      "idx": 106,
+      "family": "container",
+      "name": "salt shaker",
+      "size": [
+        0.0451,
+        0.0451,
+        0.0957
+      ],
+      "mass": 0.0426,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "sand3d_vehicle",
+      "idx": 20,
+      "family": "auto part",
+      "name": "rack boot",
+      "size": [
+        0.0474,
+        0.0474,
+        0.1864
+      ],
+      "mass": 0.0623,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "soda_can",
+      "idx": 0,
+      "family": "can",
+      "name": "soda can",
+      "size": [
+        0.0582,
+        0.0582,
+        0.139
+      ],
+      "mass": 0.27,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "tapered_cup",
+      "idx": 4,
+      "family": "cup",
+      "name": "tapered cup",
+      "size": [
+        0.0566,
+        0.0566,
+        0.119
+      ],
+      "mass": 0.1779,
+      "primitive": "power_wrap"
+    },
+    {
+      "cat": "wood_block_arch",
+      "idx": 0,
+      "family": "block",
+      "name": "arch block",
+      "size": [
+        0.0601,
+        0.0297,
+        0.03
+      ],
+      "mass": 0.0246,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_arch",
+      "idx": 2,
+      "family": "block",
+      "name": "arch block",
+      "size": [
+        0.0601,
+        0.0297,
+        0.03
+      ],
+      "mass": 0.0246,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_arch",
+      "idx": 6,
+      "family": "block",
+      "name": "arch block",
+      "size": [
+        0.0601,
+        0.0297,
+        0.03
+      ],
+      "mass": 0.0246,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_cuboid",
+      "idx": 0,
+      "family": "block",
+      "name": "cuboid block",
+      "size": [
+        0.06,
+        0.03,
+        0.03
+      ],
+      "mass": 0.0403,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_cuboid",
+      "idx": 4,
+      "family": "block",
+      "name": "cuboid block",
+      "size": [
+        0.06,
+        0.03,
+        0.03
+      ],
+      "mass": 0.0403,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_cuboid",
+      "idx": 6,
+      "family": "block",
+      "name": "cuboid block",
+      "size": [
+        0.06,
+        0.03,
+        0.03
+      ],
+      "mass": 0.0403,
+      "primitive": "lateral"
+    },
+    {
+      "cat": "wood_block_cylinder",
+      "idx": 0,
+      "family": "block",
+      "name": "tall cylinder block",
+      "size": [
+        0.03,
+        0.03,
+        0.06
+      ],
+      "mass": 0.0317,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "wood_block_cylinder",
+      "idx": 2,
+      "family": "block",
+      "name": "tall cylinder block",
+      "size": [
+        0.03,
+        0.03,
+        0.06
+      ],
+      "mass": 0.0317,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "wood_block_cylinder",
+      "idx": 4,
+      "family": "block",
+      "name": "tall cylinder block",
+      "size": [
+        0.03,
+        0.03,
+        0.06
+      ],
+      "mass": 0.0317,
+      "primitive": "tripod_pinch"
+    },
+    {
+      "cat": "wood_block_cylinder",
+      "idx": 6,
+      "family": "block",
+      "name": "tall cylinder block",
+      "size": [
+        0.03,
+        0.03,
+        0.06
+      ],
+      "mass": 0.0317,
+      "primitive": "tripod_pinch"
+    }
+  ]
+}

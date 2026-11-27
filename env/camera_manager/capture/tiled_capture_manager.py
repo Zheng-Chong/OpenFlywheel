@@ -13,6 +13,7 @@ import torch
 from env.camera_manager.camera_manager import CameraManager
 from env.camera_manager.capture.camera_view import CameraView
 from env.environment.isaac.isaac_rl_env import IsaacRLEnv
+from env.observation_manager.vision_utils import requested_depth_cameras
 
 try:  # IsaacLab 3: SimulationContext.render() no longer runs Kit's app loop; cameras pump it when they read
     from isaaclab_physx.renderers.isaac_rtx_renderer_utils import ensure_isaac_rtx_render_update
@@ -88,22 +89,30 @@ class TiledCaptureManager:
             config.pop("default_frequency")
 
         self.config = OmegaConf.create(config)
-        annotator_config = OmegaConf.to_container(self.config.annotator, resolve=True)
-        if annotator_config is None:
+        depth_sel = requested_depth_cameras(getattr(self, "_requested_depth_cameras", None))
+        annotator_config = (
+            OmegaConf.to_container(self.config.annotator, resolve=True) if "annotator" in self.config else None
+        )
+        if annotator_config is None and depth_sel is None:
             print("[TiledCaptureManager] No annotator enabled in config. Please check your config file.")
             return
+        annotator_config = annotator_config or {}
         for cam_id, camera_name in enumerate(self.camera_names[0]):
             if camera_name in annotator_config:
                 capture_config = annotator_config[camera_name]
             else:
                 capture_config = annotator_config.get("common", None)  # check if there is common annotator config
 
-            if capture_config.get("enabled", False):
+            if capture_config and capture_config.get("enabled", False):
                 annotators = deepcopy(capture_config)
                 annotators.pop("enabled")
                 for annotator_name, annotator_setting in annotators.items():
                     type_annotator = annotator_setting["type"]
-                    self.annotator_type[cam_id].append(type_annotator)
+                    if type_annotator not in self.annotator_type[cam_id]:
+                        self.annotator_type[cam_id].append(type_annotator)
+            wants_depth = depth_sel is True or (isinstance(depth_sel, set) and camera_name in depth_sel)
+            if wants_depth and not any(t in ("depth", "distance_to_image_plane") for t in self.annotator_type[cam_id]):
+                self.annotator_type[cam_id].append("distance_to_image_plane")
             prim_paths_by_cam_id = [row[cam_id] for row in self.camera_prim_paths]
 
             camera_resolution = self.cameras[0][cam_id]._resolution

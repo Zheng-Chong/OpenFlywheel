@@ -14,6 +14,8 @@
 | `state/left_arm_joint_states` 等 | (T, D) float32，取自评估时的 `obs["state"]` |
 | `action/` | 与 `state/` 同名，取自发给 `take_action` 的动作 |
 | `vision/cam_head/colors` 等 | 用 `encode_image_bit` 编码的 JPEG，存成定长字节列 |
+| `vision/<cam>/depths` 等（可选） | 开启 `--record-depth`、`OPENFLYWHEEL_COLLECT_DEPTH` 或 `observation.vision.depth` 时写入：`(T, H, W)` float32（单位 m，`distance_to_image_plane`），可附 `vision/<cam>/intrinsic_matrix` `(3, 3)` 与 `vision/<cam>/extrinsic_matrices` `(T, 4, 4)`（USD 外参） |
+| `affordance_2d/<cam>/`（可选） | 开启 `--record-affordance-2d`、`OPENFLYWHEEL_COLLECT_AFFORDANCE` 或 `observation.vision.affordance` 时写入：`object_bbox_xyxy_norm` `(T, 4)`、`affordance_bbox_xyxy_norm` `(T, 4)`、`keypoints_xy_score` `(T, K, 3)`、`selected_grasp_xy_norm` `(T, 2)`、`heatmap_uint8` `(T, H_hm, W_hm)` |
 | `privileged/` | 我们自己加的扩展字段，只给审计用（例如豆子位置、杯子位姿），训练时不要读。录制器自己加的（2026-11-18 起）：`motion_manipulability_<臂键>`（每帧该臂末端 6×7 雅可比的可操作度 sqrt(det(J Jᵀ))，奇异位形时为 0）、`motion_grip_force_<夹爪>`（每帧两个指垫的接触合力，N，同 `obs["gripper_force"]`） |
 
 物体的尺寸和颜色泛化写在布局里（`scripts/g1d/build_asset.py` 的 `RANDOMIZE`，按任务和标签打开，现有任务都没开）：刚体条目的 `scale` 是等比缩放（质量已按体积换算，`physics.mass`），`visual.color` 是线性 RGB 纯色（`visual.color_parts` 只给列出的网格换色）。它们随 `additional_info/layout` 进每个回合，按回合统计泛化范围时读这里。
@@ -25,13 +27,14 @@
 ## 观测与动作
 
 - **16 维向量的顺序**：左臂 7 个关节、左夹爪、右臂 7 个关节、右夹爪。左右臂各自的关节顺序以质检单里的 `joint_names` 为准；G1-D 是 shoulder_pitch、shoulder_roll、shoulder_yaw、elbow、wrist_roll、wrist_pitch、wrist_yaw。关节角单位是 rad。
-- **身体自由度（腰、升降、底盘）不在 16 维向量里**，已有数据集都没有录。仿真支持它们作为可选的动作键：`waist_joint_state` [偏航, 俯仰] rad（官方 12 WaistYaw、14 WaistPitch，仿真关节 `torso_Joint`、`Yaw_Joint`）、`lift_joint_state` [升降柱高度] m（两级 `LZ_*_Joint` 各一半），以及只在 `g1d_mobile` 上有的 `base_velocity` [vx, vyaw]（底盘坐标系，m/s、rad/s）。不发腰和升降就保持，不发底盘就停车。env 配置打开 `observation.robot.body_states` 才进观测，同时多一个只在 state 里的 `base_pose` [x, y, yaw]（相对回合起点）。录制（`collect.py` 的 `state_keys`）和 LeRobot 导出都还只认 16 维，要录身体自由度先改本契约、录制器和转换器。移动操作任务 `g1d_deliver_cup_to_lounge`（env 配置 `g1d_counter_mobile`）因此目前只用于评估和脚本专家演示，不能按本契约采集。
+- **19 维固定底盘 Wholebody 向量（`g1d_wb19`，腰部升降 + 弯腰，不含底盘）**：使用开启 `observation.robot.body_states: true` 的固定底盘配置（`env_cfg/g1d_wb.yml`、`g1d_lab_wb.yml`、`g1d_shenzhen_lab_wb.yml`、`g1d_beans_rigid_wb.yml`、`g1d_lab_beans_rigid_wb.yml`、`g1d_shenzhen_lab_beans_rigid_wb.yml`）采集时，在 16 维之后依次追加 `waist_joint_state`（2 维 `[waist_yaw, waist_pitch]`，rad，对应官方 12 号电机 WaistYaw / `torso_Joint`、14 号电机 WaistPitch / `Yaw_Joint`；首期只采升降+弯腰时 `waist_yaw` 锁为 `0.0`）与 `lift_joint_state`（1 维 `lift_height`，m，范围 `[0.0, 0.42]`，两级 `LZ_mt_Joint`、`LZ_it_Joint` 等分行程），不含底盘 `base_velocity` / `base_pose`。录制器 `collect.py`、`motion.py`（腰部限速 `REAL_WAIST_VMAX = 0.5 rad/s`、升降限速 `REAL_LIFT_VMAX = 0.0765 m/s`）与 `export.py`（通过 `patch_converter_wb19` 在内存态扩展 `XPolicyLab` 转换器输出 19 维 `left_joint_0..7`、`right_joint_0..7`、`waist_yaw`、`waist_pitch`、`lift_height`）均自动识别 19 维并保持 16 维向后兼容。移动底盘任务 `g1d_deliver_cup_to_lounge`（`g1d_counter_mobile`）仍不在本契约采集范围内。
 - **夹爪 state**：两指关节实测位置的均值，换算到 0（闭合）到 1（张开）。被物体挡住时，读数停在物体宽度对应的开度上，不裁剪。由 env 配置里的 `observation.robot.ee_state: measured` 打开，G1-D 的八个配置（`g1d`、`g1d_counter`、`g1d_lab`、`g1d_school`、`g1d_shenzhen_lab`、`g1d_beans_collect`、`g1d_mobile`、`g1d_counter_mobile`）都已打开。不写这个键时仍是上一步的指令值，这是 RoboDojo 原来的行为，X5 等任务不受影响。
 - **夹爪 action**：指令值，刻度同上，执行前裁剪到 [0, 1]。
 - **夹持力**（不在数据里）：G1-D 的 obs 有 `obs["gripper_force"]["left_ee" / "right_ee"]`，是两个指垫（`*_dex1_finger_link_{1,2}_tip`）上 ContactSensor 读出的接触合力大小，单位 N，顺序同两个手指关节（挤压的法向力加上托住物体的摩擦力）。只有 `robot_config` 里写了 `FINGER_PADS` 的机器人才有这个键。录制器不写它，所以 16 维 state 不变；真机能否给出对应的量还没确认。
 - **机械臂 action**：关节位置目标，30 Hz。仿真在每个动作内部做插值，与真机控制器的跟踪方式不同（见 README「控制对齐」）。
 - **帧对齐**：第 t 帧的图像和 state 都是在执行 `action[t]` 之前采集的。
 - **相机**：`cam_head` 是头部双目的左眼（640×480，fx ≈ 279.5）；`cam_left_wrist`、`cam_right_wrist` 是左、右腕相机（640×480，fx ≈ 314）。都按针孔模型渲染，没有加畸变，腕部主点的偏移也没有建模。
+- **可选深度与 2D Affordance 观测（`obs["vision"][<cam>]`）**：默认关闭以保持零额外开销。开启 `observation.vision.depth` / `OPENFLYWHEEL_COLLECT_DEPTH` 时，`TiledCaptureManager` / `MujocoCaptureManager` 启用 `distance_to_image_plane`，`ObsManager` 在 `obs["vision"][<cam>]` 注入 `depth`（`(H, W)` float32，单位 m）；开启 `observation.vision.affordance` / `OPENFLYWHEEL_COLLECT_AFFORDANCE` 时，基于物体实时位姿与 `affordance.json`（若同时有 `depth` 则做遮挡与前景裁切）注入 `obs["vision"][<cam>]["affordance"]`（含 `heatmap`、`heatmap_uint8`、`object_bbox_xyxy_norm`、`affordance_bbox_xyxy_norm`、`keypoints` 等）。`collect.py` 可直接消费 `obs["vision"]` 的 `depth` 与 `affordance`，或在未预计算时从 3D 回退投影。
 
 ### CAD 生成的 Aurora Lite / G1-WS 变体
 
